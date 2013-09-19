@@ -1,0 +1,100 @@
+@import "grid.less";
+@import "colors.less";
+@import "buttons.less";
+@import "typography.less";
+@import "forms.less";
+@import "dropdowns.less";
+@import "styleguide.less"; 
+
+
+//       ELEMENTS MATCHING THE BODY + HTML TAGS + CLEARFIX       //
+//==============================================================//
+
+body {
+	background: @white;
+    background-color: @white;
+	font: 16px/23px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.000em;
+	line-height: 1.9;
+	margin: 0;
+	/*height: 100%;
+	width: 100%;*/
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%; }
+
+
+.clearfix { 
+	*zoom: 1; }
+
+.clearfix:before,
+.clearfix:after { 
+	display: table; 
+	line-height: 0; 
+	content: ""; }
+
+.clearfix:after { 
+	clear: both; }
+
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+article, aside,
+details, figcaption,
+figure, footer,
+header, hgroup,
+nav, section { 
+	display: block; 
+	margin: 0; }
+
+html {
+    font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%; }
+      
+.drop-shadow {
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+			-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+
+
+// floats + justified
+// ----------------------------	
+
+.left-float			{ float: left; }	
+.right-float		{ float: right; }	
+.center-float		{ margin: 0 auto; }
+
+.text-left			{ text-align: left; }
+.text-right			{ text-align: right; }
+.text-center		{ text-align: center; }
+.justified 			{ text-align: justify; }
+
+.neg-1px            { letter-spacing: -1px; }	
+
+
+
+
+
+
+//       				Horizontal Rules          	              //
+//===============================================================//
+
+.hr_thin		{ border: 1px solid @clouds; }
+.hr_medium		{ border: 3px solid @clouds; }
+.hr_thick		{ border: 5px solid @clouds; }
+
+.hr_thin_w		{ border: 1px solid @white; }
+.hr_medium_w	{ border: 3px solid @white; }
+.hr_thick_w	    { border: 5px solid @white; }
+
+
+
+.border-bottom   { border-bottom: 1px solid @clouds; padding-bottom: .5em; margin-bottom: 1em; }
+
+
+

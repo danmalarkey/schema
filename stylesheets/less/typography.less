@@ -1,0 +1,121 @@
+//              ALL THINGS TYPOGRAPHY RELATED                   //
+//==============================================================//
+
+// Typefaces
+// ----------------------------
+
+@merriweather:			'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+@oswald:				'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+@armata:				'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+
+@glegoo:				'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+
+// H1 - H6 Tags with links
+// ----------------------------
+
+h1, h2, h3, h4, h5, h6 { 
+	color: darken(@asbestos,10%);  
+	font-family: @glegoo; 
+	margin-bottom: 0.500rem; 
+	text-rendering: optimizelegibility; }
+	
+	
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+	font-weight: inherit; 
+	font-family: inherit; }
+	
+h1.title, h3.title{ 
+	font-family: @oswald; 
+	color: @orange; 
+	.border-bottom;  }
+
+h1.heading, h3.heading { 
+	font-family: @oswald; 
+	color: @concrete; 
+	.border-bottom;  }
+	
+h1 { 
+	font-size: 36px; 
+	font-size: 2.250rem; 
+	line-height: 1.4; 
+	letter-spacing: -1px; }
+	
+h2 { 
+	font-size: 31px; 
+		font-size: 1.938rem; 
+		line-height: 1.2; 
+		/*margin-bottom: 10px;*/ }
+		
+h3 { 
+	font-size: 24px; 
+	font-size: 1.500rem; 
+	line-height: 34px; 
+	/*margin-bottom: 8px;*/ }
+	
+h4 { 
+	font-size: 18px; 
+	font-size: 1.125rem; 
+	line-height: 30px; 
+	/*margin-bottom: 4px;*/ }
+	
+h5 { 
+	font-size: 14px; 
+	font-size: 0.875rem; 
+	line-height: 24px; }
+	
+h6 { 
+	font-size: 12px; 
+	font-size: 0.750rem; 
+	line-height: 21px; }
+	
+.subheader { 
+	color: darken(@asbestos,10%); 
+	text-transform: uppercase;  }
+
+
+
+
+// BLOCKQUOTE
+// ----------------------------
+
+blockquote {
+	font: 14px/22px normal helvetica, sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	padding-left: 15px;
+	border-left: 5px solid @orange; } 
+	
+blockquote cite {
+	font-weight: bold; }
+
+
+// paragraph 
+// ----------------------------		
+		
+p { 
+	margin: 0 0 1em; 
+	color: @asbestos; 
+	font-family: @armata; 
+	font-size: 0.875em; /* 14px */
+	line-height: 2.2; }
+
+p.lead { 
+	font-size: 1.313rem; 
+	line-height: 1.7; 
+	font-weight: bold; }
+
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+
+
+

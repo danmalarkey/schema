@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=1"/>
+        <meta name="description" content="Dan Malarkey, Dan, Malarkey, HTML, HTML5, CSS, CSS3, Open Source, Open Source Framework, Front End Framework, Boilerplate">
+        <meta name="author" content="Dan Malarkey | http://danmalarkey.com ©2013 and beyond">
+
+		<link rel="stylesheet" href="stylesheets/css/styleguide.css" type="text/css">
+        <link rel="stylesheet" href="stylesheets/css/schema.css" type="text/css">
+        <link rel="stylesheet" href="stylesheets/css/schema_r.css" type="text/css">
+        
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,900,300' rel='stylesheet' type='text/css'>
+        
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="stylesheets/js/jquery.easydropdown.js"></script>
+		<title>SCHEMA | A powerfully light, responsive, and lean front-end UI framework built with LESS.</title>
+    </head>
+    
+    <body>
+    <section class="nav">
+        <div class="container">
+            <nav class="top-nav">
+                <ul>
+                    <li id="logo"><a href="#top">Schema</a>
+
+                    </li>
+                    <li><a href="#grid">12 Column Grid</a>
+
+                    </li>
+                    <li><a href="#typography">Typography</a>
+
+                    </li>
+                    <li><a href="#buttons">Buttons</a>
+
+                    </li>
+                    <li><a href="#dropdowns">Dropdowns</a>
+
+                    </li>
+                    <li><a href="#forms">Forms</a>
+
+                    </li>
+                    <li><a href="#colors">Colors</a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <header id="top">
+        <section class="row-fluid">
+            <div class="container">
+                 <h1>schema</h1>
+                 
+                 <hr class="hr_thick_w">
+
+<!--                  <h6>A front end reference document by <a href="http://twitter.com/dan_malarkey" target="_blank">Dan Malarkey</a> + <a href="https://twitter.com/codebeermusic" target="_blank">RJ Mcdermott</a>.</h6> -->
+				 
+				 <div class="container">
+				 	<!-- <div class="col12"> --> 
+					 	<div class="col6">
+						 	<h3>A powerfully light, responsive, and lean frontend UI framework. Built with <a href="http://lesscss.org" target="_blank">LESS.</a></h3>
+						 	<p>A quick and easy-to-implement framework for awesome developers who build interfaces for the web. Schema provides an all-inclusive collection of CSS to jump start the foundation of all your projects.</p>
+					 	</div>
+				 	<!-- </div> -->
+				 </div>
+        </section>
+    </header>
+    <section id="grid" class="grid-system">
+        <div class="container">
+             <h1 class="title">12 Column Grid System</h1>
+
+            <div class="row">
+                <div class="col12">
+                     <h4>A responsive, proportional, and mobile-friendly 12-column grid system.</h4>
+
+                </div>
+            </div>
+            <div class="row grid-example">
+                <div class="col1">1</div>
+                <div class="col11">11</div>
+            </div>
+            <div class="row grid-example">
+                <div class="col2">2</div>
+                <div class="col10">10</div>
+            </div>
+            <div class="row grid-example">
+                <div class="col3">3</div>
+                <div class="col9">9</div>
+            </div>
+            <div class="row grid-example">
+                <div class="col4">4</div>
+                <div class="col8">8</div>
+            </div>
+            <div class="row grid-example">
+                <div class="col5">5</div>
+                <div class="col7">7</div>
+            </div>
+            <div class="row grid-example">
+                <div class="col6">6</div>
+                <div class="col6">6</div>
+            </div>
+            <div class="row grid-example">
+                <div class="col7">7</div>
+                <div class="col5">5</div>
+            </div>
+            <div class="row grid-example">
+                <div class="col8">8</div>
+                <div class="col4">4</div>
+            </div>
+            <div class="row grid-example">
+                <div class="col9">9</div>
+                <div class="col3">3</div>
+            </div>
+            <div class="row grid-example">
+                <div class="col10">10</div>
+                <div class="col2">2</div>
+            </div>
+            <div class="row grid-example">
+                <div class="col11">11</div>
+                <div class="col1">1</div>
+            </div>
+            <div class="row grid-example">
+                <div class="col12">12</div>
+            </div>
+             <h3 class="heading">1/12 Column</h3>
+
+            <div class="row grid-example">
+                <div class="col1">1</div>
+                <div class="col1">1</div>
+                <div class="col1">1</div>
+                <div class="col1">1</div>
+                <div class="col1">1</div>
+                <div class="col1">1</div>
+                <div class="col1">1</div>
+                <div class="col1">1</div>
+                <div class="col1">1</div>
+                <div class="col1">1</div>
+                <div class="col1">1</div>
+                <div class="col1">1</div>
+            </div>
+             <h3 class="heading">2/6 Column</h3>
+
+            <div class="row grid-example">
+                <div class="col2">2</div>
+                <div class="col2">2</div>
+                <div class="col2">2</div>
+                <div class="col2">2</div>
+                <div class="col2">2</div>
+                <div class="col2">2</div>
+            </div>
+             <h3 class="heading">3/4 Column</h3>
+
+            <div class="row grid-example">
+                <div class="col3">3</div>
+                <div class="col3">3</div>
+                <div class="col3">3</div>
+                <div class="col3">3</div>
+            </div>
+             <h3 class="heading">4/3 Column</h3>
+
+            <div class="row grid-example">
+                <div class="col4">4</div>
+                <div class="col4">4</div>
+                <div class="col4">4</div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Grid System -->
+    <section id="typography" class="typography">
+        <div class="container">
+             <h1 class="title">Typography</h1>
+
+            <div class="row">
+                <div class="col12">
+                     <h4>Headings, body copy, blockquotes, lists, and beyond.</h4>
+
+                </div>
+            </div>
+             <h3 class="heading">Headings</h3>
+
+            <div class="row headings">
+                <div class="col4">
+                     <h1>H1 Heading</h1>
+
+                </div>
+                <div class="col4">
+                     <h2>H2 Heading</h2>
+
+                </div>
+                <div class="col4">
+                     <h3>H3 Heading</h3>
+
+                </div>
+            </div>
+            <div class="row headings-last">
+                <div class="col4">
+                     <h4>H4 Heading</h4>
+
+                </div>
+                <div class="col4">
+                     <h5>H5 Heading</h5>
+
+                </div>
+                <div class="col4">
+                     <h6>H6 Heading</h6>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col12">
+                    	<h3 class="heading">Headings and paragraph text examples.</h3>
+
+                </div>
+            </div>
+             <h1>There are many variations.</h1>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <hr class="hr_thin">
+             <h2>There are many variations.</h2>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <hr class="hr_thin">
+             <h3>There are many variations.</h3>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <hr class="hr_thin">
+             <h4>There are many variations.</h4>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <hr class="hr_thin">
+             <h5>There are many variations.</h5>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <hr class="hr_thin">
+             <h6>There are many variations.</h6>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <hr class="hr_thin">
+            <div class="row">
+                <div class="col12">
+                    	<h3 class="heading">Lead Paragraph</h3>
+
+                </div>
+            </div>
+            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="row">
+                <div class="col12">
+                    	<h3 class="heading">Paragraph Left Align</h3>
+
+                </div>
+            </div>
+            <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="row">
+                <div class="col12">
+                    	<h3 class="heading">Paragraph Right Align</h3>
+
+                </div>
+            </div>
+            <p class="text-right">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="row">
+                <div class="col12">
+                    	<h3 class="heading">Paragraph Center Text</h3>
+
+                </div>
+            </div>
+            <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="row">
+                <div class="col12">
+                    	<h3 class="heading">Paragraph Justified</h3>
+
+                </div>
+            </div>
+            <p class="justified">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="row">
+                <div class="col12">
+                    	<h3 class="heading">Blockquote</h3>
+
+                </div>
+            </div>
+            <blockquote>
+                <p><em>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis. Gangsta in brizzle. Yo mamma eleifend rhoncizzle i'm in the shizzle. In hac gangsta fo dictumst. Dope dapibizzle. Curabitizzle bizzle urna, pretizzle away, dope phat, tellivizzle vitae, nunc. Sizzle suscipizzle. Integer shizznit velit ass nizzle.<br /> <cite><strong>— Snoop Dogg Lion</strong></cite></em>
+
+                </p>
+            </blockquote>
+            <div class="row">
+                <div class="col12">
+                    	<h3 class="heading">Multiple Column Body Text</h3>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col12">
+                    	<h3 class="heading">Two Columns</h3>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col6">
+                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
+                </div>
+                <div class="col6">
+                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col12">
+                    	<h3 class="heading">Three Columns</h3>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col4">
+                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
+                </div>
+                <div class="col4">
+                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
+                </div>
+                <div class="col4">
+                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col12">
+                    	<h3 class="heading">Four Columns</h3>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col3">
+                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
+                </div>
+                <div class="col3">
+                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
+                </div>
+                <div class="col3">
+                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
+                </div>
+                <div class="col3">
+                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Typography section -->
+    <section id="buttons" class="buttons">
+        <div class="container">
+            	<h1 class="title">Buttons</h1>
+
+            <div class="row">
+                <div class="col12">
+                     <h4>Big buttons, normal buttons, and small buttons.</h4>
+
+                </div>
+            </div>
+            	<h3 class="heading">Itty Bitty Buttons. Add the class <em>“btn btn-small”.</em></h3>
+
+            <div class="container">
+                <button class="btn btn-small btn-newlightgrey">Default Button</button>
+                <button class="btn btn-small btn-grey">Grey Button</button>
+                <button class="btn btn-small btn-newblue">Primary Button</button>
+                <button class="btn btn-small btn-newteal">Info Button</button>
+                <button class="btn btn-small btn-newgreen">Success Button</button>
+                <button class="btn btn-small btn-danger">Danger Button</button>
+                <button class="btn btn-small btn-newyellow">Caution Button</button>
+                <button class="btn btn-small btn-orange">Call To Action Button</button>
+            </div>
+            	<h3 class="heading">Regular Size Buttons</h3>
+
+            <div class="container">
+                <!--<button class="btn btn-regular">Regular Button</button>-->
+                <button class="btn btn-newlightgrey">Default Button</button>
+                <button class="btn btn-grey">Grey Button</button>
+                <button class="btn btn-newblue">Primary Button</button>
+                <button class="btn btn-newteal">Info Button</button>
+                <button class="btn btn-newgreen">Success Button</button>
+                <button class="btn btn-danger">Danger Button</button>
+                <button class="btn btn-newyellow">Caution Button</button>
+                <button class="btn btn-orange">Call To Action Button</button>
+            </div>
+            	<h3 class="heading">Extra Large Buttons. Add the class <em>“btn btn-xl”.</em></h3>
+
+            <div class="container">
+                <button class="btn btn-xl newlightgrey">Default Button</button>
+                <button class="btn btn-xl btn-grey">Grey Button</button>
+                <button class="btn btn-xl btn-newblue">Primary Button</button>
+                <button class="btn btn-xl btn-newteal">Info Button</button>
+                <button class="btn btn-xl btn-newgreen">Success Button</button>
+                <button class="btn btn-xl btn-danger">Danger Button</button>
+                <button class="btn btn-xl btn-newyellow">Caution Button</button>
+                <button class="btn btn-xl btn-orange">Call To Action Button</button>
+            </div>
+            	<h3 class="heading">Add a class of <em>“round-corners”</em>&nbsp; to get rounded corners.</h3> 
+            <div class="container">
+                <button class="btn btn-newlightgrey round-corners">Default Button</button>
+                <button class="btn btn-grey round-corners">Grey Button</button>
+                <button class="btn btn-newblue round-corners">Primary Button</button>
+                <button class="btn btn-newteal round-corners">Info Button</button>
+                <button class="btn btn-newgreen round-corners">Success Button</button>
+                <button class="btn btn-danger round-corners">Danger Button</button>
+                <button class="btn btn-newyellow round-corners">Caution Button</button>
+                <button class="btn btn-orange round-corners">Call To Action Button</button>
+            </div>
+            	<h3 class="heading">Full Width Buttons. Add the class <em>“full-btn”.</em></h3>
+
+            <div class="container">
+                <button class="btn btn-danger full-btn xl">Danger Button</button>
+                <button class="btn btn-grey full-btn xl">Grey Button</button>
+                <button class="btn btn-newblue full-btn xl">New Blue Button</button>
+                <button class="btn btn-orange full-btn xl">Orange Button</button>
+                <button class="btn btn-newgreen full-btn xl">New Green Button</button>
+                <button class="btn btn-newlightgrey full-btn xl">New Green Button</button>
+                <button class="btn btn-newteal full-btn xl">New Teal Button</button>
+                <button class="btn btn-newyellow full-btn xl">New Yellow Button</button>
+            </div>
+        </div>
+    </section>
+    <section id="dropdowns" class="dropdowns">
+        <div class="container">
+            	<h1 class="title">Dropdowns</h1>
+
+            <div class="row">
+                <div class="col12">
+                     <h4>Dropdown Buttons</h4>
+
+                </div>
+            </div>
+            <div class="container">
+            	<div class="dropdown">
+            	  <span class="old">
+            	  	<select class="" tabindex="7">
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+						<option value="4">Option 4</option>
+						<option value="5">Option 5</option>
+					</select>
+				  </span>
+				  <span class="selected">Choose Option
+			   	  </span>
+						<span class="carat"></span>
+							<div style="height: 0px;">
+								<ul>
+									<li class="active">Option 1</li>
+									<li class="">Option 2</li>
+									<li class="">Option 3</li>
+									<li class="">Option 4</li>
+									<li>Option 5</li>
+								</ul>
+							</div>
+						</div>
+            </div>
+        </div>
+    </section>
+    <!-- End of button section -->
+    <hr class="hr_thick" />
+    <section id="forms" class="forms">
+        <div class="container">
+             <h1 class="title">Form Fields</h1>
+
+            <div class="row">
+                <div class="col12">
+                     <h4>Input fields, email fields, and more.</h4>
+
+                </div>
+            </div>
+            <div class="container">
+                <fieldset>
+                    <div class="form-group">
+                        <div class="col2">
+                            <label>First Name:</label>
+                        </div>
+                        <div class="col5">
+                            <input class="round-corners" type="text" placeholder="first name" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col2">
+                            <label>Last Name:</label>
+                        </div>
+                        <div class="col5">
+                            <input type="text" placeholder="last name" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col2">
+                            <label>Email:</label>
+                        </div>
+                        <div class="col5">
+                            <input type="email" placeholder="email" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col2">
+                            <label>Credentials:</label>
+                        </div>
+                        <div class="col5">
+                            <input type="password" placeholder="password" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col5">
+                            <label class="r-password">
+                                <input type="checkbox">Remember Password?</label>	<span class="float-right"><button type="submit" class="btn btn-small btn-orange xs">Submit</button></span>
+
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- End of button section -->
+    <section id="colors" class="palette">
+        <div class="container">
+            	<h1 class="title">Colors</h1>
+
+            <div class="row">
+                <div class="col12">
+                     <h4>Some pre-determined colors. Make your own!</h4>
+
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid palette-example">
+            <div class="example1">
+                <p>Orange</p>
+            </div>
+            <div class="example2">
+                <p>Clouds</p>
+            </div>
+            <div class="example3">
+                <p>Asbestos</p>
+            </div>
+            <div class="example4">
+                <p>Silver</p>
+            </div>
+            <div class="example5">
+                <p>Sunflower</p>
+            </div>
+            <div class="example6">
+                <p>Light Sunflower</p>
+            </div>
+            <div class="example7">
+                <p>Lizarin</p>
+            </div>
+            <div class="example8">
+                <p>Pomegranate</p>
+            </div>
+            <div class="example9">
+                <p>New Green</p>
+            </div>
+            <div class="example10">
+                <p>New Yellow</p>
+            </div>
+            <div class="example11">
+                <p>New Teal</p>
+            </div>
+            <div class="example12">
+                <p>Belizehole</p>
+            </div>
+        </div>
+    </section>
+    <!-- Ending of color examples -->
+    <footer class="credits">
+        <div class="container">
+            <div class="row">
+                <div class="col6">
+                    	<h5>Developed with all the love in the world by <a href="http://danmalarkey.com">Dan Malarkey</a>.</h5>
+
+                    <p>This is my first ever Open Source project to date.
+                        <br />Please use and abuse this framework as you see fit.</p>
+                        
+                    <p>This site was built with <a href="http://panic.com/coda/" target="_blank">Coda 2</a>, <a href="http://en.wikipedia.org/wiki/HTML5" target="_blank"> HTML5</a>, <a href="http://www.css3.com" target="_blank">CSS3</a>, and <a href="http://lesscss.org" target="_blank">LESS.</a> 
+                    <br />Fonts are powered by <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a>.
+                    <br /><br />
+                    <p>&copy; 2013. All Rights Reserved. 
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+   	<a href="#top"><i id="#top" class="icon-up-open"></i></a>
+
+    <script type="text/javascript">
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 700);
+                    return false;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
