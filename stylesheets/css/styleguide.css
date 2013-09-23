@@ -1,3 +1,5 @@
+@import "styleguide.less";
+
 @font-face {
     font-family: 'fontello';
     src: url('../css/fontello-62c1d405/font/fontello.eot?36290682');
@@ -44,6 +46,20 @@
     font-size: 14px;
 }
 }
+.schema-social-btns {
+	margin-top: 20px; }
+	
+ul.schema-social-btns {
+	list-style: none; 
+	float: left; 
+	padding-left: 0; 
+	display: inline-block; }
+	
+ul.schema-social-btns li {
+	display: inline-block; 
+	float: left; 
+	padding-left: 0;
+	margin-left: 0; }
 
 
 #logo a {
@@ -125,7 +141,7 @@ footer p {
 header, .header {
     background-color: #f46801;
     font-family: 'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding-top: 10.500em;
+    padding-top: 7.500em;
     padding-bottom: 7.500em;
 }
 header h1 {
@@ -156,6 +172,7 @@ header p {
     font-size: 1.125em;
     line-height: 2;
     font-size: .825em;
+    margin-bottom: 2.5em;
 }
 nav.col6 {
     display: inline-block;
@@ -397,6 +414,8 @@ label.r-password {
     .palette-example p {
     font-size: 14px;
 }
+	
+	
 }@media(max-width:768px) {
     .example1, .example2, .example3, .example4, .example5, .example6, .example7, .example8, .example9, .example10, .example11, .example12 {
     width: 50%}
