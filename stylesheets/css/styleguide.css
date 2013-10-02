@@ -1324,6 +1324,7 @@ label {
   position: relative;
   width: 160px;
   border: 1px solid #bdc3c7;
+  display: inline-block;
   cursor: pointer;
   background: #ffffff;
   color: #7f8c8d;
@@ -1470,4 +1471,8 @@ label {
 }
 .dropdown li.active {
   font-weight: 700;
+}
+.dropdown {
+	display: inline-block;
+	margin-right: 40px; 
 }
