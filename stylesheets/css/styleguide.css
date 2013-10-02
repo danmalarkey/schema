@@ -23,6 +23,12 @@
 .text-right {
   text-align: right;
 }
+.text-center {
+  text-align: center;
+}
+.justified {
+  text-align: justify;
+}
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: "fontello";
@@ -387,7 +393,7 @@ section.buttons code {
 section.buttons em {
     color: #f46801;
 }
-@media(min-width:320px) and (max-width:767px) {
+@media (min-width:320px) and (max-width:767px) {
     .grid-example .col1, .grid-example .col2, .grid-example .col3, .grid-example .col4, .grid-example .col5, .grid-example .col6, .grid-example .col7, .grid-example .col8, .grid-example .col9, .grid-example .col10, .grid-example .col11, .grid-example .col12 {
     text-align: center;
     margin-left: auto;
@@ -400,6 +406,14 @@ section.buttons em {
     text-align: right;
     color: #7f8c8d;
 }
+@media (max-width: 762px) {
+	label {
+		text-align: left;
+	}
+	label.r-password {
+		text-align: left;
+	}
+}
 input[type="checkbox"] {
     margin-right: 5px;
     position: relative;
@@ -411,6 +425,12 @@ label.r-password {
     margin-top: 8px;
     margin-left: 60px;
     font-size: 12px;
+}
+@media (max-width: 762px) {
+	label.r-password {
+		text-align: left;
+		margin-left: 0;
+	}
 }
 .palette-example {
     height: 100%;
@@ -1475,4 +1495,18 @@ label {
 .dropdown {
 	display: inline-block;
 	margin-right: 40px; 
+	float: left;
 }
+
+@media (min-width: 300px) and (max-width: 596px) {
+	.dropdown {
+		width: 50%;
+		margin-right: 5px;
+		margin-bottom: 40px;
+	}
+	label {
+		text-align: left;
+	}
+}
+
+
