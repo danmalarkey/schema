@@ -28,10 +28,9 @@
 .hr_medium_w	{ border: 3px solid @white; }
 .hr_thick_w	    { border: 5px solid @white; }
 
-.drop-shadow {
-	box-shadow: 0 1px 3px rgba(0,0,0,.4);
-		-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
-			-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+
+//       				Round Corners            	              //
+//===============================================================//
 			
 .round-corner (@radius: 6px) {
   -webkit-border-radius: @radius;
@@ -40,11 +39,89 @@
   -o-border-radius: @radius;
   border-radius: @radius; }
   
-.round-corners { .round-corner; }
+.round-corner-top-radius(@radius) {
+	round-corner-top-right-radius: @radius;
+	round-corner-top-left-radius: @radius;
+}
 
+.round-corner-right-radius(@radius) {
+	round-corner-bottom-right-radius: @radius;
+	round-corner-bottom-right-radius: @radius;
+}
+
+.round-corner-bottom-radius(@radius) {
+	round-corner-bottom-right-radius: @radius;
+	round-corner-bottom-left-radius: @radius;
+}
+
+.round-corner-left-radius(@radius) {
+	round-corner-bottom-left-radius: @radius;
+	round-corner-bottom-left-radius: @radius;
+}
+
+
+.opacity(@opacity) {
+  opacity: @opacity;
+}
+
+
+.transition(@transition) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	transition: @transition;
+}
+
+.rotate(@deg) {
+	-webkit-transform:rotate(@deg);    
+	-moz-transform:rotate(@deg);   
+	-ms-transform:rotate(@deg);   
+	 -o-transform:rotate(@deg);
+	    transform:rotate(@deg);
+}
+
+.transform(@skew) {
+	-webkit-transform:skew(@skew);
+	-moz-transform:skew(@skew);
+	-ms-transform:skew(@skew);
+	-o-transform:skew(@skew);
+	transform:skew(@skew);
+}
+
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+	  background: @color;
+	  background: -webkit-gradient(linear,
+	                               left bottom,
+	                               left top,
+	                               color-stop(0, @start),
+	                               color-stop(1, @stop));
+	  background: -ms-linear-gradient(bottom,
+	                                  @start,
+	                                  @stop);
+	  background: -moz-linear-gradient(center bottom,
+	                                   @start 0%,
+	                                   @stop 100%);
+	  background: -o-linear-gradient(@stop,
+	                                 @start);
+	  background-image: linear-gradient(top, @startColor, @endColor);
+	  
+	  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
 
 
 .border-bottom   { border-bottom: 1px solid @clouds; padding-bottom: .5em; margin-bottom: 1em; }
+
+
+.box-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
+  -webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+}
+
+.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+}
 
 
 
