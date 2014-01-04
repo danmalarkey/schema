@@ -30,15 +30,12 @@ body {
   background: #ffffff;
   background-color: #ffffff;
   font: 16px/23px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.000em;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.9;
   margin: 0;
-  /*height: 100%;
-	width: 100%;*/
-
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
-
   -webkit-text-size-adjust: 100%;
 }
 .clearfix {
@@ -78,6 +75,53 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+}
+.left-float {
+  float: left;
+}
+.right-float {
+  float: right;
+}
+.center-float {
+  margin: 0 auto;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.justified {
+  text-align: justify;
+}
+.neg-1px {
+  letter-spacing: -1px;
+}
+.hr_thin {
+  border: 1px solid #ecf0f1;
+}
+.hr_medium {
+  border: 3px solid #ecf0f1;
+}
+.hr_thick {
+  border: 5px solid #ecf0f1;
+}
+.hr_thin_w {
+  border: 1px solid #ffffff;
+}
+.hr_medium_w {
+  border: 3px solid #ffffff;
+}
+.hr_thick_w {
+  border: 5px solid #ffffff;
+}
+.border-bottom {
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
 }
 /* =============================================================
      
@@ -418,18 +462,18 @@ h3.heading {
 }
 h1 {
   font-size: 36px;
-  font-size: 2.250rem;
+  font-size: 2.25rem;
   line-height: 1.4;
   letter-spacing: -1px;
 }
 h2 {
   font-size: 31px;
-  font-size: 1.938rem;
+  font-size: 1.9375rem;
   line-height: 1.2;
 }
 h3 {
   font-size: 24px;
-  font-size: 1.500rem;
+  font-size: 1.5rem;
   line-height: 34px;
 }
 h4 {
@@ -443,7 +487,7 @@ h5 {
 }
 h6 {
   font-size: 12px;
-  font-size: 0.750rem;
+  font-size: 0.75rem;
   line-height: 21px;
 }
 .subheader {
@@ -465,14 +509,14 @@ p {
   margin: 0 0 1em;
   color: #7f8c8d;
   font-family: 'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.875em;
+  font-size: 14px;
+  font-size: 0.875rem;
   /* 14px */
-
   line-height: 2.2;
 }
 p.lead {
-  font-size: 1.313rem;
   font-size: 21px;
+  font-size: 1.3125rem;
   line-height: 1.7;
   font-weight: bold;
 }
@@ -492,6 +536,7 @@ Here you'll find small, medium, large, and full size buttons.
 .btn.btn-small {
   padding: 10px;
   font-size: 12px;
+  font-size: 0.75rem;
 }
 /* XL buttons  */
 .btn.btn-xl {
@@ -515,7 +560,8 @@ Here you'll find small, medium, large, and full size buttons.
   padding: 1em;
   display: inline-block;
   float: left;
-  font-size: 0.875em;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-family: 'armata';
   cursor: pointer;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
@@ -692,10 +738,10 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   padding: 0.625em;
-  font-size: 0.625em;
   width: auto;
   margin-bottom: 10px;
-  font-size: 0.875em;
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.7;
   color: #95a5a6;
   width: 13.750em;
@@ -705,7 +751,8 @@ input[type="color"],
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #bdc3c7;
-  font-size: 0.825em;
+  font-size: 14px;
+  font-size: 0.875rem;
   padding-top: 2px;
   font-family: 'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -755,7 +802,6 @@ input[type="color"]:focus,
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
-
   color: #7f8c8d;
   -webkit-box-shadow: 0 0 8px rgba(244, 104, 1, 0.6);
   -moz-box-shadow: 0 0 8px rgba(244, 104, 1, 0.6);
@@ -874,13 +920,14 @@ EasyDropdown Default Theme.
   height: 100%;
   opacity: 0;
 }
-/* SELECTED FEEDBACK ITEM */.dropdown .selected,
+/* SELECTED FEEDBACK ITEM */
+.dropdown .selected,
 .dropdown li {
   display: block;
-  font-size: 1em;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1;
   /* 	color: #000; */
-
   color: inherit;
   padding: 9px 12px;
   overflow: hidden;
@@ -894,7 +941,6 @@ EasyDropdown Default Theme.
   bottom: 0;
   width: 60px;
   /* 	box-shadow: inset -55px 0 25px -20px #fff; */
-
 }
 /* DROP DOWN WRAPPER */
 .dropdown div {
@@ -925,7 +971,6 @@ EasyDropdown Default Theme.
   bottom: 0;
   height: 50px;
   /* 	box-shadow: inset 0 -50px 30px -35px #fff; */
-
 }
 .dropdown.scrollable.bottom div::after {
   opacity: 0;
@@ -961,63 +1006,4 @@ EasyDropdown Default Theme.
 }
 .dropdown li.active {
   font-weight: 700;
-}
-.left-float {
-  float: left;
-}
-.right-float {
-  float: right;
-}
-.center-float {
-  margin: 0 auto;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
-}
-.justified {
-  text-align: justify;
-}
-.neg-1px {
-  letter-spacing: -1px;
-}
-.hr_thin {
-  border: 1px solid #ecf0f1;
-}
-.hr_medium {
-  border: 3px solid #ecf0f1;
-}
-.hr_thick {
-  border: 5px solid #ecf0f1;
-}
-.hr_thin_w {
-  border: 1px solid #ffffff;
-}
-.hr_medium_w {
-  border: 3px solid #ffffff;
-}
-.hr_thick_w {
-  border: 5px solid #ffffff;
-}
-.drop-shadow {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-}
-.round-corners {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
-}
-.border-bottom {
-  border-bottom: 1px solid #ecf0f1;
-  padding-bottom: .5em;
-  margin-bottom: 1em;
 }
