@@ -1,0 +1,136 @@
+@import "mixins.less";
+
+//========================================================================================
+//
+//	FONT RELATED VARIABLES
+//
+//========================================================================================
+@base-font-size: 							16;
+@baseline-px: 								16px;					  // 16px
+					   
+@base-font-size-xl: 						ceil(@baseline-px * 1.50); /* 24px */
+@base-font-size-large:         				ceil(@baseline-px * 1.25); /* 20px */
+@base-font-size-small:         				ceil(@baseline-px * 0.85); /* 14px */
+@base-font-size-xs: 						ceil(@baseline-px * 0.75); /* 12px */
+@base-line-height:  						1.7;
+
+/* Colors */
+
+//old
+@white:                 #fff;
+@light-white:			rgba(255, 255, 255, .5);
+@clouds:                #ecf0f1;
+@silver:                #bdc3c7;
+@concrete:              #95a5a6;
+@asbestos:              #7f8c8d;
+
+
+@light-sunflower:       #f4d03f;
+@sunflower:             #f1c40f;
+@light-orange:          #f39c12;
+@orange:              	#f46801;
+@carrot:             	#e67e22;
+@pumpkin:            	#d35400;
+@alizarin:           	#e74c3c;
+@pomegranate:			#c0392b;
+
+
+@turquoise:             #1abc9c;
+@greensea:              #16a085;
+@emerland:              #2ecc71;
+@nephritis:            	#27ae60;
+@peter-river:           #3498db;
+@belizehole:			#2980b9;
+@amethyst:				#9b59b6;
+@wisteria:				#8e44ad;
+@wet-asphalt:			#34495e;
+@midnight-blue:			#2c3350;
+
+
+@new-blue:               #60b7e1;
+@new-green:              #009e73;
+@new-teal:               #009E91;
+@new-yellow:             #FFBF00;
+// colors
+
+//========================================================================================
+//
+//	COLORS
+//
+//========================================================================================
+//New
+
+@base-color: 								#000;
+@base-color-222:            				lighten(@base-color, 13.5%); 	// #222
+@base-color-333:              				lighten(@base-color, 20%);   	// #333
+@base-color-555:                   			lighten(@base-color, 33.5%); 	// #555
+@base-color-999:             				lighten(@base-color, 60%);   	// #999
+@base-color-aaa: 							lighten(@base-color, 66.5%);  	// #aaa
+@base-color-ccc: 							lighten(@base-color, 80%); 		// #ccc
+@base-color-eee:           					lighten(@base-color, 93.5%); 	// #eee
+
+@off-white: 								#f4f4f4;
+@white: 									#fff;
+
+
+
+@secondary-color: 							#3498db;
+
+
+@text-color: 								@base-color-555;
+@link-color: 								@secondary-color;
+
+
+@btn-orange: 								#f46801;
+
+
+@primary-color: 							@secondary-color;
+@danger-color: 								#e74c3c;
+@info-color: 								#1abc9c;
+@warning-color: 							#f39c12;
+@success-color: 							#2ecc71;
+
+
+
+
+
+
+
+//========================================================================================
+//
+//	Buttons
+//
+//========================================================================================
+
+@btn-font-weight: 							normal;
+
+
+// Default //
+@btn-default-color: 						lighten(@base-color, 55%);
+@btn-default-bg: 							darken(@white, 5%);
+@btn-default-border: 						darken(@white, 10%);
+
+// Primary //
+@btn-primary-color: 						@white;
+@btn-primary-bg: 							@secondary-color;
+@btn-primary-border: 						darken(@secondary-color, 10%);
+
+// Danger //
+@btn-danger-color: 							@white;
+@btn-danger-bg: 							@danger-color;
+@btn-danger-border: 						darken(@danger-color, 5%);
+
+// Info //
+@btn-info-color: 							@white;
+@btn-info-bg: 								@info-color;
+@btn-info-border: 							darken(@info-color, 5%);
+
+// Warning //
+@btn-warning-color: 						@white;
+@btn-warning-bg: 							@warning-color;
+@btn-warning-border: 						darken(@warning-color, 5%);
+
+// Success //
+@btn-success-color: 						@white;
+@btn-success-bg: 							@success-color;
+@btn-success-border: 						darken(@success-color, 5%);

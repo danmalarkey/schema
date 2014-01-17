@@ -11,6 +11,7 @@
 		
 		<link rel="stylesheet" href="stylesheets/css/styleguide.css" type="text/css">
 		<link rel="stylesheet" href="stylesheets/css/schema_r.css" type="text/css">
+<!-- 		<link rel="stylesheet" href="stylesheets/css/schema.css" type="text/css" /> -->
 
         
         <!-- Google Fonts -->
@@ -50,8 +51,10 @@
                     </li>
                     <li><a href="#forms">Forms</a>
 
-                    </li>
+                    <!--
+</li>
                     <li><a href="#colors">Colors</a>
+-->
 
                     </li>
                 </ul>
@@ -100,8 +103,9 @@
 	  								<a href="https://twitter.com/schemaui" class="twitter-follow-button" data-show-count="true">Follow @schemaui</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   								</li>
-				 			</div>
+				 			</ul>
 				 		</div>
+				 	</div>
         </section>
     </header>
     <section id="grid" class="grid-system">
@@ -383,80 +387,49 @@
             <div class="row">
                 <div class="col12">
                      <h4>Big buttons, normal buttons, and small buttons. Choose your own colors for each specific function.</h4>
-
                 </div>
             </div>
-            	<h3 class="heading">Itty Bitty Buttons. Add the class <em>“btn btn-small”.</em></h3>
+            <h3 class="heading">Regular Size Buttons</h3>
+
+                <div class="container">
+	                <button class="btn btn-default">Default Button</button>
+	                <button class="btn btn-primary">Primary Button</button>
+	                <button class="btn btn-danger">Danger Button</button>
+	                <button class="btn btn-info">Info Button</button>
+	                <button class="btn btn-warning">Warning Button</button>
+	                <button class="btn btn-success">Success Button</button>
+                </div>
+                
+            	<h3 class="heading">Itty Bitty Buttons. Add the class <em>“btn-small”.</em></h3>
 
             <div class="container">
-                <button class="btn btn-small btn-newlightgrey">Default Button</button>
-                <button class="btn btn-small btn-grey">Grey Button</button>
-                <button class="btn btn-small btn-newblue">Primary Button</button>
-                <button class="btn btn-small btn-newteal">Info Button</button>
-                <button class="btn btn-small btn-newgreen">Success Button</button>
-                <button class="btn btn-small btn-danger">Danger Button</button>
-                <button class="btn btn-small btn-newyellow">Caution Button</button>
-                <button class="btn btn-small btn-orange">Call To Action Button</button>
+                <button class="btn btn-default btn-small">Default Button</button>
+	            <button class="btn btn-primary btn-small">Primary Button</button>
+	            <button class="btn btn-danger btn-small">Danger Button</button>
+	            <button class="btn btn-info btn-small">Info Button</button>
+	            <button class="btn btn-warning btn-small">Warning Button</button>
+	            <button class="btn btn-success btn-small">Success Button</button>
             </div>
-            	<h3 class="heading">Regular Size Buttons</h3>
+            	           
+            	<h3 class="heading">Extra Large Buttons. Add the class <em>“btn-xl”.</em></h3>
 
             <div class="container">
-                <button class="btn btn-newlightgrey">Default Button</button>
-                <button class="btn btn-grey">Grey Button</button>
-                <button class="btn btn-newblue">Primary Button</button>
-                <button class="btn btn-newteal">Info Button</button>
-                <button class="btn btn-newgreen">Success Button</button>
-                <button class="btn btn-danger btn-danger-flat">Danger Button</button>
-                <button class="btn btn-newyellow">Caution Button</button>
-                <button class="btn btn-orange">Call To Action Button</button>
+                <button class="btn btn-xl btn-default">Default Button</button>
+	            <button class="btn btn-xl btn-primary">Primary Button</button>
+	            <button class="btn btn-xl btn-danger">Danger Button</button>
+	            <button class="btn btn-xl btn-info">Info Button</button>
+	            <button class="btn btn-xl btn-warning">Warning Button</button>
+	            <button class="btn btn-xl btn-success">Success Button</button>
             </div>
-            	<h3 class="heading">Add a class of <em>"btn-shadow"</em> for some depth.</h3>
+            	<h3 class="heading">Full Width Buttons. Add the class <em>“btn-full”.</em></h3>
 
             <div class="container">
-                <button class="btn btn-newlightgrey btn-shadow">Default Button</button>
-                <button class="btn btn-grey btn-shadow">Grey Button</button>
-                <button class="btn btn-newblue btn-shadow">Primary Button</button>
-                <button class="btn btn-newteal btn-shadow">Info Button</button>
-                <button class="btn btn-newgreen btn-shadow">Success Button</button>
-                <button class="btn btn-danger btn-danger btn-shadow">Danger Button</button>
-                <button class="btn btn-newyellow btn-shadow">Caution Button</button>
-                <button class="btn btn-orange btn-shadow">Call To Action Button</button>
-            </div>
-            
-            	<h3 class="heading">Extra Large Buttons. Add the class <em>“btn btn-xl”.</em></h3>
-
-            <div class="container">
-                <button class="btn btn-xl btn-newlightgrey">Default Button</button>
-                <button class="btn btn-xl btn-grey">Grey Button</button>
-                <button class="btn btn-xl btn-newblue">Primary Button</button>
-                <button class="btn btn-xl btn-newteal">Info Button</button>
-                <button class="btn btn-xl btn-newgreen">Success Button</button>
-                <button class="btn btn-xl btn-danger">Danger Button</button>
-                <button class="btn btn-xl btn-newyellow">Caution Button</button>
-                <button class="btn btn-xl btn-orange">Call To Action Button</button>
-            </div>
-            	<h3 class="heading">There's rounded corners, too.</h3> 
-            <div class="container">
-                <button class="btn btn-newlightgrey round-corners">Default Button</button>
-                <button class="btn btn-grey round-corners">Grey Button</button>
-                <button class="btn btn-newblue round-corners">Primary Button</button>
-                <button class="btn btn-newteal round-corners">Info Button</button>
-                <button class="btn btn-newgreen round-corners">Success Button</button>
-                <button class="btn btn-danger round-corners">Danger Button</button>
-                <button class="btn btn-newyellow round-corners">Caution Button</button>
-                <button class="btn btn-orange round-corners">Call To Action Button</button>
-            </div>
-            	<h3 class="heading">Full Width Buttons. Add the class <em>“full-btn”.</em></h3>
-
-            <div class="container">
-                <button class="btn btn-danger full-btn xl">Danger Button</button>
-                <button class="btn btn-grey full-btn xl">Grey Button</button>
-                <button class="btn btn-newblue full-btn xl">New Blue Button</button>
-                <button class="btn btn-orange full-btn xl">Orange Button</button>
-                <button class="btn btn-newgreen full-btn xl">New Green Button</button>
-                <button class="btn btn-newlightgrey full-btn xl">New Green Button</button>
-                <button class="btn btn-newteal full-btn xl">New Teal Button</button>
-                <button class="btn btn-newyellow full-btn xl">New Yellow Button</button>
+                <button class="btn btn-full btn-default">Default Button</button>
+	            <button class="btn btn-full btn-primary">Primary Button</button>
+	            <button class="btn btn-full btn-danger">Danger Button</button>
+	            <button class="btn btn-full btn-info">Info Button</button>
+	            <button class="btn btn-full btn-warning">Warning Button</button>
+	            <button class="btn btn-full btn-success">Success Button</button>
             </div>
         </div>
     </section>
@@ -599,7 +572,7 @@
                     <div class="form-group">
                         <div class="col5">
                             <label class="r-password">
-                                <input type="checkbox">Remember Password?</label>	<span class="float-right"><button type="submit" class="btn btn-small btn-orange xs">Submit</button></span>
+                                <input type="checkbox">Remember Password?</label>	<span class="float-right"><button type="submit" class="btn btn-small btn-primary xs">Submit</button></span>
 
                         </div>
                     </div>
@@ -608,7 +581,8 @@
         </div>
     </section>
     <!-- End of button section -->
-    <section id="colors" class="palette">
+    <!--
+<section id="colors" class="palette">
         <div class="container">
             	<h1 class="title">Colors</h1>
 
@@ -658,6 +632,7 @@
             </div>
         </div>
     </section>
+-->
     <!-- Ending of color examples -->
     <footer class="credits">
         <div class="container">
