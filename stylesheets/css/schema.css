@@ -543,6 +543,11 @@ Here you'll find small, medium, large, and full size buttons.
   font-size: 12px;
   font-size: 0.75rem;
 }
+.btn.btn-small {
+  padding: 10px;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
 /* XL buttons  */
 .btn.btn-xl {
   padding: 25px 40px;
@@ -563,6 +568,9 @@ Here you'll find small, medium, large, and full size buttons.
   padding: 1em;
   display: inline-block;
   float: left;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: 'armata';
   letter-spacing: 1px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -928,7 +936,6 @@ EasyDropdown Default Theme.
   font-size: 16px;
   font-size: 1rem;
   line-height: 1;
-  /* 	color: #000; */
   color: inherit;
   padding: 9px 12px;
   overflow: hidden;

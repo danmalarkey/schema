@@ -12,6 +12,13 @@
 
 .neg-1px            { letter-spacing: -1px; }	
 
+@base-font-size: 	16px;
+
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
+
 
 
 .font-size (@size) {
