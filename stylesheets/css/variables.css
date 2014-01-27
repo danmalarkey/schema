@@ -1,0 +1,81 @@
+.left-float {
+  float: left;
+}
+.right-float {
+  float: right;
+}
+.center-float {
+  margin: 0 auto;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.justified {
+  text-align: justify;
+}
+.neg-1px {
+  letter-spacing: -1px;
+}
+.hr_thin {
+  border: 1px solid #ecf0f1;
+}
+.hr_medium {
+  border: 3px solid #ecf0f1;
+}
+.hr_thick {
+  border: 5px solid #ecf0f1;
+}
+.hr_thin_w {
+  border: 1px solid #ffffff;
+}
+.hr_medium_w {
+  border: 3px solid #ffffff;
+}
+.hr_thick_w {
+  border: 5px solid #ffffff;
+}
+.border-bottom {
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
+}
+/* 24px */
+/* 20px */
+/* 14px */
+/* 12px */
+/* Colors */
+/* Buttons */
+/*bootstrap =====================
+@btn-font-weight:                normal;
+
+@btn-default-color:              #333;
+@btn-default-bg:                 #fff;
+@btn-default-border:             #ccc;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 5%);
+
+@btn-warning-color:              #fff;
+@btn-warning-bg:                 @brand-warning;
+@btn-warning-border:             darken(@btn-warning-bg, 5%);
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 5%);
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 5%);
+
+@btn-link-disabled-color:        @gray-light;*/
