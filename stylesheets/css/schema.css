@@ -128,11 +128,6 @@ html {
   padding-bottom: .5em;
   margin-bottom: 1em;
 }
-/* 24px */
-/* 20px */
-/* 14px */
-/* 12px */
-/* Colors */
 /* =============================================================
      
 The Grid System
@@ -537,6 +532,11 @@ p.lead {
   background-color: transparent;
   border: 0;
 }
+/* 24px */
+/* 20px */
+/* 14px */
+/* 12px */
+/* Colors */
 /* =============================================================
      
 Here you'll find small, medium, large, and full size buttons.
