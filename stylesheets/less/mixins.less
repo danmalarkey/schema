@@ -27,6 +27,17 @@
 
 @glegoo:				'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+
+
+
+// Baseline Font Sizes
+// ----------------------------
+
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
+
 @base-font-size: 							16px;
 
 @base-font-size: 							16;
@@ -83,6 +94,8 @@
 //	COLORS
 //
 //========================================================================================
+
+
 //New
 
 @base-color: 								#000;
@@ -96,8 +109,6 @@
 
 @off-white: 								#f4f4f4;
 @white: 									#fff;
-
-
 
 @secondary-color: 							#3498db;
 
@@ -114,10 +125,6 @@
 @info-color: 								#1abc9c;
 @warning-color: 							#f39c12;
 @success-color: 							#2ecc71;
-
-
-
-
 
 
 
@@ -161,20 +168,6 @@
 @btn-success-border: 						darken(@success-color, 5%);
 
 
-.font-size (@size) {
-  font-size: 0px + @size;
-  font-size: 0rem + @size / @base-font-size;
-}
-
-
-
-.font-size (@size) {
-  font-size: 0px + @size;
-  font-size: 0rem + @size / @base-font-size;
-}
-
-
-
 
 //       				Horizontal Rules          	              //
 //===============================================================//
@@ -188,7 +181,7 @@
 .hr_thick_w	    { border: 5px solid @white; }
 
 
-//       				Round Corners            	              //
+//       				Border-Radius            	              //
 //===============================================================//
 			
 .border-radius (@radius: 6px) {
@@ -299,6 +292,13 @@
   -moz-box-shadow: @values;
   box-shadow: @values;
 }
+
+// Will this work for mutltiple box-shadows?
+//.2-box-shadow(@value1, @value2) {
+//  -webkit-box-shadow: @values;
+//  -moz-box-shadow: @values;
+//  box-shadow: @values;
+//}
 
 .inner-shadow(@horizontal @vertical @blur @alpha) {
   -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
