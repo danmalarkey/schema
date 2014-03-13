@@ -23,6 +23,7 @@
 
 @glegoo:				    'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+<<<<<<< HEAD
 
 
 
@@ -35,6 +36,9 @@
 }
 
 @base-font-size: 							        16px;
+=======
+@base-font-size: 							16px;
+>>>>>>> parent of 14d569f... I'm the one who knocks.
 
 @base-font-size: 							        16;
 @baseline-px: 								        16px;// 16px
@@ -90,8 +94,6 @@
 //	COLORS
 //
 //========================================================================================
-
-
 //New
 
 @base-color: 								        #000;
@@ -106,7 +108,13 @@
 @off-white: 								        #f4f4f4;
 @white: 									          #fff;
 
+<<<<<<< HEAD
 @secondary-color: 							    #3498db;
+=======
+
+
+@secondary-color: 							#3498db;
+>>>>>>> parent of 14d569f... I'm the one who knocks.
 
 
 @text-color: 								        @base-color-555;
@@ -121,6 +129,10 @@
 @info-color: 								        #1abc9c;
 @warning-color: 							      #f39c12;
 @success-color: 							      #2ecc71;
+
+
+
+
 
 
 
@@ -164,6 +176,20 @@
 @btn-success-border: 						  darken(@success-color, 5%);
 
 
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
+
+
+
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
+
+
+
 
 //       				Horizontal Rules          	                      //
 //===============================================================//
@@ -177,7 +203,7 @@
 .hr_thick_w	    { border: 5px solid @white; }
 
 
-//       				Border-Radius            	              //
+//       				Round Corners            	              //
 //===============================================================//
 			
 .border-radius (@radius: 6px) {
@@ -330,4 +356,12 @@
   box-shadow: @values;
 }
 
+<<<<<<< HEAD
 
+=======
+.inner-shadow(@horizontal @vertical @blur @alpha) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+}
+>>>>>>> parent of 14d569f... I'm the one who knocks.

@@ -12,7 +12,7 @@ The Grid System
 
 .row:after { clear: both; }
 
-[class^="col"] { .left-float; min-height: 1px; margin-left: 20px; }
+[class*="col"] { .left-float; min-height: 1px; margin-left: 20px; }
 
 .container { width: 940px; width: 58.750em; }
 
@@ -58,7 +58,7 @@ The Grid System
   clear: both;
 }
 
-.row-fluid [class^="col"] {
+.row-fluid [class*="col"] {
   display: block;
   float: left;
   width: 100%;
@@ -68,8 +68,8 @@ The Grid System
      -moz-box-sizing: border-box;
           box-sizing: border-box; }
 
-.row-fluid [class^="col"]:first-child { margin-left: 0; }
-.row-fluid .controls-row [class^="col"] + [class^="col"] { margin-left: 2.12%; }
+.row-fluid [class*="col"]:first-child { margin-left: 0; }
+.row-fluid .controls-row [class*="col"] + [class*="col"] { margin-left: 2.12%; }
 
 .row-fluid .col12 { width: 100%; }
 .row-fluid .col11 { width: 91.48%; }
@@ -109,11 +109,11 @@ The Grid System
 .row-fluid .offset1 { margin-left: 10.63%; }
 .row-fluid .offset1:first-child { margin-left: 8.51%; }
 
-[class^="col"].hide,
-.row-fluid [class^="col"].hide { display: none; }
+[class*="col"].hide,
+.row-fluid [class*="col"].hide { display: none; }
 
-[class^="col"].pull-right,
-.row-fluid [class^="col"].pull-right { float: right; }
+[class*="col"].pull-right,
+.row-fluid [class*="col"].pull-right { float: right; }
 
 .container { margin-right: auto; margin-left: auto; *zoom: 1; }
 
