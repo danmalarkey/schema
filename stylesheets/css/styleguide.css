@@ -1,4 +1,6 @@
+@import "styleguide.less";
 
+<<<<<<< HEAD
 .left-float {
   float: left;
 }
@@ -2959,6 +2961,8 @@ EasyDropdown Default Theme.
 @import "styleguide.less";
 
 >>>>>>> parent of a774ed9... Added modernizr
+=======
+>>>>>>> gh-pages
 /* uparrow @font-face {
     font-family: 'fontello';
     src: url('../css/fontello-62c1d405/font/fontello.eot?36290682');
@@ -3287,6 +3291,7 @@ section.dropdowns a:hover {
 
 #logo a {
 <<<<<<< HEAD
+<<<<<<< HEAD
   opacity: 1;
 }
 .top-nav {
@@ -3316,6 +3321,9 @@ section.dropdowns a:hover {
 =======
     opacity: 1;
 >>>>>>> parent of a774ed9... Added modernizr
+=======
+    opacity: 1;
+>>>>>>> gh-pages
 }
 
 .top-nav { display: inline-block; }
@@ -3348,6 +3356,7 @@ section.dropdowns a:hover {
 	
 section.nav {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 100%;
   background: #d65b01;
   background-color: #d65b01;
@@ -3368,6 +3377,8 @@ nav > ul {
   display: inline-block;
   font-size: 18px;
 =======
+=======
+>>>>>>> gh-pages
     width: 100%;
     background: #d65b01;
     background-color: #d65b01;
@@ -3387,11 +3398,15 @@ nav>ul {
     padding-left: 0;
     display: inline-block;
     font-size: 18px;
+<<<<<<< HEAD
 >>>>>>> parent of a774ed9... Added modernizr
+=======
+>>>>>>> gh-pages
 }
 @media(max-width:767px) {
     nav>ul {
     font-size: 12px;
+<<<<<<< HEAD
 }
 }nav>ul>li {
     float: left;
@@ -3411,6 +3426,27 @@ nav>ul>li a {
     text-decoration: none;
     opacity: .55;
 }
+=======
+}
+}nav>ul>li {
+    float: left;
+    margin-right: 40px;
+    position: relative;
+    top: 50%;
+    bottom: 50%}
+nav>ul>li:first-child {
+    margin-left: 0;
+    font-weight: bold;
+}
+nav>ul>li:last-child {
+    margin-right: 0;
+}
+nav>ul>li a {
+    color: #fff;
+    text-decoration: none;
+    opacity: .55;
+}
+>>>>>>> gh-pages
 nav>ul>li a:hover {
     opacity: 1;
 }
@@ -3521,6 +3557,7 @@ section.container.elements ul {
 }
 section.container.elements li {
     padding-bottom: 1.125em;
+<<<<<<< HEAD
 }
 .grid-system, .typography, .buttons, .dropdowns, .forms, .palette, .palette-example, .credits {
     padding-top: 7.500em;
@@ -3533,6 +3570,20 @@ section.container.elements li {
     color: #7f8c8d;
     text-align: center;
 }
+=======
+}
+.grid-system, .typography, .buttons, .dropdowns, .forms, .palette, .palette-example, .credits {
+    padding-top: 7.500em;
+    padding-bottom: 7.500em;
+}
+.grid-example .col1, .grid-example .col2, .grid-example .col3, .grid-example .col4, .grid-example .col5, .grid-example .col6, .grid-example .col7, .grid-example .col8, .grid-example .col9, .grid-example .col10, .grid-example .col11, .grid-example .col12 {
+    background-color: #ecf0f1;
+    min-height: 2em;
+    margin-bottom: 1em;
+    color: #7f8c8d;
+    text-align: center;
+}
+>>>>>>> gh-pages
 .grid-example .col1:hover, .grid-example .col2:hover, .grid-example .col3:hover, .grid-example .col4:hover, .grid-example .col5:hover, .grid-example .col6:hover, .grid-example .col7:hover, .grid-example .col8:hover, .grid-example .col9:hover, .grid-example .col10:hover, .grid-example .col11:hover, .grid-example .col12:hover {
     background-color: #bdc3c7;
     color: #fff;
