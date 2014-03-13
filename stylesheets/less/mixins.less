@@ -1,9 +1,14 @@
 // floats + justified
 // ----------------------------	
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
 .left-float			{ float: left; }	
 .right-float		{ float: right; }	
 .center-float		{ margin: 0 auto; }
+>>>>>>> gh-pages
 
 .text-left			{ text-align: left; }
 .text-right			{ text-align: right; }
@@ -14,6 +19,13 @@
 
 
 
+<<<<<<< HEAD
+>>>>>>> gh-pages
+.left-float			     { float: left; }	
+.right-float		     { float: right; }	
+.center-float		     { margin: 0 auto; }
+=======
+>>>>>>> gh-pages
 
 
 // Typefaces
@@ -21,13 +33,38 @@
 
 @merriweather:			'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+<<<<<<< HEAD
+@oswald:				    'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+@armata:				    'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+
+@glegoo:				    'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+<<<<<<< HEAD
+=======
 @oswald:				'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+>>>>>>> gh-pages
 
 @armata:				'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 
 @glegoo:				'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+<<<<<<< HEAD
+// Baseline Font Sizes
+// ----------------------------
+
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
+
+@base-font-size: 							        16px;
+=======
 @base-font-size: 							16px;
+>>>>>>> parent of 14d569f... I'm the one who knocks.
+=======
+@base-font-size: 							16px;
+>>>>>>> gh-pages
 
 @base-font-size: 							16;
 @baseline-px: 								16px;					  // 16px
@@ -98,6 +135,16 @@
 @white: 									#fff;
 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+@secondary-color: 							    #3498db;
+=======
+
+
+@secondary-color: 							#3498db;
+>>>>>>> parent of 14d569f... I'm the one who knocks.
+=======
+>>>>>>> gh-pages
 
 @secondary-color: 							#3498db;
 
@@ -114,6 +161,10 @@
 @info-color: 								#1abc9c;
 @warning-color: 							#f39c12;
 @success-color: 							#2ecc71;
+
+
+
+
 
 
 
@@ -174,6 +225,20 @@
 }
 
 
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
+
+
+
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
+
+
+
 
 
 //       				Horizontal Rules          	              //
@@ -218,6 +283,50 @@
 	border-radius-bottom-left-radius: @radius;
 }
 
+<<<<<<< HEAD
+//
+// Build multiple levels of box-shadows on any element
+//
+
+/*
+.box-shadow(@values) {
+  -webkit-box-shadow: @values;
+  -moz-box-shadow: @values;
+  box-shadow: @values;
+}
+*/
+
+.box-shadow(@shadow1) {
+    -webkit-box-shadow: @shadow1;
+    -moz-box-shadow: @shadow1;
+    box-shadow: @shadow1;
+}
+
+.box-shadow(@shadow1, @shadow2) {
+    -webkit-box-shadow: @shadow1, @shadow2;
+    -moz-box-shadow: @shadow1, @shadow2;
+    box-shadow: @shadow1, @shadow2;
+}    
+
+.box-shadow(@shadow1, @shadow2, @shadow3) {
+    -webkit-box-shadow: @shadow1, @shadow2, @shadow3;
+    -moz-box-shadow: @shadow1, @shadow2, @shadow3;
+    box-shadow: @shadow1, @shadow2, @shadow3;
+}
+
+.box-shadow(@shadow1, @shadow2, @shadow3, @shadow4) {
+    -webkit-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
+    -moz-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
+    box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
+}
+
+.box-shadow(@shadow1, @shadow2, @shadow3, @shadow4, @shadow5) {
+    -webkit-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
+    -moz-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
+    box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
+}
+=======
+>>>>>>> gh-pages
 
 .opacity(@opacity) {
   opacity: @opacity;
@@ -287,7 +396,14 @@
         .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
         outline: 0;
 	}
+<<<<<<< HEAD
+=======
 }
+<<<<<<< HEAD
+>>>>>>> gh-pages
+}
+=======
+>>>>>>> gh-pages
 
 
 .border-bottom   { border-bottom: 1px solid @clouds; padding-bottom: .5em; margin-bottom: 1em; }
@@ -298,10 +414,26 @@
   -webkit-box-shadow: @values;
   -moz-box-shadow: @values;
   box-shadow: @values;
+<<<<<<< HEAD
+<<<<<<< HEAD
 }
 
+<<<<<<< HEAD
+
+=======
+=======
+}
+
+>>>>>>> gh-pages
 .inner-shadow(@horizontal @vertical @blur @alpha) {
   -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
   -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
   box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
 }
+<<<<<<< HEAD
+>>>>>>> parent of 14d569f... I'm the one who knocks.
+=======
+}
+>>>>>>> gh-pages
+=======
+>>>>>>> gh-pages
