@@ -85,11 +85,6 @@ html {
 .center-float {
   margin: 0 auto;
 }
-.border-bottom {
-  border-bottom: 1px solid #ecf0f1;
-  padding-bottom: .5em;
-  margin-bottom: 1em;
-}
 .text-left {
   text-align: left;
 }
@@ -128,21 +123,11 @@ html {
 .hr_thick_w {
   border: 5px solid #ffffff;
 }
-<<<<<<< HEAD
-=======
-/*
-.box-shadow(@values) {
-  -webkit-box-shadow: @values;
-  -moz-box-shadow: @values;
-  box-shadow: @values;
-}
-*/
 .border-bottom {
   border-bottom: 1px solid #ecf0f1;
   padding-bottom: .5em;
   margin-bottom: 1em;
 }
->>>>>>> master
 /* =============================================================
      
 The Grid System
@@ -161,7 +146,7 @@ The Grid System
 .row:after {
   clear: both;
 }
-[class^="col"] {
+[class*="col"] {
   float: left;
   min-height: 1px;
   margin-left: 20px;
@@ -279,7 +264,7 @@ The Grid System
 .row-fluid:after {
   clear: both;
 }
-.row-fluid [class^="col"] {
+.row-fluid [class*="col"] {
   display: block;
   float: left;
   width: 100%;
@@ -289,10 +274,10 @@ The Grid System
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.row-fluid [class^="col"]:first-child {
+.row-fluid [class*="col"]:first-child {
   margin-left: 0;
 }
-.row-fluid .controls-row [class^="col"] + [class^="col"] {
+.row-fluid .controls-row [class*="col"] + [class*="col"] {
   margin-left: 2.12%;
 }
 .row-fluid .col12 {
@@ -403,12 +388,12 @@ The Grid System
 .row-fluid .offset1:first-child {
   margin-left: 8.51%;
 }
-[class^="col"].hide,
-.row-fluid [class^="col"].hide {
+[class*="col"].hide,
+.row-fluid [class*="col"].hide {
   display: none;
 }
-[class^="col"].pull-right,
-.row-fluid [class^="col"].pull-right {
+[class*="col"].pull-right,
+.row-fluid [class*="col"].pull-right {
   float: right;
 }
 .container {

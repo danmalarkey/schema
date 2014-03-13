@@ -1,103 +1,81 @@
 // floats + justified
 // ----------------------------	
 
+.left-float			{ float: left; }	
+.right-float		{ float: right; }	
+.center-float		{ margin: 0 auto; }
 
-.left-float			    { float: left; }	
-.right-float		    { float: right; }	
-.center-float		    { margin: 0 auto; }
-.border-bottom      { border-bottom: 1px solid @clouds; padding-bottom: .5em; margin-bottom: 1em; }
-.text-left			    { text-align: left; }
-.text-right			    { text-align: right; }
-.text-center		    { text-align: center; }
-.justified 			    { text-align: justify; }
+.text-left			{ text-align: left; }
+.text-right			{ text-align: right; }
+.text-center		{ text-align: center; }
+.justified 			{ text-align: justify; }
 
 .neg-1px            { letter-spacing: -1px; }	
 
 
 
-.left-float			     { float: left; }	
-.right-float		     { float: right; }	
-.center-float		     { margin: 0 auto; }
->>>>>>> master
 
-.text-left			     { text-align: left; }
-.text-right			     { text-align: right; }
-.text-center		     { text-align: center; }
-.justified 			     { text-align: justify; }
-
-.neg-1px             { letter-spacing: -1px; }	
 
 // Typefaces
 // ----------------------------
 
 @merriweather:			'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-@oswald:				    'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@oswald:				'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-@armata:				    'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+@armata:				'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 
-@glegoo:				    'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@glegoo:				'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+@base-font-size: 							16px;
 
-
-
-// Baseline Font Sizes
-// ----------------------------
-
-.font-size (@size) {
-  font-size: 0px + @size;
-  font-size: 0rem + @size / @base-font-size;
-}
-
-@base-font-size: 							        16px;
-
-@base-font-size: 							        16;
-@baseline-px: 								        16px;// 16px
+@base-font-size: 							16;
+@baseline-px: 								16px;					  // 16px
 					   
-@base-font-size-xl: 						      ceil(@baseline-px * 1.50); /* 24px */
+@base-font-size-xl: 						ceil(@baseline-px * 1.50); /* 24px */
 @base-font-size-large:         				ceil(@baseline-px * 1.25); /* 20px */
 @base-font-size-small:         				ceil(@baseline-px * 0.85); /* 14px */
-@base-font-size-xs: 						      ceil(@baseline-px * 0.75); /* 12px */
-@base-line-height:  						      1.7;
+@base-font-size-xs: 						ceil(@baseline-px * 0.75); /* 12px */
+@base-line-height:  						1.7;
 
 
 /* Colors */
 
 //old
-@white:                               #fff;
-@light-white:			                    rgba(255, 255, 255, .5);
-@clouds:                              #ecf0f1;
-@silver:                              #bdc3c7;
-@concrete:                            #95a5a6;
-@asbestos:                            #7f8c8d;
+@white:                 #fff;
+@light-white:			rgba(255, 255, 255, .5);
+@clouds:                #ecf0f1;
+@silver:                #bdc3c7;
+@concrete:              #95a5a6;
+@asbestos:              #7f8c8d;
 
 
-@light-sunflower:                     #f4d03f;
-@sunflower:                           #f1c40f;
-@light-orange:                        #f39c12;
-@orange:              	              #f46801;
-@carrot:             	                #e67e22;
-@pumpkin:            	                #d35400;
-@alizarin:           	                #e74c3c;
-@pomegranate:			                    #c0392b;
+@light-sunflower:       #f4d03f;
+@sunflower:             #f1c40f;
+@light-orange:          #f39c12;
+@orange:              	#f46801;
+@carrot:             	#e67e22;
+@pumpkin:            	#d35400;
+@alizarin:           	#e74c3c;
+@pomegranate:			#c0392b;
 
 
-@turquoise:                           #1abc9c;
-@greensea:                            #16a085;
-@emerland:                            #2ecc71;
-@nephritis:            	              #27ae60;
-@peter-river:                         #3498db;
-@belizehole:			                    #2980b9;
-@amethyst:				                    #9b59b6;
-@wisteria:				                    #8e44ad;
-@wet-asphalt:			                    #34495e;
-@midnight-blue:			                  #2c3350;
+@turquoise:             #1abc9c;
+@greensea:              #16a085;
+@emerland:              #2ecc71;
+@nephritis:            	#27ae60;
+@peter-river:           #3498db;
+@belizehole:			#2980b9;
+@amethyst:				#9b59b6;
+@wisteria:				#8e44ad;
+@wet-asphalt:			#34495e;
+@midnight-blue:			#2c3350;
 
 
-@new-blue:                            #60b7e1;
-@new-green:                           #009e73;
-@new-teal:                            #009E91;
-@new-yellow:                          #FFBF00;
+@new-blue:               #60b7e1;
+@new-green:              #009e73;
+@new-teal:               #009E91;
+@new-yellow:             #FFBF00;
 // colors
 
 //========================================================================================
@@ -105,37 +83,41 @@
 //	COLORS
 //
 //========================================================================================
-
-
 //New
 
-@base-color: 								        #000;
+@base-color: 								#000;
 @base-color-222:            				lighten(@base-color, 13.5%); 	// #222
-@base-color-333:              			lighten(@base-color, 20%);   	// #333
-@base-color-555:                   	lighten(@base-color, 33.5%); 	// #555
+@base-color-333:              				lighten(@base-color, 20%);   	// #333
+@base-color-555:                   			lighten(@base-color, 33.5%); 	// #555
 @base-color-999:             				lighten(@base-color, 60%);   	// #999
-@base-color-aaa: 							      lighten(@base-color, 66.5%);  	// #aaa
-@base-color-ccc: 							      lighten(@base-color, 80%); 		// #ccc
+@base-color-aaa: 							lighten(@base-color, 66.5%);  	// #aaa
+@base-color-ccc: 							lighten(@base-color, 80%); 		// #ccc
 @base-color-eee:           					lighten(@base-color, 93.5%); 	// #eee
 
-@off-white: 								        #f4f4f4;
-@white: 									          #fff;
-
-@secondary-color: 							    #3498db;
+@off-white: 								#f4f4f4;
+@white: 									#fff;
 
 
-@text-color: 								        @base-color-555;
-@link-color: 								        @secondary-color;
+
+@secondary-color: 							#3498db;
 
 
-@btn-orange: 								        #f46801;
+@text-color: 								@base-color-555;
+@link-color: 								@secondary-color;
 
 
-@primary-color: 							      @secondary-color;
-@danger-color: 								      #e74c3c;
-@info-color: 								        #1abc9c;
-@warning-color: 							      #f39c12;
-@success-color: 							      #2ecc71;
+@btn-orange: 								#f46801;
+
+
+@primary-color: 							@secondary-color;
+@danger-color: 								#e74c3c;
+@info-color: 								#1abc9c;
+@warning-color: 							#f39c12;
+@success-color: 							#2ecc71;
+
+
+
+
 
 
 
@@ -145,42 +127,56 @@
 //
 //========================================================================================
 
-@btn-font-weight: 							   normal;
+@btn-font-weight: 							normal;
 
 
 // Default //
-@btn-default-color: 						  lighten(@base-color, 55%);
-@btn-default-bg: 							    darken(@white, 5%);
-@btn-default-border: 						  darken(@white, 10%);
+@btn-default-color: 						lighten(@base-color, 55%);
+@btn-default-bg: 							darken(@white, 5%);
+@btn-default-border: 						darken(@white, 10%);
 
 // Primary //
-@btn-primary-color: 						  @white;
-@btn-primary-bg: 							    @secondary-color;
-@btn-primary-border: 						  darken(@secondary-color, 10%);
+@btn-primary-color: 						@white;
+@btn-primary-bg: 							@secondary-color;
+@btn-primary-border: 						darken(@secondary-color, 10%);
 
 // Danger //
-@btn-danger-color: 							  @white;
-@btn-danger-bg: 							    @danger-color;
-@btn-danger-border: 						  darken(@danger-color, 5%);
+@btn-danger-color: 							@white;
+@btn-danger-bg: 							@danger-color;
+@btn-danger-border: 						darken(@danger-color, 5%);
 
 // Info //
-@btn-info-color: 							    @white;
-@btn-info-bg: 								    @info-color;
-@btn-info-border: 							  darken(@info-color, 5%);
+@btn-info-color: 							@white;
+@btn-info-bg: 								@info-color;
+@btn-info-border: 							darken(@info-color, 5%);
 
 // Warning //
-@btn-warning-color: 						  @white;
-@btn-warning-bg: 							    @warning-color;
-@btn-warning-border: 						  darken(@warning-color, 5%);
+@btn-warning-color: 						@white;
+@btn-warning-bg: 							@warning-color;
+@btn-warning-border: 						darken(@warning-color, 5%);
 
 // Success //
-@btn-success-color: 						  @white;
-@btn-success-bg: 							    @success-color;
-@btn-success-border: 						  darken(@success-color, 5%);
+@btn-success-color: 						@white;
+@btn-success-bg: 							@success-color;
+@btn-success-border: 						darken(@success-color, 5%);
+
+
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
 
 
 
-//       				Horizontal Rules          	                      //
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
+
+
+
+
+//       				Horizontal Rules          	              //
 //===============================================================//
 
 .hr_thin		{ border: 1px solid @clouds; }
@@ -192,7 +188,7 @@
 .hr_thick_w	    { border: 5px solid @white; }
 
 
-//       				Border-Radius            	                        //
+//       				Round Corners            	              //
 //===============================================================//
 			
 .border-radius (@radius: 6px) {
@@ -222,53 +218,6 @@
 	border-radius-bottom-left-radius: @radius;
 }
 
-//
-<<<<<<< HEAD
-// For multiple box-shadows on an element
-//
-
-=======
-// Build multiple levels of box-shadows on any element
-//
-
-/*
-.box-shadow(@values) {
-  -webkit-box-shadow: @values;
-  -moz-box-shadow: @values;
-  box-shadow: @values;
-}
-*/
-
->>>>>>> master
-.box-shadow(@shadow1) {
-    -webkit-box-shadow: @shadow1;
-    -moz-box-shadow: @shadow1;
-    box-shadow: @shadow1;
-}
-
-.box-shadow(@shadow1, @shadow2) {
-    -webkit-box-shadow: @shadow1, @shadow2;
-    -moz-box-shadow: @shadow1, @shadow2;
-    box-shadow: @shadow1, @shadow2;
-}    
-
-.box-shadow(@shadow1, @shadow2, @shadow3) {
-    -webkit-box-shadow: @shadow1, @shadow2, @shadow3;
-    -moz-box-shadow: @shadow1, @shadow2, @shadow3;
-    box-shadow: @shadow1, @shadow2, @shadow3;
-}
-
-.box-shadow(@shadow1, @shadow2, @shadow3, @shadow4) {
-    -webkit-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
-    -moz-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
-    box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
-}
-
-.box-shadow(@shadow1, @shadow2, @shadow3, @shadow4, @shadow5) {
-    -webkit-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
-    -moz-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
-    box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
-}
 
 .opacity(@opacity) {
   opacity: @opacity;
@@ -317,7 +266,7 @@
 	  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
 }
 
-//       				         Buttons 	            	                  //
+//       				Buttons 	            	              //
 //===============================================================//
 
 .button-version (@color; @background; @border) {
@@ -339,7 +288,6 @@
         outline: 0;
 	}
 }
-}
 
 
 .border-bottom   { border-bottom: 1px solid @clouds; padding-bottom: .5em; margin-bottom: 1em; }
@@ -350,4 +298,10 @@
   -webkit-box-shadow: @values;
   -moz-box-shadow: @values;
   box-shadow: @values;
+}
+
+.inner-shadow(@horizontal @vertical @blur @alpha) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
 }
