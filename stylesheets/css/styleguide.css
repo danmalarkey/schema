@@ -342,9 +342,8 @@ section.dropdowns a:hover {
 	text-shadow: none; 
 	border-color: #fff; 
 	border-size: 1px; 
-	box-shadow: 0 1px 7px rgba(0,0,0,.45);
-	-webkit-box-shadow: 0 1px 7px rgba(0,0,0,.45); 
-	-moz-box-shadow: 0 1px 7px rgba(0,0,0,.45); }
+  font-family: 'oswald';
+}
 
 	.nav a.btn:hover {
 		
@@ -360,17 +359,17 @@ section.dropdowns a:hover {
 	
 section.nav {
     width: 100%;
-    background: #d65b01;
-    background-color: #d65b01;
+    background: #f46801;
+    background-color: #f46801;
     position: fixed;
     top: 0;
     left: 0;
     border-bottom: 1px solid #c15201;
     z-index: 10;
     font-family: 'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 4px rgba(255,255,255, 0.15);
+    -webkit-box-shadow: 0 2px 4px rgba(255,255,255, 0.15);
+    -moz-box-shadow: 0 2px 4px rgba(255,255,255, 0.15);
 }
 nav>ul {
     list-style: none;
