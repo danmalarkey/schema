@@ -123,13 +123,6 @@ html {
 .hr_thick_w {
   border: 5px solid #ffffff;
 }
-/*
-.box-shadow(@values) {
-  -webkit-box-shadow: @values;
-  -moz-box-shadow: @values;
-  box-shadow: @values;
-}
-*/
 .border-bottom {
   border-bottom: 1px solid #ecf0f1;
   padding-bottom: .5em;
