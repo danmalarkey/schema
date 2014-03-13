@@ -85,6 +85,11 @@ html {
 .center-float {
   margin: 0 auto;
 }
+.border-bottom {
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
+}
 .text-left {
   text-align: left;
 }
@@ -122,11 +127,6 @@ html {
 }
 .hr_thick_w {
   border: 5px solid #ffffff;
-}
-.border-bottom {
-  border-bottom: 1px solid #ecf0f1;
-  padding-bottom: .5em;
-  margin-bottom: 1em;
 }
 /* =============================================================
      

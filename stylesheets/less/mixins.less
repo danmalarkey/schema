@@ -1,14 +1,14 @@
 // floats + justified
 // ----------------------------	
 
-.left-float			{ float: left; }	
-.right-float		{ float: right; }	
-.center-float		{ margin: 0 auto; }
-
-.text-left			{ text-align: left; }
-.text-right			{ text-align: right; }
-.text-center		{ text-align: center; }
-.justified 			{ text-align: justify; }
+.left-float			    { float: left; }	
+.right-float		    { float: right; }	
+.center-float		    { margin: 0 auto; }
+.border-bottom      { border-bottom: 1px solid @clouds; padding-bottom: .5em; margin-bottom: 1em; }
+.text-left			    { text-align: left; }
+.text-right			    { text-align: right; }
+.text-center		    { text-align: center; }
+.justified 			    { text-align: justify; }
 
 .neg-1px            { letter-spacing: -1px; }	
 
@@ -21,11 +21,11 @@
 
 @merriweather:			'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-@oswald:				'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@oswald:				    'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-@armata:				'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+@armata:				    'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 
-@glegoo:				'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@glegoo:				    'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 
 
@@ -169,7 +169,7 @@
 
 
 
-//       				Horizontal Rules          	              //
+//       				Horizontal Rules          	                      //
 //===============================================================//
 
 .hr_thin		{ border: 1px solid @clouds; }
@@ -181,7 +181,7 @@
 .hr_thick_w	    { border: 5px solid @white; }
 
 
-//       				Border-Radius            	              //
+//       				Border-Radius            	                        //
 //===============================================================//
 			
 .border-radius (@radius: 6px) {
@@ -211,6 +211,39 @@
 	border-radius-bottom-left-radius: @radius;
 }
 
+//
+// For multiple box-shadows on an element
+//
+
+.box-shadow(@shadow1) {
+    -webkit-box-shadow: @shadow1;
+    -moz-box-shadow: @shadow1;
+    box-shadow: @shadow1;
+}
+
+.box-shadow(@shadow1, @shadow2) {
+    -webkit-box-shadow: @shadow1, @shadow2;
+    -moz-box-shadow: @shadow1, @shadow2;
+    box-shadow: @shadow1, @shadow2;
+}    
+
+.box-shadow(@shadow1, @shadow2, @shadow3) {
+    -webkit-box-shadow: @shadow1, @shadow2, @shadow3;
+    -moz-box-shadow: @shadow1, @shadow2, @shadow3;
+    box-shadow: @shadow1, @shadow2, @shadow3;
+}
+
+.box-shadow(@shadow1, @shadow2, @shadow3, @shadow4) {
+    -webkit-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
+    -moz-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
+    box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
+}
+
+.box-shadow(@shadow1, @shadow2, @shadow3, @shadow4, @shadow5) {
+    -webkit-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
+    -moz-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
+    box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
+}
 
 .opacity(@opacity) {
   opacity: @opacity;
@@ -259,7 +292,7 @@
 	  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
 }
 
-//       				Buttons 	            	              //
+//       				         Buttons 	            	                  //
 //===============================================================//
 
 .button-version (@color; @background; @border) {
@@ -280,28 +313,4 @@
         .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
         outline: 0;
 	}
-}
-
-
-.border-bottom   { border-bottom: 1px solid @clouds; padding-bottom: .5em; margin-bottom: 1em; }
-
-
-
-.box-shadow(@values) {
-  -webkit-box-shadow: @values;
-  -moz-box-shadow: @values;
-  box-shadow: @values;
-}
-
-// Will this work for mutltiple box-shadows?
-//.2-box-shadow(@value1, @value2) {
-//  -webkit-box-shadow: @values;
-//  -moz-box-shadow: @values;
-//  box-shadow: @values;
-//}
-
-.inner-shadow(@horizontal @vertical @blur @alpha) {
-  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
-  -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
-  box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
 }
