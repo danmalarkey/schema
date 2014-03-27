@@ -154,24 +154,20 @@ The Grid System
   [class^="col"] { 
     float: left; 
 	  min-height: 1px; 
-	  //@include rem(margin-left, 20px);
-	  .margin-left(20px); 
+	  .rem-px(margin-left, 20); 
 	  
 	  @media bp(bp-desktop) {
-		  //@include rem(margin-left, 30px);
-		  .margin-left(30px);
+		  .rem-px(margin-left, 30);
 		  
 	  }
   }
   
   .row {
- 	  //@include rem(margin-left, -20px); 
- 	  .margin-left(-20px);
+ 	  .rem-px(margin-left, -20);
  	  *zoom: 1; 
 	  	
 	  	@media bp(bp-desktop) {
-		    //@include rem(margin-left, -30px);
-		    .margin-left(-30px);
+		    .rem-px(margin-left, -30);
 		    *zoom: 1; 
 		}
 	}
@@ -187,19 +183,16 @@ The Grid System
 
 
 	.container {
-		//@include rem(width, 940px);
-		.width(940px);
+		.rem-px(width, 940);
 		margin-left: auto;
 		margin-left: auto;
 		
 		@media bp(bp-desktop) {
-			//@include rem(width, 1170px);
-			.width(1170px);
+			.rem-px(width, 1170);
 		}
 		
 		@media bp(bp-tablet) {
-			//@include rem(width, 724px);
-			.width(724px);
+			.rem-px(width, 724);
 		}
 		
 		@media bp(bp-mobile) {
@@ -211,13 +204,13 @@ The Grid System
 
 
 	.col12 {
-		.width(940px);
+		.rem-px(width, 940);
 		
 		@media bp(bp-desktop) {
-			.width(1170px);
+			.rem-px(width, 1170);
 		}
 		@media bp(bp-tablet) {
-			.width(724px);
+			.rem-px(width, 724);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -225,13 +218,13 @@ The Grid System
 	}
 	
 	.col11 {
-		.width(860px);
+		.rem-px(width, 860);
 		
 		@media bp(bp-desktop) {
-			.width(1070px); 
+			.rem-px(width, 1070); 
 		}
 		@media bp(bp-tablet) {
-			.width(662px);
+			.rem-px(width, 662);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -239,14 +232,13 @@ The Grid System
 	}
 	
 	.col10 {
-		@include rem(width, 780px);
-		.width(780px);
+		.rem-px(width, 780);
 		
 		@media bp(bp-desktop) {
-			.width(970px);
+			.rem-px(width, 970);
 		}
 		@media bp(bp-tablet) {
-			.width(600px);
+		  .rem-px(width, 600);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -254,13 +246,13 @@ The Grid System
 	}
 	
 	.col9 {
-		.width(700px);
-		
+	  .rem-px(width, 700);
+
 		@media bp(bp-desktop) {
-			.width(870px);
+		  .rem-px(width, 870);
 		}
 		@media bp(bp-tablet) {
-			.width(538px);
+			.rem-px(width, 538);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -268,13 +260,13 @@ The Grid System
 	}
 	
 	.col8 {
-		.width(620px);
+		.rem-px(width, 620);
 		
 		@media bp(bp-desktop) {
-			.width(770px); 
+			.rem-px(width, 770);
 		}
 		@media bp(bp-tablet) {
-			.width(476px);
+			.rem-px(width, 476);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -282,13 +274,13 @@ The Grid System
 	}
 	
 	.col7 {
-    .width(540px);
+    .rem-px(width, 540);
 		
 		@media bp(bp-desktop) {
-			.width(670px); 
+			.rem-px(width, 670); 
 		}
 		@media bp(bp-tablet) {
-			.width(414px);
+			.rem-px(width, 414);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -296,13 +288,13 @@ The Grid System
 	}
 	
 	.col6 {
-    .width(460px);
+    .rem-px(width, 460);
 		
 		@media bp(bp-desktop) { 
-			.width(570px);
+			.rem-px(width, 570);
 		}
 		@media bp(bp-tablet) {
-			.width(352px);
+			.rem-px(width, 352);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -310,13 +302,13 @@ The Grid System
 	}
 	
 	.col5 {
-		.width(380px);
+		.rem-px(width, 380);
 		
 		@media bp(bp-desktop) { 
-			.width(470px);
+			.rem-px(width, 470);
 		}
 		@media bp(bp-tablet) {
-			.width(290px);
+			.rem-px(width, 290);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -324,13 +316,13 @@ The Grid System
 	}
 	
 	.col4 {
-		.width(300px);
+		.rem-px(width, 300);
 		
 		@media bp(bp-desktop) {
-			@include rem(width, 370px); 
+			.rem-px(width, 370);
 		}
 		@media bp(bp-tablet) {
-			@include rem(width, 228px);
+			.rem-px(width, 228);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -338,13 +330,13 @@ The Grid System
 	}
 	
 	.col3 {
-		.width(220px);
+		.rem-px(width, 220);
 		
 		@media bp(bp-desktop) {
-			.width(270px);
+			.rem-px(width, 270);
 		}
 		@media bp(bp-tablet) {
-			.width(166px);
+			.rem-px(width, 166);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -352,13 +344,13 @@ The Grid System
 	}
 	
 	.col2 {
-		.width(140px);
+		.rem-px(width, 140);
 		
 		@media bp(bp-desktop) { 
-			.width(170px);
+			.rem-px(width, 170);
 		}
 		@media bp(bp-tablet) {
-			.width(104px);
+			.rem-px(width, 104);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -366,13 +358,13 @@ The Grid System
 	}
 	
 	.col1 {
-		.width(60px);
+		.rem-px(width, 60);
 		
 		@media bp(bp-desktop) {
-			.width(70px); 
+			.rem-px(width, 70);
 		}
 		@media bp(bp-tablet) {
-			.width(42px);
+			.rem-px(width, 42);
 		}
 		@media bp(bp-mobile) {
 			 width: 100%; 
@@ -382,34 +374,34 @@ The Grid System
 
 
 	// 940px offset //
-	.offset12 { .width(980px); }
-	.offset11 { .width(900px); }
-	.offset10 { .width(820px); }
-	.offset9  { .width(740px); }
-	.offset8  { .width(660px); }
-	.offset7  { .width(580px); }
-	.offset6  { .width(500px); }
-	.offset5  { .width(420px); }
-	.offset4  { .width(340px); }
-	.offset3  { .width(260px); }
-	.offset2  { .width(180px); }
-	.offset1  { .width(100px); }
+	.offset12 { .rem-px(width, 980); }
+	.offset11 { .rem-px(width, 900); }
+	.offset10 { .rem-px(width, 820); }
+	.offset9  { .rem-px(width, 740); }
+	.offset8  { .rem-px(width, 660); }
+	.offset7  { .rem-px(width, 580); }
+	.offset6  { .rem-px(width, 500); }
+	.offset5  { .rem-px(width, 420); }
+	.offset4  { .rem-px(width, 340); }
+	.offset3  { .rem-px(width, 260); }
+	.offset2  { .rem-px(width, 180); }
+	.offset1  { .rem-px(width, 100); }
 
 
 @media  (min-width: 768px) and (max-width: 979px) {
 
-  .offset12 { .width(764px); }
-  .offset11 { .width(702px); }  
-  .offset10 { .width(640px); } 
-  .offset9  { .width(578px); }
-  .offset8  { .width(516px); }
-  .offset7  { .width(454px); }
-  .offset6  { .width(392px); }
-  .offset5  { .width(330px); }
-  .offset4  { .width(268px); }
-  .offset3  { .width(206px); }
-  .offset2  { .width(144px); }
-  .offset1  { .width(82px); }
+  .offset12 { .rem-px(width, 764); }
+  .offset11 { .rem-px(width, 702); }  
+  .offset10 { .rem-px(width, 640); } 
+  .offset9  { .rem-px(width, 578); }
+  .offset8  { .rem-px(width, 516); }
+  .offset7  { .rem-px(width, 454); }
+  .offset6  { .rem-px(width, 392); }
+  .offset5  { .rem-px(width, 330); }
+  .offset4  { .rem-px(width, 268); }
+  .offset3  { .rem-px(width, 206); }
+  .offset2  { .rem-px(width, 144); }
+  .offset1  { .rem-px(width, 82); }
 
   .row-fluid {
     width: 100%;
@@ -554,7 +546,7 @@ The Grid System
 
 .container:after { clear: both; }
 
-.container-fluid { .padding-right(20px); .padding-left(20px); *zoom: 1; }
+.container-fluid { .rem-px(padding-right, 20); .rem-px(padding-left, 20); *zoom: 1; }
 
 .container-fluid:before,
 .container-fluid:after { display: table; line-height: 0; content: ""; }

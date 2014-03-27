@@ -30,9 +30,8 @@ body {
   background: #ffffff;
   background-color: #ffffff;
   font: 16px/23px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16;
-  font-size: 16px;
   font-size: 1rem;
+  font-size: 16px;
   line-height: 1.9;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -77,24 +76,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-/*
-.rem-mixins-test-class {
-    .font-size(10px);
-    .line-height(20px);
-    .margin(10px);
-    .margin(3em);
-    .margin(10px, 20px);
-    .margin(10px, 20%);
-    .margin(0px , 20px);
-    .margin-top(2%);
-    .margin-top(2px);
-    .padding(10px);
-    .padding(3em);
-    .padding(10px, 20px);
-    .padding(10px, 20%);
-    .padding(3em, 20px)
-}
-*/
 .left-float {
   float: left;
 }
@@ -103,6 +84,9 @@ html {
 }
 .center-float {
   margin: 0 auto;
+}
+.no-float {
+  float: none;
 }
 .border-bottom {
   border-bottom: 1px solid #ecf0f1;
@@ -124,6 +108,12 @@ html {
 .neg-1px {
   letter-spacing: -1px;
 }
+/*
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
+*/
 /* 24px */
 /* 20px */
 /* 14px */
@@ -319,24 +309,24 @@ The Grid System
 [class^="col"] {
   float: left;
   min-height: 1px;
-  margin-left: 20px;
   margin-left: 1.25rem;
+  margin-left: 20px;
 }
 @media bp (bp-desktop) {
   [class^="col"] {
-    margin-left: 30px;
     margin-left: 1.875rem;
+    margin-left: 30px;
   }
 }
 .row {
-  margin-left: -20px;
   margin-left: -1.25rem;
+  margin-left: -20px;
   *zoom: 1;
 }
 @media bp (bp-desktop) {
   .row {
-    margin-left: -30px;
     margin-left: -1.875rem;
+    margin-left: -30px;
     *zoom: 1;
   }
 }
@@ -350,20 +340,20 @@ The Grid System
   clear: both;
 }
 .container {
-  width: 940px;
   width: 58.75rem;
+  width: 940px;
   margin-left: auto;
 }
 @media bp (bp-desktop) {
   .container {
-    width: 1170px;
     width: 73.125rem;
+    width: 1170px;
   }
 }
 @media bp (bp-tablet) {
   .container {
-    width: 724px;
     width: 45.25rem;
+    width: 724px;
   }
 }
 @media bp (bp-mobile) {
@@ -373,19 +363,19 @@ The Grid System
   }
 }
 .col12 {
-  width: 940px;
   width: 58.75rem;
+  width: 940px;
 }
 @media bp (bp-desktop) {
   .col12 {
-    width: 1170px;
     width: 73.125rem;
+    width: 1170px;
   }
 }
 @media bp (bp-tablet) {
   .col12 {
-    width: 724px;
     width: 45.25rem;
+    width: 724px;
   }
 }
 @media bp (bp-mobile) {
@@ -394,19 +384,19 @@ The Grid System
   }
 }
 .col11 {
-  width: 860px;
   width: 53.75rem;
+  width: 860px;
 }
 @media bp (bp-desktop) {
   .col11 {
-    width: 1070px;
     width: 66.875rem;
+    width: 1070px;
   }
 }
 @media bp (bp-tablet) {
   .col11 {
-    width: 662px;
     width: 41.375rem;
+    width: 662px;
   }
 }
 @media bp (bp-mobile) {
@@ -415,20 +405,19 @@ The Grid System
   }
 }
 .col10 {
-  width: 780px;
   width: 48.75rem;
+  width: 780px;
 }
-@include rem(width, 780px);
 @media bp (bp-desktop) {
   .col10 {
-    width: 970px;
     width: 60.625rem;
+    width: 970px;
   }
 }
 @media bp (bp-tablet) {
   .col10 {
-    width: 600px;
     width: 37.5rem;
+    width: 600px;
   }
 }
 @media bp (bp-mobile) {
@@ -437,19 +426,19 @@ The Grid System
   }
 }
 .col9 {
-  width: 700px;
   width: 43.75rem;
+  width: 700px;
 }
 @media bp (bp-desktop) {
   .col9 {
-    width: 870px;
     width: 54.375rem;
+    width: 870px;
   }
 }
 @media bp (bp-tablet) {
   .col9 {
-    width: 538px;
     width: 33.625rem;
+    width: 538px;
   }
 }
 @media bp (bp-mobile) {
@@ -458,19 +447,19 @@ The Grid System
   }
 }
 .col8 {
-  width: 620px;
   width: 38.75rem;
+  width: 620px;
 }
 @media bp (bp-desktop) {
   .col8 {
-    width: 770px;
     width: 48.125rem;
+    width: 770px;
   }
 }
 @media bp (bp-tablet) {
   .col8 {
-    width: 476px;
     width: 29.75rem;
+    width: 476px;
   }
 }
 @media bp (bp-mobile) {
@@ -479,19 +468,19 @@ The Grid System
   }
 }
 .col7 {
-  width: 540px;
   width: 33.75rem;
+  width: 540px;
 }
 @media bp (bp-desktop) {
   .col7 {
-    width: 670px;
     width: 41.875rem;
+    width: 670px;
   }
 }
 @media bp (bp-tablet) {
   .col7 {
-    width: 414px;
     width: 25.875rem;
+    width: 414px;
   }
 }
 @media bp (bp-mobile) {
@@ -500,19 +489,19 @@ The Grid System
   }
 }
 .col6 {
-  width: 460px;
   width: 28.75rem;
+  width: 460px;
 }
 @media bp (bp-desktop) {
   .col6 {
-    width: 570px;
     width: 35.625rem;
+    width: 570px;
   }
 }
 @media bp (bp-tablet) {
   .col6 {
-    width: 352px;
     width: 22rem;
+    width: 352px;
   }
 }
 @media bp (bp-mobile) {
@@ -521,19 +510,19 @@ The Grid System
   }
 }
 .col5 {
-  width: 380px;
   width: 23.75rem;
+  width: 380px;
 }
 @media bp (bp-desktop) {
   .col5 {
-    width: 470px;
     width: 29.375rem;
+    width: 470px;
   }
 }
 @media bp (bp-tablet) {
   .col5 {
-    width: 290px;
     width: 18.125rem;
+    width: 290px;
   }
 }
 @media bp (bp-mobile) {
@@ -542,18 +531,20 @@ The Grid System
   }
 }
 .col4 {
-  width: 300px;
   width: 18.75rem;
+  width: 300px;
 }
 @media bp (bp-desktop) {
   .col4 {
-    
-  }@include rem(width, 370px);
+    width: 23.125rem;
+    width: 370px;
+  }
 }
 @media bp (bp-tablet) {
   .col4 {
-    
-  }@include rem(width, 228px);
+    width: 14.25rem;
+    width: 228px;
+  }
 }
 @media bp (bp-mobile) {
   .col4 {
@@ -561,19 +552,19 @@ The Grid System
   }
 }
 .col3 {
-  width: 220px;
   width: 13.75rem;
+  width: 220px;
 }
 @media bp (bp-desktop) {
   .col3 {
-    width: 270px;
     width: 16.875rem;
+    width: 270px;
   }
 }
 @media bp (bp-tablet) {
   .col3 {
-    width: 166px;
     width: 10.375rem;
+    width: 166px;
   }
 }
 @media bp (bp-mobile) {
@@ -582,19 +573,19 @@ The Grid System
   }
 }
 .col2 {
-  width: 140px;
   width: 8.75rem;
+  width: 140px;
 }
 @media bp (bp-desktop) {
   .col2 {
-    width: 170px;
     width: 10.625rem;
+    width: 170px;
   }
 }
 @media bp (bp-tablet) {
   .col2 {
-    width: 104px;
     width: 6.5rem;
+    width: 104px;
   }
 }
 @media bp (bp-mobile) {
@@ -603,19 +594,19 @@ The Grid System
   }
 }
 .col1 {
-  width: 60px;
   width: 3.75rem;
+  width: 60px;
 }
 @media bp (bp-desktop) {
   .col1 {
-    width: 70px;
     width: 4.375rem;
+    width: 70px;
   }
 }
 @media bp (bp-tablet) {
   .col1 {
-    width: 42px;
     width: 2.625rem;
+    width: 42px;
   }
 }
 @media bp (bp-mobile) {
@@ -624,101 +615,101 @@ The Grid System
   }
 }
 .offset12 {
-  width: 980px;
   width: 61.25rem;
+  width: 980px;
 }
 .offset11 {
-  width: 900px;
   width: 56.25rem;
+  width: 900px;
 }
 .offset10 {
-  width: 820px;
   width: 51.25rem;
+  width: 820px;
 }
 .offset9 {
-  width: 740px;
   width: 46.25rem;
+  width: 740px;
 }
 .offset8 {
-  width: 660px;
   width: 41.25rem;
+  width: 660px;
 }
 .offset7 {
-  width: 580px;
   width: 36.25rem;
+  width: 580px;
 }
 .offset6 {
-  width: 500px;
   width: 31.25rem;
+  width: 500px;
 }
 .offset5 {
-  width: 420px;
   width: 26.25rem;
+  width: 420px;
 }
 .offset4 {
-  width: 340px;
   width: 21.25rem;
+  width: 340px;
 }
 .offset3 {
-  width: 260px;
   width: 16.25rem;
+  width: 260px;
 }
 .offset2 {
-  width: 180px;
   width: 11.25rem;
+  width: 180px;
 }
 .offset1 {
-  width: 100px;
   width: 6.25rem;
+  width: 100px;
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .offset12 {
-    width: 764px;
     width: 47.75rem;
+    width: 764px;
   }
   .offset11 {
-    width: 702px;
     width: 43.875rem;
+    width: 702px;
   }
   .offset10 {
-    width: 640px;
     width: 40rem;
+    width: 640px;
   }
   .offset9 {
-    width: 578px;
     width: 36.125rem;
+    width: 578px;
   }
   .offset8 {
-    width: 516px;
     width: 32.25rem;
+    width: 516px;
   }
   .offset7 {
-    width: 454px;
     width: 28.375rem;
+    width: 454px;
   }
   .offset6 {
-    width: 392px;
     width: 24.5rem;
+    width: 392px;
   }
   .offset5 {
-    width: 330px;
     width: 20.625rem;
+    width: 330px;
   }
   .offset4 {
-    width: 268px;
     width: 16.75rem;
+    width: 268px;
   }
   .offset3 {
-    width: 206px;
     width: 12.875rem;
+    width: 206px;
   }
   .offset2 {
-    width: 144px;
     width: 9rem;
+    width: 144px;
   }
   .offset1 {
-    width: 82px;
     width: 5.125rem;
+    width: 82px;
   }
   .row-fluid {
     width: 100%;
@@ -1013,10 +1004,10 @@ The Grid System
   clear: both;
 }
 .container-fluid {
-  padding-right: 20px;
   padding-right: 1.25rem;
-  padding-left: 20px;
+  padding-right: 20px;
   padding-left: 1.25rem;
+  padding-left: 20px;
   *zoom: 1;
 }
 .container-fluid:before,
@@ -1070,39 +1061,33 @@ h3.heading {
   margin-bottom: 1em;
 }
 h1 {
-  font-size: 36;
-  font-size: 36px;
   font-size: 2.25rem;
+  font-size: 36px;
   line-height: 1.4;
   letter-spacing: -1px;
 }
 h2 {
-  font-size: 31;
-  font-size: 31px;
   font-size: 1.9375rem;
+  font-size: 31px;
   line-height: 1.2;
 }
 h3 {
-  font-size: 24;
-  font-size: 24px;
   font-size: 1.5rem;
+  font-size: 24px;
   line-height: 34px;
 }
 h4 {
-  font-size: 18;
-  font-size: 18px;
   font-size: 1.125rem;
+  font-size: 18px;
   line-height: 30px;
 }
 h5 {
-  font-size: 14;
-  font-size: 14px;
   font-size: 0.875rem;
+  font-size: 14px;
 }
 h6 {
-  font-size: 12;
-  font-size: 12px;
   font-size: 0.75rem;
+  font-size: 12px;
   line-height: 21px;
 }
 .subheader {
@@ -1124,16 +1109,14 @@ p {
   margin: 0 0 1em;
   color: #7f8c8d;
   font-family: 'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 1rem;
+  font-size: 16px;
   /* 14px */
-  line-height: 2.2;
+  line-height: 1.7;
 }
 p.lead {
-  font-size: 21;
-  font-size: 21px;
   font-size: 1.3125rem;
+  font-size: 21px;
   line-height: 1.7;
   font-weight: bold;
 }
@@ -1152,15 +1135,13 @@ Here you'll find small, medium, large, and full size buttons.
 /* Small buttons  */
 .btn.btn-small {
   padding: 10px;
-  font-size: 12;
-  font-size: 12px;
   font-size: 0.75rem;
+  font-size: 12px;
 }
 .btn.btn-small {
   padding: 10px;
-  font-size: 12;
-  font-size: 12px;
   font-size: 0.75rem;
+  font-size: 12px;
 }
 /* XL buttons  */
 .btn.btn-xl {
@@ -1182,9 +1163,6 @@ Here you'll find small, medium, large, and full size buttons.
   padding: 1em;
   display: inline-block;
   float: left;
-  font-size: 14;
-  font-size: 14px;
-  font-size: 0.875rem;
   font-family: 'armata';
   letter-spacing: 1px;
   -webkit-border-radius: 4px;
@@ -1192,9 +1170,8 @@ Here you'll find small, medium, large, and full size buttons.
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  font-size: 16;
-  font-size: 16px;
   font-size: 1rem;
+  font-size: 16px;
   font-family: 'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: normal;
   outline: 0;
@@ -1365,9 +1342,8 @@ input[type="color"],
   padding: 0.625em;
   width: auto;
   margin-bottom: 10px;
-  font-size: 14;
-  font-size: 14px;
   font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.7;
   color: #95a5a6;
   width: 13.750em;
@@ -1377,9 +1353,8 @@ input[type="color"],
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #bdc3c7;
-  font-size: 14;
-  font-size: 14px;
   font-size: 0.875rem;
+  font-size: 14px;
   padding-top: 2px;
   font-family: 'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -1551,9 +1526,8 @@ EasyDropdown Default Theme.
 .dropdown .selected,
 .dropdown li {
   display: block;
-  font-size: 16;
-  font-size: 16px;
   font-size: 1rem;
+  font-size: 16px;
   line-height: 1;
   color: inherit;
   padding: 9px 12px;
