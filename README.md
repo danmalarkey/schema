@@ -15,4 +15,5 @@ http://danmalarkey.github.io/schema/
 - Work: UI/UX Designer @ http://feature23.com
 
 ##Changelog
-- v1.0.0 - 9/26/2013 - Schema is ready for everyday use and is easy to implement.  
+- v1.0.0 - 9.26.2013 - Schema is ready for everyday use and is easy to implement.  
+- v1.1.0 — 3.26.2014 – All new mixins, updated for LESS version 1.7.0
