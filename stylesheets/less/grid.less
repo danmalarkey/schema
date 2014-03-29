@@ -3,173 +3,32 @@
 The Grid System
 	
 ============================================================= */
-
-
-/*
-.row { margin-left: -20px; *zoom: 1; }
-
-.row:before,
-.row:after { display: table; line-height: 0; content: ""; }
-
-.row:after { clear: both; }
-
-[class^="col"] { .left-float; min-height: 1px; margin-left: 20px; }
-
-.container { width: 940px; width: 58.750em; }
-
-.col12 { width: 940px; width: 58.750em; }
-.col11 { width: 860px; width: 53.750em; }
-.col10 { width: 780px; width: 48.750em; }
-.col9 { width: 700px; width: 43.750em; }
-.col8 { width: 620px; width: 38.750em; }
-.col7 { width: 540px; width: 33.750em; }
-.col6 { width: 460px; width: 28.750em; }
-.col5 { width: 380px; width: 23.750em; }
-.col4 { width: 300px; width: 18.750em; }
-.col3 { width: 220px; width: 13.750em; }
-.col2 { width: 140px; width: 8.750em; }
-.col1 { width: 60px; width: 3.750em; }
-
-.offset12 { margin-left: 980px; margin-left: 61.250em; }
-.offset11 { margin-left: 900px; margin-left: 56.250em; }
-.offset10 { margin-left: 820px; margin-left: 51.250em; }
-.offset9 { margin-left: 740px; margin-left: 46.250em; }
-.offset8 { margin-left: 660px; margin-left: 41.250em; }
-.offset7 { margin-left: 580px; margin-left: 36.250em; }
-.offset6 { margin-left: 500px; margin-left: 31.250em; }
-.offset5 { margin-left: 420px; margin-left: 26.250em; }
-.offset4 { margin-left: 340px; margin-left: 21.250em; }
-.offset3 { margin-left: 260px; margin-left: 16.250em; }
-.offset2 { margin-left: 180px; margin-left: 11.250em; }
-.offset1 { margin-left: 100px; margin-left: 6.250em; }
-
-.row-fluid {
-  width: 100%;
-  *zoom: 1;
-}
-
-.row-fluid:before,
-.row-fluid:after {
-  display: table;
-  line-height: 0;
-  content: "";
-}
-
-.row-fluid:after {
-  clear: both;
-}
-
-.row-fluid [class^="col"] {
-  display: block;
-  float: left;
-  width: 100%;
-  min-height: 30px;
-  margin-left: 2.12%;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; }
-
-.row-fluid [class^="col"]:first-child { margin-left: 0; }
-.row-fluid .controls-row [class^="col"] + [class^="col"] { margin-left: 2.12%; }
-
-.row-fluid .col12 { width: 100%; }
-.row-fluid .col11 { width: 91.48%; }
-.row-fluid .col10 { width: 82.97%; }
-.row-fluid .col9 { width: 74.46%; }
-.row-fluid .col8 { width: 65.95%; }
-.row-fluid .col7 { width: 57.44%; }
-.row-fluid .col6 { width: 48.93%; }
-.row-fluid .col5 { width: 40.42%; }
-.row-fluid .col4 { width: 31.91%; }
-.row-fluid .col3 { width: 23.40%; }
-.row-fluid .col2 { width: 14.895%; }
-.row-fluid .col1 { width: 6.38%; }
-
-.row-fluid .offset12 { margin-left: 104.25%; }
-.row-fluid .offset12:first-child { margin-left: 102.12%; }
-.row-fluid .offset11 { margin-left: 95.74%; }
-.row-fluid .offset11:first-child { margin-left: 93.61%; }
-.row-fluid .offset10 { margin-left: 87.23%; }
-.row-fluid .offset10:first-child { margin-left: 85.10%; }
-.row-fluid .offset9 { margin-left: 78.72%; }
-.row-fluid .offset9:first-child { margin-left: 76.59%; }
-.row-fluid .offset8 { margin-left: 70.21%; }
-.row-fluid .offset8:first-child { margin-left: 68.08%; }
-.row-fluid .offset7 { margin-left: 61.70%; }
-.row-fluid .offset7:first-child { margin-left: 59.57%; }
-.row-fluid .offset6 { margin-left: 53.195%; }
-.row-fluid .offset6:first-child { margin-left: 51.06%; }
-.row-fluid .offset5 { margin-left: 44.68%; }
-.row-fluid .offset5:first-child { margin-left: 42.55%; }
-.row-fluid .offset4 { margin-left: 36.17%; }
-.row-fluid .offset4:first-child { margin-left: 34.04%; }
-.row-fluid .offset3 { margin-left: 27.65%; }
-.row-fluid .offset3:first-child { margin-left: 25.53%; }
-.row-fluid .offset2 { margin-left: 19.14%; }
-.row-fluid .offset2:first-child { margin-left: 17.02%; }
-.row-fluid .offset1 { margin-left: 10.63%; }
-.row-fluid .offset1:first-child { margin-left: 8.51%; }
-
-[class^="col"].hide,
-.row-fluid [class^="col"].hide { display: none; }
-
-[class^="col"].pull-right,
-.row-fluid [class^="col"].pull-right { float: right; }
-
-.container { margin-right: auto; margin-left: auto; *zoom: 1; }
-
-.container:before,
-.container:after { display: table; line-height: 0; content: ""; }
-
-.container:after { clear: both; }
-
-.container-fluid { padding-right: 20px; padding-left: 20px; *zoom: 1; }
-
-.container-fluid:before,
-.container-fluid:after { display: table; line-height: 0; content: ""; }
-
-.container-fluid:after { clear: both; }
-*/
-
-
-
-//=========================================================
-//
-//
-//
-//
-// from SASS framework 
-//
-//
-//
-//
-//=========================================================
-
-/* =============================================================
-     
-The Grid System
-	
-============================================================= */
   
   [class^="col"] { 
     float: left; 
 	  min-height: 1px; 
 	  .rem-px(margin-left, 20); 
-	  
-	  @media bp(bp-desktop) {
-		  .rem-px(margin-left, 30);
-		  
+  
+    @media @bp-mobile {
+  	  float: none;
+  	  width: 100%;
+  	  margin-left: 0;
 	  }
+	  
+	  @media @bp-desktop {
+		  .rem-px(margin-left, 30);
+	  }
+	  
   }
   
   .row {
- 	  .rem-px(margin-left, -20);
- 	  *zoom: 1; 
-	  	
-	  	@media bp(bp-desktop) {
+    @media @bp-desktop {
 		    .rem-px(margin-left, -30);
 		    *zoom: 1; 
 		}
+		
+ 	  .rem-px(margin-left, -20);
+ 	  *zoom: 1; 
 	}
     
     .row:before,
@@ -185,19 +44,20 @@ The Grid System
 	.container {
 		.rem-px(width, 940);
 		margin-left: auto;
-		margin-left: auto;
+		margin-right: auto;
+    
+    @media @bp-mobile {
+			width: 95%;
+			width: auto;
+			float: none;
+		}	
 		
-		@media bp(bp-desktop) {
-			.rem-px(width, 1170);
-		}
-		
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 724);
 		}
 		
-		@media bp(bp-mobile) {
-			width: 95%;
-			width: auto;
+		@media @bp-desktop {
+			.rem-px(width, 1170);
 		}
 	}
 
@@ -206,13 +66,13 @@ The Grid System
 	.col12 {
 		.rem-px(width, 940);
 		
-		@media bp(bp-desktop) {
+		@media @bp-desktop {
 			.rem-px(width, 1170);
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 724);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -220,13 +80,13 @@ The Grid System
 	.col11 {
 		.rem-px(width, 860);
 		
-		@media bp(bp-desktop) {
+		@media @bp-desktop {
 			.rem-px(width, 1070); 
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 662);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -234,13 +94,13 @@ The Grid System
 	.col10 {
 		.rem-px(width, 780);
 		
-		@media bp(bp-desktop) {
+		@media @bp-desktop {
 			.rem-px(width, 970);
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 		  .rem-px(width, 600);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -248,13 +108,13 @@ The Grid System
 	.col9 {
 	  .rem-px(width, 700);
 
-		@media bp(bp-desktop) {
+		@media @bp-desktop {
 		  .rem-px(width, 870);
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 538);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -262,13 +122,13 @@ The Grid System
 	.col8 {
 		.rem-px(width, 620);
 		
-		@media bp(bp-desktop) {
+		@media @bp-desktop {
 			.rem-px(width, 770);
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 476);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -276,13 +136,13 @@ The Grid System
 	.col7 {
     .rem-px(width, 540);
 		
-		@media bp(bp-desktop) {
+		@media @bp-desktop {
 			.rem-px(width, 670); 
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 414);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -290,13 +150,13 @@ The Grid System
 	.col6 {
     .rem-px(width, 460);
 		
-		@media bp(bp-desktop) { 
+		@media @bp-desktop { 
 			.rem-px(width, 570);
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 352);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -304,13 +164,13 @@ The Grid System
 	.col5 {
 		.rem-px(width, 380);
 		
-		@media bp(bp-desktop) { 
+		@media @bp-desktop { 
 			.rem-px(width, 470);
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 290);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -318,13 +178,13 @@ The Grid System
 	.col4 {
 		.rem-px(width, 300);
 		
-		@media bp(bp-desktop) {
+		@media @bp-desktop {
 			.rem-px(width, 370);
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 228);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -332,13 +192,13 @@ The Grid System
 	.col3 {
 		.rem-px(width, 220);
 		
-		@media bp(bp-desktop) {
+		@media @bp-desktop {
 			.rem-px(width, 270);
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 166);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -346,13 +206,13 @@ The Grid System
 	.col2 {
 		.rem-px(width, 140);
 		
-		@media bp(bp-desktop) { 
+		@media @bp-desktop { 
 			.rem-px(width, 170);
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 104);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -360,13 +220,13 @@ The Grid System
 	.col1 {
 		.rem-px(width, 60);
 		
-		@media bp(bp-desktop) {
+		@media @bp-desktop {
 			.rem-px(width, 70);
 		}
-		@media bp(bp-tablet) {
+		@media @bp-tablet {
 			.rem-px(width, 42);
 		}
-		@media bp(bp-mobile) {
+		@media @bp-mobile {
 			 width: 100%; 
 		}
 	}
@@ -411,6 +271,10 @@ The Grid System
     clear: both; }
 
   .row-fluid [class^="col"] {
+  
+    @media @bp-mobile {
+      margin-left: 0;
+    }
     display: block;
     float: left;
     width: 100%;
@@ -533,6 +397,24 @@ The Grid System
 .row-fluid .offset1 { margin-left: 10.63%; }
 .row-fluid .offset1:first-child { margin-left: 8.51%; }
 
+@media @bp-mobile {
+.row-fluid {
+    width: 100%;
+  }
+  
+  [class^="col"],
+  .uneditable-input[class^="col"],
+  .row-fluid [class^="col"] {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
 [class^="col"].hide,
 .row-fluid [class^="col"].hide { display: none; }
 
@@ -552,3 +434,4 @@ The Grid System
 .container-fluid:after { display: table; line-height: 0; content: ""; }
 
 .container-fluid:after { clear: both; }
+
