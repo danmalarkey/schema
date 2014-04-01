@@ -207,6 +207,12 @@ The Grid System
     *zoom: 1;
   }
 }
+@media screen and (max-width: 767px) {
+  .row {
+    margin-lef: 0rem;
+    margin-lef: 0px;
+  }
+}
 .row:before,
 .row:after {
   display: table;

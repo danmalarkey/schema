@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16877",
+"creatorBuild": "16895",
 "files": {
 	"\/index.html": {
 		"fileType": 8192,
@@ -8,6 +8,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/README.md": {
@@ -19,6 +20,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/README.md",
 		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/stylesheets\/css\/fontello-62c1d405\/css\/fontello-codes.css": {
@@ -27,6 +29,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/css\/fontello-62c1d405\/css\/fontello-codes.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/stylesheets\/css\/fontello-62c1d405\/css\/fontello-embedded.css": {
@@ -35,6 +38,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/css\/fontello-62c1d405\/css\/fontello-embedded.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/stylesheets\/css\/fontello-62c1d405\/css\/fontello-ie7-codes.css": {
@@ -43,6 +47,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/css\/fontello-62c1d405\/css\/fontello-ie7-codes.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/stylesheets\/css\/fontello-62c1d405\/css\/fontello-ie7.css": {
@@ -51,6 +56,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/css\/fontello-62c1d405\/css\/fontello-ie7.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/stylesheets\/css\/fontello-62c1d405\/css\/fontello.css": {
@@ -59,14 +65,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/css\/fontello-62c1d405\/css\/fontello.css",
 		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/stylesheets\/css\/schema.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/stylesheets\/css\/schema.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/stylesheets\/css\/schema_r.css": {
@@ -75,6 +74,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/css\/schema_r.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/stylesheets\/css\/styleguide.css": {
@@ -83,6 +83,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/css\/styleguide.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/stylesheets\/js\/jquery.easydropdown.js": {
@@ -91,6 +92,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/js\/jquery.easydropdown.js",
 		"outputAbbreviatedPath": "\/stylesheets\/js\/min\/jquery.easydropdown-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -101,6 +103,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/js\/jquery.easydropdown.min.js",
 		"outputAbbreviatedPath": "\/stylesheets\/js\/min\/jquery.easydropdown.min-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -111,6 +114,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/js\/less.js",
 		"outputAbbreviatedPath": "\/stylesheets\/js\/min\/less-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -121,6 +125,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/js\/modernizr.custom.js",
 		"outputAbbreviatedPath": "\/stylesheets\/js\/min\/modernizr.custom-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -135,6 +140,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/less\/buttons.less",
 		"outputAbbreviatedPath": "\/stylesheets\/css\/buttons.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
@@ -154,6 +160,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/less\/dropdowns.less",
 		"outputAbbreviatedPath": "\/stylesheets\/css\/dropdowns.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
@@ -173,44 +180,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/less\/forms.less",
 		"outputAbbreviatedPath": "\/stylesheets\/css\/forms.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/stylesheets\/less\/grid.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/stylesheets\/less\/grid.less",
-		"outputAbbreviatedPath": "\/stylesheets\/css\/grid.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/stylesheets\/less\/mixins.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/stylesheets\/less\/mixins.less",
-		"outputAbbreviatedPath": "\/stylesheets\/css\/mixins.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
@@ -230,6 +200,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/less\/schema.less",
 		"outputAbbreviatedPath": "\/stylesheets\/css\/schema.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
@@ -249,6 +220,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/less\/styleguide.less",
 		"outputAbbreviatedPath": "\/stylesheets\/css\/styleguide.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
@@ -268,6 +240,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/less\/typography.less",
 		"outputAbbreviatedPath": "\/stylesheets\/css\/typography.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
