@@ -1,3 +1,8 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /* Small buttons  */
 .btn.btn-small {
   padding: 10px;
@@ -215,7 +220,6 @@
   color: #fff;
 }
 .icon-up-open:before {
-  /* content: '\e75f'; */
   content: '\e802';
   opacity: .6;
   position: fixed;
@@ -223,6 +227,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   font-size: 1em;
   padding: 10px;
+  display: inline-table;
 }
 .icon-up-open:hover:before {
   opacity: 1;
