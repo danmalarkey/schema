@@ -1,5 +1,8 @@
-// floats + justified
-// ----------------------------	
+/* =============================================================
+*     
+*  Floats + Text Justification
+*	
+*============================================================= */
 
 .left-float			               { float: left; }	
 .right-float		               { float: right; }	
@@ -16,16 +19,12 @@
 .neg-1px                       { letter-spacing: -1px; }	
                                
 
-/*
-.font-size (@size) {
-  font-size: 0px + @size;
-  font-size: 0rem + @size / @base-font-size;
-}
-*/
 
-
-// Typefaces
-// ----------------------------
+/* =============================================================
+*     
+*  Typeface Variables
+*	
+*============================================================= */
 
 @merriweather:			          'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -48,6 +47,15 @@
 @base-line-height:  					1.7;
 
 
+/* =============================================================
+*     
+*  REM to Pixel Mixin.
+*  This mixin gives a REM value
+*  and provides a pixel fallback.
+*	
+*============================================================= */
+
+
 .rem-px(@property; @sizeValue) {
 
     @pxValue: @sizeValue;
@@ -57,11 +65,12 @@
   }
 
 
-/* Colors */
+/* =============================================================
+*     
+*  Older Colors
+*	
+*============================================================= */
 
-//old
-@white:                       #fff;
-@light-white:			            rgba(255, 255, 255, .5);
 @clouds:                      #ecf0f1;
 @silver:                      #bdc3c7;
 @concrete:                    #95a5a6;
@@ -94,14 +103,12 @@
 @new-green:                   #009e73;
 @new-teal:                    #009E91;
 @new-yellow:                  #FFBF00;
-// colors
 
-//========================================================================================
-//
-//	COLORS
-//
-//========================================================================================
-//New
+/* =============================================================
+*     
+*  Newer Colors
+*	
+*============================================================= */
 
 @base-color: 								  #000;
 @base-color-222:            	lighten(@base-color, 13.5%); 	// #222
@@ -115,18 +122,12 @@
 @off-white: 								  #f4f4f4;
 @white: 									    #fff;
 
-
-
 @secondary-color: 						#3498db;
 
-
 @text-color: 								  @base-color-555;
-@link-color: 								  @secondary-color;
-                              
+@link-color: 								  @secondary-color;                            
                               
 @btn-orange: 								  #f46801;
-
-
 @primary-color: 							@secondary-color;
 @danger-color: 								#e74c3c;
 @info-color: 								  #1abc9c;
@@ -134,11 +135,11 @@
 @success-color: 							#2ecc71;
 
 
-//========================================================================================
-//
-//	Media Query Breakpoints
-//
-//========================================================================================
+/* =============================================================
+*     
+*  Media Query Breakpoints
+*	
+*============================================================= */
 
 @bp-desktop: 		~"screen and (min-width: 1200px)";
 @bp-tablet: 		~"screen and (min-width: 768px) and (max-width: 979px)";
@@ -184,11 +185,11 @@
 }
 
 
-//========================================================================================
-//
-//	Buttons
-//
-//========================================================================================
+/* =============================================================
+*     
+*  Button of all types.
+*	
+*============================================================= */
 
 @btn-font-weight: 						normal;
 
@@ -224,8 +225,11 @@
 @btn-success-border: 					darken(@success-color, 5%);
 
 
-//       				Horizontal Rules          	              //
-//===============================================================//
+/* =============================================================
+*     
+*  Horizontal Rule Mixins
+*	
+*============================================================= */
 
 .hr_thin		{ border: 1px solid @clouds; }
 .hr_medium		{ border: 3px solid @clouds; }
@@ -235,9 +239,20 @@
 .hr_medium_w	{ border: 3px solid @white; }
 .hr_thick_w	    { border: 5px solid @white; }
 
+// Mixin //
 
-//       				Round Corners            	              //
-//===============================================================//
+.hr_rule (@size, @color) {
+  border-top: @size solid @color;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent; 
+}
+
+/* =============================================================
+*     
+*  Border-radius Mixin
+*	
+*============================================================= */
 			
 .border-radius (@radius: 6px) {
   -webkit-border-radius: @radius;
@@ -266,9 +281,11 @@
 	border-radius-bottom-left-radius: @radius;
 }
 
-//
-// Make multpile box-shadows on any element
-//
+/* =============================================================
+*     
+*  Box-shadow mixins with multiple values.
+*	
+*============================================================= */
 
 .box-shadow(@shadow1) {
     -webkit-box-shadow: @shadow1;
@@ -300,16 +317,33 @@
     box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
 }
 
+/* =============================================================
+*     
+*  Opacity Mixin
+*	
+*============================================================= */
+
 .opacity(@opacity) {
   opacity: @opacity;
 }
 
+/* =============================================================
+*     
+*  Transition Mixin
+*	
+*============================================================= */
 
 .transition(@transition) {
 	-webkit-transition: @transition;
 	-moz-transition: @transition;
 	transition: @transition;
 }
+
+/* =============================================================
+*     
+*  Rotate Mixin
+*	
+*============================================================= */
 
 .rotate(@deg) {
 	-webkit-transform: rotate(@deg);    
@@ -319,6 +353,12 @@
 	    transform: rotate(@deg);
 }
 
+/* =============================================================
+*     
+*  Transform Mixin
+*	
+*============================================================= */
+
 .transform(@skew) {
 	-webkit-transform: skew(@skew);
 	-moz-transform: skew(@skew);
@@ -326,6 +366,12 @@
 	-o-transform: skew(@skew);
 	transform: skew(@skew);
 }
+
+/* =============================================================
+*     
+*  Gradient Mixin
+*	
+*============================================================= */
 
 .gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
 	  background: @color;
@@ -347,8 +393,14 @@
 	  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
 }
 
-//       				Buttons 	            	              //
-//===============================================================//
+
+/* =============================================================
+*     
+*  A button builder
+*  Create different buttons with color,
+*  background color, and border color.
+*	
+*============================================================= */
 
 .button-version (@color; @background; @border) {
 	color: @color;
