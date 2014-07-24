@@ -1,0 +1,59 @@
+//  =================================
+//
+//  The Framework of Schema
+//
+//  =================================
+
+
+body {
+  background: @white;
+  background-color: @white;
+  font: 16px/23px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: @primary-font;
+  .rem-px(font-size, 16);
+  line-height: 1.9;
+  margin: 0;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
+
+article, aside,
+details, figcaption,
+figure, footer,
+header, hgroup,
+nav, section { 
+	display: block; 
+	margin: 0; 
+}
+	
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; 
+}
+
+
+
+//  =================================
+//
+//  Box-sizing mixin
+//
+//  =================================
+
+* {
+  .box-sizing(border-box);
+}
+
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+

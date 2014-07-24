@@ -27,34 +27,13 @@
  *  Design + built by @dan_malarkey.
  */
 
-body {
-	background: @white;
-    background-color: @white;
-	font: 16px/23px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	.rem-px(font-size, 16);
-	line-height: 1.9;
-	margin: 0;
-	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-	-webkit-text-size-adjust: 100%; }
 
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-.clearfix { 
-	*zoom: 1; }
 
-.clearfix:before,
-.clearfix:after { 
-	display: table; 
-	line-height: 0; 
-	content: ""; }
 
-.clearfix:after { 
-	clear: both; }
 
+
+/*
 .input-block-level {
   display: block;
   width: 100%;
@@ -62,27 +41,9 @@ body {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box; }
+*/
 
-article, aside,
-details, figcaption,
-figure, footer,
-header, hgroup,
-nav, section { 
-	display: block; 
-	margin: 0; }
-	
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
 
-html {
-    font-size: 100%;
-	-webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%; }
       
  
 @import "mixins.less";      
@@ -90,4 +51,7 @@ html {
 @import "typography.less";
 @import "buttons.less";
 @import "forms.less";
-@import "dropdowns.less"; 
+@import "dropdowns.less";
+@import "clearfix.less";
+@import "frame.less";
+@import "normalize.less"; 

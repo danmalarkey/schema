@@ -26,14 +26,7 @@
 *	
 *============================================================= */
 
-@merriweather:			          'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-@oswald:				              'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-@armata:				              'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-
-@glegoo:				              'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
+@primary-font:                'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 @base-font-size: 							16;
 
@@ -246,6 +239,13 @@
   border-bottom-color: transparent;
   border-right-color: transparent;
   border-left-color: transparent; 
+}
+
+.box-sizing(@value) {
+  -moz-box-sizing: @value;
+  -o-box-sizing: @value;
+  -webkit-box-sizing: @value;
+  box-sizing: @value;
 }
 
 /* =============================================================
