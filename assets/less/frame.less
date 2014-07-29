@@ -1,52 +1,27 @@
-//  =================================
+//  ============================================================
 //
 //  The Framework of Schema
 //
-//  =================================
-
+//  ============================================================
 
 body {
-  background: @white;
-  background-color: @white;
-  font: 16px/23px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: @base-bg;
+  color: @text-color;
   font-family: @primary-font;
+  font-weight: @font-family-weight;
   .rem-px(font-size, 16);
-  line-height: 1.9;
+  line-height: @base-line-height;
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-article, aside,
-details, figcaption,
-figure, footer,
-header, hgroup,
-nav, section { 
-	display: block; 
-	margin: 0; 
-}
-	
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; 
-}
-
-
-
-//  =================================
+//  ============================================================
 //
 //  Box-sizing mixin
 //
-//  =================================
+//  ============================================================
 
 * {
   .box-sizing(border-box);
@@ -57,3 +32,14 @@ html {
   .box-sizing(border-box);
 }
 
+
+// Alert frame
+.alert {
+  color: darken(@success-color, 10%);
+  border: 1px solid @success-color;
+  display: inline-block;
+  padding: 1rem .875em;
+  width: 80%;
+  background-color: lighten(@success-color, 46.5%);
+  border-radius: 6px;
+}

@@ -1,0 +1,292 @@
+ 
+//
+//  Variables throughout Schema
+//  
+//  =============================================================
+
+
+
+//
+//  Variable === Colors
+// 
+//  /////////////////////////////////////////////////////////////
+
+//
+// Black + Grey's
+@base-color: 								            #000;
+@base-color-222:            	          lighten(@base-color, 13.5%); 	// #222
+@base-color-333:                        lighten(@base-color, 20%);   	// #333
+@base-color-555:                        lighten(@base-color, 33.5%); 	// #555
+@base-color-777:                        lighten(@base-color, 46.5%);  // #777
+@base-color-999:             	          lighten(@base-color, 60%);   	// #999
+@base-color-aaa: 							          lighten(@base-color, 66.5%);  // #aaa
+@base-color-ccc: 							          lighten(@base-color, 80%); 		// #ccc
+@base-color-eee:           		          lighten(@base-color, 93.5%); 	// #eee
+
+@disabled-color:                        @base-color-aaa;
+                                        
+// White's + Light White's              
+@base-white: 									          #fff;
+@base-off-white: 							          darken(@base-white, 3.75%); // #f5f5f5
+
+// Schema Colors
+@primary-color: 							          #f46801;
+@success-color: 							          #2ecc71;
+@info-color: 								            #3498db;
+@warning-color: 							          #f39c12;
+@danger-color: 								          #e74c3c;
+ 
+//
+//  Most Global Variables
+// 
+//  /////////////////////////////////////////////////////////////
+
+// Base background-color
+@base-bg:                               @base-white;  // white - #fff
+@base-bg-off-white:                     @base-off-white;  // whitesmoke - #f5f5f5
+@accent-white:                          darken(@base-bg, 2.5%);  // #f9f9f9
+
+// The active state of navs
+@active-color:                          @primary-color;
+
+// Base text color
+@text-color:                            @base-color-555; // #555
+
+// Link color 
+@link-color: 								           @primary-color;
+@link-color-hover:                      darken(@primary-color, 5%); // #db5d01
+
+//
+//  Variable === Typography
+// 
+//  /////////////////////////////////////////////////////////////
+
+
+@primary-font:                          Helvetica Neue, 'HelveticaNeue', Helvetica, Arial, sans-serif;
+
+@secondary-font:                        serif;
+
+//  This variable intended to be used with the .rem-px(); mixin.
+//  This mixin gives a REM value and provides a pixel fallback.
+//  You can learn more in the mixins.less file.
+//
+//  Here's an example.
+// 
+// .class { .rem-px(font-size, 16); }
+// 
+//    The output would be when compiled: 
+//      .class {
+//         font-size: 1rem;
+//         font-size: 16px;
+//      }   
+@rem-font-size: 							          16;
+
+// This variable is used for calculating base-font-size xl, large, small, xs //
+@baseline-size: 								        1rem; // 16px 
+					   
+@base-font-size-xl: 					          (@baseline-size * 1.50); /* 24px */  // 1.5rem
+@base-font-size-large:                  (@baseline-size * 1.25); /* 20px */  // 1.25rem
+@base-font-size-small:                  (@baseline-size * 0.875); /* 14px */  // 0.85rem
+@base-font-size-xs: 					          (@baseline-size * 0.75); /* 12px */  // 0.75rem
+
+@typeset-margin:                        1.4rem 0;
+
+@font-h1:                               (@baseline-size * 2.25);  // 36px / 2.25rem
+@font-h2:                               (@baseline-size * 1.875); // 30px / 1.875rem
+@font-h3:                               (@baseline-size * 1.5);   // 24px / 1.5rem
+@font-h4:                               (@baseline-size * 1.125); // 18px / 1.125rem
+@font-h5:                               @baseline-size; // 16px / 1rem
+@font-h6:                               @base-font-size-small; // 14px / 0.875rem
+
+@base-line-height:  					          1.3125; // 21/16
+@base-line-height-computed:             floor((@baseline-size * @base-line-height)); // ~21px
+                                        
+@heading-font-family:                   inherit;
+@heading-font-weight:                   500;
+@heading-line-height:                   (@base-line-height / 1.125); // 1.3125 / 1.125
+@heading-font-color:                    inherit;
+                                        
+//                                      
+//  Components – padding, margins, line-heights, etc
+//
+//  //////////////////////////////////////////////////////////////////                                      
+                                        
+@base-padding-horizontal:               (@baseline-size / 2);  // 8px
+@base-padding-vertical:                 (@baseline-size * 0.875);  // 14px
+
+@base-padding-large-horizontal:         (@baseline-size * 0.75);  // 12px
+@base-padding-large-vertical:           (@baseline-size * 1.125); // 18px
+
+@base-padding-small-horizontal:         (@baseline-size / 4);  // 4px
+@base-padding-small-veritcal:           (@baseline-size * 1.6);  // 10px 
+
+@btn-base-line-height:                  (@base-line-height * 1.5); // 1.96875
+@btn-small-base-line-height:            @base-line-height; // 1.3125
+
+// 
+//
+//  Buttons of all types
+// 
+//  /////////////////////////////////////////////////////////////
+
+
+@btn-font-weight: 						          normal;
+                                                                               
+// Default //                           
+                                     
+@btn-default-color: 					          @base-color-777;
+@btn-default-bg: 							          @base-bg;
+@btn-default-border: 					          @base-color-ccc;                                      
+                                        
+// Primary                              
+@btn-primary-color: 					          @base-bg;
+@btn-primary-bg: 							          @primary-color;
+@btn-primary-border: 					          darken(@primary-color, 5%);
+                                        
+// Danger                               
+@btn-danger-color: 						          @base-bg;
+@btn-danger-bg: 							          @danger-color;
+@btn-danger-border: 					          darken(@danger-color, 5%);
+                                        
+// Info                                 
+@btn-info-color: 							          @base-bg;
+@btn-info-bg: 								          @info-color;
+@btn-info-border: 						          darken(@info-color, 5%);
+                                        
+// Warning                              
+@btn-warning-color: 					          @base-bg;
+@btn-warning-bg: 							          @warning-color;
+@btn-warning-border: 					          darken(@warning-color, 5%);
+                                        
+// Success                              
+@btn-success-color: 					          @base-bg;
+@btn-success-bg: 							          @success-color;
+@btn-success-border: 					          darken(@success-color, 5%);
+
+ 
+//
+//  Border-radius — Normal, large, and small
+// 
+//  /////////////////////////////////////////////////////////////
+
+@border-radius:                         6px;
+@border-radius-large:                   8px;
+@border-radius-small:                   4px;
+
+//
+//  Tables
+// 
+//  /////////////////////////////////////////////////////////////
+
+//  Table stuff will go here  //
+
+ 
+//
+//  Forms — Input fields and all
+// 
+//  /////////////////////////////////////////////////////////////
+
+@input-bg:                              @base-bg;  // All input fields will have a white background
+@input-bg-disabled:                     @disabled-color;  // When a field is disabled use this color  
+
+@input-text-color:                      @base-color-777;  // Border text color
+@input-border-color:                    @base-color-ccc;  // Border color
+
+@input-border-radius:                   @border-radius;
+@input-border-focus:                    @primary-color;  // Border color on focus
+
+
+//
+//  Z-index component
+// 
+//  /////////////////////////////////////////////////////////////
+
+@zindex-1000:                           1000;
+@zindex-1010:                           1010;
+@zindex-1020:                           1020;
+@zindex-1030:                           1030;
+@zindex-1040:                           1040;
+@zindex-1050:                           1050;
+@zindex-1060:                           1060;
+@zindex-1070:                           1070;
+@zindex-1080:                           1080;
+@zindex-1090:                           1090;
+@zindex-2000:                           2000;
+
+//
+//  Media Query Breakpoints
+// 
+//  /////////////////////////////////////////////////////////////
+
+@bp-desktop: 		~"screen and (min-width: 1200px)";
+
+@bp-tablet: 		~"screen and (min-width: 768px) and (max-width: 979px)";
+
+@bp-mobile: 		~"screen and (max-width: 767px)";
+
+
+@media @bp-desktop {
+	.desktop-hidden {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@media @bp-tablet {
+	.tablet-hidden {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@media @bp-mobile {
+	.mobile-hidden {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@media @bp-mobile {
+	.show-mobile {
+		visibility: visible;
+		display: block;
+		
+	}
+}
+
+.show-mobile {
+	display: none;
+	visibility: hidden; 
+	
+	@media @bp-mobile {
+		display: block;
+		visibility: visible;
+	}
+}
+
+//
+//  Alerts 
+// 
+//  /////////////////////////////////////////////////////////////
+
+// Success Alert
+@success-alert-text:                    darken(@success-color, 10%);
+@success-alert-border:                  lighten(@success-color, 30%);
+@success-alert-bg:                      lighten(@success-color, 46.5%);
+
+// Info Alert
+@info-alert-text:                       darken(@info-color, 10%);
+@info-alert-border:                     lighten(@info-color, 30%);
+@info-alert-bg:                         lighten(@success-color, 44.5%);
+
+// Warning Alert
+@warning-alert-text:                    darken(@warning-color, 10%);
+@warning-alert-border:                  lighten(@warning-color, 30%);
+@warning-alert-bg:                      darken(@warning-color, 45.5%);
+
+// Danger Alert
+@danger-alert-text:                     darken(@danger-color, 10%);
+@danger-alert-border:                   lighten(@danger-color, 30%);
+@danger-alert-bg:                       darken(@danger-color, 40.5%);
+
+	
