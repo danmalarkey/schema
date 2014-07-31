@@ -1,61 +1,58 @@
-/* =============================================================
-*     
-*  Floats + Text Justification
-*	
-*============================================================= */
-
-.left-float			               { float: left; }	
-.right-float		               { float: right; }	
-.center-float		               { margin: 0 auto; }
-.no-float                      { float: none; }
-                               
-.border-bottom                 { border-bottom: 1px solid @clouds; padding-bottom: .5em; margin-bottom: 1em; }
-                               
-.text-left			               { text-align: left; }
-.text-right			               { text-align: right; }
-.text-center		               { text-align: center; }
-.justified 			               { text-align: justify; }
-                               
-.neg-1px                       { letter-spacing: -1px; }	
-                               
-
-
-
-
-
-
-/* =============================================================
-*     
-*  REM to Pixel Mixin.
-*  This mixin gives a REM value
-*  and provides a pixel fallback.
-*	
-*============================================================= */
-
+// =============================================================
+//     
+//  REM to Pixel Mixin.
+//  This mixin gives a REM value
+//  and provides a pixel fallback.
+//	
+// ============================================================= 
 
 .rem-px(@property; @sizeValue) {
+  @pxValue: @sizeValue;
+  @remValue: (@sizeValue / @rem-font-size);
+  @{property}: ~"@{remValue}rem";
+  @{property}: ~"@{pxValue}px";
+}
 
-    @pxValue: @sizeValue;
-    @remValue: (@sizeValue / @rem-font-size);
-    @{property}: ~"@{remValue}rem";
-    @{property}: ~"@{pxValue}px";
-  }
+// =============================================================
+//     
+//  A button builder
+//  Create different buttons with color,
+//  background color, and border color.
+//	
+// =============================================================
 
-/* =============================================================
-*     
-*  Horizontal Rule Mixins
-*	
-*============================================================= */
+.button-version (@color; @background; @border) {
+	color: @color;
+	background-color: @background;
+	border-color: @border;
+	.box-shadow(inset 0px 1px 0 rgba(255,255,255,.5));
+	
+	&:hover {
+		background-color: darken(@background, 10%);
+    border-color: darken(@border, 10%);
+	}
+	&:active,
+	&.active {
+		color: @color;
+		background-color: darken(@background, 12.5%);
+    border-color: darken(@border, 12.5%);
+    .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
+    outline: 0;
+	}
+}
 
-.hr_thin		{ border: 1px solid @clouds; }
-.hr_medium		{ border: 3px solid @clouds; }
-.hr_thick		{ border: 5px solid @clouds; }
-
-.hr_thin_w		{ border: 1px solid @base-white; }
-.hr_medium_w	{ border: 3px solid @base-white; }
-.hr_thick_w	    { border: 5px solid @base-white; }
-
-// Mixin //
+.button-size(@button-padding-vertical; @button-padding-horizontal; @button-font-size; @button-line-height; @button-border-radius) {
+  padding: @button-padding-vertical @button-padding-horizontal;
+  font-size: @button-font-size;
+  line-height: @button-line-height;
+  border-radius: @button-border-radius;
+}
+  
+// =============================================================
+//     
+//  Horizontal Rule Mixins
+//	
+// =============================================================
 
 .hr_rule (@size, @color) {
   border-top: @size solid @color;
@@ -64,6 +61,24 @@
   border-left-color: transparent; 
 }
 
+// =============================================================
+//     
+//  Border-style Mixin
+//	
+// =============================================================
+
+.border-style(@border-width, @border-style, @border-color) {
+  border-width: @border-width;
+  border-style: @border-style;
+  border-color: @border-color;
+}
+
+// =============================================================
+//     
+//  Box-sizing Mixin
+//	
+// =============================================================
+
 .box-sizing(@value) {
   -moz-box-sizing: @value;
   -o-box-sizing: @value;
@@ -71,13 +86,13 @@
   box-sizing: @value;
 }
 
-/* =============================================================
-*     
-*  Border-radius Mixin
-*	
-*============================================================= */
+// ============================================================
+//     
+//  Border-radius Mixin
+// 	
+// ============================================================ 
 			
-.border-radius (@radius: 6px) {
+.border-radius (@radius) {
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
   -ms-border-radius: @radius;
@@ -104,11 +119,11 @@
 	border-radius-bottom-left-radius: @radius;
 }
 
-/* =============================================================
-*     
-*  Box-shadow mixins with multiple values.
-*	
-*============================================================= */
+// =============================================================
+//     
+//  Box-shadow mixins with multiple values.
+//	
+// =============================================================
 
 .box-shadow(@shadow1) {
     -webkit-box-shadow: @shadow1;
@@ -140,21 +155,21 @@
     box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
 }
 
-/* =============================================================
-*     
-*  Opacity Mixin
-*	
-*============================================================= */
+// =============================================================
+//     
+//  Opacity Mixin
+//	
+// ============================================================= 
 
 .opacity(@opacity) {
   opacity: @opacity;
 }
 
-/* =============================================================
-*     
-*  Transition Mixin
-*	
-*============================================================= */
+// =============================================================
+//     
+//  Transition Mixin
+//	
+// =============================================================
 
 .transition(@transition) {
 	-webkit-transition: @transition;
@@ -162,11 +177,11 @@
 	transition: @transition;
 }
 
-/* =============================================================
-*     
-*  Rotate Mixin
-*	
-*============================================================= */
+// =============================================================
+//     
+//  Rotate Mixin
+//	
+// =============================================================
 
 .rotate(@deg) {
 	-webkit-transform: rotate(@deg);    
@@ -176,11 +191,11 @@
 	    transform: rotate(@deg);
 }
 
-/* =============================================================
-*     
-*  Transform Mixin
-*	
-*============================================================= */
+// =============================================================
+//     
+//  Transform Mixin
+//	
+// ============================================================= 
 
 .transform(@skew) {
 	-webkit-transform: skew(@skew);
@@ -190,57 +205,18 @@
 	transform: skew(@skew);
 }
 
-/* =============================================================
-*     
-*  Gradient Mixin
-*	
-*============================================================= */
+// =============================================================
+//     
+//  Gradient Mixin
+//	
+// =============================================================
 
 .gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
 	  background: @color;
-	  background: -webkit-gradient(linear,
-	                               left bottom,
-	                               left top,
-	                               color-stop(0, @start),
-	                               color-stop(1, @stop));
-	  background: -ms-linear-gradient(bottom,
-	                                  @start,
-	                                  @stop);
-	  background: -moz-linear-gradient(center bottom,
-	                                   @start 0%,
-	                                   @stop 100%);
-	  background: -o-linear-gradient(@stop,
-	                                 @start);
+	  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @stop));
+	  background: -ms-linear-gradient(bottom, @start, @stop);
+	  background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
+	  background: -o-linear-gradient(@stop, @start);
 	  background-image: linear-gradient(top, @start, @stop);
-	  
 	  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
-}
-
-
-/* =============================================================
-*     
-*  A button builder
-*  Create different buttons with color,
-*  background color, and border color.
-*	
-*============================================================= */
-
-.button-version (@color; @background; @border) {
-	color: @color;
-	background-color: @background;
-	border-color: @border;
-	.box-shadow(inset 0px 1px 0 rgba(255,255,255,.5));
-	
-	&:hover {
-		background-color: darken(@background, 10%);
-        border-color: darken(@border, 10%);
-	}
-	&:active,
-	&.active {
-		color: @color;
-		background-color: darken(@background, 12.5%);
-        border-color: darken(@border, 12.5%);
-        .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
-        outline: 0;
-	}
 }

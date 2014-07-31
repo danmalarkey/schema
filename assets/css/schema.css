@@ -26,138 +26,15 @@
  *
  *  Design + built by @dan_malarkey.
  */
-body {
-  background: #ffffff;
-  background-color: #ffffff;
-  font: 16px/23px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-size: 16px;
-  line-height: 1.9;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  /* Fix for webkit rendering */
-  -webkit-text-size-adjust: 100%;
-}
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  line-height: 0;
-  content: "";
-}
-.clearfix:after {
-  clear: both;
-}
+/*
 .input-block-level {
   display: block;
   width: 100%;
   min-height: 30px;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-  display: block;
-  margin: 0;
-}
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-/* =============================================================
-*     
-*  Floats + Text Justification
-*	
-*============================================================= */
-.left-float {
-  float: left;
-}
-.right-float {
-  float: right;
-}
-.center-float {
-  margin: 0 auto;
-}
-.no-float {
-  float: none;
-}
-.border-bottom {
-  border-bottom: 1px solid #ecf0f1;
-  padding-bottom: .5em;
-  margin-bottom: 1em;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
-}
-.justified {
-  text-align: justify;
-}
-.neg-1px {
-  letter-spacing: -1px;
-}
-/* =============================================================
-*     
-*  Typeface Variables
-*	
-*============================================================= */
-/* 24px */
-/* 20px */
-/* 14px */
-/* 12px */
-/* =============================================================
-*     
-*  REM to Pixel Mixin.
-*  This mixin gives a REM value
-*  and provides a pixel fallback.
-*	
-*============================================================= */
-/* =============================================================
-*     
-*  Older Colors
-*	
-*============================================================= */
-/* =============================================================
-*     
-*  Newer Colors
-*	
-*============================================================= */
-/* =============================================================
-*     
-*  Media Query Breakpoints
-*	
-*============================================================= */
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+*/
 @media screen and (min-width: 1200px) {
   .desktop-hidden {
     visibility: hidden;
@@ -192,76 +69,6 @@ html {
     visibility: visible;
   }
 }
-/* =============================================================
-*     
-*  Button of all types.
-*	
-*============================================================= */
-/* =============================================================
-*     
-*  Horizontal Rule Mixins
-*	
-*============================================================= */
-.hr_thin {
-  border: 1px solid #ecf0f1;
-}
-.hr_medium {
-  border: 3px solid #ecf0f1;
-}
-.hr_thick {
-  border: 5px solid #ecf0f1;
-}
-.hr_thin_w {
-  border: 1px solid #ffffff;
-}
-.hr_medium_w {
-  border: 3px solid #ffffff;
-}
-.hr_thick_w {
-  border: 5px solid #ffffff;
-}
-/* =============================================================
-*     
-*  Border-radius Mixin
-*	
-*============================================================= */
-/* =============================================================
-*     
-*  Box-shadow mixins with multiple values.
-*	
-*============================================================= */
-/* =============================================================
-*     
-*  Opacity Mixin
-*	
-*============================================================= */
-/* =============================================================
-*     
-*  Transition Mixin
-*	
-*============================================================= */
-/* =============================================================
-*     
-*  Rotate Mixin
-*	
-*============================================================= */
-/* =============================================================
-*     
-*  Transform Mixin
-*	
-*============================================================= */
-/* =============================================================
-*     
-*  Gradient Mixin
-*	
-*============================================================= */
-/* =============================================================
-*     
-*  A button builder
-*  Create different buttons with color,
-*  background color, and border color.
-*	
-*============================================================= */
 /* =============================================================
 *     
 *  The Grid System
@@ -1016,20 +823,15 @@ html {
 .container-fluid:after {
   clear: both;
 }
-/***************************************************************** 
-*
-*  H1 - H6 tags, including links
-*
-*****************************************************************/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #667273;
-  font-family: 'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin-bottom: 0.500rem;
+  color: inherit;
+  font-family: inherit;
+  margin: 1.4rem 0;
   text-rendering: optimizelegibility;
 }
 h1 a,
@@ -1043,19 +845,13 @@ h6 a {
 }
 h1.title,
 h3.title {
-  font-family: 'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #f46801;
-  border-bottom: 1px solid #ecf0f1;
-  padding-bottom: .5em;
-  margin-bottom: 1em;
+  font-family: inherit;
+  color: inherit;
 }
 h1.heading,
 h3.heading {
-  font-family: 'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #95a5a6;
-  border-bottom: 1px solid #ecf0f1;
-  padding-bottom: .5em;
-  margin-bottom: 1em;
+  font-family: inherit;
+  color: inherit;
 }
 h1 {
   font-size: 2.25rem;
@@ -1088,7 +884,7 @@ h6 {
   line-height: 21px;
 }
 .subheader {
-  color: #667273;
+  color: inherit;
   text-transform: uppercase;
 }
 /***************************************************************** 
@@ -1098,10 +894,17 @@ h6 {
 *****************************************************************/
 blockquote {
   font: 14px/22px normal helvetica, sans-serif;
+  font-family: Helvetica Neue, 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-size: 16px;
+  margin-top: 0.625rem;
   margin-top: 10px;
+  margin-bottom: 0.625rem;
   margin-bottom: 10px;
+  margin-left: 3.125rem;
   margin-left: 50px;
-  padding-left: 15px;
+  padding-left: 1rem;
+  padding-left: 16px;
   border-left: 5px solid #f46801;
 }
 blockquote cite {
@@ -1114,25 +917,16 @@ blockquote cite {
 *****************************************************************/
 p {
   margin: 0 0 1em;
-  color: #7f8c8d;
-  font-family: 'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #555555;
+  font-family: Helvetica Neue, 'HelveticaNeue', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-size: 16px;
-  /* 14px */
-  line-height: 1.7;
+  line-height: 1.3125;
 }
 p.lead {
   font-size: 1.3125rem;
   font-size: 21px;
-  line-height: 1.7;
   font-weight: bold;
-}
-.hide-text {
-  font: 0/0;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
 }
 /* =============================================================
      
@@ -1141,13 +935,17 @@ Here you'll find small, medium, large, and full size buttons.
 ============================================================= */
 /* Small buttons  */
 .btn.btn-small {
+  padding: 0.625rem;
   padding: 10px;
   font-size: 0.75rem;
   font-size: 12px;
 }
 /* XL buttons  */
-.btn.btn-xl {
-  padding: 25px 40px;
+.btn.btn-large {
+  padding: 0.75rem 1.125rem;
+  font-size: 1.25rem;
+  line-height: 2.0671875rem;
+  border-radius: 6px;
 }
 /* Full buttons */
 .btn-full {
@@ -1160,45 +958,40 @@ Here you'll find small, medium, large, and full size buttons.
   padding: 15px 45px 15px 15px;
 }
 .btn {
-  border: 1px solid transparent;
-  color: #ffffff;
-  padding: 1em;
-  display: inline-block;
-  float: left;
-  font-family: 'armata';
-  letter-spacing: 1px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+  padding: 0.5rem 0.875rem;
   font-size: 1rem;
-  font-size: 16px;
-  font-family: 'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  line-height: 2.0671875rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: #777777;
+  border: 1px solid #cccccc;
+  display: inline-block;
+  font-family: Helvetica Neue, 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
   outline: 0;
   cursor: pointer;
+  text-decoration: none;
   -webkit-transition: background-color 250ms ease-out;
   -moz-transition: background-color 250ms ease-out;
   transition: background-color 250ms ease-out;
 }
 .btn-default {
-  color: #8c8c8c;
-  background-color: #f2f2f2;
-  border-color: #e6e6e6;
+  color: #777777;
+  background-color: #ffffff;
+  border-color: #cccccc;
   -webkit-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
 }
 .btn-default:hover {
-  background-color: #d9d9d9;
-  border-color: #cccccc;
+  background-color: #e6e6e6;
+  border-color: #b3b3b3;
 }
 .btn-default:active,
 .btn-default.active {
-  color: #8c8c8c;
-  background-color: #d2d2d2;
-  border-color: #c6c6c6;
+  color: #777777;
+  background-color: #dfdfdf;
+  border-color: #acacac;
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
@@ -1206,21 +999,21 @@ Here you'll find small, medium, large, and full size buttons.
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #3498db;
-  border-color: #217dbb;
+  background-color: #f46801;
+  border-color: #db5d01;
   -webkit-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
 }
 .btn-primary:hover {
-  background-color: #217dbb;
-  border-color: #196090;
+  background-color: #c15201;
+  border-color: #a84801;
 }
 .btn-primary:active,
 .btn-primary.active {
   color: #ffffff;
-  background-color: #1f76b0;
-  border-color: #185985;
+  background-color: #b54d01;
+  border-color: #9b4201;
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
@@ -1250,21 +1043,21 @@ Here you'll find small, medium, large, and full size buttons.
 }
 .btn-info {
   color: #ffffff;
-  background-color: #1abc9c;
-  border-color: #17a689;
+  background-color: #3498db;
+  border-color: #258cd1;
   -webkit-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
 }
 .btn-info:hover {
-  background-color: #148f77;
-  border-color: #117964;
+  background-color: #217dbb;
+  border-color: #1d6fa5;
 }
 .btn-info:active,
 .btn-info.active {
   color: #ffffff;
-  background-color: #12846e;
-  border-color: #0f6e5b;
+  background-color: #1f76b0;
+  border-color: #1b679a;
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
@@ -1343,22 +1136,21 @@ input[type="color"],
 .uneditable-input {
   padding: 0.625em;
   width: auto;
+  margin-bottom: 0.625rem;
   margin-bottom: 10px;
-  font-size: 0.875rem;
-  font-size: 14px;
-  line-height: 1.7;
-  color: #95a5a6;
-  width: 13.750em;
+  font-size: 1rem;
+  font-size: 16px;
+  line-height: 1.70625;
+  color: #777777;
   vertical-align: middle;
-  font-family: 'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, 'HelveticaNeue', Helvetica, Arial, sans-serif;
 }
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #bdc3c7;
-  font-size: 0.875rem;
-  font-size: 14px;
+  color: #cccccc;
+  font-size: inherit;
   padding-top: 2px;
-  font-family: 'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, 'HelveticaNeue', Helvetica, Arial, sans-serif;
 }
 textarea {
   height: auto;
@@ -1380,7 +1172,7 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   background-color: #ffffff;
-  border: 1px solid #bdc3c7;
+  border: 1px solid #cccccc;
   -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
   -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
   -o-transition: border linear 0.2s, box-shadow linear 0.2s;
@@ -1406,10 +1198,10 @@ input[type="color"]:focus,
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
-  color: #7f8c8d;
-  -webkit-box-shadow: 0 0 8px rgba(244, 104, 1, 0.6);
-  -moz-box-shadow: 0 0 8px rgba(244, 104, 1, 0.6);
-  box-shadow: 0 0 8px rgba(244, 104, 1, 0.6);
+  color: inherit;
+  -webkit-box-shadow: 0 0 8px rgba(244, 104, 1, 0.06);
+  -moz-box-shadow: 0 0 8px rgba(244, 104, 1, 0.06);
+  box-shadow: 0 0 8px rgba(244, 104, 1, 0.06);
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -1426,15 +1218,13 @@ input[type="checkbox"] {
 }
 .form-group {
   float: left;
-  color: #7f8c8d;
+  color: inherit;
   margin-bottom: 1em;
   margin-right: 5px;
 }
 label {
-  padding-top: 6px;
-  margin-right: 0.625em;
-  margin-bottom: 18px;
-  font-family: "armata";
+  font-weight: 700;
+  font-family: inherit;
   display: block;
 }
 /* =============================================================
@@ -1464,10 +1254,10 @@ EasyDropdown Default Theme.
 .dropdown {
   position: relative;
   width: 160px;
-  border: 1px solid #bdc3c7;
+  border: 1px solid #cccccc;
   cursor: pointer;
   background: #ffffff;
-  color: #7f8c8d;
+  color: #777777;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -1494,12 +1284,12 @@ EasyDropdown Default Theme.
   top: 50%;
   margin-top: -3px;
   border: 6px solid transparent;
-  border-top: 6px solid #bdc3c7;
+  border-top: 6px solid #cccccc;
 }
 .dropdown.open .carat {
   margin-top: -10px;
   border-top: 6px solid transparent;
-  border-bottom: 6px solid #bdc3c7;
+  border-bottom: 6px solid #cccccc;
 }
 /* OLD SELECT (HIDDEN) */
 .dropdown .old {
@@ -1597,7 +1387,7 @@ EasyDropdown Default Theme.
 .dropdown li {
   list-style: none;
   padding: 8px 12px;
-  color: #7f8c8d;
+  color: #777777;
 }
 /* .focus class is also added on hover */
 /* Change the background color to whatever you want to match your styles */
@@ -1609,4 +1399,257 @@ EasyDropdown Default Theme.
 }
 .dropdown li.active {
   font-weight: 700;
+}
+body {
+  background-color: #ffffff;
+  color: #555555;
+  font-family: Helvetica Neue, 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-size: 16px;
+  line-height: 1.3125;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
+* {
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.alert {
+  color: #25a25a;
+  border: 1px solid #2ecc71;
+  display: inline-block;
+  padding: 1rem .875em;
+  width: 80%;
+  background-color: #ecfbf2;
+  border-radius: 6px;
+}
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+.hide-text {
+  font: 0/0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.left-float {
+  float: left;
+}
+.right-float {
+  float: right;
+}
+.center-float {
+  margin: 0 auto;
+}
+.no-float {
+  float: none;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.justified {
+  text-align: justify;
 }

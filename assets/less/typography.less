@@ -1,7 +1,7 @@
 h1, h2, h3, h4, h5, h6 { 
-	color: darken(@asbestos,10%);  
-	font-family: @glegoo; 
-	margin-bottom: 0.500rem; 
+	color: inherit;  
+	font-family: inherit; 
+	margin: 1.4rem 0; 
 	text-rendering: optimizelegibility; 
 }
 	
@@ -12,15 +12,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 	
 h1.title, h3.title{ 
-	font-family: @oswald; 
-	color: @orange; 
-	.border-bottom;  
+	font-family: inherit; 
+	color: inherit;   
 }
 
 h1.heading, h3.heading { 
-	font-family: @oswald; 
-	color: @concrete; 
-	.border-bottom;  
+	font-family: inherit; 
+	color: inherit;   
 }
 	
 h1 { 
@@ -54,11 +52,9 @@ h6 {
 }
 
 .subheader { 
-	color: darken(@asbestos,10%); 
+	color: inherit; 
 	text-transform: uppercase;  
 }
-
-
 
 /***************************************************************** 
 *
@@ -68,14 +64,18 @@ h6 {
 
 blockquote {
 	font: 14px/22px normal helvetica, sans-serif;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 50px;
-	padding-left: 15px;
-	border-left: 5px solid @orange; } 
+	font-family: @primary-font;
+	.rem-px(font-size, 16);
+	.rem-px(margin-top, 10);
+	.rem-px(margin-bottom, 10);
+  .rem-px(margin-left, 50);
+  .rem-px(padding-left, 16);
+	border-left: 5px solid @primary-color; 
+} 
 	
 blockquote cite {
-	font-weight: bold; }
+	font-weight: bold; 
+}
 
 /***************************************************************** 
 *
@@ -85,19 +85,14 @@ blockquote cite {
 		
 p { 
 	margin: 0 0 1em; 
-	color: @asbestos; 
-	font-family: @armata; 
-	.rem-px(font-size, 16); /* 14px */
-	line-height: 1.7; }
+	color: @text-color; 
+	font-family: @primary-font; 
+	.rem-px(font-size, 16);
+	line-height: @base-line-height;
+}
 
 p.lead {  
-	.rem-px(font-size, 21);
-	line-height: 1.7; 
-	font-weight: bold; }
+	.rem-px(font-size, 21); 
+	font-weight: bold; 
+}
 
-.hide-text {
-  font: 0/0;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0; }

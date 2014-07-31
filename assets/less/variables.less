@@ -1,17 +1,16 @@
  
 //
-//  Variables throughout Schema
+//  === Variables
 //  
 //  =============================================================
 
 
 
-//
-//  Variable === Colors
-// 
-//  /////////////////////////////////////////////////////////////
+// =============================================================
+//  Colors
+//	
+// ============================================================= 
 
-//
 // Black + Grey's
 @base-color: 								            #000;
 @base-color-222:            	          lighten(@base-color, 13.5%); 	// #222
@@ -36,10 +35,11 @@
 @warning-color: 							          #f39c12;
 @danger-color: 								          #e74c3c;
  
-//
+// =============================================================
+//     
 //  Most Global Variables
-// 
-//  /////////////////////////////////////////////////////////////
+//	
+// ============================================================= 
 
 // Base background-color
 @base-bg:                               @base-white;  // white - #fff
@@ -53,13 +53,14 @@
 @text-color:                            @base-color-555; // #555
 
 // Link color 
-@link-color: 								           @primary-color;
+@link-color: 								            @primary-color;
 @link-color-hover:                      darken(@primary-color, 5%); // #db5d01
 
-//
-//  Variable === Typography
-// 
-//  /////////////////////////////////////////////////////////////
+// =============================================================
+//     
+//  Typography
+//	
+// ============================================================= 
 
 
 @primary-font:                          Helvetica Neue, 'HelveticaNeue', Helvetica, Arial, sans-serif;
@@ -81,13 +82,14 @@
 //      }   
 @rem-font-size: 							          16;
 
-// This variable is used for calculating base-font-size xl, large, small, xs //
+// This variable is used for calculating 
+//base-font-size xl, large, small, xs 
 @baseline-size: 								        1rem; // 16px 
 					   
-@base-font-size-xl: 					          (@baseline-size * 1.50); /* 24px */  // 1.5rem
-@base-font-size-large:                  (@baseline-size * 1.25); /* 20px */  // 1.25rem
-@base-font-size-small:                  (@baseline-size * 0.875); /* 14px */  // 0.85rem
-@base-font-size-xs: 					          (@baseline-size * 0.75); /* 12px */  // 0.75rem
+@base-font-size-xl: 					          (@baseline-size * 1.50); // 24px // 1.5rem
+@base-font-size-large:                  (@baseline-size * 1.25); // 20px // 1.25rem
+@base-font-size-small:                  (@baseline-size * 0.875); // 14px // 0.85rem
+@base-font-size-xs: 					          (@baseline-size * 0.75); // 12px // 0.75rem
 
 @typeset-margin:                        1.4rem 0;
 
@@ -99,17 +101,24 @@
 @font-h6:                               @base-font-size-small; // 14px / 0.875rem
 
 @base-line-height:  					          1.3125; // 21/16
-@base-line-height-computed:             floor((@baseline-size * @base-line-height)); // ~21px
+@base-line-height-computed:             ((@baseline-size * @base-line-height) * 1.575);
                                         
 @heading-font-family:                   inherit;
+@font-family-weight:                    400;
 @heading-font-weight:                   500;
+@label-font-weight:                     700;
 @heading-line-height:                   (@base-line-height / 1.125); // 1.3125 / 1.125
 @heading-font-color:                    inherit;
                                         
-//                                      
+
+// =============================================================
+//     
 //  Components – padding, margins, line-heights, etc
-//
-//  //////////////////////////////////////////////////////////////////                                      
+//	
+// ============================================================= 
+
+@btn-font-size:                         @baseline-size;
+@btn-font-size-large:                   (@baseline-size * @base-font-size-large);                                     
                                         
 @base-padding-horizontal:               (@baseline-size / 2);  // 8px
 @base-padding-vertical:                 (@baseline-size * 0.875);  // 14px
@@ -123,17 +132,16 @@
 @btn-base-line-height:                  (@base-line-height * 1.5); // 1.96875
 @btn-small-base-line-height:            @base-line-height; // 1.3125
 
-// 
-//
-//  Buttons of all types
-// 
-//  /////////////////////////////////////////////////////////////
 
+// =============================================================
+//     
+//  Buttons – different
+//	
+// =============================================================
 
-@btn-font-weight: 						          normal;
+@btn-font-weight: 						          @font-family-weight;
                                                                                
-// Default //                           
-                                     
+// Default //                                                            
 @btn-default-color: 					          @base-color-777;
 @btn-default-bg: 							          @base-bg;
 @btn-default-border: 					          @base-color-ccc;                                      
@@ -164,27 +172,30 @@
 @btn-success-border: 					          darken(@success-color, 5%);
 
  
-//
-//  Border-radius — Normal, large, and small
-// 
-//  /////////////////////////////////////////////////////////////
+// =============================================================
+//     
+//  Border-radius – normal, large, and small
+//	
+// =============================================================
 
 @border-radius:                         6px;
 @border-radius-large:                   8px;
 @border-radius-small:                   4px;
 
-//
+// =============================================================
+//     
 //  Tables
-// 
-//  /////////////////////////////////////////////////////////////
+//	
+// =============================================================
 
 //  Table stuff will go here  //
 
  
-//
-//  Forms — Input fields and all
-// 
-//  /////////////////////////////////////////////////////////////
+// =============================================================
+//     
+//  Forms – Input fields and all
+//	
+// =============================================================
 
 @input-bg:                              @base-bg;  // All input fields will have a white background
 @input-bg-disabled:                     @disabled-color;  // When a field is disabled use this color  
@@ -196,10 +207,11 @@
 @input-border-focus:                    @primary-color;  // Border color on focus
 
 
-//
-//  Z-index component
-// 
-//  /////////////////////////////////////////////////////////////
+// =============================================================
+//     
+//  Z-index Component 
+//	
+// =============================================================
 
 @zindex-1000:                           1000;
 @zindex-1010:                           1010;
@@ -213,10 +225,11 @@
 @zindex-1090:                           1090;
 @zindex-2000:                           2000;
 
-//
+// =============================================================
+//     
 //  Media Query Breakpoints
-// 
-//  /////////////////////////////////////////////////////////////
+//	
+// =============================================================
 
 @bp-desktop: 		~"screen and (min-width: 1200px)";
 
@@ -264,10 +277,11 @@
 	}
 }
 
-//
-//  Alerts 
-// 
-//  /////////////////////////////////////////////////////////////
+// =============================================================
+//     
+//  Alert Badges
+//	
+// =============================================================
 
 // Success Alert
 @success-alert-text:                    darken(@success-color, 10%);

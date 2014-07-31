@@ -8,38 +8,39 @@ Here you'll find small, medium, large, and full size buttons.
 /* Small buttons  */
 
 .btn.btn-small { 
-	padding: 10px; 
-	.rem-px(font-size, 12); }
+	.rem-px(padding, 10); 
+	.rem-px(font-size, 12); 
+}
 
 /* XL buttons  */
 
-.btn.btn-xl { padding: 25px 40px; }
-
+.btn.btn-large { 
+  .button-size(@base-padding-large-horizontal, @base-padding-large-vertical, @btn-font-size-large, @base-line-height-computed, @border-radius) 
+}
 
 /* Full buttons */
-.btn-full { width: 100%; }
-
+.btn-full { 
+  width: 100%; 
+}
 
 /* Button Styles */
 .btn-label {
 	vertical-align: middle;
 	.left-float;
-	padding: 15px 45px 15px 15px; }
+	padding: 15px 45px 15px 15px; 
+}
 
 .btn {
+  .button-size(@base-padding-horizontal, @base-padding-vertical, @btn-font-size, @base-line-height-computed, @border-radius);
   border: 1px solid transparent;
-  color: @base-white;
-  padding: 1em;
+  color: @base-color-777;
+  border: 1px solid @base-color-ccc;
   display: inline-block;
-  .left-float;
-  font-family: 'armata';
-  letter-spacing: 1px;
-  .border-radius(4px);
-  .rem-px(font-size, 16);
-  font-family: @glegoo;
+  font-family: @primary-font;
   font-weight: @btn-font-weight;
   outline: 0;
   cursor: pointer;
+  text-decoration: none;
   .transition(background-color 250ms ease-out); 
 }
   		
