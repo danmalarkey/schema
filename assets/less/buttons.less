@@ -7,21 +7,12 @@ Here you'll find small, medium, large, and full size buttons.
 
 /* Small buttons  */
 
-.btn.btn-small { 
+/*
+.btn-sm { 
 	.rem-px(padding, 10); 
 	.rem-px(font-size, 12); 
 }
-
-/* XL buttons  */
-
-.btn.btn-large { 
-  .button-size(@base-padding-large-horizontal, @base-padding-large-vertical, @btn-font-size-large, @base-line-height-computed, @border-radius) 
-}
-
-/* Full buttons */
-.btn-full { 
-  width: 100%; 
-}
+*/
 
 /* Button Styles */
 .btn-label {
@@ -31,10 +22,10 @@ Here you'll find small, medium, large, and full size buttons.
 }
 
 .btn {
-  .button-size(@base-padding-horizontal, @base-padding-vertical, @btn-font-size, @base-line-height-computed, @border-radius);
+  .button-size(@base-padding-vertical, @base-padding-horizontal, @btn-font-size, @base-line-height, @border-radius);
   border: 1px solid transparent;
   color: @base-color-777;
-  border: 1px solid @base-color-ccc;
+/*   border: 1px solid @base-color-ccc; */
   display: inline-block;
   font-family: @primary-font;
   font-weight: @btn-font-weight;
@@ -43,27 +34,42 @@ Here you'll find small, medium, large, and full size buttons.
   text-decoration: none;
   .transition(background-color 250ms ease-out); 
 }
+
+// Button Block
+.btn--full { 
+  display: block;
+  width: 100%; 
+}
+
+// Large Button
+.btn--lg { 
+  .button-size(@base-padding-lg-vertical, @base-padding-lg-horizontal, @btn-font-size-lg, @line-height-lg, @border-radius) 
+}
+
+.btn--sm {
+  .button-size(@base-padding-sm-vertical, @base-padding-sm-horizontal, @btn-font-size-sm, @line-height-sm, @border-radius)
+}
   		
-.btn-default {
+.btn--default {
 	.button-version(@btn-default-color, @btn-default-bg, @btn-default-border);
 }
 
-.btn-primary {
+.btn--primary {
 	.button-version(@btn-primary-color, @btn-primary-bg, @btn-primary-border);
 }
 
-.btn-danger {
+.btn--danger {
 	.button-version(@btn-danger-color, @btn-danger-bg, @btn-danger-border);
 }
 
-.btn-info {
+.btn--info {
 	.button-version(@btn-info-color, @btn-info-bg, @btn-info-border);
 }
 
-.btn-warning {
+.btn--warning {
 	.button-version(@btn-warning-color, @btn-warning-bg, @btn-warning-border);
 }
 
-.btn-success {
+.btn--success {
 	.button-version(@btn-success-color, @btn-success-bg, @btn-success-border);
 }

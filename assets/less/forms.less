@@ -1,124 +1,232 @@
-/* =============================================================
-*     
-*  Form Controls
-*	
-*============================================================= */
+// =============================================================
+//     
+//  Form controls
+//	
+// ============================================================= 
+
+// 
+// Address Firefox 4+ setting `line-height` on `input` using `!important` in
+// the UA stylesheet.
+// 
+
+input {
+  line-height: normal;
+}
+
+// 
+// It's recommended that you don't attempt to style these elements.
+// Firefox's implementation doesn't respect box-sizing, padding, or width.
+// 
+// 1. Address box sizing set to `content-box` in IE 8/9/10.
+// 2. Remove excess padding in IE 8/9/10.
+// 
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+// 
+// Fix the cursor style for Chrome's increment/decrement buttons. For certain
+// `font-size` values of the `input`, it causes the cursor style of the
+// decrement button to change from `default` to `text`.
+// 
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+// 
+// 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+// 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+//    (include `-moz` to future-proof).
+// 
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  .box-sizing(border-box);
+}
+
+// 
+// Remove inner padding and search cancel button in Safari and Chrome on OS X.
+// Safari (but not Chrome) clips the cancel button when the search input has
+// padding (and `textfield` appearance).
+// 
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+// 
+// Define consistent border, margin, and padding.
+// 
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
 
 fieldset {
 	padding: 0;
 	margin: 0; 
-	border: 0; }
+	border: 0; 
+}
 
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  padding: 0.625em;
-  width: auto;
-  .rem-px(margin-bottom, 10);
-  .rem-px(font-size, 16);
-  line-height: (@base-line-height * 1.3);
-  color: @base-color-777;
-  vertical-align: middle; 
-  font-family: @primary-font 
-}	
-	
+// 
+// 1. Correct `color` not being inherited in IE 8/9/10/11.
+// 2. Remove padding so people aren't caught out if they zero out fieldsets.
+// 
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+label {
+  font-weight: @label-font-weight; 
+	font-family: inherit; 
+	display: block;
+	margin-bottom: @baseline-size / 2; 
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  .box-sizing(border-box);
+}
+
+// Styling the placeholder for inputs	
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
 	color: @base-color-ccc;
 	font-size: inherit;
-	padding-top: 2px; 
 	font-family: @primary-font; 
 }
 
 textarea {
   height: auto; 
-}
-
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  background-color: @base-white;
-  border: 1px solid @base-color-ccc;
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-          transition: border linear 0.2s, box-shadow linear 0.2s; }
-
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
-  border-color: @primary-color;
-	outline: 0;
- 	outline: thin dotted \9;
- 	/* IE6-9 */
- 	color: inherit;
- 	.box-shadow(0 0 8px rgba(244, 104, 1, .06));
+  resize: none;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
   margin-top: 1px \9;
   *margin-top: 0;
   line-height: normal; 
 }
 
-.form-group::before, .form-group::after {
-	clear: both; 
-	display: table;
-	content: "" 
-}
-	
+// Group that contains all form related classes
 .form-group {
-	.left-float; 
-	color: inherit; 
-	margin-bottom: 1em; 
-	margin-right: 5px;
+  display: inline-table;
+  vertical-align: middle;
+  position: relative;
+  .rem-px(margin-bottom, 16);
 }
+
+  .form-class::before, .form-class::after {
+  	clear: both; 
+  	display: table;
+  	content: "" 
+  }
+
+// Add this class to all input elements 
+// input, checkbox, textarea, etc
+.form-element {
+  background-color: @base-bg;
+  display: block;
+  width: 100%;
+  font-size: @baseline-size;
+  font-weight: @font-family-weight;
+  line-height: @base-line-height;
+  border-radius: @border-radius;
+  .left-float;
+  color: @base-color-777;
+  vertical-align: middle; 
+  font-family: @primary-font;
+  padding: @base-padding-vertical @base-padding-horizontal;
+  border: 1px solid @base-color-ccc;
+  outline: 0;
+  
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+//
+.form-element-lg > .form-element,
+.form-element-lg > .form-element-extra,
+.form-element-lg > .form-group-btn:first-child > .btn,
+.form-element-lg > .form-group-btn:last-child > .btn {
+  padding: @base-padding-lg-vertical @base-padding-lg-horizontal;
+  line-height: @line-height-lg;
+  font-size: @btn-font-size-lg;
+}
+
+// This is the design details on :focus
+.form-element:focus,
+input:focus {
+  outline: 0;
+ 	outline: thin dotted \9;
+ 	border-color: rgb(244, 104, 1);
+ 	/* IE6-9 */
+ 	color: inherit;
+ 	.box-shadow(0 0 8px rgba(244, 104, 1, .6));
+}
+
+.form-element-extra,
+.form-group-extra,
+.form-group-btn {
+  display: table-cell;
+}
+
+.form-element-extra {
+  background-color: @base-color-eee;
+  border: 1px solid @base-color-ccc;
+  padding: @base-padding-vertical @base-padding-horizontal;
+  vertical-align: middle; 
+  font-family: @primary-font;
+  .text-center;
+  vertical-align: middle;
+  z-index: @zindex-1000;
+  display: table-cell;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.form-element-extra:first-child {
+  border-top-left-radius: @border-radius;
+  border-bottom-left-radius: @border-radius;
+  border-right: 0;
+}
+
+  .form-element-extra:last-child {
+    border-left: 0;
+    border-top-right-radius: @border-radius;
+    border-bottom-right-radius: @border-radius;
+  }
+
+.form-group .form-element:last-child,
+.form-group-btn:last-child > .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -1px;
+}
+
+  .form-group .form-element:first-child,
+  .form-group-btn:first-child > .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: -1px;
+  }
+  
 	
-label {
-  font-weight: @label-font-weight; 
-	font-family: inherit; 
-	display: block; 
+.form-group-extra,
+.form-group-btn {
+  width: 1%;
+  vertical-align: middle;
 }
 	

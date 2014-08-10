@@ -22,3 +22,43 @@
 .text-right			               { text-align: right; }
 .text-center		               { text-align: center; }
 .justified 			               { text-align: justify; }
+
+
+
+@media @bp-desktop {
+	.desktop-hidden {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@media @bp-tablet {
+	.tablet-hidden {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@media @bp-mobile {
+	.mobile-hidden {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@media @bp-mobile {
+  .show-mobile {
+  	visibility: visible;
+  	display: block;
+  }
+}
+
+.show-mobile {
+	display: none;
+	visibility: hidden; 
+	
+	@media @bp-mobile {
+		display: block;
+		visibility: visible;
+	}
+}

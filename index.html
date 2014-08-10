@@ -10,8 +10,9 @@
         <meta name="author" content="Dan Malarkey | http://danmalarkey.com ©2014">
 
 		
-		<link rel="stylesheet" href="stylesheets/css/styleguide.css" type="text/css">
-		<link rel="stylesheet" href="stylesheets/css/schema_r.css" type="text/css">
+<!-- 		<link rel="stylesheet" href="assets/css/styleguide.css" type="text/css"> -->
+    <link rel="stylesheet" href="assets/css/schema.css" type="text/css">
+		<!-- <link rel="stylesheet" href="assets/css/schema_r.css" type="text/css"> -->
 
         
         <!-- Google Fonts -->
@@ -28,10 +29,12 @@
         <script src="stylesheets/js/jquery.easydropdown.js"></script>
         <script src="stylesheets/js/modernizr.custom.js"></script>
 		<title>SCHEMA UI Frontend Framework| A powerfully light, responsive, and lean front-end UI framework built with LESS. | CSS Framework | LESS Framework | Dan Malarkey</title>
+		<style>.container { margin: 4em auto; }</style>
     </head>
     
     <body>
-    <section class="nav">
+    <!--
+<section class="nav">
         <div class="container">
             <nav class="top-nav">
                 <ul>
@@ -52,11 +55,6 @@
                     </li>
                     <li><a href="#forms">Forms</a>
 
-                    <!--
-</li>
-                    <li><a href="#colors">Colors</a>
--->
-
                     </li>
                 </ul>
             </nav>
@@ -69,11 +67,8 @@
                  <h1>schema</h1>
                  
                  <hr class="hr_thick_w">
-
-<!--                  <h6>A front end reference document by <a href="http://twitter.com/dan_malarkey" target="_blank">Dan Malarkey</a> + <a href="https://twitter.com/codebeermusic" target="_blank">RJ Mcdermott</a>.</h6> -->
 				 
 				 <div class="container">
-				 	<!-- <div class="col12"> --> 
 					 	<div class="col6">
 						 	<h3>A powerfully light, responsive, and lean frontend UI framework. Built with <a href="http://lesscss.org" target="_blank">LESS.</a></h3>
 						 	<p>A quick and easy-to-implement framework for awesome developers who build interfaces for the web. Schema provides an all-inclusive collection of CSS to jump start the foundation of all your projects.</p>
@@ -209,7 +204,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Grid System -->
+
     <section id="typography" class="typography">
         <div class="container">
              <h1 class="title">Typography</h1>
@@ -380,7 +375,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Typography section -->
+
     <section id="buttons" class="buttons">
         <div class="container">
             	<h1 class="title">Buttons</h1>
@@ -524,7 +519,7 @@
 						</select>
         </div>
     </section>
-    <!-- End of button section -->
+
     <hr class="hr_thick" />
     <section id="forms" class="forms">
         <div class="container">
@@ -581,60 +576,7 @@
             </div>
         </div>
     </section>
-    <!-- End of button section -->
-    <!--
-<section id="colors" class="palette">
-        <div class="container">
-            	<h1 class="title">Colors</h1>
 
-            <div class="row">
-                <div class="col12">
-                     <h4>Some pre-determined colors. Make your own!</h4>
-
-                </div>
-            </div>
-        </div>
-        <div class="row-fluid palette-example">
-            <div class="example1">
-                <p>Orange</p>
-            </div>
-            <div class="example2">
-                <p>Clouds</p>
-            </div>
-            <div class="example3">
-                <p>Asbestos</p>
-            </div>
-            <div class="example4">
-                <p>Silver</p>
-            </div>
-            <div class="example5">
-                <p>Sunflower</p>
-            </div>
-            <div class="example6">
-                <p>Light Sunflower</p>
-            </div>
-            <div class="example7">
-                <p>Lizarin</p>
-            </div>
-            <div class="example8">
-                <p>Pomegranate</p>
-            </div>
-            <div class="example9">
-                <p>New Green</p>
-            </div>
-            <div class="example10">
-                <p>New Yellow</p>
-            </div>
-            <div class="example11">
-                <p>New Teal</p>
-            </div>
-            <div class="example12">
-                <p>Belizehole</p>
-            </div>
-        </div>
-    </section>
--->
-    <!-- Ending of color examples -->
     <footer class="credits">
         <div class="container">
             <div class="row">
@@ -691,6 +633,137 @@
             }
         });
     </script>
+-->
+    
+    <div class="container">
+      <div class="row-fluid">
+        <div class="buttons">
+          <button class="btn btn--sm btn--default col4">Small Button</button>
+          <button class="btn btn--info col4">Default Button</button>
+          <button class="btn btn--primary btn--lg col4">Large Button</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row-fluid">
+      <div class="container">
+        <div class="col3">
+          <div class="form-group">
+            <span class="form-element-extra">$</span>
+            <input class="form-element" placeholder="Enter Dollar Amount">
+          </div>
+        </div>
+        <div class="col3">
+          <div class="form-group">
+            <input class="form-element" placeholder="placeholder">
+            <span class="form-element-extra">@</span>
+          </div>
+        </div>
+        <div class="col3">
+          <div class="form-group">
+            <input class="form-element">
+              <span class="form-group-btn">
+                <button class="btn btn--primary">Send</button>
+              </span>
+          </div>
+        </div>
+        <div class="col3">
+          <div class="form-group">
+            <span class="form-group-btn">
+              <button class="btn btn--default">Send</button>
+            </span>
+            <input class="form-element">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <h1>Large Form Elements</h1>
+      <div class="row">
+        <div class="col3">
+          <div class="form-element-lg form-group">
+            <span class="form-element-extra">$</span>
+            <input class="form-element" placeholder="Enter Dollar Amount">
+          </div>
+        </div>
+        <div class="col3">
+          <div class="form-element-lg form-group">
+            <input class="form-element" placeholder="placeholder">
+              <span class="form-element-extra">
+                <input type="checkbox">
+              </span>
+          </div>
+        </div>
+        <div class="col3">
+          <div class="form-element-lg form-group">
+            <input class="form-element">
+              <span class="form-group-btn">
+                <button class="btn btn--primary">Send</button>
+              </span>
+          </div>
+        </div>
+        <div class="col3">
+          <div class="form-element-lg form-group">
+            <span class="form-group-btn">
+              <button class="btn btn--default">Send</button>
+            </span>
+            <input class="form-element">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="container">
+      <h1>Default Input Form Elements</h1>
+      <div class="row">
+        <div class="col3">
+          <label>What's your name?</label>
+          <input class="form-element">
+        </div>
+        <div class="col3">
+          <label>What's your email?</label>
+          <input class="form-element">
+        </div>
+        <div class="col3">
+          <label>What's your number?</label>
+          <input class="form-element">
+        </div>
+        <div class="col3">
+          <label>What's your address?</label>
+          <input class="form-element">
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row-fluid">
+        <div class="col4">
+          <h4>Design Thinking</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Mollitia, deleniti, quibusdam, tempore, sapiente nemo nostrum tempora 
+          excepturi quam itaque blanditiis aut fugiat ad eum aliquam optio temporibus dignissimos ipsam ut.</p>
+        </div>
+        <div class="col4">
+          <h4>Design Thinking</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Mollitia, deleniti, quibusdam, tempore, sapiente nemo nostrum tempora 
+          excepturi quam itaque blanditiis aut fugiat ad eum aliquam optio temporibus dignissimos ipsam ut.</p>
+        </div>
+        <div class="col4">
+          <h4>Design Thinking</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Mollitia, deleniti, quibusdam, tempore, sapiente nemo nostrum tempora 
+          excepturi quam itaque blanditiis aut fugiat ad eum aliquam optio temporibus dignissimos ipsam ut.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <textarea class="form-element"></textarea>
+    </div>
 </body>
 
 </html>
