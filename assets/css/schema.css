@@ -894,23 +894,17 @@ p.lead {
   font-size: 1.3125rem;
   font-weight: bold;
 }
-/* =============================================================
-     
-Here you'll find small, medium, large, and full size buttons.
-	
-============================================================= */
-/* Small buttons  */
-/*
-.btn-sm { 
-	.rem-px(padding, 10); 
-	.rem-px(font-size, 12); 
-}
-*/
 /* Button Styles */
 .btn-label {
   vertical-align: middle;
-  float: left;
-  padding: 15px 45px 15px 15px;
+  padding: .25rem .5rem;
+  background-color: #2ecc71;
+  color: #ffffff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
 }
 .btn {
   padding: 0.5rem 0.875rem;
@@ -919,7 +913,6 @@ Here you'll find small, medium, large, and full size buttons.
   border-radius: 6px;
   border: 1px solid transparent;
   color: #777777;
-  /*   border: 1px solid @base-color-ccc; */
   display: inline-block;
   font-family: Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -941,7 +934,7 @@ Here you'll find small, medium, large, and full size buttons.
   border-radius: 6px;
 }
 .btn--sm {
-  padding: 0.25rem 0.6rem;
+  padding: 0.6rem 0.6rem;
   font-size: 0.875rem;
   line-height: 0.6825;
   border-radius: 6px;
@@ -956,8 +949,7 @@ Here you'll find small, medium, large, and full size buttons.
   background-color: #f7f7f7;
   border-color: #c4c4c4;
 }
-.btn--default:active,
-.btn--default.active {
+.btn--default:active {
   color: #777777;
   background-color: #f1f1f1;
   border-color: #bebebe;
@@ -979,8 +971,7 @@ Here you'll find small, medium, large, and full size buttons.
   background-color: #e56201;
   border-color: #cb5701;
 }
-.btn--primary:active,
-.btn--primary.active {
+.btn--primary:active {
   color: #ffffff;
   background-color: #d85c01;
   border-color: #bf5101;
@@ -1002,8 +993,7 @@ Here you'll find small, medium, large, and full size buttons.
   background-color: #e53f2e;
   border-color: #df2e1b;
 }
-.btn--danger:active,
-.btn--danger.active {
+.btn--danger:active {
   color: #ffffff;
   background-color: #e43523;
   border-color: #d32b1a;
@@ -1025,8 +1015,7 @@ Here you'll find small, medium, large, and full size buttons.
   background-color: #2791d9;
   border-color: #2383c4;
 }
-.btn--info:active,
-.btn--info.active {
+.btn--info:active {
   color: #ffffff;
   background-color: #258ace;
   border-color: #217cb9;
@@ -1048,8 +1037,7 @@ Here you'll find small, medium, large, and full size buttons.
   background-color: #ea940c;
   border-color: #d2850b;
 }
-.btn--warning:active,
-.btn--warning.active {
+.btn--warning:active {
   color: #ffffff;
   background-color: #de8c0b;
   border-color: #c57d0a;
@@ -1071,8 +1059,7 @@ Here you'll find small, medium, large, and full size buttons.
   background-color: #2bc06a;
   border-color: #26ab5f;
 }
-.btn--success:active,
-.btn--success.active {
+.btn--success:active {
   color: #ffffff;
   background-color: #29b564;
   border-color: #24a059;
@@ -1114,11 +1101,6 @@ fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
-}
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
 }
 legend {
   border: 0;
@@ -1173,6 +1155,10 @@ input[type="checkbox"] {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.3125;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   border-radius: 6px;
   float: left;
   color: #777777;
@@ -1181,10 +1167,10 @@ input[type="checkbox"] {
   padding: 0.5rem 0.875rem;
   border: 1px solid #cccccc;
   outline: 0;
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-transition: border linear 0.25s, box-shadow linear 0.25s;
+  -moz-transition: border linear 0.25s, box-shadow linear 0.25s;
+  -o-transition: border linear 0.25s, box-shadow linear 0.25s;
+  transition: border linear 0.25s, box-shadow linear 0.25s;
 }
 .form-element-lg > .form-element,
 .form-element-lg > .form-element-extra,
@@ -1194,8 +1180,7 @@ input[type="checkbox"] {
   line-height: 1.70625;
   font-size: 1.25rem;
 }
-.form-element:focus,
-input:focus {
+.form-element:focus {
   outline: 0;
   outline: thin dotted \9;
   border-color: #f46801;
@@ -1222,12 +1207,16 @@ input:focus {
   white-space: nowrap;
   width: 1%;
 }
-.form-element-extra:first-child {
+.form-element-extra:first-child,
+.btn-group > .btn:first-child,
+.btn-group-lg > .btn:first-child {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   border-right: 0;
 }
-.form-element-extra:last-child {
+.form-element-extra:last-child,
+.btn-group > .btn:last-child,
+.btn-group-lg > .btn:last-child {
   border-left: 0;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1248,6 +1237,39 @@ input:focus {
 .form-group-btn {
   width: 1%;
   vertical-align: middle;
+}
+.btn-group,
+.btn-group-lg {
+  float: left;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.btn-group > .btn,
+.btn-group-lg > .btn {
+  float: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.btn-group > .btn + .btn,
+.btn-group-lg > .btn + .btn {
+  margin-left: -1px;
+}
+.btn-group > .btn:first-child {
+  margin-left: 0;
+}
+.btn-group > .btn:last-child {
+  margin-left: 0;
+}
+.btn-group > .active {
+  background-color: #3498db;
+  color: #ffffff;
+}
+.btn-group-lg > .btn {
+  padding: 0.75rem 1.125rem;
 }
 /* =============================================================
      

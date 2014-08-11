@@ -70,12 +70,6 @@ fieldset {
   padding: 0.35em 0.625em 0.75em;
 }
 
-fieldset {
-	padding: 0;
-	margin: 0; 
-	border: 0; 
-}
-
 // 
 // 1. Correct `color` not being inherited in IE 8/9/10/11.
 // 2. Remove padding so people aren't caught out if they zero out fieldsets.
@@ -141,7 +135,7 @@ input[type="checkbox"] {
   font-size: @baseline-size;
   font-weight: @font-family-weight;
   line-height: @base-line-height;
-  border-radius: @border-radius;
+  .border-radius(@border-radius);
   .left-float;
   color: @base-color-777;
   vertical-align: middle; 
@@ -149,14 +143,13 @@ input[type="checkbox"] {
   padding: @base-padding-vertical @base-padding-horizontal;
   border: 1px solid @base-color-ccc;
   outline: 0;
-  
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-          transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-transition: border linear 0.25s, box-shadow linear 0.25s;
+     -moz-transition: border linear 0.25s, box-shadow linear 0.25s;
+       -o-transition: border linear 0.25s, box-shadow linear 0.25s;
+          transition: border linear 0.25s, box-shadow linear 0.25s;
 }
 
-//
+//Form Element Lg - apply to the same class as form-group
 .form-element-lg > .form-element,
 .form-element-lg > .form-element-extra,
 .form-element-lg > .form-group-btn:first-child > .btn,
@@ -167,8 +160,7 @@ input[type="checkbox"] {
 }
 
 // This is the design details on :focus
-.form-element:focus,
-input:focus {
+.form-element:focus {
   outline: 0;
  	outline: thin dotted \9;
  	border-color: rgb(244, 104, 1);
@@ -183,6 +175,7 @@ input:focus {
   display: table-cell;
 }
 
+// This is the add-on for form-elements
 .form-element-extra {
   background-color: @base-color-eee;
   border: 1px solid @base-color-ccc;
@@ -197,13 +190,17 @@ input:focus {
   width: 1%;
 }
 
-.form-element-extra:first-child {
+.form-element-extra:first-child,
+.btn-group > .btn:first-child,
+.btn-group-lg > .btn:first-child {
   border-top-left-radius: @border-radius;
   border-bottom-left-radius: @border-radius;
   border-right: 0;
 }
 
-  .form-element-extra:last-child {
+  .form-element-extra:last-child,
+  .btn-group > .btn:last-child,
+  .btn-group-lg > .btn:last-child {
     border-left: 0;
     border-top-right-radius: @border-radius;
     border-bottom-right-radius: @border-radius;
@@ -222,11 +219,43 @@ input:focus {
     border-bottom-right-radius: 0;
     margin-right: -1px;
   }
-  
-	
+  	
 .form-group-extra,
 .form-group-btn {
   width: 1%;
   vertical-align: middle;
 }
-	
+
+.btn-group,
+.btn-group-lg {
+  float: left;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}	
+
+.btn-group > .btn,
+.btn-group-lg > .btn {
+  .left-float;
+  .border-radius(0);
+} 
+  .btn-group > .btn + .btn,
+  .btn-group-lg > .btn + .btn {
+    margin-left: -1px;
+  }
+  
+  .btn-group > .btn:first-child {
+    margin-left: 0;
+  }
+  
+  .btn-group > .btn:last-child {
+    margin-left: 0;
+  }
+    // The active state 
+    .btn-group > .active {
+      background-color: @info-color;
+      color: @base-white;
+    }
+.btn-group-lg > .btn {
+  padding: @base-padding-lg-vertical @base-padding-lg-horizontal;
+}
