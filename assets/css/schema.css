@@ -1207,6 +1207,18 @@ input[type="checkbox"] {
   white-space: nowrap;
   width: 1%;
 }
+.f-is-success {
+  border-color: #2ecc71;
+}
+.f-is-danger {
+  border-color: #e74c3c;
+}
+.f-is-warning {
+  border-color: #f39c12;
+}
+.f-is-info {
+  border-color: #3498db;
+}
 .form-element-extra:first-child,
 .btn-group > .btn:first-child,
 .btn-group-lg > .btn:first-child {
