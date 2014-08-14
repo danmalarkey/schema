@@ -23,15 +23,6 @@ a.btn--default {
   text-decoration: none;
 }
 
-/* Button Styles */
-.btn-label {
-	vertical-align: middle;
-	padding: .25rem .5rem; 
-	background-color: @success-color;
-	color: @base-white;
-	.border-radius(@border-radius);
-}
-
 .btn {
   .button-size(@base-padding-vertical, @base-padding-horizontal, @btn-font-size, @base-line-height, @border-radius);
   border: 1px solid transparent;
@@ -42,13 +33,27 @@ a.btn--default {
   outline: 0;
   cursor: pointer;
   text-decoration: none;
-  .transition(background-color 250ms ease-out); 
+  .transition(); 
+}
+
+.btn--link {
+  background: transparent;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 // Button Block
 .btn--full { 
   display: block;
   width: 100%; 
+}
+
+.btn-label {
+	vertical-align: middle;
+	padding: .25rem .5rem; 
+	background-color: @success-color;
+	color: @base-white;
+	.border-radius(@border-radius);
 }
 
 // Large Button
