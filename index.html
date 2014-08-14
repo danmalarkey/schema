@@ -16,16 +16,13 @@
 
         
         <!-- Google Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,900,300' rel='stylesheet' type='text/css'>
+
         
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
             <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="/assets/js/jquery-1.11.1.min.js"></script>
         <script src="stylesheets/js/jquery.easydropdown.js"></script>
         <script src="stylesheets/js/modernizr.custom.js"></script>
 		<title>SCHEMA UI Frontend Framework| A powerfully light, responsive, and lean front-end UI framework built with LESS. | CSS Framework | LESS Framework | Dan Malarkey</title>
@@ -636,11 +633,37 @@
 -->
     
     <div class="container">
+      <div class="alert a-is-success">
+        <strong>Much Success!</strong> 
+          You did it right! Congrats!<span class="close">&times;</span>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="alert a-is-danger"><strong>No Success!</strong> You did it wrong! Oh No!<span class="close">&times;</span></div>
+    </div>
+    
+    <div class="container">
+      <div class="alert a-is-info"><strong>Did you know!</strong> I forgot what I was saying!<span class="close">&times;</span></div>
+    </div>
+    
+    <div class="container">
+      <div class="alert a-is-warning"><strong>Be careful!</strong> This is just a warning.<span class="close">&times;</span></div>
+    </div>
+    
+    <div class="container">
       <div class="row-fluid">
         <div class="buttons">
           <button class="btn btn--sm btn--default">Small Button</button>
-          <button class="btn btn--info">Default Button</button>
-          <button class="btn btn--primary btn--lg">Large Button</button>
+          <button class="btn btn--default">Default Button</button>
+          <button class="btn btn--default btn--lg">Large Button</button>
+            <br><br>
+          <a href="" class="btn btn--default">View The Solutions</a>
+          <a href="" class="btn btn--warning">View The Solutions</a>
+          <a href="" class="btn btn--info">View The Solutions</a>
+          <a href="" class="btn btn--danger">View The Solutions</a>
+          <a href="" class="btn btn--success">View The Solutions</a>
+          <a href="" class="btn btn--primary">View The Solutions</a>
         </div>
       </div>
     </div>
@@ -663,7 +686,7 @@
           <div class="form-group">
             <input class="form-element">
               <span class="form-group-btn">
-                <button class="btn btn--primary">Send</button>
+                <button class="btn btn--success">Send</button>
               </span>
           </div>
         </div>
@@ -733,7 +756,7 @@
         <div class="btn-group">
           <button class="btn btn--default">A Long Button Name</button>
           <button class="btn btn--default">A Long Button Name</button>
-          <button class="btn btn--danger">A Long Button Name</button>
+          <button class="btn btn--info">A Long Button Name</button>
         </div>
       </div>
     </div>
@@ -789,7 +812,7 @@
         </div>
         <div class="col4">
           <h4>Design Thinking</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          <p>Lorem ipsum dolor sit amet, <a href="">consectetur adipisicing</a> elit. 
           Mollitia, deleniti, quibusdam, tempore, sapiente nemo nostrum tempora 
           excepturi quam itaque blanditiis aut fugiat ad eum aliquam optio temporibus dignissimos ipsam ut.</p>
         </div>
@@ -806,6 +829,7 @@
       <textarea class="form-element"></textarea>
       <span class="btn-label">Label</span>
     </div>
+
 </body>
 
 </html>

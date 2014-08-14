@@ -17,29 +17,20 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-//  ============================================================
-//
-//  Box-sizing mixin
-//
-//  ============================================================
-
-* {
-  .box-sizing(border-box);
-}
-
+*,
 *:before,
 *:after {
   .box-sizing(border-box);
 }
 
+a {
+  color: @link-color;
+  text-decoration: none;
+  .transition();
+}
 
-// Alert frame
-.alert {
-  color: darken(@success-color, 10%);
-  border: 1px solid @success-color;
-  display: inline-block;
-  padding: 1rem .875em;
-  width: 80%;
-  background-color: lighten(@success-color, 46.5%);
-  border-radius: 6px;
+a:hover {
+  color: @link-color-hover;
+  text-decoration: underline;
+  .transition();
 }

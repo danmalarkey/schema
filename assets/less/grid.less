@@ -354,9 +354,8 @@
   width: 100%;
   min-height: 30px;
   margin-left: 2.12%;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; }
+  .box-sizing(border-box); 
+  }
 
 .row-fluid [class^="col"]:first-child { margin-left: 0; }
 .row-fluid .controls-row [class^="col"] + [class^="col"] { margin-left: 2.12%; }
@@ -401,8 +400,8 @@
 
 @media @bp-mobile {
 .row-fluid {
-    width: 100%;
-  }
+  width: 100%;
+}
   
   [class^="col"],
   .uneditable-input[class^="col"],
@@ -411,9 +410,7 @@
     float: none;
     width: 100%;
     margin-left: 0;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    .box-sizing(border-box);
   }
 }
 

@@ -26,6 +26,7 @@
 	background-color: @background;
 	border-color: @border;
 	/* .box-shadow(inset 0px 1px 0 rgba(255,255,255,.5)); */
+	.transition();
 	
 	&:hover {
 		background-color: darken(@background, 3%);
@@ -36,7 +37,7 @@
 		background-color: darken(@background, 5.5%);
     border-color: darken(@border, 5.5%);
     .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
-    .transition(all .25s ease-in-out);
+    .transition(all .25s ease);
     outline: 0;
 	}
 }
@@ -54,8 +55,8 @@
 //	
 // =============================================================
 
-.hr_rule (@size, @color) {
-  border-top: @size solid @color;
+.hr_rule (@size @type @color) {
+  border-top: @size @type @color;
   border-bottom-color: transparent;
   border-right-color: transparent;
   border-left-color: transparent; 
@@ -67,10 +68,40 @@
 //	
 // =============================================================
 
-.border-style(@border-width, @border-style, @border-color) {
+.border-style-bottom(@border-width, @border-style, @border-color) {
   border-width: @border-width;
   border-style: @border-style;
   border-color: @border-color;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.border-style-left(@border-width, @border-style, @border-color) {
+  border-width: @border-width;
+  border-style: @border-style;
+  border-color: @border-color;
+  border-bottom: transparent;
+  border-top: transparent;
+  border-right: transparent;
+}
+
+.border-style-right(@border-width, @border-style, @border-color) {
+  border-width: @border-width;
+  border-style: @border-style;
+  border-color: @border-color;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-top: transparent;
+}
+
+.border-style-top(@border-width, @border-style, @border-color) {
+  border-width: @border-width;
+  border-style: @border-style;
+  border-color: @border-color;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: transparent;
 }
 
 // =============================================================
@@ -171,10 +202,10 @@
 //	
 // =============================================================
 
-.transition(@transition) {
-	-webkit-transition: @transition;
-	-moz-transition: @transition;
-	transition: @transition;
+.transition(@type: all; @speed: .25s; @ease: ease;) {
+	-webkit-transition: @type @speed @ease;
+	-moz-transition: @type @speed @ease;
+	transition: @type @speed @ease;
 }
 
 // =============================================================

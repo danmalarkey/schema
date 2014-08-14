@@ -1,0 +1,50 @@
+//  ============================================================
+//
+//  Alert Frame
+//
+//  ============================================================
+.alert {
+  color: inherit;
+  border: 1px solid transparent;
+  display: block;
+  padding: 1rem;
+  background-color: lighten(@success-color, 46.5%);
+  .border-radius(@border-radius);
+}
+
+.alert a,
+.alert a:hover {
+  color: inherit;
+  font-weight: bold;
+}
+
+.a-is-success {
+  color: darken(@success-color, 10%);
+  border-color: @success-color;
+  background-color: lighten(@success-color, 46.5%);
+}
+
+.a-is-danger {
+  color: darken(@danger-color, 10%);
+  border-color: @danger-color;
+  background-color: lighten(@danger-color, 40.5%);
+}
+
+.a-is-info {
+  color: darken(@info-color, 10%);
+  border-color: @info-color;
+  background-color: lighten(@info-color, 44.5%);
+}
+
+.a-is-warning {
+  color: darken(@warning-color, 10%);
+  border-color: @warning-color;
+  background-color: lighten(@warning-color, 44.5%);
+}
+
+.close {
+  .right-float;
+  color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
