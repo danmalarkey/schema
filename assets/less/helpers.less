@@ -87,3 +87,35 @@
 		visibility: visible;
 	}
 }
+
+.hide {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  .transition(opacity .45s linear);
+}
+
+.fade {
+  opacity: 0;
+  .transition(opacity .45s linear);
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.has-success {
+  color: @success-color;
+}
+
+.has-info {
+  color: @info-color;
+}
+
+.has-warning {
+  color: @warning-color;
+}
+
+.has-danger {
+  color: @danger-color;
+}

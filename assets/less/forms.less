@@ -251,10 +251,38 @@ input[type="checkbox"] {
     margin-left: 0;
   }
     // The active state 
-    .btn-group > .active {
+    .btn-group > .btn.active {
       background-color: @info-color;
       color: @base-white;
     }
 .btn-group-lg > .btn {
   padding: @base-padding-lg-vertical @base-padding-lg-horizontal;
+}
+
+
+
+// has icon
+.has-icon {
+  display: block;
+  position: relative;
+}
+
+/*
+.has-icon > .fa.fa-check {
+  position: absolute;
+  right: 0;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-top: .80rem;
+}
+*/
+
+.has-icon > .fa {
+  position: relative;
+  right: 0;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-top: .775rem;
+  float: right;
+  top: -2.40rem;
 }

@@ -26,7 +26,7 @@
 	background-color: @background;
 	border-color: @border;
 	/* .box-shadow(inset 0px 1px 0 rgba(255,255,255,.5)); */
-	.transition();
+	.transition(all .25s ease);
 	
 	&:hover {
 		background-color: darken(@background, 3%);
@@ -202,10 +202,10 @@
 //	
 // =============================================================
 
-.transition(@type: all; @speed: .25s; @ease: ease;) {
-	-webkit-transition: @type @speed @ease;
-	-moz-transition: @type @speed @ease;
-	transition: @type @speed @ease;
+.transition(@transition) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	transition: @transition;
 }
 
 // =============================================================

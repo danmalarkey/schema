@@ -1,660 +1,57 @@
 <!DOCTYPE html>
 <html>
     
-    <head>
-        <meta charset="utf-8">
-        
-        <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=1"/>
-        <meta name="description" content="Dan Malarkey, Dan, Malarkey, HTML, HTML5, CSS, CSS3, Open Source, Open Source Framework, Front End Framework, Boilerplate">
-        <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, front-end, frontend, web development, schema, schema ui, schema ui framework, css framework, css frameworks"
-        <meta name="author" content="Dan Malarkey | http://danmalarkey.com ©2014">
+<head>
+  <meta charset="utf-8">      
+  <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=1"/>
+  <meta name="description" content="Dan Malarkey, Dan, Malarkey, HTML, HTML5, CSS, CSS3, Open Source, Open Source Framework, Front End Framework, Boilerplate">
+  <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, front-end, frontend, web development, schema, schema ui, schema ui framework, css framework, css frameworks"
+  <meta name="author" content="Dan Malarkey | http://danmalarkey.com ©2014">
 
-		
-<!-- 		<link rel="stylesheet" href="assets/css/styleguide.css" type="text/css"> -->
-    <link rel="stylesheet" href="assets/css/schema.css" type="text/css">
-		<!-- <link rel="stylesheet" href="assets/css/schema_r.css" type="text/css"> -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/schema.css" type="text/css" />
 
         
-        <!-- Google Fonts -->
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-        
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <script src="/assets/js/jquery-1.11.1.min.js"></script>
-        <script src="stylesheets/js/jquery.easydropdown.js"></script>
-        <script src="stylesheets/js/modernizr.custom.js"></script>
-		<title>SCHEMA UI Frontend Framework| A powerfully light, responsive, and lean front-end UI framework built with LESS. | CSS Framework | LESS Framework | Dan Malarkey</title>
-		<style>.container { margin: 4em auto; }</style>
-    </head>
-    
-    <body>
-    <!--
-<section class="nav">
-        <div class="container">
-            <nav class="top-nav">
-                <ul>
-                    <li id="logo"><a href="#top">Schema</a>
-
-                    </li>
-                    <li><a href="#grid">12 Column Grid</a>
-
-                    </li>
-                    <li><a href="#typography">Typography</a>
-
-                    </li>
-                    <li><a href="#buttons">Buttons</a>
-
-                    </li>
-                    <li><a href="#dropdowns">Dropdowns</a>
-
-                    </li>
-                    <li><a href="#forms">Forms</a>
-
-                    </li>
-                </ul>
-            </nav>
-            <a href="https://github.com/danmalarkey/schema/archive/master.zip" class="btn btn-small right-float round-corners">Download Schema</a>
-        </div>
-    </section>
-    <header id="top">
-        <section class="row-fluid">
-            <div class="container">
-                 <h1>schema</h1>
-                 
-                 <hr class="hr_thick_w">
-				 
-				 <div class="container">
-					 	<div class="col6">
-						 	<h3>A powerfully light, responsive, and lean frontend UI framework. Built with <a href="http://lesscss.org" target="_blank">LESS.</a></h3>
-						 	<p>A quick and easy-to-implement framework for awesome developers who build interfaces for the web. Schema provides an all-inclusive collection of CSS to jump start the foundation of all your projects.</p>
-					 	</div>
-				 </div>
-				 	<hr class="hr_thin_w">
-				 		<div class="container">
-				 			<ul class="schema-social-btns">
-				 				<li>
-				 					<iframe style="margin-right:20px;" src="http://ghbtns.com/github-btn.html?user=danmalarkey&type=follow&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
-  								</li>
-  								
-  								<li>
-  									<iframe src="http://ghbtns.com/github-btn.html?user=danmalarkey&repo=schema&type=watch&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-  								</li>
-  								<li style="position:relative;left:-10px">
-  									<iframe src="http://ghbtns.com/github-btn.html?user=danmalarkey&repo=schema&type=fork&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-  								</li>
-  								
-  								<li>
-  									<a href="https://twitter.com/share" class="twitter-share-button" data-via="schemaui">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  								</li>
-  								<li>
-	  								<a href="https://twitter.com/schemaui" class="twitter-follow-button" data-show-count="true">Follow @schemaui</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  								</li>
-				 			</ul>
-				 		</div>
-				 	</div>
-        </section>
-    </header>
-    <section id="grid" class="grid-system">
-        <div class="container">
-             <h1 class="title">12 Column Grid System</h1>
-
-            <div class="row">
-                <div class="col12">
-                     <h4>A responsive, proportional, and mobile-friendly 12-column grid system.</h4>
-
-                </div>
-            </div>
-            <div class="row grid-example">
-                <div class="col1">1</div>
-                <div class="col11">11</div>
-            </div>
-            <div class="row grid-example">
-                <div class="col2">2</div>
-                <div class="col10">10</div>
-            </div>
-            <div class="row grid-example">
-                <div class="col3">3</div>
-                <div class="col9">9</div>
-            </div>
-            <div class="row grid-example">
-                <div class="col4">4</div>
-                <div class="col8">8</div>
-            </div>
-            <div class="row grid-example">
-                <div class="col5">5</div>
-                <div class="col7">7</div>
-            </div>
-            <div class="row grid-example">
-                <div class="col6">6</div>
-                <div class="col6">6</div>
-            </div>
-            <div class="row grid-example">
-                <div class="col7">7</div>
-                <div class="col5">5</div>
-            </div>
-            <div class="row grid-example">
-                <div class="col8">8</div>
-                <div class="col4">4</div>
-            </div>
-            <div class="row grid-example">
-                <div class="col9">9</div>
-                <div class="col3">3</div>
-            </div>
-            <div class="row grid-example">
-                <div class="col10">10</div>
-                <div class="col2">2</div>
-            </div>
-            <div class="row grid-example">
-                <div class="col11">11</div>
-                <div class="col1">1</div>
-            </div>
-            <div class="row grid-example">
-                <div class="col12">12</div>
-            </div>
-             <h3 class="heading">1/12 Column</h3>
-
-            <div class="row grid-example">
-                <div class="col1">1</div>
-                <div class="col1">1</div>
-                <div class="col1">1</div>
-                <div class="col1">1</div>
-                <div class="col1">1</div>
-                <div class="col1">1</div>
-                <div class="col1">1</div>
-                <div class="col1">1</div>
-                <div class="col1">1</div>
-                <div class="col1">1</div>
-                <div class="col1">1</div>
-                <div class="col1">1</div>
-            </div>
-             <h3 class="heading">2/6 Column</h3>
-
-            <div class="row grid-example">
-                <div class="col2">2</div>
-                <div class="col2">2</div>
-                <div class="col2">2</div>
-                <div class="col2">2</div>
-                <div class="col2">2</div>
-                <div class="col2">2</div>
-            </div>
-             <h3 class="heading">3/4 Column</h3>
-
-            <div class="row grid-example">
-                <div class="col3">3</div>
-                <div class="col3">3</div>
-                <div class="col3">3</div>
-                <div class="col3">3</div>
-            </div>
-             <h3 class="heading">4/3 Column</h3>
-
-            <div class="row grid-example">
-                <div class="col4">4</div>
-                <div class="col4">4</div>
-                <div class="col4">4</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="typography" class="typography">
-        <div class="container">
-             <h1 class="title">Typography</h1>
-
-            <div class="row">
-                <div class="col12">
-                     <h4>Headings, body copy, blockquotes, lists, and beyond.</h4>
-
-                </div>
-            </div>
-             <h3 class="heading">Headings</h3>
-
-            <div class="row headings">
-                <div class="col4">
-                     <h1>H1 Heading</h1>
-
-                </div>
-                <div class="col4">
-                     <h2>H2 Heading</h2>
-
-                </div>
-                <div class="col4">
-                     <h3>H3 Heading</h3>
-
-                </div>
-            </div>
-            <div class="row headings-last">
-                <div class="col4">
-                     <h4>H4 Heading</h4>
-
-                </div>
-                <div class="col4">
-                     <h5>H5 Heading</h5>
-
-                </div>
-                <div class="col4">
-                     <h6>H6 Heading</h6>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col12">
-                    	<h3 class="heading">Headings and paragraph text examples.</h3>
-
-                </div>
-            </div>
-             <h1>There are many variations.</h1>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <hr class="hr_thin">
-             <h2>There are many variations.</h2>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <hr class="hr_thin">
-             <h3>There are many variations.</h3>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <hr class="hr_thin">
-             <h4>There are many variations.</h4>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <hr class="hr_thin">
-             <h5>There are many variations.</h5>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <hr class="hr_thin">
-             <h6>There are many variations.</h6>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <hr class="hr_thin">
-            <div class="row">
-                <div class="col12">
-                    	<h3 class="heading">Lead Paragraph</h3>
-
-                </div>
-            </div>
-            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <div class="row">
-                <div class="col12">
-                    	<h3 class="heading">Paragraph Left Align</h3>
-
-                </div>
-            </div>
-            <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <div class="row">
-                <div class="col12">
-                    	<h3 class="heading">Paragraph Right Align</h3>
-
-                </div>
-            </div>
-            <p class="text-right">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <div class="row">
-                <div class="col12">
-                    	<h3 class="heading">Paragraph Center Text</h3>
-
-                </div>
-            </div>
-            <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <div class="row">
-                <div class="col12">
-                    	<h3 class="heading">Paragraph Justified</h3>
-
-                </div>
-            </div>
-            <p class="justified">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <div class="row">
-                <div class="col12">
-                    	<h3 class="heading">Blockquote</h3>
-
-                </div>
-            </div>
-            <blockquote>
-                <p><em>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis. Gangsta in brizzle. Yo mamma eleifend rhoncizzle i'm in the shizzle. In hac gangsta fo dictumst. Dope dapibizzle. Curabitizzle bizzle urna, pretizzle away, dope phat, tellivizzle vitae, nunc. Sizzle suscipizzle. Integer shizznit velit ass nizzle.<br /> <cite><strong>— Snoop Dogg Lion</strong></cite></em>
-
-                </p>
-            </blockquote>
-            <div class="row">
-                <div class="col12">
-                    	<h3 class="heading">Two Columns</h3>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col6">
-                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
-                </div>
-                <div class="col6">
-                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col12">
-                    	<h3 class="heading">Three Columns</h3>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col4">
-                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
-                </div>
-                <div class="col4">
-                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
-                </div>
-                <div class="col4">
-                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col12">
-                    	<h3 class="heading">Four Columns</h3>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col3">
-                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
-                </div>
-                <div class="col3">
-                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
-                </div>
-                <div class="col3">
-                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
-                </div>
-                <div class="col3">
-                    <p>Lorizzle boom shackalack dolizzle rizzle amizzle, yo adipiscing uhuh ... yih!. Nullizzle sapizzle i'm in the shizzle, fo shizzle my nizzle volutpizzle, suscipizzle , things vizzle, check out this. Pellentesque doggy tortizzle. Shizznit phat. Shizzlin dizzle things dolizzle ghetto turpis tempizzle funky fresh. Maurizzle pellentesque dope et turpis.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="buttons" class="buttons">
-        <div class="container">
-            	<h1 class="title">Buttons</h1>
-
-            <div class="row">
-                <div class="col12">
-                     <h4>Big buttons, normal buttons, and small buttons. Choose your own colors for each specific function.</h4>
-                </div>
-            </div>
-            <h3 class="heading">Regular Size Buttons</h3>
-
-                <div class="container">
-	                <button class="btn btn-default">Default Button</button>
-	                <button class="btn btn-primary">Primary Button</button>
-	                <button class="btn btn-danger">Danger Button</button>
-	                <button class="btn btn-info">Info Button</button>
-	                <button class="btn btn-warning">Warning Button</button>
-	                <button class="btn btn-success">Success Button</button>
-                </div>
-                
-            	<h3 class="heading">Itty Bitty Buttons. Add the class <em>“btn-small”.</em></h3>
-
-            <div class="container">
-                <button class="btn btn-default btn-small">Default Button</button>
-	            <button class="btn btn-primary btn-small">Primary Button</button>
-	            <button class="btn btn-danger btn-small">Danger Button</button>
-	            <button class="btn btn-info btn-small">Info Button</button>
-	            <button class="btn btn-warning btn-small">Warning Button</button>
-	            <button class="btn btn-success btn-small">Success Button</button>
-            </div>
-            	           
-            	<h3 class="heading">Extra Large Buttons. Add the class <em>“btn-xl”.</em></h3>
-
-            <div class="container">
-                <button class="btn btn-xl btn-default">Default Button</button>
-	            <button class="btn btn-xl btn-primary">Primary Button</button>
-	            <button class="btn btn-xl btn-danger">Danger Button</button>
-	            <button class="btn btn-xl btn-info">Info Button</button>
-	            <button class="btn btn-xl btn-warning">Warning Button</button>
-	            <button class="btn btn-xl btn-success">Success Button</button>
-            </div>
-            	<h3 class="heading">Full Width Buttons. Add the class <em>“btn-full”.</em></h3>
-
-            <div class="container">
-                <button class="btn btn-full btn-default">Default Button</button>
-	            <button class="btn btn-full btn-primary">Primary Button</button>
-	            <button class="btn btn-full btn-danger">Danger Button</button>
-	            <button class="btn btn-full btn-info">Info Button</button>
-	            <button class="btn btn-full btn-warning">Warning Button</button>
-	            <button class="btn btn-full btn-success">Success Button</button>
-            </div>
-        </div>
-    </section>
-    <section id="dropdowns" class="dropdowns">
-        <div class="container">
-            	<h1 class="title">Dropdowns</h1>
-
-            <div class="row">
-                <div class="col12">
-                     <h4>The dropdown button is from <a href="https://github.com/patrickkunka/easydropdown" target="_blank">EasyDropdown</a> by <a href="http://http://kunkalabs.com/" target="_blank">Patrick Kunka</a>.</h4>
-
-                </div>
-            </div>
-						<select tabindex="4" class="dropdown">
-							<option class="label" value="">Month</option>
-							<option value="1">January</option>
-							<option value="2">February</option>
-							<option value="3">March</option>
-							<option value="4">April</option>
-							<option value="5">May</option>
-							<option value="6">June</option>
-							<option value="7">July</option>
-							<option value="8">August</option>
-							<option value="9">September</option>
-							<option value="10">October</option>
-							<option value="11">November</option>
-							<option value="12">December</option>
-						</select>
-					
-						<select tabindex="5" class="dropdown" data-settings='{"cutOff": 12}'>
-							<option class="label">Day</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-					        <option value="3">3</option>
-					        <option value="4">4</option>
-					        <option value="5">5</option>
-					        <option value="6">6</option>
-					        <option value="7">7</option>
-					        <option value="8">8</option>
-					        <option value="9">9</option>
-					        <option value="10">10</option>
-					        <option value="11">11</option>
-					        <option value="12">12</option>
-					        <option value="13">13</option>
-					        <option value="14">14</option>
-					        <option value="15">15</option>
-					        <option value="16">16</option>
-					        <option value="17">17</option>
-					        <option value="18">18</option>
-					        <option value="19">19</option>
-					        <option value="20">20</option>
-					        <option value="21">21</option>
-					        <option value="22">22</option>
-					        <option value="23">23</option>
-					        <option value="24">24</option>
-					        <option value="25">25</option>
-					        <option value="26">26</option>
-					        <option value="27">27</option>
-					        <option value="28">28</option>
-					        <option value="29">29</option>
-					        <option value="30">30</option>
-					        <option value="31">31</option>
-						</select>
-					
-						<select tabindex="6" class="dropdown" data-settings='{"cutOff": 12}'>
-							<option class="label">Year</option>
-							<option value="2011">2013</option>
-							<option value="2011">2012</option>
-							<option value="2011">2011</option>
-							<option value="2010">2010</option>
-						    <option value="2009">2009</option>
-						    <option value="2008">2008</option>
-						    <option value="2007">2007</option>
-						    <option value="2006">2006</option>
-						    <option value="2005">2005</option>
-						    <option value="2004">2004</option>
-						    <option value="2003">2003</option>
-						    <option value="2002">2002</option>
-						    <option value="2001">2001</option>
-						    <option value="2000">2000</option>
-						    <option value="1999">1999</option>
-						    <option value="1998">1998</option>
-						    <option value="1997">1997</option>
-						    <option value="1996">1996</option>
-						    <option value="1995">1995</option>
-						    <option value="1994">1994</option>
-						    <option value="1993">1993</option>
-						    <option value="1992">1992</option>
-						    <option value="1991">1991</option>
-						    <option value="1990">1990</option>
-						</select>
-        </div>
-    </section>
-
-    <hr class="hr_thick" />
-    <section id="forms" class="forms">
-        <div class="container">
-             <h1 class="title">Form Fields</h1>
-
-            <div class="row">
-                <div class="col12">
-                     <h4>Input fields, email fields, and more.</h4>
-
-                </div>
-            </div>
-            <div class="container">
-                <fieldset>
-                    <div class="form-group">
-                        <div class="col2">
-                            <label>First Name:</label>
-                        </div>
-                        <div class="col5">
-                            <input type="text" placeholder="first name" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col2">
-                            <label>Last Name:</label>
-                        </div>
-                        <div class="col5">
-                            <input type="text" placeholder="last name" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col2">
-                            <label>Email:</label>
-                        </div>
-                        <div class="col5">
-                            <input type="email" placeholder="email" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col2">
-                            <label>Credentials:</label>
-                        </div>
-                        <div class="col5">
-                            <input type="password" placeholder="password" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col5">
-                            <label class="r-password">
-                                <input type="checkbox">Remember Password?</label>	<span class="float-right"><button type="submit" class="btn btn-small btn-primary xs">Submit</button></span>
-
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-        </div>
-    </section>
-
-    <footer class="credits">
-        <div class="container">
-            <div class="row">
-                <div class="col6">
-                    	<h5>Developed with all the love in the world by <a href="http://danmalarkey.com">Dan Malarkey</a>.</h5>
-
-                    <p>This is my first ever Open Source project to date.
-                        <br />Please use and abuse this framework as you see fit.</p>
-                        
-                    <p>This site was built with <a href="http://panic.com/coda/" target="_blank">Coda 2</a>, <a href="http://en.wikipedia.org/wiki/HTML5" target="_blank"> HTML5</a>, <a href="http://www.css3.com" target="_blank">CSS3</a>, and <a href="http://lesscss.org" target="_blank">LESS.</a> 
-                    <br />Fonts are powered by <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a>. Dropdown buttons built by <a href="http://http://kunkalabs.com/" target="_blank">Patrick Kunka</a>.
-                    <br /><br />
-                    <p>&copy; 2013. All Rights Reserved. 
-                </div>
-                <div class="col6 social">
-                    <a href="https://github.com/danmalarkey/schema" target="_blank"><i class="icon-github"></i></a>
-                	<a href="https://twitter.com/schemaui" target="_blank"><i class="icon-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-   
-   	<a href="#top"><i id="#top" class="icon-up-open"></i></a>
-   	
-   	<script>
-	    (function (i, s, o, g, r, a, m) {
-	        i['GoogleAnalyticsObject'] = r;
-	        i[r] = i[r] || function () {
-	            (i[r].q = i[r].q || []).push(arguments)
-	        }, i[r].l = 1 * new Date();
-	        a = s.createElement(o),
-	        m = s.getElementsByTagName(o)[0];
-	        a.async = 1;
-	        a.src = g;
-	        m.parentNode.insertBefore(a, m)
-	    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-	
-	    ga('create', 'UA-45144558-1', 'danmalarkey.github.io');
-	    ga('send', 'pageview');
-	</script>
-
-    <script type="text/javascript">
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 700);
-                    return false;
-                }
-            }
-        });
-    </script>
+<!--
+  <script src="assets/js/jquery.easydropdown.js"></script>
+  <script src="assets/js/modernizr.custom.js"></script>
 -->
+  <title>SCHEMA UI Frontend Framework| A powerfully light, responsive, and lean front-end UI framework built with LESS. | CSS Framework | LESS Framework | Dan Malarkey</title>
+		<style>.container { margin: 4em auto; }</style>
+  </head>
     
-    <div class="container">
-      <div class="alert a-is-success">
+  <body>
+      <div class="container alert a-is-success alert-gone fade in">
         <strong>Much Success!</strong> 
           You did it right! Congrats!<span class="close">&times;</span>
       </div>
-    </div>
     
-    <div class="container">
-      <div class="alert a-is-danger">
+      <div class="container alert a-is-danger alert-gone fade in">
           <strong>No Success!</strong> You did it wrong! Oh No!<span class="close">&times;</span>
-          <h4>You need to do something.</h4>
-          <button class="btn btn--danger">Do Some Action</button>
+          <p>You need to do something. Something did not go as planned.</p>
+          <button class="btn btn--danger left-float close">Do Some Action</button>
           <button class="btn btn--link">Cancel</button>
       </div>
-    </div>
     
-    <div class="container">
-      <div class="alert a-is-info"><strong>Did you know!</strong> I forgot what I was saying!<span class="close">&times;</span></div>
-    </div>
-    
-    <div class="container">
-      <div class="alert a-is-warning"><strong>Be careful!</strong> This is just a warning.<span class="close">&times;</span></div>
-    </div>
+      <div class="container alert a-is-info alert-gone fade in">
+        <strong>Did you know!</strong> 
+          I forgot what I was saying!
+          <span class="close">&times;</span>
+          <p>Do you need some information, bro?</p>
+          <button class="btn btn--info left-float close">Get some info</button>
+          <button class="btn btn--default">No thanks</button>
+      </div>
+
+      <div class="container alert a-is-warning alert-gone fade in">
+        <strong>Be careful!</strong> 
+          This is just a warning.
+          <span class="close">&times;</span>
+      </div>
     
     <div class="container">
       <div class="row-fluid">
@@ -703,6 +100,15 @@
             <input class="form-element">
           </div>
         </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="form-group">
+        <input class="form-element">
+          <span class="form-group-btn">
+            <button class="btn btn--success">Send</button>
+          </span>
       </div>
     </div>
     
@@ -777,10 +183,26 @@
     </div>
     
     <div class="container">
-      <input class="form-element f-is-success">
-      <input class="form-element f-is-info">
-      <input class="form-element f-is-warning">
-      <input class="form-element f-is-danger">
+      <div class="has-success has-icon">
+        <label>Form-element that has success</label>
+        <input class="form-element f-is-success">
+        <i class="fa fa-check"></i>
+      </div>
+      <div class="has-danger has-icon">
+        <label>Form-element that has danger</label>
+        <input class="form-element f-is-danger">
+        <i class="fa fa-warning"></i>
+      </div>
+      <div class="has-info has-icon">
+        <label>Form-element that has information</label>
+        <input class="form-element f-is-info">
+        <i class="fa fa-warning"></i>
+      </div>
+      <div class="has-warning has-icon">
+        <label>Form-element that has warning</label>
+        <input class="form-element f-is-warning">
+        <i class="fa fa-warning"></i>
+      </div>
     </div>
     
     
@@ -852,7 +274,9 @@
       <textarea class="form-element"></textarea>
       <span class="btn-label">Label</span>
     </div>
-
+    
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/global.js"></script>
 </body>
 
 </html>

@@ -963,8 +963,7 @@ blockquote cite {
 *
 *****************************************************************/
 p {
-  /* 	margin: 0 0 1em; */
-  color: #555555;
+  color: inherit;
   font-family: Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -1167,12 +1166,34 @@ input[type="checkbox"] {
 .btn-group > .btn:last-child {
   margin-left: 0;
 }
-.btn-group > .active {
+.btn-group > .btn.active {
   background-color: #3498db;
   color: #ffffff;
 }
 .btn-group-lg > .btn {
   padding: 0.75rem 1.125rem;
+}
+.has-icon {
+  display: block;
+  position: relative;
+}
+/*
+.has-icon > .fa.fa-check {
+  position: absolute;
+  right: 0;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-top: .80rem;
+}
+*/
+.has-icon > .fa {
+  position: relative;
+  right: 0;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-top: .775rem;
+  float: right;
+  top: -2.4rem;
 }
 /* =============================================================
      
@@ -1568,6 +1589,35 @@ th {
     visibility: visible;
   }
 }
+.hide {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.45s linear;
+  -moz-transition: opacity 0.45s linear;
+  transition: opacity 0.45s linear;
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.45s linear;
+  -moz-transition: opacity 0.45s linear;
+  transition: opacity 0.45s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+.has-success {
+  color: #2ecc71;
+}
+.has-info {
+  color: #3498db;
+}
+.has-warning {
+  color: #f39c12;
+}
+.has-danger {
+  color: #e74c3c;
+}
 a.btn--success,
 a.btn--warning,
 a.btn--info,
@@ -1606,6 +1656,7 @@ a.btn--default {
   background: transparent;
   background-color: transparent;
   border-color: transparent;
+  color: inherit;
 }
 .btn--full {
   display: block;
@@ -1654,9 +1705,9 @@ a.btn--default {
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -webkit-transition: all 0.25s ease 0.25s ease;
-  -moz-transition: all 0.25s ease 0.25s ease;
-  transition: all 0.25s ease 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   outline: 0;
 }
 .btn--primary {
@@ -1679,9 +1730,9 @@ a.btn--default {
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -webkit-transition: all 0.25s ease 0.25s ease;
-  -moz-transition: all 0.25s ease 0.25s ease;
-  transition: all 0.25s ease 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   outline: 0;
 }
 .btn--danger {
@@ -1704,9 +1755,9 @@ a.btn--default {
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -webkit-transition: all 0.25s ease 0.25s ease;
-  -moz-transition: all 0.25s ease 0.25s ease;
-  transition: all 0.25s ease 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   outline: 0;
 }
 .btn--info {
@@ -1729,9 +1780,9 @@ a.btn--default {
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -webkit-transition: all 0.25s ease 0.25s ease;
-  -moz-transition: all 0.25s ease 0.25s ease;
-  transition: all 0.25s ease 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   outline: 0;
 }
 .btn--warning {
@@ -1754,9 +1805,9 @@ a.btn--default {
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -webkit-transition: all 0.25s ease 0.25s ease;
-  -moz-transition: all 0.25s ease 0.25s ease;
-  transition: all 0.25s ease 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   outline: 0;
 }
 .btn--success {
@@ -1779,9 +1830,9 @@ a.btn--default {
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -webkit-transition: all 0.25s ease 0.25s ease;
-  -moz-transition: all 0.25s ease 0.25s ease;
-  transition: all 0.25s ease 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   outline: 0;
 }
 .f-is-success {
