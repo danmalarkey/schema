@@ -254,12 +254,17 @@ input[type="checkbox"] {
     .btn-group > .btn.active {
       background-color: @info-color;
       color: @base-white;
+      border-color: @info-color;
     }
 .btn-group-lg > .btn {
   padding: @base-padding-lg-vertical @base-padding-lg-horizontal;
 }
 
-
+/* Removes the border on .btn-group */
+.btn-group.no-b > .btn,
+.btn-group-lg.no-b > .btn {
+  border: none;
+}
 
 // has icon
 .has-icon {

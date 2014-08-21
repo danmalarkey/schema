@@ -26,6 +26,7 @@
   </head>
     
   <body>
+      
       <div class="container alert a-is-success alert-gone fade in">
         <strong>Much Success!</strong> 
           You did it right! Congrats!<span class="close">&times;</span>
@@ -34,7 +35,7 @@
       <div class="container alert a-is-danger alert-gone fade in">
           <strong>No Success!</strong> You did it wrong! Oh No!<span class="close">&times;</span>
           <p>You need to do something. Something did not go as planned.</p>
-          <button class="btn btn--danger left-float close">Do Some Action</button>
+          <button class="btn btn--danger close left-float">Do Some Action</button>
           <button class="btn btn--link">Cancel</button>
       </div>
     
@@ -52,7 +53,8 @@
           This is just a warning.
           <span class="close">&times;</span>
       </div>
-    
+      
+    <!-- Buttons buttons -->
     <div class="container">
       <div class="row-fluid">
         <div class="buttons">
@@ -61,13 +63,43 @@
           <button class="btn btn--default btn--lg is-disabled">Large Button</button>
             <br><br>
           <a href="" class="btn btn--default">View The Solutions</a>
-          <a href="" class="btn btn--warning">View The Solutions</a>
+          <a href="" class="btn btn--warning active">View The Solutions</a>
           <a href="" class="btn btn--info">View The Solutions</a>
           <a href="" class="btn btn--danger">View The Solutions</a>
           <a href="" class="btn btn--success is-disabled">View The Solutions</a>
           <a href="" class="btn btn--primary">View The Solutions</a>
         </div>
       </div>
+    </div>
+    
+    <!-- Outline buttons -->
+    <div class="container">
+        <button class="btn btn--default-outline">Outline Button</button>
+        <button class="btn btn--primary-outline">Primary Outline Button</button>
+        <button class="btn btn--danger-outline">Danger Outline Button</button>
+        <button class="btn btn--success-outline">Success Outline Button</button>
+        <button class="btn btn--info-outline">Info Outline Button</button>
+        <button class="btn btn--warning-outline">Warning Outline Button</button>
+    </div>
+    
+    <!-- btn-pill buttons -->
+    <div class="container">
+        <button class="btn btn--default-outline btn-pill">Outline Button</button>
+        <button class="btn btn--primary btn-pill">Primary Outline Button</button>
+        <button class="btn btn--danger-outline btn-pill">Danger Outline Button</button>
+        <button class="btn btn--success-outline btn-pill">Success Outline Button</button>
+        <button class="btn btn--info-outline btn-pill">Info Outline Button</button>
+        <button class="btn btn--warning btn-pill">Warning Outline Button</button>
+    </div>
+    
+    <!-- btn-pill buttons -->
+    <div class="container">
+        <button class="btn btn--default-gradient">Gradient Default Button</button>
+        <button class="btn btn--primary-gradient">Gradient Primary Button</button>
+        <button class="btn btn--danger-gradient">Gradient Danger Button</button>
+        <button class="btn btn--success-gradient">Gradient Success Button</button>
+        <button class="btn btn--info-gradient">Gradient Info Button</button>
+        <button class="btn btn--warning-gradient">Gradient Warning Button</button>
     </div>
     
     <div class="row-fluid">
@@ -148,16 +180,34 @@
       </div>
     </div>
     
-    
+    <!-- !Pagination -->
     <div class="container">
       <div class="row-fluid">
         <div class="btn-group">
+          <button class="btn btn--default">«</button>
           <button class="btn btn--default">1</button>
           <button class="btn btn--default">2</button>
           <button class="btn btn--default active">3</button>
           <button class="btn btn--default">4</button>
           <button class="btn btn--default">5</button>
           <button class="btn btn--default">6</button>
+          <button class="btn btn--default">»</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Pagination w/out a border -->
+    <div class="container">
+      <div class="row-fluid">
+        <div class="btn-group no-b">
+          <button class="btn btn--default">«</button>
+          <button class="btn btn--default">1</button>
+          <button class="btn btn--default">2</button>
+          <button class="btn btn--default active">3</button>
+          <button class="btn btn--default">4</button>
+          <button class="btn btn--default">5</button>
+          <button class="btn btn--default">6</button>
+          <button class="btn btn--default">»</button>
         </div>
       </div>
     </div>
@@ -165,9 +215,9 @@
     <div class="container">
       <div class="row-fluid">
         <div class="btn-group">
-          <button class="btn btn--default">A Long Button Name</button>
-          <button class="btn btn--default">A Long Button Name</button>
-          <button class="btn btn--info">A Long Button Name</button>
+          <button class="btn btn--default-gradient">A Long Button Name</button>
+          <button class="btn btn--default-gradient">A Long Button Name</button>
+          <button class="btn btn--info-gradient">A Long Button Name</button>
         </div>
       </div>
     </div>
@@ -196,7 +246,7 @@
       <div class="has-info has-icon">
         <label>Form-element that has information</label>
         <input class="form-element f-is-info">
-        <i class="fa fa-warning"></i>
+        <i class="fa fa-info-circle"></i>
       </div>
       <div class="has-warning has-icon">
         <label>Form-element that has warning</label>
@@ -212,7 +262,7 @@
       <div class="row">
         <div class="col3">
           <label>What's your name?</label>
-          <input class="form-element">
+          <input class="form-element default-gradient">
         </div>
         <div class="col3">
           <label>What's your email?</label>
@@ -273,6 +323,15 @@
     <div class="container">
       <textarea class="form-element"></textarea>
       <span class="btn-label">Label</span>
+    </div>
+    
+    <div class="ex container">
+      <ul class="nav pill-nav">
+        <li><a href="#" class="active">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
     </div>
     
     <script src="assets/js/jquery-1.11.1.min.js"></script>

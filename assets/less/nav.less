@@ -1,0 +1,43 @@
+// Pill Navigation Design
+
+.nav {
+  padding-left: 0;
+}
+
+.nav > li > a {
+  .left-float;
+  padding: @base-padding-pill-nav-vertical @base-padding-pill-nav-horizontal;
+  .border-radius(@border-radius);
+  position: relative;
+}
+
+.pill-nav > li > a {
+  display: inline-block;
+}
+
+.pill-nav li,
+.pill-nav > li+li {
+  display: inline-block;
+  .rem-px(margin-right, 4);
+}
+
+.pill-nav > li > a.active {
+  background-color: @info-color;
+  color: @base-white;
+  
+  &:hover {
+    background-color: darken(@info-color, 5%);
+  }
+  
+  &:active {
+    .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
+    .transition(all .25s ease);
+    outline: 0;
+	}
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: @base-color-eee;
+}
