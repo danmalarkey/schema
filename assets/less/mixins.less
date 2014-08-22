@@ -55,11 +55,24 @@
 //	
 // =============================================================
 
+/*
 .hr_rule (@size @type @color) {
   border-top: @size @type @color;
   border-bottom-color: transparent;
   border-right-color: transparent;
   border-left-color: transparent; 
+}
+*/
+
+.hr(@size, @color) {
+  border-top: @size solid @color;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  height: 1px;
+/*   width: 100%; */
+  margin: 1rem 0;
+  .box-sizing(border-box);
 }
 
 // =============================================================

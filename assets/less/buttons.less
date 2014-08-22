@@ -4,6 +4,7 @@
 //	
 // ============================================================= 
 
+/*
 a.btn--success,
 a.btn--warning,
 a.btn--info,
@@ -17,6 +18,7 @@ a:hover.btn--primary {
   text-decoration: none;
   color: @base-bg;
 }
+*/
 
 a.btn--default {
   color: @base-color-777;
@@ -55,11 +57,36 @@ a.btn--default {
 
 .btn-label {
 	vertical-align: middle;
-	padding: .25rem .5rem; 
-	background-color: @success-color;
+	padding: .1875rem .5rem; 
+	background-color: @base-color-ccc;
 	color: @base-white;
-	.border-radius(@border-radius);
+	.border-radius(@border-radius / 3);
 }
+
+  .btn-label.primary { 
+	  background-color: @primary-color;
+	  color: @base-white;
+  }
+
+  .btn-label.success { 
+	  background-color: @success-color;
+	  color: @base-white;
+  }
+  
+  .btn-label.danger { 
+	  background-color: @danger-color;
+	  color: @base-white;
+  }
+  
+  .btn-label.info { 
+	  background-color: @info-color;
+	  color: @base-white;
+  }
+  
+  .btn-label.warning { 
+	  background-color: @warning-color;
+	  color: @base-white;
+  }
 
 
 
@@ -81,7 +108,8 @@ a.btn--default {
 // ///////////////////////
 // Default Button
 // ///////////////////////	
-.btn--default {
+.btn--default,
+.nav > li > a.btn--default {
 	.button-version(@btn-default-color, @btn-default-bg, @btn-default-border);
 }
     // Default Button Outline //
@@ -90,6 +118,8 @@ a.btn--default {
       .button-version(@base-color-777, @btn-default-bg-outline, @btn-default-border-outline);
       &:hover {
         border-color: @base-color-777;
+        color: @base-white;
+        background-color: @base-color-777;
       }
       &:active {
         .box-shadow(none);
@@ -111,7 +141,8 @@ a.btn--default {
 // ///////////////////////
 // Primary Button
 // ///////////////////////
-.btn--primary {
+.btn--primary,
+.nav > li > a.btn--primary {
 	.button-version(@btn-primary-color, @btn-primary-bg, @btn-primary-border);
 }
     // Primary Button Outline //
@@ -145,7 +176,8 @@ a.btn--default {
 // ///////////////////////
 // Danger Button
 // ///////////////////////
-.btn--danger {
+.btn--danger,
+.nav > li > a.btn--danger {
 	.button-version(@btn-danger-color, @btn-danger-bg, @btn-danger-border);
 }
 
@@ -180,7 +212,8 @@ a.btn--default {
 // ///////////////////////
 // Info Button
 // ///////////////////////
-.btn--info {
+.btn--info,
+.nav > li > a.btn--info {
 	.button-version(@btn-info-color, @btn-info-bg, @btn-info-border);
 }
     // Info Button Outline //
@@ -214,11 +247,12 @@ a.btn--default {
 // ///////////////////////
 // Warning Button
 // ///////////////////////
-.btn--warning {
+.btn--warning,
+.nav > li > a.btn--warning {
 	.button-version(@btn-warning-color, @btn-warning-bg, @btn-warning-border);
 }
     // Warning Button Outline //
-    .btn--warning-outline
+    .btn--warning-outline,
     .warning-outline {
       .button-version(@btn-warning-color-outline, @btn-warning-bg-outline, @btn-warning-border-outline);
       &:hover {
@@ -248,7 +282,8 @@ a.btn--default {
 // ///////////////////////    
 // Success Button
 // ///////////////////////
-.btn--success {
+.btn--success,
+.nav > li > a.btn--success {
 	.button-version(@btn-success-color, @btn-success-bg, @btn-success-border);
 }
     // Success Button Outline //

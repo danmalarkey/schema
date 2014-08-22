@@ -120,7 +120,7 @@ input[type="checkbox"] {
   .rem-px(margin-bottom, 16);
 }
 
-  .form-class::before, .form-class::after {
+  .form-group::before, .form-group::after {
   	clear: both; 
   	display: table;
   	content: "" 
@@ -159,12 +159,27 @@ input[type="checkbox"] {
   font-size: @btn-font-size-lg;
 }
 
+.form-element-lg > .form-element.btn-pill,
+.form-element-lg > .form-element-extra.btn-pill,
+.form-element-lg > .form-group-btn:first-child > .btn.btn-pill,
+.form-element-lg > .form-group-btn:last-child > .btn.btn-pill {
+  .border-radius(@border-radius * 10);  
+}
+
+.form-element-sm > .form-element,
+.form-element-sm > .form-element-extra,
+.form-element-sm > .form-group-btn:first-child > .btn,
+.form-element-sm > .form-group-btn:last-child > .btn {
+  padding: (@base-padding-sm-vertical / 1.75) @base-padding-sm-horizontal;
+  line-height: @line-height-sm;
+  font-size: @btn-font-size-sm;
+}
+
 // This is the design details on :focus
 .form-element:focus {
   outline: 0;
  	outline: thin dotted \9;
  	border-color: rgb(244, 104, 1);
- 	color: inherit;
  	.box-shadow(0 0 8px rgba(244, 104, 1, .6));
 }
 
@@ -269,18 +284,7 @@ input[type="checkbox"] {
 // has icon
 .has-icon {
   display: block;
-  position: relative;
 }
-
-/*
-.has-icon > .fa.fa-check {
-  position: absolute;
-  right: 0;
-  vertical-align: middle;
-  margin-right: 1rem;
-  margin-top: .80rem;
-}
-*/
 
 .has-icon > .fa {
   position: relative;
