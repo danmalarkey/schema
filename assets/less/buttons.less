@@ -4,7 +4,6 @@
 //	
 // ============================================================= 
 
-/*
 a.btn--success,
 a.btn--warning,
 a.btn--info,
@@ -14,13 +13,22 @@ a:hover.btn--success,
 a:hover.btn--warning,
 a:hover.btn--info,
 a:hover.btn--danger,
-a:hover.btn--primary {
+a:hover.btn--primary,
+a:hover.btn--success-gradient,
+a:hover.btn--primary-gradient,
+a:hover.btn--info-gradient,
+a:hover.btn--danger-gradient,
+a:hover.btn--warning-gradient {
   text-decoration: none;
   color: @base-bg;
 }
-*/
 
-a.btn--default {
+.btn > i:before {
+  .rem-px(margin-right, 8);
+}
+
+a.btn--default,
+a:hover.btn--default-gradient {
   color: @base-color-777;
   text-decoration: none;
 }

@@ -1101,14 +1101,16 @@ input[type="checkbox"] {
 }
 .form-element-extra:first-child,
 .btn-group > .btn:first-child,
-.btn-group-lg > .btn:first-child {
+.btn-group-lg > .btn:first-child,
+.pagination > ul > li:first-child > .btn {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   border-right: 0;
 }
 .form-element-extra:last-child,
 .btn-group > .btn:last-child,
-.btn-group-lg > .btn:last-child {
+.btn-group-lg > .btn:last-child,
+.pagination > ul > li:last-child > .btn {
   border-left: 0;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1131,14 +1133,35 @@ input[type="checkbox"] {
   vertical-align: middle;
 }
 .btn-group,
-.btn-group-lg {
+.btn-group-lg,
+.pagination > ul > li,
+.pagination > ul > li > a {
   float: left;
   display: inline-block;
   position: relative;
   vertical-align: middle;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.pagination-gradient > ul > li {
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(1, #ffffff));
+  background: -ms-linear-gradient(bottom, #eeeeee, #ffffff);
+  background: -moz-linear-gradient(center bottom, #eeeeee 0%, #ffffff 100%);
+  background: -o-linear-gradient(#ffffff, #eeeeee);
+  background-image: linear-gradient(top, #eeeeee, #ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
+}
+.pagination > ul > li > a,
+.pagination > ul > li > button {
+  background-color: transparent;
+  background: transparent;
 }
 .btn-group > .btn,
-.btn-group-lg > .btn {
+.btn-group-lg > .btn .pagination > ul > li > a {
   float: left;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1147,27 +1170,45 @@ input[type="checkbox"] {
   border-radius: 0;
 }
 .btn-group > .btn + .btn,
-.btn-group-lg > .btn + .btn {
+.btn-group-lg > .btn + .btn,
+.pagination > ul > li > a,
+.pagination > ul > li > .btn {
   margin-left: -1px;
 }
-.btn-group > .btn:first-child {
+.btn-group > .btn:first-child,
+.btn-group > .btn:first-child,
+.pagination > ul > li:first-child > .btn,
+.pagination > ul > li:first-child > button {
   margin-left: 0;
 }
-.btn-group > .btn:last-child {
+.btn-group > .btn:last-child,
+.pagination > ul > li:last-child > .btn,
+.pagination > ul > li:last-child > button {
   margin-left: 0;
 }
-.btn-group > .btn.active {
-  background-color: #f46801;
+.btn-group > .btn.active,
+.pagination > ul > li.active,
+.pagination > ul > li > .active {
+  background-color: #3498db;
   color: #ffffff;
-  border-color: #f46801;
+  border-color: #3498db;
 }
 .btn-group-lg > .btn {
   padding: 0.75rem 1.125rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  float: left;
+  display: inline-block;
 }
 /* Removes the border on .btn-group */
 .btn-group.no-b > .btn,
-.btn-group-lg.no-b > .btn {
+.btn-group-lg.no-b > .btn,
+.pagination.no-b > ul > li > .btn {
   border: none;
+  border-color: transparent;
 }
 .has-icon {
   display: block;
@@ -1625,7 +1666,6 @@ hr {
   border-left-color: transparent; 
 }
 */
-/*
 a.btn--success,
 a.btn--warning,
 a.btn--info,
@@ -1635,12 +1675,21 @@ a:hover.btn--success,
 a:hover.btn--warning,
 a:hover.btn--info,
 a:hover.btn--danger,
-a:hover.btn--primary {
+a:hover.btn--primary,
+a:hover.btn--success-gradient,
+a:hover.btn--primary-gradient,
+a:hover.btn--info-gradient,
+a:hover.btn--danger-gradient,
+a:hover.btn--warning-gradient {
   text-decoration: none;
-  color: @base-bg;
+  color: #ffffff;
 }
-*/
-a.btn--default {
+.btn > i:before {
+  margin-right: 8px;
+  margin-right: 0.5rem;
+}
+a.btn--default,
+a:hover.btn--default-gradient {
   color: #777777;
   text-decoration: none;
 }
@@ -2652,4 +2701,71 @@ span.close {
   -moz-transition: all 0.25s ease;
   transition: all 0.25s ease;
   outline: 0;
+}
+.list-group {
+  display: block;
+  position: relative;
+}
+a.list-group-element,
+.list-group > li {
+  display: block;
+  margin-bottom: -1px;
+  border: 1px solid #dddddd;
+  color: #777777;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 0.75rem 0.75rem;
+}
+a:hover.list-group-element {
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #555555;
+}
+.list-group-element.active,
+a:hover.list-group-element.active {
+  background-color: #3498db;
+  color: #ffffff;
+  border-color: #3498db;
+}
+.list-group-element:first-child {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.list-group-element:last-child {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 0.23076923rem 0.63157895rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #777777;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  -ms-border-radius: 120px;
+  -o-border-radius: 120px;
+  border-radius: 120px;
+}
+.badge.success {
+  background-color: #2ecc71;
+}
+.badge.primary {
+  background-color: #3498db;
+}
+.badge.danger {
+  background-color: #e74c3c;
+}
+.badge.warning {
+  background-color: #f39c12;
+}
+.badge.info {
+  background-color: #f46801;
 }

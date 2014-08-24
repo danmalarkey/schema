@@ -206,7 +206,8 @@ input[type="checkbox"] {
 
 .form-element-extra:first-child,
 .btn-group > .btn:first-child,
-.btn-group-lg > .btn:first-child {
+.btn-group-lg > .btn:first-child,
+.pagination > ul > li:first-child > .btn {
   border-top-left-radius: @border-radius;
   border-bottom-left-radius: @border-radius;
   border-right: 0;
@@ -214,7 +215,8 @@ input[type="checkbox"] {
 
   .form-element-extra:last-child,
   .btn-group > .btn:last-child,
-  .btn-group-lg > .btn:last-child {
+  .btn-group-lg > .btn:last-child,
+  .pagination > ul > li:last-child > .btn {
     border-left: 0;
     border-top-right-radius: @border-radius;
     border-bottom-right-radius: @border-radius;
@@ -241,44 +243,72 @@ input[type="checkbox"] {
 }
 
 .btn-group,
-.btn-group-lg {
+.btn-group-lg,
+.pagination > ul > li,
+.pagination > ul > li > a {
   float: left;
   display: inline-block;
   position: relative;
   vertical-align: middle;
-}	
+  .border-radius(0);
+}
+
+.pagination-gradient > ul > li {
+  .gradient(@base-color-eee, @base-color-eee, @base-white);
+}
+
+    .pagination > ul > li > a,
+    .pagination > ul > li > button {
+      background-color: transparent;
+      background: transparent;
+    }	
 
 .btn-group > .btn,
-.btn-group-lg > .btn {
+.btn-group-lg > .btn
+.pagination > ul > li > a {
   .left-float;
   .border-radius(0);
 } 
   .btn-group > .btn + .btn,
-  .btn-group-lg > .btn + .btn {
+  .btn-group-lg > .btn + .btn,
+  .pagination > ul > li > a,
+  .pagination > ul > li > .btn  {
     margin-left: -1px;
   }
   
-  .btn-group > .btn:first-child {
+  .btn-group > .btn:first-child,
+  .btn-group > .btn:first-child,
+  .pagination > ul > li:first-child > .btn,
+  .pagination > ul > li:first-child > button {
     margin-left: 0;
   }
   
-  .btn-group > .btn:last-child {
+  .btn-group > .btn:last-child,
+  .pagination > ul > li:last-child > .btn,
+  .pagination > ul > li:last-child > button {
     margin-left: 0;
   }
     // The active state 
-    .btn-group > .btn.active {
-      background-color: @info-color;
+    .btn-group > .btn.active,
+    .pagination > ul > li.active,
+    .pagination > ul > li > .active {
+      background-color: @primary-color;
       color: @base-white;
-      border-color: @info-color;
+      border-color: @primary-color;
     }
 .btn-group-lg > .btn {
   padding: @base-padding-lg-vertical @base-padding-lg-horizontal;
+  .border-radius(0);
+  float: left;
+  display: inline-block;
 }
 
 /* Removes the border on .btn-group */
 .btn-group.no-b > .btn,
-.btn-group-lg.no-b > .btn {
+.btn-group-lg.no-b > .btn,
+.pagination.no-b > ul > li > .btn {
   border: none;
+  border-color: transparent; 
 }
 
 // has icon
