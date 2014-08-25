@@ -1210,6 +1210,9 @@ input[type="checkbox"] {
   border: none;
   border-color: transparent;
 }
+.form-group-btn > button > i:before {
+  margin: 0;
+}
 .has-icon {
   display: block;
 }
