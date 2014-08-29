@@ -1,6 +1,38 @@
 // Pill Navigation Design
 
 .nav {
+  position: relative;
+  top: 0;
+  background-color: @base-white;
+}
+
+.brand > a {
+  text-decoration: none;
+  color: @base-color-333;
+  padding: @base-padding-vertical 0;
+  float: left;
+  
+  &:hover {
+    text-decoration: none;
+    color: @primary-color;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: @base-color-777;
+  padding: @base-padding-vertical @base-padding-horizontal;
+  display: inline-block;
+  .border-radius(@border-radius);
+  
+  &:hover {
+    background-color: @base-color-eee;
+    text-decoration: none;
+    color: @base-color-333;
+  }
+}
+
+.nav {
   padding-left: 0;
 }
 
@@ -10,11 +42,10 @@
   padding: @base-padding-pill-nav-vertical @base-padding-pill-nav-horizontal;
   position: relative;
   .left-float;
-  color: @base-color-777;
 }
     // Default Outline //
-    .nav > li > a.btn--default-outline,
-    .nav > li > a.default-outline {
+    .nav > a.btn--default-outline,
+    .nav > a.default-outline {
       .button-version(@base-color-777, @btn-default-bg-outline, @btn-default-border-outline);
       &:hover {
         border-color: @base-color-777;

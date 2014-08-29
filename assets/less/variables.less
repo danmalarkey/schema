@@ -21,21 +21,28 @@
 @base-color-999:             	          lighten(@base-color, 60%);   	// #999
 @base-color-aaa: 							          lighten(@base-color, 66.5%);  // #aaa
 @base-color-ccc: 							          lighten(@base-color, 80%); 		// #ccc
-@base-color-ddd:                        lighten(@base-color, 86.5%);    // #ddd
+@base-color-ddd:                        lighten(@base-color, 86.5%);  // #ddd
 @base-color-eee:           		          lighten(@base-color, 93.5%); 	// #eee
 
 @disabled-color:                        @base-color-aaa;
                                         
 // White's + Light White's              
 @base-white: 									          #fff;
-@base-off-white: 							          darken(@base-white, 3.75%); // #f5f5f5
+@base-off-white: 							          darken(@base-white, 3.75%);        // #f5f5f5
 
 // Schema Colors
-@primary-color: 							          #3498db;
-@success-color: 							          #2ecc71;
-@info-color: 								            #f46801;
-@warning-color: 							          #f39c12;
-@danger-color: 								          #e74c3c;
+@base-blue:                             #3498db;
+@base-teal:                             #34c1db;
+@base-green:                            #2ecc71;
+@base-orange:                           #f46801;
+@base-warning:                          #f39c12;
+@base-danger:                           #e74c3c;
+
+@primary-color: 							          @base-blue;
+@success-color: 							          @base-green;
+@info-color: 								            @base-teal;
+@warning-color: 							          @base-warning;
+@danger-color: 								          @base-danger;
  
 // =============================================================
 //     
@@ -44,9 +51,9 @@
 // ============================================================= 
 
 // Base background-color
-@base-bg:                               @base-white;  // white - #fff
-@base-bg-off-white:                     @base-off-white;  // whitesmoke - #f5f5f5
-@accent-white:                          darken(@base-bg, 2.5%);  // #f9f9f9
+@base-bg:                               @base-white;                 // white - #fff
+@base-bg-off-white:                     @base-off-white;             // whitesmoke - #f5f5f5
+@accent-white:                          darken(@base-bg, 2.5%);      // #f9f9f9
 
 // The active state of navs
 @active-color:                          @primary-color;
@@ -55,8 +62,8 @@
 @text-color:                            @base-color-555; // #555
 
 // Link color 
-@link-color: 								            @info-color;
-@link-color-hover:                      darken(@info-color, 15%); //
+@link-color: 								            @primary-color;
+@link-color-hover:                      darken(@primary-color, 15%); 
 
 // =============================================================
 //     
@@ -65,7 +72,7 @@
 // ============================================================= 
 
 
-@primary-font:                          Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif;
+@primary-font:                          'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
 
 @secondary-font:                        serif;
 
@@ -86,21 +93,21 @@
 
 // This variable is used for calculating 
 //base-font-size xl, large, small, xs 
-@baseline-size: 								        1rem; // 16px 
+@baseline-size: 								        1rem;                              // 16px 
 					   
-@base-font-size-xl: 					          (@baseline-size * 1.50); // 24px // 1.5rem
-@base-font-size-large:                  (@baseline-size * 1.25); // 20px // 1.25rem
-@base-font-size-small:                  (@baseline-size * 0.875); // 14px // 0.85rem
-@base-font-size-xs: 					          (@baseline-size * 0.75); // 12px // 0.75rem
+@base-font-size-xl: 					          (@baseline-size * 1.50);          // 24px // 1.5rem
+@base-font-size-large:                  (@baseline-size * 1.25);          // 20px // 1.25rem
+@base-font-size-small:                  (@baseline-size * 0.875);         // 14px // 0.85rem
+@base-font-size-xs: 					          (@baseline-size * 0.75);          // 12px // 0.75rem
 
 @typeset-margin:                        1.4rem 0;
 
-@font-h1:                               (@baseline-size * 2.25);  // 36px / 2.25rem
-@font-h2:                               (@baseline-size * 1.875); // 30px / 1.875rem
-@font-h3:                               (@baseline-size * 1.5);   // 24px / 1.5rem
-@font-h4:                               (@baseline-size * 1.125); // 18px / 1.125rem
-@font-h5:                               @baseline-size; // 16px / 1rem
-@font-h6:                               @base-font-size-small; // 14px / 0.875rem
+@font-h1:                               (@baseline-size * 2.25);         // 36px / 2.25rem
+@font-h2:                               (@baseline-size * 1.875);        // 30px / 1.875rem
+@font-h3:                               (@baseline-size * 1.5);          // 24px / 1.5rem
+@font-h4:                               (@baseline-size * 1.125);        // 18px / 1.125rem
+@font-h5:                               @baseline-size;                  // 16px / 1rem
+@font-h6:                               @base-font-size-small;           // 14px / 0.875rem
 
 @base-line-height:  					          1.3125; // 21/16
 @base-line-height-computed:             ((@baseline-size * @base-line-height) * 1.575);

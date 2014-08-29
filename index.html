@@ -26,6 +26,22 @@
   </head>
     
   <body>
+      <header class="nav">
+        <div class="container">
+          <div class="brand left-float">
+            <a href="#" class="lead"><strong>Schema</strong></a>
+          </div>
+          <nav class="right-float">
+            <a href="#" class="btn-pill">Components</a>
+            <a href="#" class="btn-pill">CSS</a>
+            <a href="#" class="btn-pill">About</a>
+            <a href="#" class="btn-pill">Documentation</a>
+            <a href="#" class="btn btn-pill btn-primary-outline">View Repo</a>
+          </nav>
+        </div>
+      </header>
+      
+      <hr class="container">
       
       <div class="container alert a-is-success alert-gone fade in">
         <strong>Much Success!</strong> 
@@ -33,19 +49,20 @@
       </div>
     
       <div class="container alert a-is-danger alert-gone fade in">
-          <strong>No Success!</strong> You did it wrong! Oh No!<span class="close">&times;</span>
-          <p>You need to do something. Something did not go as planned.</p>
-          <button class="btn btn--danger close left-float">Do Some Action</button>
-          <button class="btn btn--link">Cancel</button>
+        <span class="close">&times;</span>
+        <h4>No Success!</h4>
+        <p>You need to do something. Something did not go as planned.</p>
+        <p>
+          <button class="btn btn-danger close left-float">Do Some Action</button>
+          <button class="btn btn-link">Cancel</button>
+        </p>
       </div>
     
       <div class="container alert a-is-info alert-gone fade in">
-        <strong>Did you know!</strong> 
-          I forgot what I was saying!
-          <span class="close">&times;</span>
-          <p>Do you need some information, bro?</p>
-          <button class="btn btn--info left-float close">Get some info</button>
-          <button class="btn btn--default">No thanks</button>
+        <span class="close">&times;</span>
+        <h4>Did you know!</h4> 
+          <p>Here's some information.</p>
+          <button class="btn btn-info left-float close">Get some info</button>
       </div>
 
       <div class="container alert a-is-warning alert-gone fade in">
@@ -58,48 +75,48 @@
     <div class="container">
       <div class="row-fluid">
         <div class="buttons">
-          <button class="btn btn--sm btn--default">Small Button</button>
-          <button class="btn btn--default">Default Button</button>
-          <button class="btn btn--default btn--lg is-disabled">Large Button</button>
+          <button class="btn btn-sm btn-default">Small Button</button>
+          <button class="btn btn-default">Default Button</button>
+          <button class="btn btn-default btn-lg is-disabled">Large Button</button>
             <br><br>
-          <a href="#" class="btn btn--default">View The Solutions</a>
-          <a href="#" class="btn btn--warning active">View The Solutions</a>
-          <a href="#" class="btn btn--info">View The Solutions</a>
-          <a href="#" class="btn btn--danger">View The Solutions</a>
-          <a href="#" class="btn btn--success is-disabled">View The Solutions</a>
-          <a href="#" class="btn btn--primary">View The Solutions</a>
+          <a href="#" class="btn btn-default">View The Solutions</a>
+          <a href="#" class="btn btn-warning active">View The Solutions</a>
+          <a href="#" class="btn btn-info">View The Solutions</a>
+          <a href="#" class="btn btn-danger">View The Solutions</a>
+          <a href="#" class="btn btn-success is-disabled">View The Solutions</a>
+          <a href="#" class="btn btn-primary">View The Solutions</a>
         </div>
       </div>
     </div>
     
     <!-- Outline buttons -->
     <div class="container">
-        <button class="btn btn--default-outline">Outline Button</button>
-        <button class="btn btn--primary-outline">Primary Outline Button</button>
-        <button class="btn btn--danger-outline">Danger Outline Button</button>
-        <button class="btn btn--success-outline">Success Outline Button</button>
-        <button class="btn btn--info-outline">Info Outline Button</button>
-        <button class="btn btn--warning-outline">Warning Outline Button</button>
+        <button class="btn btn-default-outline">Outline Button</button>
+        <button class="btn btn-primary-outline">Primary Outline Button</button>
+        <button class="btn btn-danger-outline">Danger Outline Button</button>
+        <button class="btn btn-success-outline">Success Outline Button</button>
+        <button class="btn btn-info-outline">Info Outline Button</button>
+        <button class="btn btn-warning-outline">Warning Outline Button</button>
     </div>
     
     <!-- btn-pill buttons -->
     <div class="container">
-        <button class="btn btn--default-outline btn-pill">Outline Button</button>
-        <button class="btn btn--primary btn-pill">Primary Outline Button</button>
-        <button class="btn btn--danger-outline btn-pill">Danger Outline Button</button>
-        <button class="btn btn--success-outline btn-pill">Success Outline Button</button>
-        <button class="btn btn--info-outline btn-pill">Info Outline Button</button>
-        <button class="btn btn--warning btn-pill">Warning Outline Button</button>
+        <button class="btn btn-default-outline btn-pill">Outline Button</button>
+        <button class="btn btn-primary btn-pill">Primary Outline Button</button>
+        <button class="btn btn-danger-outline btn-pill">Danger Outline Button</button>
+        <button class="btn btn-success-outline btn-pill">Success Outline Button</button>
+        <button class="btn btn-info-outline btn-pill">Info Outline Button</button>
+        <button class="btn btn-warning btn-pill">Warning Outline Button</button>
     </div>
     
     <!-- btn-pill buttons -->
     <div class="container">
-        <button class="btn btn--default-gradient">Gradient Default Button</button>
-        <button class="btn btn--primary-gradient">Gradient Primary Button</button>
-        <button class="btn btn--danger-gradient">Gradient Danger Button</button>
-        <button class="btn btn--success-gradient">Gradient Success Button</button>
-        <button class="btn btn--info-gradient">Gradient Info Button</button>
-        <button class="btn btn--warning-gradient">Gradient Warning Button</button>
+        <button class="btn btn-default-gradient">Gradient Default Button</button>
+        <button class="btn btn-primary-gradient">Gradient Primary Button</button>
+        <button class="btn btn-danger-gradient">Gradient Danger Button</button>
+        <button class="btn btn-success-gradient">Gradient Success Button</button>
+        <button class="btn btn-info-gradient">Gradient Info Button</button>
+        <button class="btn btn-warning-gradient">Gradient Warning Button</button>
     </div>
     
     <div class="row-fluid">
@@ -120,14 +137,14 @@
           <div class="form-group">
             <input class="form-element">
               <span class="form-group-btn">
-                <button class="btn btn--success">Send</button>
+                <button class="btn btn-success">Send</button>
               </span>
           </div>
         </div>
         <div class="col3">
           <div class="form-group">
             <span class="form-group-btn">
-              <button class="btn btn--default">Send</button>
+              <button class="btn btn-default">Send</button>
             </span>
             <input class="form-element">
           </div>
@@ -141,7 +158,7 @@
           <div class="form-group">
             <input class="form-element" placeholder="placeholder">
             <span class="form-group-btn">
-              <button class="btn btn--warning"><i class="fa fa-plane"></i></button>
+              <button class="btn btn-warning"><i class="fa fa-plane"></i></button>
             </span>
           </div>
         </div>
@@ -149,7 +166,7 @@
           <div class="form-group">
             <input class="form-element" placeholder="placeholder">
             <span class="form-group-btn">
-              <button class="btn btn--success"><i class="fa fa-plus"></i></button>
+              <button class="btn btn-success"><i class="fa fa-plus"></i></button>
             </span>
           </div>
         </div>
@@ -157,14 +174,14 @@
           <div class="form-group">
             <input class="form-element">
               <span class="form-group-btn">
-                <button class="btn btn--primary">Send</button>
+                <button class="btn btn-primary">Send</button>
               </span>
           </div>
         </div>
         <div class="col3">
           <div class="form-group">
             <span class="form-group-btn">
-              <button class="btn btn--default">Send</button>
+              <button class="btn btn-default">Send</button>
             </span>
             <input class="form-element">
           </div>
@@ -176,7 +193,7 @@
       <div class="form-group">
         <input class="form-element">
           <span class="form-group-btn">
-            <button class="btn btn--success">Send</button>
+            <button class="btn btn-success">Send</button>
           </span>
       </div>
     </div>
@@ -202,14 +219,14 @@
           <div class="form-element-lg form-group">
             <input class="form-element">
               <span class="form-group-btn">
-                <button class="btn btn--primary">Send</button>
+                <button class="btn btn-primary">Send</button>
               </span>
           </div>
         </div>
         <div class="col3">
           <div class="form-element-lg form-group">
             <span class="form-group-btn">
-              <button class="btn btn--default">Send</button>
+              <button class="btn btn-default">Send</button>
             </span>
             <input class="form-element">
           </div>
@@ -221,14 +238,14 @@
     <div class="container">
       <div class="row-fluid">
         <div class="btn-group">
-          <button class="btn btn--default">«</button>
-          <button class="btn btn--default">1</button>
-          <button class="btn btn--default">2</button>
-          <button class="btn btn--default active">3</button>
-          <button class="btn btn--default">4</button>
-          <button class="btn btn--default">5</button>
-          <button class="btn btn--default">6</button>
-          <button class="btn btn--default">»</button>
+          <button class="btn btn-default">«</button>
+          <button class="btn btn-default">1</button>
+          <button class="btn btn-default">2</button>
+          <button class="btn btn-default active">3</button>
+          <button class="btn btn-default">4</button>
+          <button class="btn btn-default">5</button>
+          <button class="btn btn-default">6</button>
+          <button class="btn btn-default">»</button>
         </div>
       </div>
     </div>
@@ -238,14 +255,14 @@
       <div class="row-fluid">
         <div class="pagination no-b">
           <ul>
-            <li><a href="#" class="btn btn--default">«</a></li>
-            <li><a href="#" class="btn btn--default">1</a></li>
-            <li><a href="#" class="btn btn--default active">2</a></li>
-            <li><a href="#" class="btn btn--default">3</a></li>
-            <li><a href="#" class="btn btn--default">4</a></li>
-            <li><a href="#" class="btn btn--default">5</a></li>
-            <li><a href="#" class="btn btn--default">6</a></li>
-            <li><a href="#" class="btn btn--default">»</a></li>
+            <li><a href="#" class="btn btn-default">«</a></li>
+            <li><a href="#" class="btn btn-default">1</a></li>
+            <li><a href="#" class="btn btn-default active">2</a></li>
+            <li><a href="#" class="btn btn-default">3</a></li>
+            <li><a href="#" class="btn btn-default">4</a></li>
+            <li><a href="#" class="btn btn-default">5</a></li>
+            <li><a href="#" class="btn btn-default">6</a></li>
+            <li><a href="#" class="btn btn-default">»</a></li>
           </ul>
         </div>
       </div>
@@ -256,14 +273,14 @@
       <div class="row-fluid">
         <div class="pagination pagination-gradient">
           <ul>
-            <li><a href="#" class="btn btn--default">«</a></li>
-            <li><a href="#" class="btn btn--default">1</a></li>
-            <li><a href="#" class="btn btn--default active">2</a></li>
-            <li><a href="#" class="btn btn--default">3</a></li>
-            <li><a href="#" class="btn btn--default">4</a></li>
-            <li><a href="#" class="btn btn--default">5</a></li>
-            <li><a href="#" class="btn btn--default">6</a></li>
-            <li><a href="#" class="btn btn--default">»</a></li>
+            <li><a href="#" class="btn btn-default">«</a></li>
+            <li><a href="#" class="btn btn-default">1</a></li>
+            <li><a href="#" class="btn btn-default active">2</a></li>
+            <li><a href="#" class="btn btn-default">3</a></li>
+            <li><a href="#" class="btn btn-default">4</a></li>
+            <li><a href="#" class="btn btn-default">5</a></li>
+            <li><a href="#" class="btn btn-default">6</a></li>
+            <li><a href="#" class="btn btn-default">»</a></li>
           </ul>
         </div>
       </div>
@@ -272,9 +289,9 @@
     <div class="container">
       <div class="row-fluid">
         <div class="btn-group">
-          <button class="btn btn--default-gradient">A Long Button Name</button>
-          <button class="btn btn--default-gradient">A Long Button Name</button>
-          <button class="btn btn--primary-gradient">A Long Button Name</button>
+          <button class="btn btn-default-gradient">A Long Button Name</button>
+          <button class="btn btn-default-gradient">A Long Button Name</button>
+          <button class="btn btn-primary-gradient">A Long Button Name</button>
         </div>
       </div>
     </div>
@@ -282,9 +299,9 @@
     <div class="container">
       <div class="row-fluid">
         <div class="btn-group-lg">
-          <button class="btn btn--default">A Long Button Name</button>
-          <button class="btn btn--default">A Long Button Name</button>
-          <button class="btn btn--danger">A Long Button Name</button>
+          <button class="btn btn-default">A Long Button Name</button>
+          <button class="btn btn-default">A Long Button Name</button>
+          <button class="btn btn-danger">A Long Button Name</button>
         </div>
       </div>
     </div>
@@ -431,7 +448,7 @@
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
-          <li><a href="#" class="btn btn--default-outline btn-pill right-float">Sign Up</a></li>
+          <li><a href="#" class="btn btn-primary-outline btn-pill right-float">Sign Up</a></li>
         </ul>
       </div>
     </nav>
@@ -466,56 +483,56 @@
     
     <div class="container">
       <div class="row-fluid">
-        <a href="#" class="btn btn--default-gradient"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--primary-gradient"><i class="fa fa-plus">Add New</i></a>
-        <a href="#" class="btn btn--success-gradient"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--danger-gradient"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--info-gradient"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--warning-gradient"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-default-gradient"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-primary-gradient"><i class="fa fa-plus">Add New</i></a>
+        <a href="#" class="btn btn-success-gradient"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-danger-gradient"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-info-gradient"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-warning-gradient"><i class="fa fa-envelope">Send Mail</i></a>
       </div>
     </div>
     
     <div class="container">
       <div class="row-fluid">
-        <a href="#" class="btn btn--default"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--primary"><i class="fa fa-plus">Add New</i></a>
-        <a href="#" class="btn btn--success"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--danger"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--info"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--warning"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-default"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-primary"><i class="fa fa-plus">Add New</i></a>
+        <a href="#" class="btn btn-success"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-danger"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-info"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-warning"><i class="fa fa-envelope">Send Mail</i></a>
       </div>
     </div>
     
     <div class="container">
       <div class="row-fluid">
-        <a href="#" class="btn btn--default-outline"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--primary-outline"><i class="fa fa-plus">Add New</i></a>
-        <a href="#" class="btn btn--success-outline"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--danger-outline"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--info-outline"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn--warning-outline"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-default-outline"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-primary-outline"><i class="fa fa-plus">Add New</i></a>
+        <a href="#" class="btn btn-success-outline"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-danger-outline"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-info-outline"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-warning-outline"><i class="fa fa-envelope">Send Mail</i></a>
       </div>
     </div>
     
     <div class="container">
       <div class="row-fluid">
-        <a href="#" class="btn btn-pill btn--default-gradient"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn-pill btn--primary-gradient"><i class="fa fa-plus">Add New</i></a>
-        <a href="#" class="btn btn-pill btn--success-gradient"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn-pill btn--danger-gradient"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn-pill btn--info-gradient"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn-pill btn--warning-gradient"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-pill btn-default-gradient"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-pill btn-primary-gradient"><i class="fa fa-plus">Add New</i></a>
+        <a href="#" class="btn btn-pill btn-success-gradient"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-pill btn-danger-gradient"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-pill btn-info-gradient"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-pill btn-warning-gradient"><i class="fa fa-envelope">Send Mail</i></a>
       </div>
     </div>
     
     <div class="container">
       <div class="row-fluid">
-        <a href="#" class="btn btn-pill btn--default-outline"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn-pill btn--primary-outline"><i class="fa fa-plus">Add New</i></a>
-        <a href="#" class="btn btn-pill btn--success-outline"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn-pill btn--danger-outline"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn-pill btn--info-outline"><i class="fa fa-envelope">Send Mail</i></a>
-        <a href="#" class="btn btn-pill btn--warning-outline"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-pill btn-default-outline"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-pill btn-primary-outline"><i class="fa fa-plus">Add New</i></a>
+        <a href="#" class="btn btn-pill btn-success-outline"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-pill btn-danger-outline"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-pill btn-info-outline"><i class="fa fa-envelope">Send Mail</i></a>
+        <a href="#" class="btn btn-pill btn-warning-outline"><i class="fa fa-envelope">Send Mail</i></a>
       </div>
     </div>
     

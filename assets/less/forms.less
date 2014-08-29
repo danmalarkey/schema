@@ -217,9 +217,14 @@ input[type="checkbox"] {
   .btn-group > .btn:last-child,
   .btn-group-lg > .btn:last-child,
   .pagination > ul > li:last-child > .btn {
-    border-left: 0;
     border-top-right-radius: @border-radius;
     border-bottom-right-radius: @border-radius;
+  }
+  
+  .form-element-extra:last-child,
+  .btn-group-lg > .btn:last-child,
+  .pagination > ul > li:last-child > .btn {
+    border-left: 0;
   }
 
 .form-group .form-element:last-child,
@@ -276,14 +281,16 @@ input[type="checkbox"] {
     margin-left: -1px;
   }
   
+  /*
+.btn-group > .btn:first-child,
   .btn-group > .btn:first-child,
-  .btn-group > .btn:first-child,
+*/
   .pagination > ul > li:first-child > .btn,
   .pagination > ul > li:first-child > button {
     margin-left: 0;
   }
   
-  .btn-group > .btn:last-child,
+  /* .btn-group > .btn:last-child, */
   .pagination > ul > li:last-child > .btn,
   .pagination > ul > li:last-child > button {
     margin-left: 0;
