@@ -4,45 +4,6 @@
 //
 //  ============================================================
 
-// Table Stripe
-.table-stripe > tbody > tr:nth-child(odd) > td {
-  background-color: @accent-white;
-}
-
-    .table-stripe.table-bordered > thead > tr > th {
-      background-color: @base-white;
-    }
-    
-// Table Row is success
-.table > tbody > tr.is-success > td,
-.table > tbody > tr:hover.is-success > td {
-  background-color: lighten(@success-color, 44%);
-  color: darken(@success-color, 20%);
-}
-
-// Table row is Info
-.table > tbody > tr.is-info > td,
-.table > tbody > tr:hover.is-info > td {
-  background-color: lighten(@info-color, 44%);
-  color: darken(@info-color, 20%);
-}
-
-// Table row is Danger
-.table > tbody > tr.is-danger > td,
-.table > tbody > tr:hover.is-danger > td {
-  background-color: lighten(@danger-color, 40.5%);
-  color: darken(@danger-color, 10%);
-}
-
-// Table Condensed
-.table.table-condensed > thead > tr > th,
-.table.table-condensed  > tbody > tr > td {
-  .rem(padding-top, 5);
-  .rem(padding-bottom, 5);
-  .rem(padding-left, 7);
-  .rem(padding-right, 7);
-}
-
 .table {
   width: @table-width;
   max-width: @table-width;
@@ -52,10 +13,29 @@
   transition: all .25s ease;
   color: @base-color-777;
 }
+    // Gives a table a border
     .table-bordered {
       border: 1px solid @base-color-ccc;
     }
-    
+
+    // Every odd table row is Striped
+    .table-stripe > tbody > tr:nth-child(odd) > td {
+      background-color: @accent-white;
+    }
+
+    .table-stripe.table-bordered > thead > tr > th {
+      background-color: @base-white;
+    }
+
+    // Table Condensed
+    .table.table-condensed > thead > tr > th,
+    .table.table-condensed  > tbody > tr > td {
+      .rem(padding-top, 5);
+      .rem(padding-bottom, 5);
+      .rem(padding-left, 7);
+      .rem(padding-right, 7);
+    }
+
 .table > tr {
   display: table-row;
   vertical-align: inherit;
@@ -88,7 +68,7 @@
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 1rem;
+  .rem(padding, 16);
   line-height: @base-line-height;
   vertical-align: top;
   border-top: 1px solid @base-color-ddd;
@@ -113,4 +93,43 @@
 .table > colgroup + thead > tr:first-child > td,
 .table > thead:first-child > tr:first-child > td {
   border-top: 0;
+}
+
+// 
+// Assign colors to each Table row.
+//
+
+// Table row is Primary
+.table > tbody > tr.is-primary > td,
+.table > tbody > tr:hover.is-primary > td {
+  background-color: lighten(@info-color, 44%);
+  color: darken(@info-color, 20%);
+}
+    
+// Table Row is Success
+.table > tbody > tr.is-success > td,
+.table > tbody > tr:hover.is-success > td {
+  background-color: lighten(@success-color, 44%);
+  color: darken(@success-color, 20%);
+}
+
+// Table row is Info
+.table > tbody > tr.is-info > td,
+.table > tbody > tr:hover.is-info > td {
+  background-color: lighten(@info-color, 44%);
+  color: darken(@info-color, 20%);
+}
+
+// Table row is Warning
+.table > tbody > tr.is-warning > td,
+.table > tbody > tr:hover.is-warning > td {
+  background-color: lighten(@success-color, 44%);
+  color: darken(@success-color, 20%);
+}
+
+// Table row is Danger
+.table > tbody > tr.is-danger > td,
+.table > tbody > tr:hover.is-danger > td {
+  background-color: lighten(@danger-color, 40.5%);
+  color: darken(@danger-color, 10%);
 }

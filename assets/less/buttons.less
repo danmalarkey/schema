@@ -19,6 +19,15 @@ a:hover.btn-primary-gradient,
 a:hover.btn-info-gradient,
 a:hover.btn-danger-gradient,
 a:hover.btn-warning-gradient,
+a.btn-warning-outline:hover,
+a.btn-info-outline:hover,
+a.btn-primary-outline:hover,
+a.btn-success-outline:hover,
+a.btn-danger-outline:hover,
+a:hover.btn-success-outline,
+a:hover.btn-info-outline,
+a:hover.btn-warning-outline,
+a:hover.btn-primary-outline,
 .nav > li > a:hover.btn-default-outline,
 .nav > li > a:hover.btn-primary-outline,
 .nav > li > a:hover.btn-info-outline,
@@ -29,15 +38,9 @@ a:hover.btn-warning-gradient,
   color: @base-bg;
 }
 
-// Sets the font awesome icon before text in a button
+// Sets the font awesome icon before text in a .btn class
 .btn > i:before {
   .rem(margin-right, 8);
-}
-
-a.btn-default,
-a:hover.btn-default-gradient {
-  color: @base-color-777;
-  text-decoration: none;
 }
 
 .btn {
@@ -54,15 +57,30 @@ a:hover.btn-default-gradient {
   .transition(all .25s ease); 
 }
 
+  // Large Button
+  .btn-lg { 
+    .button-size(@base-padding-lg-vertical, @base-padding-lg-horizontal, @btn-font-size-lg, @line-height-lg, @border-radius); 
+  }
+  
+  // Small Button
+  .btn-sm {
+    .button-size(@base-padding-sm-vertical, @base-padding-sm-horizontal, @btn-font-size-sm, @line-height-sm, @border-radius);
+  }
+
+// add .btn-pill to the .btn class
+// to achieve a pill button look
 .btn-pill {
   .border-radius(@border-radius * 4);
 }
 
+// Add this class to a button 
+// that looks like a link
 .btn-link {
   background: transparent;
   background-color: transparent;
   border-color: transparent;
   color: inherit;
+  text-shadow: none;
 }
 
 // Button Block
@@ -104,26 +122,16 @@ a:hover.btn-default-gradient {
 	  color: @base-white;
   }
 
-
-
-
-
-// Large Button
-.btn-lg { 
-  .button-size(@base-padding-lg-vertical, @base-padding-lg-horizontal, @btn-font-size-lg, @line-height-lg, @border-radius); 
-}
-
-// Small Button
-.btn-sm {
-  .button-size(@base-padding-sm-vertical, @base-padding-sm-horizontal, @btn-font-size-sm, @line-height-sm, @border-radius);
-}
-
-
-
-
-// ///////////////////////
+// 
 // Default Button
-// ///////////////////////	
+// 	
+
+a.btn-default,
+a:hover.btn-default-gradient {
+  color: @base-color-777;
+  text-decoration: none;
+}
+
 .btn-default,
 .nav > li > a.btn-default {
 	.button-version(@btn-default-color, @btn-default-bg, @btn-default-border);
@@ -141,7 +149,7 @@ a:hover.btn-default-gradient {
         background-color: @base-color-777;
       }
       &:active {
-        .box-shadow(none);
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
       }
     }
         // Default Button Gradient //
@@ -159,9 +167,9 @@ a:hover.btn-default-gradient {
           }
         }
         
-// ///////////////////////
+//
 // Primary Button
-// ///////////////////////
+// 
 .btn-primary,
 .nav > li > a.btn-primary {
 	.button-version(@btn-primary-color, @btn-primary-bg, @btn-primary-border);
@@ -173,12 +181,13 @@ a:hover.btn-default-gradient {
       text-shadow: none;
       
       &:hover {
-        border-color: @primary-color;
+        border-color: rgba(0, 0, 0, .25);
         color: @base-white;
         background-color: @primary-color;
+        
       }
       &:active {
-        .box-shadow(none);
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
       }
     }
     
@@ -196,9 +205,9 @@ a:hover.btn-default-gradient {
           }
         }
         
-// ///////////////////////
+// 
 // Danger Button
-// ///////////////////////
+// 
 .btn-danger,
 .nav > li > a.btn-danger {
 	.button-version(@btn-danger-color, @btn-danger-bg, @btn-danger-border);
@@ -211,12 +220,12 @@ a:hover.btn-default-gradient {
       text-shadow: none;
       
       &:hover {
-        border-color: @danger-color;
+        border-color: rgba(0, 0, 0, .25);
         color: @base-white;
         background-color: @danger-color;
       }
       &:active {
-        .box-shadow(none);
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
       }
     }
     
@@ -234,9 +243,9 @@ a:hover.btn-default-gradient {
           }
         }
 
-// ///////////////////////
+// 
 // Info Button
-// ///////////////////////
+// 
 .btn-info,
 .nav > li > a.btn-info {
 	.button-version(@btn-info-color, @btn-info-bg, @btn-info-border);
@@ -248,13 +257,13 @@ a:hover.btn-default-gradient {
       text-shadow: none;
       
       &:hover {
-        border-color: @info-color;
+        border-color: rgba(0, 0, 0, .25);
         color: @base-white;
         background-color: @info-color;
         
       }
       &:active {
-        .box-shadow(none);
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
       }
     }
     
@@ -272,9 +281,9 @@ a:hover.btn-default-gradient {
           }
         }
 
-// ///////////////////////
+// 
 // Warning Button
-// ///////////////////////
+// 
 .btn-warning,
 .nav > li > a.btn-warning {
 	.button-version(@btn-warning-color, @btn-warning-bg, @btn-warning-border);
@@ -286,12 +295,12 @@ a:hover.btn-default-gradient {
       text-shadow: none;
       
       &:hover {
-        border-color: @warning-color;
+        border-color: rgba(0, 0, 0, .25);
         color: @base-white;
         background-color: @warning-color;
       }
       &:active {
-        .box-shadow(none);
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
       }
     }
     
@@ -309,9 +318,9 @@ a:hover.btn-default-gradient {
           }
         }
 
-// ///////////////////////    
+//     
 // Success Button
-// ///////////////////////
+// 
 .btn-success,
 .nav > li > a.btn-success {
 	.button-version(@btn-success-color, @btn-success-bg, @btn-success-border);
@@ -323,12 +332,12 @@ a:hover.btn-default-gradient {
       text-shadow: none;
       
       &:hover {
-        border-color: @success-color;
+        border-color: rgba(0, 0, 0, .25);
         color: @base-white;
         background-color: @success-color;
       }
       &:active {
-        .box-shadow(none);
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
       }
     }
     

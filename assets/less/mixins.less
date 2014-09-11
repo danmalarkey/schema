@@ -13,6 +13,10 @@
   @{property}: ~"@{remValue}rem";
 }
 
+
+
+
+
 // =============================================================
 //     
 //  A button builder
@@ -47,6 +51,11 @@
   line-height: @button-line-height;
   border-radius: @button-border-radius;
 }
+
+
+
+
+
   
 // =============================================================
 //     
@@ -63,6 +72,10 @@
   margin: 1rem 0;
   .box-sizing(border-box);
 }
+
+
+
+
 
 // =============================================================
 //     
@@ -106,6 +119,10 @@
   border-right: transparent;
 }
 
+
+
+
+
 // =============================================================
 //     
 //  Box-sizing Mixin
@@ -118,6 +135,10 @@
   -webkit-box-sizing: @value;
   box-sizing: @value;
 }
+
+
+
+
 
 // ============================================================
 //     
@@ -151,6 +172,10 @@
 	border-bottom-left-radius: @radius;
 	border-bottom-left-radius: @radius;
 }
+
+
+
+
 
 // =============================================================
 //     
@@ -188,6 +213,10 @@
     box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
 }
 
+
+
+
+
 // =============================================================
 //     
 //  Opacity Mixin
@@ -197,6 +226,10 @@
 .opacity(@opacity) {
   opacity: @opacity;
 }
+
+
+
+
 
 // =============================================================
 //     
@@ -209,6 +242,10 @@
 	-moz-transition: @transition;
 	transition: @transition;
 }
+
+
+
+
 
 // =============================================================
 //     
@@ -223,6 +260,10 @@
 	 -o-transform: rotate(@deg);
 	    transform: rotate(@deg);
 }
+
+
+
+
 
 // =============================================================
 //     
@@ -302,6 +343,9 @@
 	transform: rotateY(@deg);
 }
 
+
+
+
 // =============================================================
 //     
 //  Gradient Mixin
@@ -316,4 +360,19 @@
 	  background: -o-linear-gradient(@stop, @start);
 	  background-image: linear-gradient(top, @start, @stop);
 	  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
+
+
+
+
+// =============================================================
+//     
+//  Panel Title Builder
+//	
+// =============================================================
+
+.panel-title(@bg, @color, @border-bottom-color ) {
+  background-color: @bg;
+  color: @color;
+  border-bottom-color: @border-bottom-color;
 }
