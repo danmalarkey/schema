@@ -117,7 +117,7 @@ input[type="checkbox"] {
   display: inline-table;
   vertical-align: middle;
   position: relative;
-  .rem-px(margin-bottom, 16);
+  .rem(margin-bottom, 16);
 }
 
   .form-group::before, .form-group::after {
@@ -179,8 +179,8 @@ input[type="checkbox"] {
 .form-element:focus {
   outline: 0;
  	outline: thin dotted \9;
- 	border-color: rgb(244, 104, 1);
- 	.box-shadow(0 0 8px rgba(244, 104, 1, .6));
+ 	border-color: rgb(52,193,219);
+ 	.box-shadow(0 0 8px rgba(52,193,219,.6));
 }
 
 .form-element-extra,
@@ -299,9 +299,9 @@ input[type="checkbox"] {
     .btn-group > .btn.active,
     .pagination > ul > li.active,
     .pagination > ul > li > .active {
-      background-color: @primary-color;
+      background-color: @info-color;
       color: @base-white;
-      border-color: @primary-color;
+      border-color: @info-color;
     }
 .btn-group-lg > .btn {
   padding: @base-padding-lg-vertical @base-padding-lg-horizontal;
@@ -334,5 +334,5 @@ input[type="checkbox"] {
   margin-right: 1rem;
   margin-top: .775rem;
   float: right;
-  top: -2.40rem;
+  top: -2.45rem;
 }

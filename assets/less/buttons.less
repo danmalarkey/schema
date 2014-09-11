@@ -21,6 +21,7 @@ a:hover.btn-danger-gradient,
 a:hover.btn-warning-gradient,
 .nav > li > a:hover.btn-default-outline,
 .nav > li > a:hover.btn-primary-outline,
+.nav > li > a:hover.btn-info-outline,
 .nav > li > a:hover.btn-success-outline,
 .nav > li > a:hover.btn-warning-outline,
 .nav > li > a:hover.btn-danger-outline {
@@ -28,8 +29,9 @@ a:hover.btn-warning-gradient,
   color: @base-bg;
 }
 
+// Sets the font awesome icon before text in a button
 .btn > i:before {
-  .rem-px(margin-right, 8);
+  .rem(margin-right, 8);
 }
 
 a.btn-default,
@@ -40,7 +42,7 @@ a:hover.btn-default-gradient {
 
 .btn {
   .button-size(@base-padding-vertical, @base-padding-horizontal, @btn-font-size, @base-line-height, @border-radius);
-  border: 1px solid transparent;
+  border: 1px solid rgba(0,0,0,.25);
   color: @base-color-777;
   display: inline-block;
   font-family: @primary-font;
@@ -48,6 +50,7 @@ a:hover.btn-default-gradient {
   outline: 0;
   cursor: pointer;
   text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0,0,0,.25);
   .transition(all .25s ease); 
 }
 
@@ -124,11 +127,14 @@ a:hover.btn-default-gradient {
 .btn-default,
 .nav > li > a.btn-default {
 	.button-version(@btn-default-color, @btn-default-bg, @btn-default-border);
+	text-shadow: none;
 }
     // Default Button Outline //
     .btn-default-outline,
     .default-outline {
       .button-version(@base-color-777, @btn-default-bg-outline, @btn-default-border-outline);
+      text-shadow: none;
+      
       &:hover {
         border-color: @base-color-777;
         color: @base-white;
@@ -142,12 +148,14 @@ a:hover.btn-default-gradient {
         .btn-default-gradient,
         .default-gradient {
           .gradient(@base-color-ccc, @base-off-white, @base-white);
-          border-color: @base-color-ccc;
+          /* border-color: @base-color-ccc; */
+          border-color: rgba(0,0,0,.25);
+          text-shadow: 0 1px 0 rgba(255,255,255,1);
           &:hover {
             .gradient(@base-color-ccc, @base-off-white, @base-off-white);
           }
           &:active {
-            .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
           }
         }
         
@@ -162,6 +170,8 @@ a:hover.btn-default-gradient {
     .btn-primary-outline,
     .primary-outline {
       .button-version(@btn-primary-color-outline, @btn-primary-bg-outline, @btn-primary-border-outline);
+      text-shadow: none;
+      
       &:hover {
         border-color: @primary-color;
         color: @base-white;
@@ -175,14 +185,14 @@ a:hover.btn-default-gradient {
         // Primary Button Gradient //
         .btn-primary-gradient,
         .primary-gradient {
-          .gradient(@primary-color, @primary-color, lighten(@primary-color, 15%));
-          border-color: @primary-color;
+          .gradient(@primary-color, darken(@primary-color, 2%), lighten(@primary-color, 20%));
+          border-color: rgba(0,0,0,.25);
           color: @base-white;
           &:hover {
             .gradient(@primary-color, @primary-color, @primary-color);
           }
           &:active {
-            .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
           }
         }
         
@@ -198,6 +208,8 @@ a:hover.btn-default-gradient {
     .btn-danger-outline,
     .danger-outline {
       .button-version(@btn-danger-color-outline, @btn-danger-bg-outline, @btn-danger-border-outline);
+      text-shadow: none;
+      
       &:hover {
         border-color: @danger-color;
         color: @base-white;
@@ -211,14 +223,14 @@ a:hover.btn-default-gradient {
         // Danger Button Gradient //
         .btn-danger-gradient,
         .danger-gradient {
-          .gradient(@danger-color, @danger-color, lighten(@danger-color, 15%));
-          border-color: @danger-color;
+          .gradient(@danger-color, darken(@danger-color, 2%), lighten(@danger-color, 20%));
+          border-color: rgba(0,0,0,.25);
           color: @base-white;
           &:hover {
             .gradient(@danger-color, @danger-color, @danger-color);
           }
           &:active {
-            .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
           }
         }
 
@@ -233,10 +245,13 @@ a:hover.btn-default-gradient {
     .btn-info-outline,
     .info-outline {
       .button-version(@btn-info-color-outline, @btn-info-bg-outline, @btn-info-border-outline);
+      text-shadow: none;
+      
       &:hover {
         border-color: @info-color;
         color: @base-white;
         background-color: @info-color;
+        
       }
       &:active {
         .box-shadow(none);
@@ -246,14 +261,14 @@ a:hover.btn-default-gradient {
         // Info Button Gradient //
         .btn-info-gradient,
         .info-gradient {
-          .gradient(@info-color, @info-color, lighten(@info-color, 15%));
-          border-color: @info-color;
+          .gradient(@info-color, darken(@info-color, 2%), lighten(@info-color, 20%));
+          border-color: rgba(0,0,0,.25);
           color: @base-white;
           &:hover {
             .gradient(@info-color, @info-color, @info-color);
           }
           &:active {
-            .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
           }
         }
 
@@ -268,6 +283,8 @@ a:hover.btn-default-gradient {
     .btn-warning-outline,
     .warning-outline {
       .button-version(@btn-warning-color-outline, @btn-warning-bg-outline, @btn-warning-border-outline);
+      text-shadow: none;
+      
       &:hover {
         border-color: @warning-color;
         color: @base-white;
@@ -281,14 +298,14 @@ a:hover.btn-default-gradient {
         // Warning Button Gradient //
         .btn-warning-gradient,
         .warning-gradient {
-          .gradient(@warning-color, @warning-color, lighten(@warning-color, 15%));
-          border-color: @warning-color;
+          .gradient(@warning-color, darken(@warning-color, 2%), lighten(@warning-color, 20%));
+          border-color: rgba(0,0,0,.25);
           color: @base-white;
           &:hover {
             .gradient(@warning-color, @warning-color, @warning-color);
           }
           &:active {
-            .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
           }
         }
 
@@ -303,6 +320,8 @@ a:hover.btn-default-gradient {
     .btn-success-outline,
     .success-outline {
       .button-version(@btn-success-color-outline, @btn-success-bg-outline, @btn-success-border-outline);
+      text-shadow: none;
+      
       &:hover {
         border-color: @success-color;
         color: @base-white;
@@ -316,13 +335,13 @@ a:hover.btn-default-gradient {
         // Success Button Gradient //
         .btn-success-gradient,
         .success-gradient {
-          .gradient(@success-color, @success-color, lighten(@success-color, 15%));
-          border-color: @success-color;
+          .gradient(@success-color, darken(@success-color, 2%), lighten(@success-color, 20%));
+          border-color: rgba(0,0,0,.25);
           color: @base-white;
           &:hover {
             .gradient(@success-color, @success-color, @success-color);
           }
           &:active {
-            .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
           }
         }

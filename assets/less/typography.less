@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: inherit; 
 	text-rendering: optimizelegibility;
 	color: @base-color-333; 
+	margin-bottom: 0;
 }
 	
 	
@@ -28,32 +29,32 @@ h1.heading, h3.heading {
 }
 	
 h1 { 
-	.rem-px(font-size, 36); 
+	.rem(font-size, 36); 
 	line-height: 1.4; 
-	letter-spacing: -1px; 
+  font-weight: @weight-300;
 }
 	
 h2 { 
-	.rem-px(font-size, 31);   
+	.rem(font-size, 31);   
 	line-height: 1.2;  
 }
 		
 h3 { 
-	.rem-px(font-size, 24);  
+	.rem(font-size, 24);  
 	line-height: 1; 
 }
 	
 h4 { 
-	.rem-px(font-size, 18);  
+	.rem(font-size, 18);  
 	line-height: .0875px; 
 }
 	
 h5 { 
-	.rem-px(font-size, 14); 
+	.rem(font-size, 14); 
 }
 	
 h6 { 
-	.rem-px(font-size, 12);  
+	.rem(font-size, 12);  
 	line-height: .0875px; 
 }
 
@@ -69,13 +70,12 @@ h6 {
 *****************************************************************/
 
 blockquote {
-/* 	font: 14px/22px normal helvetica, sans-serif; */
 	font-family: @primary-font;
-	.rem-px(font-size, 16);
-	.rem-px(margin-top, 10);
-	.rem-px(margin-bottom, 10);
-  .rem-px(margin-left, 50);
-  .rem-px(padding-left, 16);
+	.rem(font-size, 16);
+	.rem(margin-top, 10);
+	.rem(margin-bottom, 10);
+  .rem(margin-left, 50);
+  .rem(padding-left, 16);
 	border-left: 5px solid @primary-color; 
 } 
 	
@@ -92,13 +92,13 @@ blockquote cite {
 p { 
 	color: inherit; 
 	font-family: @primary-font; 
-	.rem-px(font-size, 16);
+	.rem(font-size, 16);
 	line-height: @base-line-height;
 }
 
 p.lead,
 .lead {  
-	.rem-px(font-size, 21); 
+	.rem(font-size, 21); 
 	font-weight: bold; 
 }
 
