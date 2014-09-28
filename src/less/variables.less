@@ -101,6 +101,12 @@
 // baseline-size is the base variable to all 
 // calculations for all the things.
 @baseline-size: 								        1rem;                             // 16px 
+
+@base-font-size-xl: 					          (@base-font-size * 1.50);          // 24px // 1.5rem
+@base-font-size-large:                  (@base-font-size * 1.25);          // 20px // 1.25rem
+@base-font-size: 								        1rem;                              // 16px // 1.00rem
+@base-font-size-small:                  (@base-font-size * 0.875);         // 14px // 0.85rem
+@base-font-size-xs: 					          (@base-font-size * 0.75);          // 12px // 0.75rem
 					   
 @base-font-size-xl: 					          (@baseline-size * 1.50);          // 24px // 1.5rem
 @base-font-size-large:                  (@baseline-size * 1.25);          // 20px // 1.25rem
@@ -126,6 +132,8 @@
 
 @heading-line-height:                   (@base-line-height / 1.125); // 1.3125 / 1.125
 @heading-font-color:                    inherit;
+
+@blockquote-border-color:               @base-color;
                                         
 
 
@@ -252,7 +260,15 @@
 //	
 // =============================================================
 
-@table-width: 100%;
+@table-width:                           100%;
+
+@table-bg-color:                        @base-white;
+@table-hover-color:                     @accent-white;
+@table-border-color:                    @base-color-ccc;
+@table-head-text-color:                 @base-color-555;
+@table-text-color:                      @base-color-777;
+
+@table-padding:                         (@base-font-size * 0.75); // 12px // 0.75rem;
 
  
 // =============================================================
@@ -295,11 +311,11 @@
 //	
 // =============================================================
 
-@bp-desktop: 		~"screen and (min-width: 1200px)";
+@bp-desktop: 		~"screen and (min-width: 75rem)"; // 1200px
 
-@bp-tablet: 		~"screen and (min-width: 768px) and (max-width: 979px)";
+@bp-tablet: 		~"screen and (min-width: 48rem) and (max-width: 61.1875rem)"; // 768px and 979px
 
-@bp-mobile: 		~"screen and (max-width: 767px)";
+@bp-mobile: 		~"screen and (max-width: 47.9375rem)"; // 767px
 
 
 // =============================================================
