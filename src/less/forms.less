@@ -303,8 +303,19 @@ input[type="checkbox"] {
       color: @base-white;
       border-color: @info-color;
     }
-.btn-group-lg > .btn {
+
+/* Pagination Large Size */
+.btn-group-lg > .btn,
+.pagination-lg > ul > li > a.btn {
   padding: @base-padding-lg-vertical @base-padding-lg-horizontal;
+  .border-radius(0);
+  float: left;
+  display: inline-block;
+}
+/* Pagination Small Size */
+.btn-group-sm > .btn,
+.pagination-sm > ul > li > a.btn {
+  padding: @base-padding-sm-vertical @base-padding-sm-horizontal;
   .border-radius(0);
   float: left;
   display: inline-block;
