@@ -1759,6 +1759,16 @@ span.close {
   padding-left: 0.66666667rem;
   padding-right: 0.66666667rem;
 }
+@media screen and (max-width: 47.9375rem) {
+  .responsive-table {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #dddddd;
+  }
+}
 .table > tr {
   display: table-row;
   vertical-align: inherit;
@@ -1814,8 +1824,8 @@ span.close {
 }
 .table > tbody > tr.is-primary > td,
 .table > tbody > tr:hover.is-primary > td {
-  background-color: #d7f8f5;
-  color: #15736b;
+  background-color: #eaf4fb;
+  color: #196090;
 }
 .table > tbody > tr.is-success > td,
 .table > tbody > tr:hover.is-success > td {
@@ -2118,10 +2128,13 @@ input[type="checkbox"] {
   float: left;
   display: inline-block;
 }
-/* Removes the border on .btn-group */
+/* Removes the border */
 .btn-group.no-b > .btn,
 .btn-group-lg.no-b > .btn,
-.pagination.no-b > ul > li > .btn {
+.pagination.no-b > ul > li > .btn,
+.list-group.no-b > li,
+.list-group.no-b > li > a,
+.list-group.no-b > a.list-group-element {
   border: none;
   border-color: transparent;
 }
@@ -2604,6 +2617,10 @@ th {
     @Helper Classes
     
 \*------------------------------------*/
+.no-b {
+  border-color: transparent;
+  border: none;
+}
 .hide-text {
   font: 0/0;
   color: transparent;
@@ -3067,6 +3084,7 @@ nav a:hover {
 .list-group {
   display: block;
   position: relative;
+  padding-left: 0;
 }
 a.list-group-element,
 .list-group > li {

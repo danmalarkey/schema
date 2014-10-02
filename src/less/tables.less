@@ -35,6 +35,18 @@
       padding-left: @baseline-size / 1.5;  // 8px
       padding-right: @baseline-size / 1.5; // 8px
     }
+    
+    // Responsive Table
+    @media @bp-mobile {
+      .responsive-table {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid @base-color-ddd;
+      }
+    }
 
 .table > tr {
   display: table-row;
@@ -102,8 +114,8 @@
 // Table row is Primary
 .table > tbody > tr.is-primary > td,
 .table > tbody > tr:hover.is-primary > td {
-  background-color: lighten(@info-color, 44%);
-  color: darken(@info-color, 20%);
+  background-color: lighten(@primary-color, 42%);
+  color: darken(@primary-color, 20%);
 }
     
 // Table Row is Success
