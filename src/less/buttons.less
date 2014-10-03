@@ -4,6 +4,12 @@
     
 \*------------------------------------*/
 
+// Removes border and inherits
+// styling from .btn
+button {
+  border: none;
+}
+
 a.btn-success,
 a.btn-warning,
 a.btn-info,
@@ -45,8 +51,8 @@ a:hover.btn-primary-outline,
 
 .btn {
   .button-size(@base-padding-vertical, @base-padding-horizontal, @btn-font-size, @base-line-height, @border-radius);
-  border: 1px solid rgba(0,0,0,.15);
   color: @base-color-777;
+  border: 1px solid transparent;
   display: inline-block;
   font-family: @primary-font;
   font-weight: @btn-font-weight;
@@ -54,7 +60,7 @@ a:hover.btn-primary-outline,
   cursor: pointer;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(0,0,0,.25);
-  .transition(all .25s ease); 
+  .transition(all .25s ease);
 }
 
   // Large Button
@@ -157,8 +163,8 @@ a:hover.btn-default-gradient {
         .btn-default-gradient,
         .default-gradient {
           .gradient(@base-color-ccc, @base-off-white, @base-white);
-          /* border-color: @base-color-ccc; */
-          border-color: rgba(0,0,0,.25);
+          border: 1px solid @base-color-ccc;
+          
           text-shadow: 0 1px 0 rgba(255,255,255,1);
           &:hover {
             .gradient(@base-color-ccc, @base-off-white, @base-off-white);
@@ -182,7 +188,7 @@ a:hover.btn-default-gradient {
       text-shadow: none;
       
       &:hover {
-        border-color: rgba(0, 0, 0, .25);
+        border-color: rgba(0, 0, 0, .08);
         color: @base-white;
         background-color: @primary-color;
         
@@ -196,10 +202,12 @@ a:hover.btn-default-gradient {
         .btn-primary-gradient,
         .primary-gradient {
           .gradient(@primary-color, darken(@primary-color, 2%), lighten(@primary-color, 20%));
-          border-color: rgba(0,0,0,.25);
           color: @base-white;
+          border: 1px solid @primary-color;
+          
           &:hover {
             .gradient(@primary-color, @primary-color, @primary-color);
+            border-color: rgba(0, 0, 0, .08);
           }
           &:active {
             .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
@@ -221,7 +229,7 @@ a:hover.btn-default-gradient {
       text-shadow: none;
       
       &:hover {
-        border-color: rgba(0, 0, 0, .25);
+        border-color: rgba(0, 0, 0, .08);
         color: @base-white;
         background-color: @danger-color;
       }
@@ -234,10 +242,12 @@ a:hover.btn-default-gradient {
         .btn-danger-gradient,
         .danger-gradient {
           .gradient(@danger-color, darken(@danger-color, 2%), lighten(@danger-color, 20%));
-          border-color: rgba(0,0,0,.25);
           color: @base-white;
+          border: 1px solid @danger-color;
+          
           &:hover {
             .gradient(@danger-color, @danger-color, @danger-color);
+            border-color: rgba(0, 0, 0, .08);
           }
           &:active {
             .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
@@ -258,7 +268,7 @@ a:hover.btn-default-gradient {
       text-shadow: none;
       
       &:hover {
-        border-color: rgba(0, 0, 0, .25);
+        border-color: rgba(0, 0, 0, .08);
         color: @base-white;
         background-color: @info-color;
         
@@ -272,10 +282,12 @@ a:hover.btn-default-gradient {
         .btn-info-gradient,
         .info-gradient {
           .gradient(@info-color, darken(@info-color, 2%), lighten(@info-color, 20%));
-          border-color: rgba(0,0,0,.25);
           color: @base-white;
+          border: 1px solid @info-color;
+          
           &:hover {
             .gradient(@info-color, @info-color, @info-color);
+            border-color: rgba(0, 0, 0, .08);
           }
           &:active {
             .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
@@ -296,7 +308,7 @@ a:hover.btn-default-gradient {
       text-shadow: none;
       
       &:hover {
-        border-color: rgba(0, 0, 0, .25);
+        border-color: rgba(0, 0, 0, .08);
         color: @base-white;
         background-color: @warning-color;
       }
@@ -309,10 +321,12 @@ a:hover.btn-default-gradient {
         .btn-warning-gradient,
         .warning-gradient {
           .gradient(@warning-color, darken(@warning-color, 2%), lighten(@warning-color, 20%));
-          border-color: rgba(0,0,0,.25);
           color: @base-white;
+          border: 1px solid @warning-color;
+          
           &:hover {
             .gradient(@warning-color, @warning-color, @warning-color);
+            border-color: rgba(0, 0, 0, .08);
           }
           &:active {
             .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
@@ -333,7 +347,7 @@ a:hover.btn-default-gradient {
       text-shadow: none;
       
       &:hover {
-        border-color: rgba(0, 0, 0, .25);
+        border-color: rgba(0, 0, 0, .08);
         color: @base-white;
         background-color: @success-color;
       }
@@ -346,10 +360,12 @@ a:hover.btn-default-gradient {
         .btn-success-gradient,
         .success-gradient {
           .gradient(@success-color, darken(@success-color, 2%), lighten(@success-color, 20%));
-          border-color: rgba(0,0,0,.25);
           color: @base-white;
+          border: 1px solid @success-color;
+          
           &:hover {
             .gradient(@success-color, @success-color, @success-color);
+            border-color: rgba(0, 0, 0, .08);
           }
           &:active {
             .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));

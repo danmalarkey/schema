@@ -152,7 +152,7 @@
 
 // Line height
 @line-height-lg:                        (@base-line-height * 1.3);  
-@line-height-sm:                        (@base-line-height * 0.52);                                 
+@line-height-sm:                        @baseline-size;                                 
 
 // Padding                                        
 @base-padding-vertical:                 (@baseline-size / 2); 
@@ -189,7 +189,7 @@
 // Primary                              
 @btn-primary-color: 					          @base-bg;
 @btn-primary-bg: 							          @primary-color;
-@btn-primary-border: 					          rgba(0,0,0,0.18);
+@btn-primary-border: 					          darken(@primary-color, 7%);
 
     // Primary-outline //
     @btn-primary-color-outline:         @primary-color;
@@ -199,7 +199,7 @@
 // Danger                               
 @btn-danger-color: 						          @base-bg;
 @btn-danger-bg: 							          @danger-color;
-@btn-danger-border: 					          rgba(0,0,0,0.18);
+@btn-danger-border: 					          darken(@danger-color, 7%);
 
     // Danger-outline //
     @btn-danger-color-outline:         @danger-color;
@@ -209,17 +209,17 @@
 // Info                                 
 @btn-info-color: 							          @base-bg;
 @btn-info-bg: 								          @info-color;
-@btn-info-border: 						          rgba(0,0,0,0.18);
+@btn-info-border: 						          darken(@info-color, 7%);;
 
     // Info-outline //
-    @btn-info-color-outline:         @info-color;
-    @btn-info-bg-outline:            transparent;
-    @btn-info-border-outline:        @info-color;
+    @btn-info-color-outline:           @info-color;
+    @btn-info-bg-outline:              transparent;
+    @btn-info-border-outline:          @info-color;
                                         
 // Warning                              
 @btn-warning-color: 					          @base-bg;
 @btn-warning-bg: 							          @warning-color;
-@btn-warning-border: 					          rgba(0,0,0,0.18);
+@btn-warning-border: 					          darken(@warning-color, 7%);
 
     // Warning-outline //
     @btn-warning-color-outline:         @warning-color;
@@ -229,7 +229,7 @@
 // Success                              
 @btn-success-color: 					          @base-bg;
 @btn-success-bg: 							          @success-color;
-@btn-success-border: 					          rgba(0,0,0,0.18);
+@btn-success-border: 					          darken(@success-color, 7%);
 
     // Success-outline //
     @btn-success-color-outline:         @success-color;

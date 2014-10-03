@@ -11,6 +11,7 @@
 
 input {
   line-height: normal;
+  outline: 0;
 }
 
 // 
@@ -114,13 +115,23 @@ input[type="checkbox"] {
 
 // Group that contains all form related classes
 .form-group {
-  display: inline-table;
   vertical-align: middle;
   position: relative;
   .rem(margin-bottom, 16);
 }
 
-  .form-group::before, .form-group::after {
+  // Use this class for appended input fields 
+  .form-element-group,
+  .form-element-group-lg,
+  .form-element-group-sm {
+    display: inline-table;
+    vertical-align: middle;
+    position: relative;
+    .rem(margin-bottom, 16);
+  }
+
+  .form-group::before, .form-group::after,
+  .form-element-group::before, .form-element-group::after {
   	clear: both; 
   	display: table;
   	content: "" 
@@ -150,10 +161,13 @@ input[type="checkbox"] {
 }
 
 //Form Element Lg - apply to the same class as form-group
+.form-element-lg,
 .form-element-lg > .form-element,
 .form-element-lg > .form-element-extra,
-.form-element-lg > .form-group-btn:first-child > .btn,
-.form-element-lg > .form-group-btn:last-child > .btn {
+.form-element-group-lg > .form-element, 
+.form-element-group-lg > .form-element-extra,
+.form-element-group-lg > .form-group-btn:first-child > .btn,
+.form-element-group-lg > .form-group-btn:last-child > .btn {
   padding: @base-padding-lg-vertical @base-padding-lg-horizontal;
   line-height: @line-height-lg;
   font-size: @btn-font-size-lg;
@@ -161,15 +175,24 @@ input[type="checkbox"] {
 
 .form-element-lg > .form-element.btn-pill,
 .form-element-lg > .form-element-extra.btn-pill,
+.form-element-group-lg > .form-element.btn-pill,
+.form-element-group-lg > .form-element-extra.btn-pill,
 .form-element-lg > .form-group-btn:first-child > .btn.btn-pill,
-.form-element-lg > .form-group-btn:last-child > .btn.btn-pill {
+.form-element-lg > .form-group-btn:last-child > .btn.btn-pill
+.form-element-group-lg > .form-group-btn:first-child > .btn.btn-pill,
+.form-element-group-lg > .form-group-btn:last-child > .btn.btn-pill {
   .border-radius(@border-radius * 10);  
 }
 
+.form-element-sm,
 .form-element-sm > .form-element,
 .form-element-sm > .form-element-extra,
+.form-element-group-sm > .form-element,
+.form-element-group-sm > .form-element-extra,
 .form-element-sm > .form-group-btn:first-child > .btn,
-.form-element-sm > .form-group-btn:last-child > .btn {
+.form-element-sm > .form-group-btn:last-child > .btn 
+.form-element-group-sm > .form-group-btn:first-child > .btn,
+.form-element-group-sm > .form-group-btn:last-child > .btn{
   padding: (@base-padding-sm-vertical / 1.75) @base-padding-sm-horizontal;
   line-height: @line-height-sm;
   font-size: @btn-font-size-sm;
@@ -204,38 +227,65 @@ input[type="checkbox"] {
   width: 1%;
 }
 
-.form-element-extra:first-child,
+.form-element-group > .form-element-extra:first-child,
+.form-element-group-lg > .form-element-extra:first-child,
+.form-element-group-sm > .form-element-extra:first-child,
+.form-element-group > .btn-group > .btn:first-child,
 .btn-group > .btn:first-child,
 .btn-group-lg > .btn:first-child,
+.btn-group-sm > .btn:first-child,
+.form-element-group > .btn-group-lg > .btn:first-child,
+
+.form-element-group > .form-group-btn:first-child > .btn,
+.form-element-group-lg > .form-group-btn:first-child > .btn,
+
+.form-element-group-lg > .form-element-extra:first-child,
+.form-element-group-lg > .btn-group > .btn:first-child,
+.form-element-group-lg > .btn-group-lg > .btn:first-child,
 .pagination > ul > li:first-child > .btn {
   border-top-left-radius: @border-radius;
   border-bottom-left-radius: @border-radius;
-  border-right: 0;
+  margin-left: 1px;
 }
 
-  .form-element-extra:last-child,
+  .form-element-group > .form-element-extra:last-child,
+  .form-element-group-lg > .form-element-extra:last-child,
+  .form-element-group-sm > .form-element-extra:last-child,
+  .form-element-group > .form-group-btn:last-child > .btn,
+  .form-element-group-lg > .form-group-btn > .btn,
+  .form-element-group-sm > .form-group-btn > .btn
   .btn-group > .btn:last-child,
   .btn-group-lg > .btn:last-child,
-  .pagination > ul > li:last-child > .btn {
+  .pagination > ul > li:last-child > .btn,
+  .btn-group > .btn:last-child {
     border-top-right-radius: @border-radius;
     border-bottom-right-radius: @border-radius;
   }
   
-  .form-element-extra:last-child,
+  .form-element-group > .form-element-extra:last-child,
+  .form-element-group-lg > .form-element-extra:last-child,
+  .form-element-group-sm > .form-element-extra:last-child,
   .btn-group-lg > .btn:last-child,
   .pagination > ul > li:last-child > .btn {
     border-left: 0;
   }
 
-.form-group .form-element:last-child,
-.form-group-btn:last-child > .btn {
+.form-element-group .form-element:last-child,
+.form-element-group-lg .form-element:last-child,
+.form-element-element > .form-group-btn:last-child > .btn,
+.form-element-group > .form-group-btn > .btn,
+.form-element-group-lg > .form-group-btn > .btn,
+.form-element-group-sm > .form-group-btn > .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   margin-left: -1px;
 }
 
-  .form-group .form-element:first-child,
-  .form-group-btn:first-child > .btn {
+  .form-element-group .form-element:first-child,
+  .form-element-group-lg .form-element:first-child,
+  .form-element-group-sm .form-element:first-child,
+  .form-group-btn:first-child > .btn,
+  .form-element-group-btn:first-child > .btn {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     margin-right: -1px;
@@ -256,6 +306,11 @@ input[type="checkbox"] {
   position: relative;
   vertical-align: middle;
   .border-radius(0);
+}
+
+.pagination > ul > li > a {
+  .box-shadow(none);
+  border: 1px solid @base-color-ccc;
 }
 
 .pagination-gradient > ul > li {
@@ -281,10 +336,6 @@ input[type="checkbox"] {
     margin-left: -1px;
   }
   
-  /*
-.btn-group > .btn:first-child,
-  .btn-group > .btn:first-child,
-*/
   .pagination > ul > li:first-child > .btn,
   .pagination > ul > li:first-child > button {
     margin-left: 0;
