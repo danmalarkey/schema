@@ -2697,7 +2697,7 @@ th {
 .is-disabled,
 .disabled {
   pointer-events: none;
-  opacity: .5;
+  opacity: .75;
   cursor: not-allowed;
 }
 .left-float {
@@ -2798,6 +2798,9 @@ th {
 .has-success {
   color: #2ecc71;
 }
+.has-primary {
+  color: #3498db;
+}
 .has-info {
   color: #24cabc;
 }
@@ -2814,6 +2817,9 @@ th {
 \*------------------------------------*/
 .f-is-success {
   border-color: #2ecc71;
+}
+.f-is-primary {
+  border-color: #3498db;
 }
 .f-is-danger {
   border-color: #e74c3c;
