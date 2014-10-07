@@ -309,37 +309,6 @@ a:hover.btn-primary-outline,
   display: block;
   width: 100%;
 }
-.btn-label {
-  vertical-align: middle;
-  padding: .1875rem .5rem;
-  background-color: #cccccc;
-  color: #ffffff;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-}
-.btn-label.primary {
-  background-color: #3498db;
-  color: #ffffff;
-}
-.btn-label.success {
-  background-color: #2ecc71;
-  color: #ffffff;
-}
-.btn-label.danger {
-  background-color: #e74c3c;
-  color: #ffffff;
-}
-.btn-label.info {
-  background-color: #24cabc;
-  color: #ffffff;
-}
-.btn-label.warning {
-  background-color: #f39c12;
-  color: #ffffff;
-}
 a.btn-default,
 a:hover.btn-default-gradient {
   color: #777777;
@@ -2478,9 +2447,13 @@ input[type="checkbox"] {
   margin-top: 0;
   margin-bottom: 0.4rem;
 }
-.panel p {
+.panel a,
+.panel > .btn {
   margin-top: 0.5rem;
   margin-bottom: 0;
+}
+.panel p {
+  margin: 1rem 0 0 0;
 }
 /*------------------------------------*\
 
@@ -2552,6 +2525,48 @@ input[type="checkbox"] {
 }
 .btn-danger > .badge {
   color: #e74c3c;
+}
+/*------------------------------------*\
+
+    @Label Buttons
+    
+\*------------------------------------*/
+.btn-label {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0.025rem .25rem;
+  background-color: #cccccc;
+  color: #ffffff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin: .5rem 0;
+}
+.btn-label.primary {
+  background-color: #3498db;
+  color: #ffffff;
+}
+.btn-label.success {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+.btn-label.danger {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+.btn-label.info {
+  background-color: #24cabc;
+  color: #ffffff;
+}
+.btn-label.warning {
+  background-color: #f39c12;
+  color: #ffffff;
 }
 /*------------------------------------*\
 
