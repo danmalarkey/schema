@@ -160,6 +160,11 @@ input[type="checkbox"] {
           transition: border linear 0.25s, box-shadow linear 0.25s;
 }
 
+// Adds a background color on disabled form-elements
+.form-element.is-disabled {
+  background-color: @base-color-eee;
+}
+
 //Form Element Lg - apply to the same class as form-group
 .form-element-lg,
 .form-element-lg > .form-element,
@@ -242,7 +247,8 @@ input[type="checkbox"] {
 .form-element-group-lg > .form-element-extra:first-child,
 .form-element-group-lg > .btn-group > .btn:first-child,
 .form-element-group-lg > .btn-group-lg > .btn:first-child,
-.pagination > ul > li:first-child > .btn {
+.pagination > ul > li:first-child > .btn,
+.pagination > ul > li:first-child {
   border-top-left-radius: @border-radius;
   border-bottom-left-radius: @border-radius;
   margin-left: 1px;
@@ -253,11 +259,12 @@ input[type="checkbox"] {
   .form-element-group-sm > .form-element-extra:last-child,
   .form-element-group > .form-group-btn:last-child > .btn,
   .form-element-group-lg > .form-group-btn > .btn,
-  .form-element-group-sm > .form-group-btn > .btn
+  .form-element-group-sm > .form-group-btn > .btn,
+  .btn-group > .btn:last-child,
   .btn-group > .btn:last-child,
   .btn-group-lg > .btn:last-child,
   .pagination > ul > li:last-child > .btn,
-  .btn-group > .btn:last-child {
+  .pagination > ul > li:last-child {
     border-top-right-radius: @border-radius;
     border-bottom-right-radius: @border-radius;
   }
@@ -266,6 +273,7 @@ input[type="checkbox"] {
   .form-element-group-lg > .form-element-extra:last-child,
   .form-element-group-sm > .form-element-extra:last-child,
   .btn-group-lg > .btn:last-child,
+  .pagination > ul > li:last-child,
   .pagination > ul > li:last-child > .btn {
     border-left: 0;
   }
@@ -306,6 +314,10 @@ input[type="checkbox"] {
   position: relative;
   vertical-align: middle;
   .border-radius(0);
+}
+
+.pagination > ul {
+  padding-left: 0;
 }
 
 .pagination > ul > li > a {
