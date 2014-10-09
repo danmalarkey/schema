@@ -271,7 +271,6 @@ a:hover.btn-primary-outline,
   display: inline-block;
   font-family: 'Source Sans Pro', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
-  outline: 0;
   cursor: pointer;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
@@ -2059,6 +2058,7 @@ input[type="checkbox"] {
 }
 .form-element-group .form-element:last-child,
 .form-element-group-lg .form-element:last-child,
+.form-element-group-sm .form-element:last-child,
 .form-element-element > .form-group-btn:last-child > .btn,
 .form-element-group > .form-group-btn > .btn,
 .form-element-group-lg > .form-group-btn > .btn,
@@ -2080,6 +2080,7 @@ input[type="checkbox"] {
 .form-group-btn {
   width: 1%;
   vertical-align: middle;
+  white-space: nowrap;
 }
 .btn-group,
 .btn-group-lg,
