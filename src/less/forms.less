@@ -261,6 +261,7 @@ input[type="checkbox"] {
   .btn-group > .btn:last-child,
   .btn-group > .btn:last-child,
   .btn-group-lg > .btn:last-child,
+  .btn-group-sm > .btn:last-child,
   .pagination > ul > li:last-child > .btn,
   .pagination > ul > li:last-child {
     border-top-right-radius: @border-radius;
@@ -270,7 +271,6 @@ input[type="checkbox"] {
   .form-element-group > .form-element-extra:last-child,
   .form-element-group-lg > .form-element-extra:last-child,
   .form-element-group-sm > .form-element-extra:last-child,
-  .btn-group-lg > .btn:last-child,
   .pagination > ul > li:last-child,
   .pagination > ul > li:last-child > .btn {
     border-left: 0;
@@ -307,6 +307,7 @@ input[type="checkbox"] {
 
 .btn-group,
 .btn-group-lg,
+.btn-group-sm,
 .pagination > ul > li,
 .pagination > ul > li > a {
   float: left;
@@ -336,13 +337,15 @@ input[type="checkbox"] {
     }	
 
 .btn-group > .btn,
-.btn-group-lg > .btn
+.btn-group-lg > .btn,
+.btn-group-sm > .btn,
 .pagination > ul > li > a {
   .left-float;
   .border-radius(0);
 } 
   .btn-group > .btn + .btn,
   .btn-group-lg > .btn + .btn,
+  .btn-group-sm > .btn + .btn,
   .pagination > ul > li > a,
   .pagination > ul > li > .btn  {
     margin-left: -1px;
@@ -387,6 +390,7 @@ input[type="checkbox"] {
 /* Removes the border */
 .btn-group.no-b > .btn,
 .btn-group-lg.no-b > .btn,
+.btn-group-sm.no-b > .btn,
 .pagination.no-b > ul > li > .btn,
 .list-group.no-b > li,
 .list-group.no-b > li > a,
