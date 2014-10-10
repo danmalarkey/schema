@@ -2082,113 +2082,6 @@ input[type="checkbox"] {
   vertical-align: middle;
   white-space: nowrap;
 }
-.btn-group,
-.btn-group-lg,
-.btn-group-sm,
-.pagination > ul > li,
-.pagination > ul > li > a {
-  float: left;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-}
-.pagination > ul {
-  padding-left: 0;
-}
-.pagination > ul > li > a {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border: 1px solid #cccccc;
-}
-.pagination-gradient > ul > li {
-  background: #eeeeee;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(1, #ffffff));
-  background: -ms-linear-gradient(bottom, #eeeeee, #ffffff);
-  background: -moz-linear-gradient(center bottom, #eeeeee 0%, #ffffff 100%);
-  background: -o-linear-gradient(#ffffff, #eeeeee);
-  background-image: linear-gradient(top, #eeeeee, #ffffff);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
-}
-.pagination > ul > li > a,
-.pagination > ul > li > button {
-  background-color: transparent;
-  background: transparent;
-}
-.btn-group > .btn,
-.btn-group-lg > .btn,
-.btn-group-sm > .btn,
-.pagination > ul > li > a {
-  float: left;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-}
-.btn-group > .btn + .btn,
-.btn-group-lg > .btn + .btn,
-.btn-group-sm > .btn + .btn,
-.pagination > ul > li > a,
-.pagination > ul > li > .btn {
-  margin-left: -1px;
-}
-.pagination > ul > li:first-child > .btn,
-.pagination > ul > li:first-child > button {
-  margin-left: 0;
-}
-/* .btn-group > .btn:last-child, */
-.pagination > ul > li:last-child > .btn,
-.pagination > ul > li:last-child > button {
-  margin-left: 0;
-}
-.btn-group > .btn.active,
-.pagination > ul > li.active,
-.pagination > ul > li > .active {
-  background-color: #24cabc;
-  color: #ffffff;
-  border-color: #24cabc;
-}
-/* Pagination Large Size */
-.btn-group-lg > .btn,
-.pagination-lg > ul > li > a.btn {
-  padding: 0.875rem 1.5rem;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  float: left;
-  display: inline-block;
-}
-/* Pagination Small Size */
-.btn-group-sm > .btn,
-.pagination-sm > ul > li > a.btn {
-  padding: 0.4rem 0.6rem;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  float: left;
-  display: inline-block;
-}
-/* Removes the border */
-.btn-group.no-b > .btn,
-.btn-group-lg.no-b > .btn,
-.btn-group-sm.no-b > .btn,
-.pagination.no-b > ul > li > .btn,
-.list-group.no-b > li,
-.list-group.no-b > li > a,
-.list-group.no-b > a.list-group-element {
-  border: none;
-  border-color: transparent;
-}
 .form-group-btn > button > i:before {
   margin: 0;
 }
@@ -3249,4 +3142,116 @@ a:hover.list-group-element.active {
 .list-group-element:last-child {
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
+}
+/*------------------------------------*\
+
+    @Button Groups || @Pagination
+    
+\*------------------------------------*/
+.btn-group,
+.btn-group-lg,
+.btn-group-sm,
+.pagination > ul > li,
+.pagination > ul > li > a {
+  float: left;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.pagination > ul {
+  padding-left: 0;
+}
+.pagination > ul > li > a {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #cccccc;
+}
+.pagination-gradient > ul > li {
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(1, #ffffff));
+  background: -ms-linear-gradient(bottom, #eeeeee, #ffffff);
+  background: -moz-linear-gradient(center bottom, #eeeeee 0%, #ffffff 100%);
+  background: -o-linear-gradient(#ffffff, #eeeeee);
+  background-image: linear-gradient(top, #eeeeee, #ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
+}
+.pagination > ul > li > a,
+.pagination > ul > li > button {
+  background-color: transparent;
+  background: transparent;
+}
+.btn-group > .btn,
+.btn-group-lg > .btn,
+.btn-group-sm > .btn,
+.pagination > ul > li > a {
+  float: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.btn-group > .btn + .btn,
+.btn-group-lg > .btn + .btn,
+.btn-group-sm > .btn + .btn,
+.pagination > ul > li > a,
+.pagination > ul > li > .btn {
+  margin-left: -1px;
+}
+.pagination > ul > li:first-child > .btn,
+.pagination > ul > li:first-child > button {
+  margin-left: 0;
+}
+/* .btn-group > .btn:last-child, */
+.pagination > ul > li:last-child > .btn,
+.pagination > ul > li:last-child > button {
+  margin-left: 0;
+}
+.btn-group > .btn.active,
+.pagination > ul > li.active,
+.pagination > ul > li > .active {
+  background-color: #24cabc;
+  color: #ffffff;
+  border-color: #24cabc;
+}
+/* Pagination Large Size */
+.btn-group-lg > .btn,
+.pagination-lg > ul > li > a.btn {
+  padding: 0.875rem 1.5rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  float: left;
+  display: inline-block;
+}
+/* Pagination Small Size */
+.btn-group-sm > .btn,
+.pagination-sm > ul > li > a.btn {
+  padding: 0.4rem 0.6rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  float: left;
+  display: inline-block;
+}
+/* Removes the border */
+.btn-group.no-b > .btn,
+.btn-group-lg.no-b > .btn,
+.btn-group-sm.no-b > .btn,
+.pagination.no-b > ul > li > .btn,
+.list-group.no-b > li,
+.list-group.no-b > li > a,
+.list-group.no-b > a.list-group-element {
+  border: none;
+  border-color: transparent;
 }

@@ -113,7 +113,11 @@ input[type="checkbox"] {
   line-height: normal; 
 }
 
-// Group that contains all form related classes
+
+
+
+
+// contains all form related classes
 .form-group {
   vertical-align: middle;
   position: relative;
@@ -165,7 +169,7 @@ input[type="checkbox"] {
   background-color: @base-color-eee;
 }
 
-//Form Element Lg - apply to the same class as form-group
+//Form Element Lg - 
 .form-element-lg,
 .form-element-lg > .form-element,
 .form-element-lg > .form-element-extra,
@@ -178,6 +182,7 @@ input[type="checkbox"] {
   font-size: @btn-font-size-lg;
 }
 
+//
 .form-element-lg > .form-element.btn-pill,
 .form-element-lg > .form-element-extra.btn-pill,
 .form-element-group-lg > .form-element.btn-pill,
@@ -217,7 +222,7 @@ input[type="checkbox"] {
   display: table-cell;
 }
 
-// This is the add-on for form-elements
+// This is the add-on in the front or back if input groups
 .form-element-extra {
   background-color: @base-color-eee;
   border: 1px solid @base-color-ccc;
@@ -303,100 +308,6 @@ input[type="checkbox"] {
   width: 1%;
   vertical-align: middle;
   white-space: nowrap;
-}
-
-.btn-group,
-.btn-group-lg,
-.btn-group-sm,
-.pagination > ul > li,
-.pagination > ul > li > a {
-  float: left;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  .border-radius(0);
-}
-
-.pagination > ul {
-  padding-left: 0;
-}
-
-.pagination > ul > li > a {
-  .box-shadow(none);
-  border: 1px solid @base-color-ccc;
-}
-
-.pagination-gradient > ul > li {
-  .gradient(@base-color-eee, @base-color-eee, @base-white);
-}
-
-    .pagination > ul > li > a,
-    .pagination > ul > li > button {
-      background-color: transparent;
-      background: transparent;
-    }	
-
-.btn-group > .btn,
-.btn-group-lg > .btn,
-.btn-group-sm > .btn,
-.pagination > ul > li > a {
-  .left-float;
-  .border-radius(0);
-} 
-  .btn-group > .btn + .btn,
-  .btn-group-lg > .btn + .btn,
-  .btn-group-sm > .btn + .btn,
-  .pagination > ul > li > a,
-  .pagination > ul > li > .btn  {
-    margin-left: -1px;
-  }
-  
-  .pagination > ul > li:first-child > .btn,
-  .pagination > ul > li:first-child > button {
-    margin-left: 0;
-  }
-  
-  /* .btn-group > .btn:last-child, */
-  .pagination > ul > li:last-child > .btn,
-  .pagination > ul > li:last-child > button {
-    margin-left: 0;
-  }
-    // The active state 
-    .btn-group > .btn.active,
-    .pagination > ul > li.active,
-    .pagination > ul > li > .active {
-      background-color: @info-color;
-      color: @base-white;
-      border-color: @info-color;
-    }
-
-/* Pagination Large Size */
-.btn-group-lg > .btn,
-.pagination-lg > ul > li > a.btn {
-  padding: @base-padding-lg-vertical @base-padding-lg-horizontal;
-  .border-radius(0);
-  float: left;
-  display: inline-block;
-}
-/* Pagination Small Size */
-.btn-group-sm > .btn,
-.pagination-sm > ul > li > a.btn {
-  padding: @base-padding-sm-vertical @base-padding-sm-horizontal;
-  .border-radius(0);
-  float: left;
-  display: inline-block;
-}
-
-/* Removes the border */
-.btn-group.no-b > .btn,
-.btn-group-lg.no-b > .btn,
-.btn-group-sm.no-b > .btn,
-.pagination.no-b > ul > li > .btn,
-.list-group.no-b > li,
-.list-group.no-b > li > a,
-.list-group.no-b > a.list-group-element {
-  border: none;
-  border-color: transparent; 
 }
 
 .form-group-btn > button > i:before {
