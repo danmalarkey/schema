@@ -1,0 +1,147 @@
+/*------------------------------------*\
+
+    @Tables
+    
+\*------------------------------------*/
+
+.table {
+  width: @table-width;
+  max-width: @table-width;
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: table;
+  .transition(all .25s ease);
+  color: @table-text-color;
+}
+    // Gives a table a border
+    .table-bordered {
+      border: 1px solid @table-border-color;
+    }
+
+    // Every odd table row is Striped
+    .table-stripe > tbody > tr:nth-child(odd) > td {
+      background-color: @table-hover-color;
+    }
+
+    .table-stripe.table-bordered > thead > tr > th {
+      background-color: @table-bg-color;
+    }
+
+    // Table Condensed
+    .table.table-condensed > thead > tr > th,
+    .table.table-condensed > tbody > tr > td {
+      padding-top: @baseline-size / 2.4; // 5px
+      padding-bottom: @baseline-size / 2.4;  // 5px
+      padding-left: @baseline-size / 1.5;  // 8px
+      padding-right: @baseline-size / 1.5; // 8px
+    }
+    
+    // Responsive Table
+    @media @bp-mobile {
+      .responsive-table {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid @base-color-ddd;
+      }
+    }
+
+.table > tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+  
+  .table-bordered > thead > tr > th,
+  .table-bordered > tbody > tr > td {
+      border: 1px solid @table-border-color;
+   }
+
+      .table-bordered > thead > tr > th {
+        background-color: @table-hover-color;
+        box-shadow: inset 0 2px 0 rgba(255,255,255,.92);
+      }
+
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid @table-border-color;
+  color: @table-head-text-color;
+}
+
+    .table-bordered > thead > tr > th {
+      border-bottom-width: 1px;
+    }
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: @table-padding;
+  line-height: @base-line-height;
+  vertical-align: middle;
+  border-top: 1px solid @table-border-color;
+  text-align: left;
+}
+
+    .table-hover > tbody > tr:hover,
+    .table-hover > tfoot > tr:hover,
+    .table-hover > thead > tr:hover > td,
+    .table-hover > tbody > tr:hover > td,
+    .table-hover > tfoot > tr:hover > td,
+    .table-hover > tbody > tr > td:hover,
+    .table-hover > tfoot > tr > td:hover {
+      background-color: @table-hover-color;
+      .transition(all .25s ease);
+    }
+
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+
+// 
+// Assign colors to each Table row.
+//
+
+// Table row is Primary
+.table > tbody > tr.is-primary > td,
+.table > tbody > tr:hover.is-primary > td {
+  background-color: lighten(@primary-color, 42%);
+  color: darken(@primary-color, 20%);
+}
+    
+// Table Row is Success
+.table > tbody > tr.is-success > td,
+.table > tbody > tr:hover.is-success > td {
+  background-color: lighten(@success-color, 44%);
+  color: darken(@success-color, 20%);
+}
+
+// Table row is Info
+.table > tbody > tr.is-info > td,
+.table > tbody > tr:hover.is-info > td {
+  background-color: lighten(@info-color, 44%);
+  color: darken(@info-color, 20%);
+}
+
+// Table row is Warning
+.table > tbody > tr.is-warning > td,
+.table > tbody > tr:hover.is-warning > td {
+  background-color: lighten(@warning-color, 44%);
+  color: darken(@warning-color, 20%);
+}
+
+// Table row is Danger
+.table > tbody > tr.is-danger > td,
+.table > tbody > tr:hover.is-danger > td {
+  background-color: lighten(@danger-color, 40.5%);
+  color: darken(@danger-color, 10%);
+}

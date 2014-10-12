@@ -1,0 +1,37 @@
+.list-group {
+  display: block;
+  position: relative;
+  padding-left: 0;
+}
+
+a.list-group-element,
+.list-group > li {
+  display: block;
+  margin-bottom: -1px;
+  border: 1px solid @base-color-ddd;
+  color: @base-color-777;
+  text-decoration: none;
+  background-color: @base-white;
+  padding: @base-padding-lg-vertical @base-padding-lg-vertical;
+}
+
+    a:hover.list-group-element {
+      text-decoration: none;
+      background-color: @base-color-eee;
+      color: @base-color-555;
+    }
+    
+        .list-group-element.active,
+        a:hover.list-group-element.active {
+          background-color: @info-color;
+          color: @base-white;
+          border-color: @info-color;
+        }
+
+.list-group-element:first-child {
+  .border-radius-top-radius(@border-radius);
+}
+
+.list-group-element:last-child {
+  .border-radius-bottom-radius(@border-radius);
+}

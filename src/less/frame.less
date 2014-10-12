@@ -1,0 +1,66 @@
+//  ============================================================
+//
+//  The Framework of Schema
+//
+//  ============================================================
+
+
+body {
+  background-color: @base-bg;
+  color: @text-color;
+  font-family: @primary-font;
+  font-weight: @font-family-weight;
+  .rem(font-size, 16);
+  line-height: @base-line-height;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+
+.xml {
+  font-size: 12px;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+  .transition(all .25s ease);
+  font-weight: @weight-700;
+  
+  &:hover {
+    color: @info-color;
+    text-decoration: underline;
+  }
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* -webkit- */
+::selection {
+  background-color: @info-color;
+  color: @base-white;
+}
+/* fireforx */
+::-moz-selection {
+  background-color: @info-color;
+  color: @base-white;
+}
+
+hr {
+  .hr(1px, @base-color-eee);
+}
+
+.sm-hr {
+  .rem(width, 120);
+}

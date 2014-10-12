@@ -1,0 +1,97 @@
+// 
+// Panels
+// 
+.panel {
+  margin-bottom: 1rem;
+}
+
+.panel {
+  border: 1px solid transparent;
+  background-color: @base-white;
+  .border-radius(@border-radius);
+  .box-shadow(0 2px 5px rgba(0,0,0,.15));
+}
+
+  .panel-title {
+    padding: @base-padding-lg-horizontal @base-padding-lg-vertical;
+    .border-radius-top-radius(@border-radius);
+    border-bottom: 1px solid transparent;
+    font-weight: @weight-700;
+  }
+  
+  .panel-body {
+    padding: @base-padding-lg-horizontal @base-padding-lg-vertical;
+    .border-radius-bottom-radius(@border-radius);  
+  }
+
+
+
+
+.panel-default {
+  border-color: @default-border-bottom-color;
+  
+  > .panel-title {
+    .panel-title(@default-color-bg, @default-text, @default-border-bottom-color);
+  }
+}
+
+.panel-success {
+  border-color: @success-border-bottom-color;
+  
+  > .panel-title {
+    .panel-title(@success-color-bg, @success-text, @success-border-bottom-color);
+  }
+}
+
+.panel-info {
+  border-color: @info-border-bottom-color;
+  
+  > .panel-title {
+    .panel-title(@info-color-bg, @info-text, @info-border-bottom-color);
+  }
+}
+
+.panel-warning {
+  border-color: @warning-border-bottom-color;
+  
+  > .panel-title {
+    .panel-title(@warning-color-bg, @warning-text, @warning-border-bottom-color);
+  }
+}
+
+.panel-danger {
+  border-color: @danger-border-bottom-color;
+  
+  > .panel-title {
+    .panel-title(@danger-color-bg, @danger-text, @danger-border-bottom-color);
+  }
+}
+
+.panel-primary {
+  border-color: @primary-border-bottom-color;
+  
+  > .panel-title {
+    .panel-title(@primary-color-bg, @primary-text, @primary-border-bottom-color);
+  }
+}
+
+
+.panel h1,
+.panel h2,
+.panel h3, 
+.panel h4,
+.panel h5,
+.panel h6 {
+  margin-top: 0;
+  margin-bottom: @baseline-size / 2.5;
+}
+
+.panel a,
+.panel > .btn {
+  margin-top: @baseline-size / 2;
+  margin-bottom: 0;
+}
+
+.panel p {
+  margin: 1rem 0 0 0;
+}
