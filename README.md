@@ -1,5 +1,4 @@
 #Schema UI Framework
-##The lean and responsive front end UI framework built on LESS.
 Schema is a modular, responsive, front end framework to easily and quickly help you jumpstart your process in building complex interfaces for the web right out the box. It was created by [Dan Malarkey](http://danmalarkey.com) and the [feature[23]] (http://feature23.com) team. 
 
 Learn more about Schema and how to use it by [reviewing the documentation]( 
