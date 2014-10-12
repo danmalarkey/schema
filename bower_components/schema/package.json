@@ -1,8 +1,0 @@
-{
-  "name": "schema",
-  "version": "0.1.0",
-  "description": "Schema validation",
-  "license": "MIT",
-  "main": "index.js",
-  "author": "Alexey Raspopov (https://github.com/alexeyraspopov)"
-}
