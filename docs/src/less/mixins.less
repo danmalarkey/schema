@@ -1,0 +1,377 @@
+// =============================================================
+//     
+//  REM to Pixel Mixin.
+//  This mixin gives a REM value
+//  and provides a pixel fallback.
+//	
+// ============================================================= 
+
+.rem(@property; @sizeValue) {
+  @pxValue: @sizeValue;
+  @remValue: (@sizeValue / @rem-font-size);
+  @{property}: ~"@{pxValue}px";
+  @{property}: ~"@{remValue}rem";
+}
+
+
+
+
+
+// =============================================================
+//     
+//  A button builder
+//  Create different buttons with color,
+//  background color, and border color.
+//	
+// =============================================================
+
+.button-version (@color; @background; @border) {
+	color: @color;
+	background-color: @background;
+	border-color: @border;
+	.transition(all .25s ease-in-out);
+	
+	&:hover {
+		background-color: darken(@background, 5%);
+    border-color: darken(@border, 5%);
+	}
+	&:active {
+		color: @color;
+		background-color: darken(@background, 8.5%);
+    border-color: darken(@border, 8.5%);
+    .box-shadow(inset 0px 2px 6px rgba(0,0,0,.25));
+    outline: 0;
+	}
+}
+
+.button-size(@button-padding-vertical; @button-padding-horizontal; @button-font-size; @button-line-height; @button-border-radius) {
+  padding: @button-padding-vertical @button-padding-horizontal;
+  font-size: @button-font-size;
+  line-height: @button-line-height;
+  border-radius: @button-border-radius;
+}
+
+
+
+
+
+  
+// =============================================================
+//     
+//  Horizontal Rule Mixins
+//	
+// =============================================================
+
+.hr(@size, @color) {
+  border-top: @size solid @color;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  height: 1px;
+  margin: 2rem 0;
+  .box-sizing(border-box);
+}
+
+
+
+
+
+// =============================================================
+//     
+//  Border-style Mixin
+//	
+// =============================================================
+
+.border-style-bottom(@border-width, @border-style, @border-color) {
+  border-width: @border-width;
+  border-style: @border-style;
+  border-color: @border-color;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.border-style-left(@border-width, @border-style, @border-color) {
+  border-width: @border-width;
+  border-style: @border-style;
+  border-color: @border-color;
+  border-bottom: transparent;
+  border-top: transparent;
+  border-right: transparent;
+}
+
+.border-style-right(@border-width, @border-style, @border-color) {
+  border-width: @border-width;
+  border-style: @border-style;
+  border-color: @border-color;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-top: transparent;
+}
+
+.border-style-top(@border-width, @border-style, @border-color) {
+  border-width: @border-width;
+  border-style: @border-style;
+  border-color: @border-color;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+
+
+
+
+// =============================================================
+//     
+//  Box-sizing Mixin
+//	
+// =============================================================
+
+.box-sizing(@value) {
+  -moz-box-sizing: @value;
+  -o-box-sizing: @value;
+  -webkit-box-sizing: @value;
+  box-sizing: @value;
+}
+
+
+
+
+
+// ============================================================
+//     
+//  Border-radius Mixin
+// 	
+// ============================================================ 
+			
+.border-radius (@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius; }
+  
+.border-radius-top-radius(@radius) {
+	border-top-right-radius: @radius;
+	border-top-left-radius: @radius;
+}
+
+.border-radius-right-radius(@radius) {
+	border-bottom-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+}
+
+.border-radius-bottom-radius(@radius) {
+	border-bottom-right-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+
+.border-radius-left-radius(@radius) {
+	border-bottom-left-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+
+
+
+
+
+// =============================================================
+//     
+//  Box-shadow mixins with multiple values.
+//	
+// =============================================================
+
+.box-shadow(@shadow1) {
+    -webkit-box-shadow: @shadow1;
+    -moz-box-shadow: @shadow1;
+    box-shadow: @shadow1;
+}
+
+.box-shadow(@shadow1, @shadow2) {
+    -webkit-box-shadow: @shadow1, @shadow2;
+    -moz-box-shadow: @shadow1, @shadow2;
+    box-shadow: @shadow1, @shadow2;
+}    
+
+.box-shadow(@shadow1, @shadow2, @shadow3) {
+    -webkit-box-shadow: @shadow1, @shadow2, @shadow3;
+    -moz-box-shadow: @shadow1, @shadow2, @shadow3;
+    box-shadow: @shadow1, @shadow2, @shadow3;
+}
+
+.box-shadow(@shadow1, @shadow2, @shadow3, @shadow4) {
+    -webkit-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
+    -moz-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
+    box-shadow: @shadow1, @shadow2, @shadow3, @shadow4;
+}
+
+.box-shadow(@shadow1, @shadow2, @shadow3, @shadow4, @shadow5) {
+    -webkit-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
+    -moz-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
+    box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5;
+}
+
+
+
+
+
+// =============================================================
+//     
+//  Opacity Mixin
+//	
+// ============================================================= 
+
+.opacity(@opacity) {
+  opacity: @opacity;
+}
+
+
+
+
+
+// =============================================================
+//     
+//  Transition Mixin
+//	
+// =============================================================
+
+.transition(@transition) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	transition: @transition;
+}
+
+
+
+
+
+// =============================================================
+//     
+//  Rotate Mixin
+//	
+// =============================================================
+
+.rotate(@deg) {
+	-webkit-transform: rotate(@deg);    
+	-moz-transform: rotate(@deg);   
+	-ms-transform: rotate(@deg);   
+	 -o-transform: rotate(@deg);
+	    transform: rotate(@deg);
+}
+
+
+
+
+
+// =============================================================
+//     
+//  Transforms Mixin
+//	
+// ============================================================= 
+
+.skew(@skew) {
+	-webkit-transform: skew(@skew);
+	-moz-transform: skew(@skew);
+	-ms-transform: skew(@skew);
+	-o-transform: skew(@skew);
+	transform: skew(@skew);
+}
+
+.scale(@scale) {
+	-webkit-transform: scale(@scale);
+	-moz-transform: scale(@scale);
+	-ms-transform: scale(@scale);
+	-o-transform: scale(@scale);
+	transform: scale(@scale);
+}
+
+.scale-3d(@scale3d) {
+	-webkit-transform: scale3d(@scale3d);
+	-moz-transform: scale3d(@scale3d);
+	-ms-transform: scale3d(@scale3d);
+	-o-transform: scale3d(@scale3d);
+	transform: scale3d(@scale3d);
+}
+
+.translate (@x, @y) {
+  -webkit-transform: translate(@x, @y);
+	-moz-transform: translate(@x, @y);
+	-ms-transform: translate(@x, @y);
+	-o-transform: translate(@x, @y);
+	transform: translate(@x, @y);
+}
+
+.translateX (@value) {
+  -webkit-transform: translateX(@value);
+	-moz-transform: translateX(@value);
+	-ms-transform: translateX(@value);
+	-o-transform: translateX(@value);
+	transform: translateX(@value);
+}
+
+.translateY (@value) {
+  -webkit-transform: translateY(@value);
+	-moz-transform: translateY(@value);
+	-ms-transform: translateY(@value);
+	-o-transform: translateY(@value);
+	transform: translateY(@value);
+}
+
+.rotate(@deg) {
+  -webkit-transform: rotate(@deg);
+	-moz-transform: rotate(@deg);
+	-ms-transform: rotate(@deg);
+	-o-transform: rotate(@deg);
+	transform: rotate(@deg);
+}
+
+.rotateX(@deg) {
+  -webkit-transform: rotateX(@deg);
+	-moz-transform: rotateX(@deg);
+	-ms-transform: rotateX(@deg);
+	-o-transform: rotateX(@deg);
+	transform: rotateX(@deg);
+}
+
+.rotateY(@deg) {
+  -webkit-transform: rotateY(@deg);
+	-moz-transform: rotateY(@deg);
+	-ms-transform: rotateY(@deg);
+	-o-transform: rotateY(@deg);
+	transform: rotateY(@deg);
+}
+
+
+
+
+// =============================================================
+//     
+//  Gradient Mixin
+//	
+// =============================================================
+
+.gradient(@color, @start, @stop) {
+	  background: @color;
+	  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @stop));
+	  background: -ms-linear-gradient(bottom, @start, @stop);
+	  background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
+	  background: -o-linear-gradient(@stop, @start);
+	  background-image: linear-gradient(top, @start, @stop);
+	  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
+
+
+
+
+// =============================================================
+//     
+//  Panel Title Builder
+//	
+// =============================================================
+
+.panel-title(@bg, @color, @border-bottom-color ) {
+  background-color: @bg;
+  color: @color;
+  border-bottom-color: @border-bottom-color;
+}
