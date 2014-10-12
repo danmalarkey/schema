@@ -6,7 +6,6 @@ http://danmalarkey.github.io/schema/).
 
 ##Get Started
 - Download [the latest release of Schema](https://github.com/danmalarkey/schema/releases/tag/2.0.0)
-- Download all source files
 - Clone the repo locally ```$ git clone https://github.com/danmalarkey/schema.git```
 - Install with Bower ```$ bower install schema-ui```
 
@@ -31,4 +30,4 @@ As of v2 I will be documenting releases much more than I did with version one. [
 - Email: hello@danmalarkey.com
 - Twitter: http://twitter.com/dan_malarkey
 - Headquartered: http://feature23.com
-- Work: UI/UX Designer @ http://feature23.com
+- Work: UI/UX Designer @ http://feature23.comigner @ http://feature23.com
