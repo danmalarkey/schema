@@ -1,0 +1,45 @@
+/*------------------------------------*\
+
+    @Frame
+    
+\*------------------------------------*/
+
+body {
+  background-color: @base-bg;
+  color: @text-color;
+  font-family: @primary-font;
+  font-weight: @font-family-weight;
+  .rem(font-size, 16);
+  line-height: @base-line-height;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+  .transition(all .25s ease);
+}
+
+a:hover {
+  color: @link-color-hover;
+  text-decoration: underline;
+}
+
+ul, ol {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+hr {
+  .hr(1px, @base-color-eee);
+}

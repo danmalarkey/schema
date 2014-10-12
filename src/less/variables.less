@@ -1,0 +1,407 @@
+// =============================================================
+//  
+//  Colors
+//	
+// ============================================================= 
+
+// Black + Grey's
+@base-color: 								            #000; // rgb(0, 0, 0)
+@base-color-222:            	          lighten(@base-color, 13.5%); 	// #222
+@base-color-333:                        lighten(@base-color, 20%);   	// #333
+@base-color-555:                        lighten(@base-color, 33.5%); 	// #555
+@base-color-777:                        lighten(@base-color, 46.5%);  // #777
+@base-color-999:             	          lighten(@base-color, 60%);   	// #999
+@base-color-aaa: 							          lighten(@base-color, 66.5%);  // #aaa
+@base-color-ccc: 							          lighten(@base-color, 80%); 		// #ccc
+@base-color-ddd:                        lighten(@base-color, 86.5%);  // #ddd
+@base-color-eee:           		          lighten(@base-color, 93.5%); 	// #eee
+
+@disabled-color:                        @base-color-aaa;
+                                        
+// White's + Light White's              
+@base-white: 									          #fff;  // rgb(255, 255, 255)
+@base-off-white: 							          darken(@base-white, 3.75%);  // #f5f5f5
+
+// Schema Colors
+// Change these colors for your primary, success
+// info, warning, and danger colors.
+@base-blue:                             #3498db; // rgb(52, 152, 219)
+@base-teal:                             #24cabc; // rgb(36,202,188)
+@base-green:                            #2ecc71; // rgb(46, 204, 113)
+@base-orange:                           #f46801; // rgb(244, 104, 1)
+@base-warning:                          #f39c12; // rgb(243, 156, 18)
+@base-danger:                           #e74c3c; // rgb(231, 76, 60)
+
+// These colors are inherited from the base colors
+// right above these. ^
+@primary-color: 							          @base-blue;
+@success-color: 							          @base-green;
+@info-color: 								            @base-teal;
+@warning-color: 							          @base-warning;
+@danger-color: 								          @base-danger;
+ 
+// =============================================================
+//     
+//  Most Global Variables
+//	
+// ============================================================= 
+
+// Base background-color
+@base-bg:                               @base-white;                 // white - #fff
+@base-bg-off-white:                     @base-off-white;             // whitesmoke - #f5f5f5
+@accent-white:                          darken(@base-bg, 2.5%);      // #f9f9f9
+
+// The active state of navs
+@active-color:                          @primary-color;
+
+// Base text color
+@text-color:                            @base-color-333; // #333
+
+// Link color 
+@link-color: 								            @primary-color;
+@link-color-hover:                      darken(@primary-color, 15%); 
+
+// =============================================================
+//     
+//  Typography
+//	
+// ============================================================= 
+//
+// Set your primary + secondary fonts here
+//
+@primary-font:                          'Source Sans Pro', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
+@secondary-font:                        serif;
+
+// Font weights
+@weight-300:                            300;
+@weight-400:                            400;
+@weight-700:                            700;
+@weight-800:                            800;
+
+
+//  This variable is used with the .em(); mixin found in 'mixin.less'
+//  This mixin gives a REM value and provides a pixel fallback.
+//  You can learn more in the mixins.less file.
+//
+//  Here's an example.
+// 
+// .class { 
+//   .rem(font-size, 16);
+// }
+// 
+//    The output when compiled: 
+//
+//      .class {
+//         font-size: 16px;
+//         font-size: 1rem;
+//      }  
+// 
+@rem-font-size: 							          16;
+
+// baseline-size is the base variable to all 
+// calculations for all the things.
+@baseline-size: 								        1rem;                             // 16px 
+
+@base-font-size-xl: 					          (@base-font-size * 1.50);          // 24px // 1.5rem
+@base-font-size-large:                  (@base-font-size * 1.25);          // 20px // 1.25rem
+@base-font-size: 								        1rem;                              // 16px // 1.00rem
+@base-font-size-small:                  (@base-font-size * 0.875);         // 14px // 0.85rem
+@base-font-size-xs: 					          (@base-font-size * 0.75);          // 12px // 0.75rem
+					   
+@base-font-size-xl: 					          (@baseline-size * 1.50);          // 24px // 1.5rem
+@base-font-size-large:                  (@baseline-size * 1.25);          // 20px // 1.25rem
+@base-font-size-small:                  (@baseline-size * 0.875);         // 14px // 0.85rem
+@base-font-size-xs: 					          (@baseline-size * 0.75);          // 12px // 0.75rem
+
+@typeset-margin:                        1.3125rem 0;
+
+@font-h1:                               (@baseline-size * 2.25);         // 36px / 2.25rem
+@font-h2:                               (@baseline-size * 1.875);        // 30px / 1.875rem
+@font-h3:                               (@baseline-size * 1.5);          // 24px / 1.5rem
+@font-h4:                               (@baseline-size * 1.125);        // 18px / 1.125rem
+@font-h5:                               @baseline-size;                  // 16px / 1rem
+@font-h6:                               @base-font-size-small;           // 14px / 0.875rem
+
+@base-line-height:  					          1.3125; // 21/16
+@base-line-height-computed:             ((@baseline-size * @base-line-height) * 1.575);
+                                        
+@heading-font-family:                   inherit;
+@font-family-weight:                    400;
+@heading-font-weight:                   500;
+@label-font-weight:                     700;
+
+@heading-line-height:                   (@base-line-height / 1.125); // 1.3125 / 1.125
+@heading-font-color:                    inherit;
+
+@blockquote-border-color:               @base-color;
+                                        
+
+
+
+
+// =============================================================
+//     
+//  Components – padding, margins, line-heights, etc
+//	
+// ============================================================= 
+
+// Font sizes
+@btn-font-size:                         @baseline-size;
+@btn-font-size-lg:                      (@baseline-size * @base-font-size-large);
+@btn-font-size-sm:                      (@baseline-size * 0.875);   
+
+// Line height
+@line-height-lg:                        (@base-line-height * 1.3);  
+@line-height-sm:                        @baseline-size;                                 
+
+// Padding                                        
+@base-padding-vertical:                 (@baseline-size / 2); 
+@base-padding-horizontal:               (@baseline-size * 0.875);
+
+@base-padding-lg-vertical:              (@baseline-size * 0.875);
+@base-padding-lg-horizontal:            (@baseline-size * 1.5);
+
+@base-padding-sm-vertical:              (@baseline-size * 0.4);
+@base-padding-sm-horizontal:            (@baseline-size * 0.6); 
+
+
+
+
+
+// =============================================================
+//     
+//  Buttons – different
+//	
+// =============================================================
+
+@btn-font-weight: 						          @font-family-weight;
+                                                                               
+// Default //                                                            
+@btn-default-color: 					          @base-color-777;
+@btn-default-bg: 							          @base-bg;
+@btn-default-border: 					          @base-color-ccc; 
+
+    // Default-outline //
+    @btn-default-color-outline:         @base-color-777;
+    @btn-default-bg-outline:            transparent;
+    @btn-default-border-outline:        @base-color-777;                                     
+                                        
+// Primary                              
+@btn-primary-color: 					          @base-bg;
+@btn-primary-bg: 							          @primary-color;
+@btn-primary-border: 					          darken(@primary-color, 7%);
+
+    // Primary-outline //
+    @btn-primary-color-outline:         @primary-color;
+    @btn-primary-bg-outline:            transparent;
+    @btn-primary-border-outline:        @primary-color;
+                                        
+// Danger                               
+@btn-danger-color: 						          @base-bg;
+@btn-danger-bg: 							          @danger-color;
+@btn-danger-border: 					          darken(@danger-color, 7%);
+
+    // Danger-outline //
+    @btn-danger-color-outline:         @danger-color;
+    @btn-danger-bg-outline:            transparent;
+    @btn-danger-border-outline:        @danger-color;
+                                        
+// Info                                 
+@btn-info-color: 							          @base-bg;
+@btn-info-bg: 								          @info-color;
+@btn-info-border: 						          darken(@info-color, 7%);;
+
+    // Info-outline //
+    @btn-info-color-outline:           @info-color;
+    @btn-info-bg-outline:              transparent;
+    @btn-info-border-outline:          @info-color;
+                                        
+// Warning                              
+@btn-warning-color: 					          @base-bg;
+@btn-warning-bg: 							          @warning-color;
+@btn-warning-border: 					          darken(@warning-color, 7%);
+
+    // Warning-outline //
+    @btn-warning-color-outline:         @warning-color;
+    @btn-warning-bg-outline:            transparent;
+    @btn-warning-border-outline:        @warning-color;
+                                        
+// Success                              
+@btn-success-color: 					          @base-bg;
+@btn-success-bg: 							          @success-color;
+@btn-success-border: 					          darken(@success-color, 7%);
+
+    // Success-outline //
+    @btn-success-color-outline:         @success-color;
+    @btn-success-bg-outline:            transparent;
+    @btn-success-border-outline:        @success-color;
+
+
+
+
+ 
+// =============================================================
+//     
+//  Border-radius – normal, large, and small
+//	
+// =============================================================
+
+@border-radius:                         6px;
+@border-radius-large:                   8px;
+@border-radius-small:                   4px;
+
+
+
+
+
+// =============================================================
+//     
+//  Tables
+//	
+// =============================================================
+
+@table-width:                           100%;
+
+@table-bg-color:                        @base-white;
+@table-hover-color:                     @accent-white;
+@table-border-color:                    @base-color-ccc;
+@table-head-text-color:                 @base-color-555;
+@table-text-color:                      @base-color-777;
+
+@table-padding:                         (@base-font-size * 0.75); // 12px // 0.75rem;
+
+ 
+// =============================================================
+//     
+//  Forms – Input fields and all
+//	
+// =============================================================
+
+@input-bg:                              @base-bg;  // All input fields will have a white background
+@input-bg-disabled:                     @disabled-color;  // When a field is disabled use this color  
+
+@input-text-color:                      @base-color-777;  // Border text color
+@input-border-color:                    @base-color-ccc;  // Border color
+
+@input-border-radius:                   @border-radius;
+@input-border-focus:                    @primary-color;  // Border color on focus
+
+
+// =============================================================
+//     
+//  Z-index Component 
+//	
+// =============================================================
+
+@zindex-1000:                           1000;
+@zindex-1010:                           1010;
+@zindex-1020:                           1020;
+@zindex-1030:                           1030;
+@zindex-1040:                           1040;
+@zindex-1050:                           1050;
+@zindex-1060:                           1060;
+@zindex-1070:                           1070;
+@zindex-1080:                           1080;
+@zindex-1090:                           1090;
+@zindex-2000:                           2000;
+
+// =============================================================
+//     
+//  Media Query Breakpoints
+//	
+// =============================================================
+
+@bp-desktop: 		~"screen and (min-width: 75rem)"; // 1200px
+
+@bp-tablet: 		~"screen and (min-width: 48rem) and (max-width: 61.1875rem)"; // 768px and 979px
+
+@bp-mobile: 		~"screen and (max-width: 47.9375rem)"; // 767px
+
+
+// =============================================================
+//     
+//  Alert Badges
+//	
+// =============================================================
+
+// Success Alert
+@success-alert-text:                    darken(@success-color, 10%);
+@success-alert-border:                  @success-color;
+@success-alert-bg:                      lighten(@success-color, 46.5%);
+
+
+// Info Alert
+@info-alert-text:                       darken(@info-color, 10%);
+@info-alert-border:                     lighten(@info-color, 30%);
+@info-alert-bg:                         lighten(@info-color, 44.5%);
+
+// Warning Alert
+@warning-alert-text:                    darken(@warning-color, 10%);
+@warning-alert-border:                  lighten(@warning-color, 30%);
+@warning-alert-bg:                      darken(@warning-color, 45.5%);
+
+// Danger Alert
+@danger-alert-text:                     darken(@danger-color, 10%);
+@danger-alert-border:                   lighten(@danger-color, 30%);
+@danger-alert-bg:                       darken(@danger-color, 40.5%);
+
+
+
+
+
+// =============================================================
+//     
+//  Nav + Pill Nav
+//	
+// =============================================================
+
+@base-padding-pill-nav-vertical:        @base-padding-vertical;
+@base-padding-pill-nav-horizontal:      @base-padding-horizontal;
+
+
+
+
+
+// =============================================================
+//     
+//  Panel Colors
+//	
+// =============================================================
+
+// Success Panel
+@default-text:                          @base-color-555;
+@default-border-bottom-color:           @base-color-ccc;
+@default-color-bg:                      @accent-white;
+
+// Success Panel
+@success-text:                          darken(@success-color, 5%);
+@success-border-bottom-color:           lighten(@success-color, 25%);
+@success-color-bg:                      lighten(@success-color, 41.5%);
+
+// Info Panel
+@info-text:                             darken(@info-color, 5%);
+@info-border-bottom-color:              lighten(@info-color, 25%);
+@info-color-bg:                         lighten(@info-color, 39.5%);
+
+//Primary
+@primary-text:                          darken(@primary-color, 10%);
+@primary-border-bottom-color:           lighten(@primary-color, 10%);
+@primary-color-bg:                      lighten(@primary-color, 44.5%);
+
+// Warning Panel
+@warning-text:                          darken(@warning-color, 5%);
+@warning-border-bottom-color:           lighten(@warning-color, 25%);
+@warning-color-bg:                      lighten(@warning-color, 40.5%);
+
+// Danger Alert
+@danger-text:                           darken(@danger-color, 5%);
+@danger-border-bottom-color:            lighten(@danger-color, 25%);
+@danger-color-bg:                       lighten(@danger-color, 40.5%);
+
+
+
+
+
+
+
+	

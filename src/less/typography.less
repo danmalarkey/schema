@@ -1,0 +1,115 @@
+/*------------------------------------*\
+
+    @Typography
+    
+\*------------------------------------*/
+
+h1, h2,
+h3, h4, 
+h5, h6, 
+p {
+  margin: @typeset-margin;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	font-family: inherit; 
+	text-rendering: optimizelegibility;
+	color: @base-color-333; 
+	margin-bottom: 0;
+}
+	
+	
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+	font-weight: inherit; 
+	font-family: inherit; 
+}
+	
+h1.title, h3.title{ 
+	font-family: inherit; 
+	color: inherit;   
+}
+
+h1.heading, h3.heading { 
+	font-family: inherit; 
+	color: inherit;   
+}
+	
+h1,
+.h1 { 
+	.rem(font-size, 36); 
+	line-height: 1.4; 
+}
+	
+h2,
+.h2 { 
+	.rem(font-size, 31);   
+	line-height: 1.2;  
+}
+		
+h3,
+.h3 { 
+	.rem(font-size, 24);  
+	line-height: 1; 
+}
+	
+h4,
+.h4 { 
+	.rem(font-size, 18);  
+	line-height: 1.2; 
+}
+	
+h5,
+.h5 { 
+	.rem(font-size, 14); 
+}
+	
+h6,
+.h6 { 
+	.rem(font-size, 12);  
+	line-height: .875; 
+}
+
+.subheader { 
+	color: inherit; 
+	text-transform: uppercase;  
+}
+
+/***************************************************************** 
+*
+*  BLOCKQUOTE
+*
+*****************************************************************/
+
+blockquote {
+	font-family: @primary-font;
+	.rem(font-size, 16);
+	.rem(margin-top, 10);
+	.rem(margin-bottom, 10);
+  .rem(margin-left, 50);
+  .rem(padding-left, 16);
+	border-left: 5px solid @primary-color; 
+} 
+	
+blockquote cite {
+	font-weight: bold; 
+}
+
+/***************************************************************** 
+*
+*  Paragraph tags
+*
+*****************************************************************/		
+		
+p { 
+	color: inherit; 
+	font-family: @primary-font; 
+	.rem(font-size, 16);
+	line-height: @base-line-height;
+}
+
+p.lead,
+.lead {  
+	.rem(font-size, 21); 
+	font-weight: bold; 
+}
+

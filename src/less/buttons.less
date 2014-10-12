@@ -1,0 +1,340 @@
+/*------------------------------------*\
+
+    @Buttons
+    
+\*------------------------------------*/
+
+// Removes border and inherits
+// styling from .btn
+button {
+  border: none;
+}
+
+a.btn-success,
+a.btn-warning,
+a.btn-info,
+a.btn-danger,
+a.btn-primary,
+a:hover.btn-success,
+a:hover.btn-warning,
+a:hover.btn-info,
+a:hover.btn-danger,
+a:hover.btn-primary,
+a:hover.btn-success-gradient,
+a:hover.btn-primary-gradient,
+a:hover.btn-info-gradient,
+a:hover.btn-danger-gradient,
+a:hover.btn-warning-gradient,
+a.btn-warning-outline:hover,
+a.btn-info-outline:hover,
+a.btn-primary-outline:hover,
+a.btn-success-outline:hover,
+a.btn-danger-outline:hover,
+a:hover.btn-success-outline,
+a:hover.btn-info-outline,
+a:hover.btn-warning-outline,
+a:hover.btn-primary-outline,
+.nav > li > a:hover.btn-default-outline,
+.nav > li > a:hover.btn-primary-outline,
+.nav > li > a:hover.btn-info-outline,
+.nav > li > a:hover.btn-success-outline,
+.nav > li > a:hover.btn-warning-outline,
+.nav > li > a:hover.btn-danger-outline {
+  text-decoration: none;
+  color: @base-bg;
+}
+
+// Sets the font awesome icon before text in a .btn class
+.btn > i:before {
+  .rem(margin-right, 8);
+}
+
+.btn {
+  .button-size(@base-padding-vertical, @base-padding-horizontal, @btn-font-size, @base-line-height, @border-radius);
+  color: @base-color-777;
+  border: 1px solid transparent;
+  display: inline-block;
+  font-family: @primary-font;
+  font-weight: @btn-font-weight;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0,0,0,.25);
+  .transition(all .25s ease);
+}
+
+  // Large Button
+  .btn-lg { 
+    .button-size(@base-padding-lg-vertical, @base-padding-lg-horizontal, @btn-font-size-lg, @line-height-lg, @border-radius); 
+  }
+  
+  // Small Button
+  .btn-sm {
+    .button-size(@base-padding-sm-vertical, @base-padding-sm-horizontal, @btn-font-size-sm, @line-height-sm, @border-radius);
+  }
+
+// add .btn-pill to the .btn class
+// to achieve a pill button look
+.btn-pill {
+  .border-radius(@border-radius * 4);
+}
+
+// Add this class to a button 
+// that looks like a link
+.btn-link {
+  background: transparent;
+  background-color: transparent;
+  border-color: transparent;
+  color: inherit;
+  text-shadow: none;
+}
+
+// Button Block
+.btn-full { 
+  display: block;
+  width: 100%; 
+}
+
+
+// 
+// Default Button
+// 	
+
+a.btn-default,
+a:hover.btn-default-gradient {
+  color: @base-color-777;
+  text-decoration: none;
+}
+
+.btn-default,
+.nav > li > a.btn-default {
+	.button-version(@btn-default-color, @btn-default-bg, @btn-default-border);
+	text-shadow: none;
+}
+    // Default Button Outline //
+    .btn-default-outline,
+    .default-outline {
+      .button-version(@base-color-777, @btn-default-bg-outline, @btn-default-border-outline);
+      text-shadow: none;
+      
+      &:hover {
+        border-color: @base-color-777;
+        color: @base-white;
+        background-color: @base-color-777;
+        text-decoration: none;
+      }
+      &:active {
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+      }
+    }
+        // Default Button Gradient //
+        .btn-default-gradient,
+        .default-gradient {
+          .gradient(@base-color-ccc, @base-off-white, @base-white);
+          border: 1px solid @base-color-ccc;
+          
+          text-shadow: 0 1px 0 rgba(255,255,255,1);
+          &:hover {
+            .gradient(@base-color-ccc, @base-off-white, @base-off-white);
+          }
+          &:active {
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+          }
+        }
+        
+//
+// Primary Button
+// 
+.btn-primary,
+.nav > li > a.btn-primary {
+	.button-version(@btn-primary-color, @btn-primary-bg, @btn-primary-border);
+}
+    // Primary Button Outline //
+    .btn-primary-outline,
+    .primary-outline {
+      .button-version(@btn-primary-color-outline, @btn-primary-bg-outline, @btn-primary-border-outline);
+      text-shadow: none;
+      
+      &:hover {
+        border-color: rgba(0, 0, 0, .08);
+        color: @base-white;
+        background-color: @primary-color;
+        
+      }
+      &:active {
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+      }
+    }
+    
+        // Primary Button Gradient //
+        .btn-primary-gradient,
+        .primary-gradient {
+          .gradient(@primary-color, darken(@primary-color, 2%), lighten(@primary-color, 20%));
+          color: @base-white;
+          border: 1px solid @primary-color;
+          
+          &:hover {
+            .gradient(@primary-color, @primary-color, @primary-color);
+            border-color: rgba(0, 0, 0, .08);
+          }
+          &:active {
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+          }
+        }
+        
+// 
+// Danger Button
+// 
+.btn-danger,
+.nav > li > a.btn-danger {
+	.button-version(@btn-danger-color, @btn-danger-bg, @btn-danger-border);
+}
+
+    // Danger Button Outline //
+    .btn-danger-outline,
+    .danger-outline {
+      .button-version(@btn-danger-color-outline, @btn-danger-bg-outline, @btn-danger-border-outline);
+      text-shadow: none;
+      
+      &:hover {
+        border-color: rgba(0, 0, 0, .08);
+        color: @base-white;
+        background-color: @danger-color;
+      }
+      &:active {
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+      }
+    }
+    
+        // Danger Button Gradient //
+        .btn-danger-gradient,
+        .danger-gradient {
+          .gradient(@danger-color, darken(@danger-color, 2%), lighten(@danger-color, 20%));
+          color: @base-white;
+          border: 1px solid @danger-color;
+          
+          &:hover {
+            .gradient(@danger-color, @danger-color, @danger-color);
+            border-color: rgba(0, 0, 0, .08);
+          }
+          &:active {
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+          }
+        }
+
+// 
+// Info Button
+// 
+.btn-info,
+.nav > li > a.btn-info {
+	.button-version(@btn-info-color, @btn-info-bg, @btn-info-border);
+}
+    // Info Button Outline //
+    .btn-info-outline,
+    .info-outline {
+      .button-version(@btn-info-color-outline, @btn-info-bg-outline, @btn-info-border-outline);
+      text-shadow: none;
+      
+      &:hover {
+        border-color: rgba(0, 0, 0, .08);
+        color: @base-white;
+        background-color: @info-color;
+        
+      }
+      &:active {
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+      }
+    }
+    
+        // Info Button Gradient //
+        .btn-info-gradient,
+        .info-gradient {
+          .gradient(@info-color, darken(@info-color, 2%), lighten(@info-color, 20%));
+          color: @base-white;
+          border: 1px solid @info-color;
+          
+          &:hover {
+            .gradient(@info-color, @info-color, @info-color);
+            border-color: rgba(0, 0, 0, .08);
+          }
+          &:active {
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+          }
+        }
+
+// 
+// Warning Button
+// 
+.btn-warning,
+.nav > li > a.btn-warning {
+	.button-version(@btn-warning-color, @btn-warning-bg, @btn-warning-border);
+}
+    // Warning Button Outline //
+    .btn-warning-outline,
+    .warning-outline {
+      .button-version(@btn-warning-color-outline, @btn-warning-bg-outline, @btn-warning-border-outline);
+      text-shadow: none;
+      
+      &:hover {
+        border-color: rgba(0, 0, 0, .08);
+        color: @base-white;
+        background-color: @warning-color;
+      }
+      &:active {
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+      }
+    }
+    
+        // Warning Button Gradient //
+        .btn-warning-gradient,
+        .warning-gradient {
+          .gradient(@warning-color, darken(@warning-color, 2%), lighten(@warning-color, 20%));
+          color: @base-white;
+          border: 1px solid @warning-color;
+          
+          &:hover {
+            .gradient(@warning-color, @warning-color, @warning-color);
+            border-color: rgba(0, 0, 0, .08);
+          }
+          &:active {
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+          }
+        }
+
+//     
+// Success Button
+// 
+.btn-success,
+.nav > li > a.btn-success {
+	.button-version(@btn-success-color, @btn-success-bg, @btn-success-border);
+}
+    // Success Button Outline //
+    .btn-success-outline,
+    .success-outline {
+      .button-version(@btn-success-color-outline, @btn-success-bg-outline, @btn-success-border-outline);
+      text-shadow: none;
+      
+      &:hover {
+        border-color: rgba(0, 0, 0, .08);
+        color: @base-white;
+        background-color: @success-color;
+      }
+      &:active {
+        .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+      }
+    }
+    
+        // Success Button Gradient //
+        .btn-success-gradient,
+        .success-gradient {
+          .gradient(@success-color, darken(@success-color, 2%), lighten(@success-color, 20%));
+          color: @base-white;
+          border: 1px solid @success-color;
+          
+          &:hover {
+            .gradient(@success-color, @success-color, @success-color);
+            border-color: rgba(0, 0, 0, .08);
+          }
+          &:active {
+            .box-shadow(inset 0px 2px 4px 1px rgba(0,0,0,.15));
+          }
+        }

@@ -1,0 +1,55 @@
+/*------------------------------------*\
+
+    @Alerts
+    
+\*------------------------------------*/
+.alert {
+  color: inherit;
+  border: 1px solid transparent;
+  display: block;
+  padding: 1rem;
+  background-color: lighten(@success-color, 46.5%);
+  .border-radius(@border-radius);
+  
+  > h4 {
+    color: inherit;
+    margin-top: 0;
+  }
+  
+  > p {
+    color: inherit;
+    margin: 0;
+  }
+  
+  i {
+    float: right;
+  }
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .btn {
+    margin-top: 1.4rem;
+  }
+}
+
+.alert i:before,
+.alert .fa:before {
+  margin-top: 3px;
+  display: inline-block;
+}
+
+.alert a,
+.alert a:hover {
+  color: inherit;
+  font-weight: bold;
+}
+
+span.close {
+  .right-float;
+  color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}

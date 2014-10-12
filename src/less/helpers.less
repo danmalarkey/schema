@@ -1,0 +1,151 @@
+/*------------------------------------*\
+
+    @Helper Classes
+    
+\*------------------------------------*/
+
+.no-b {
+  border-color: transparent;
+  border: none;
+}
+
+.hide-text {
+  font: 0/0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; 
+}
+
+.is-disabled,
+.disabled {
+  pointer-events: none;
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.left-float { 
+  float: left; 
+}	
+
+  .right-float { 
+    float: right; 
+  }	
+  
+    .center-float {
+      margin: 0 auto; 
+    }
+    
+      .no-float {
+        float: none; 
+      }
+                           
+.text-left {
+  text-align: left; 
+}
+
+  .text-right { 
+    text-align: right; 
+  }
+  
+    .text-center { 
+      text-align: center; 
+    }
+    
+      .justified { 
+        text-align: justify; 
+      }
+
+@media @bp-desktop {
+	.desktop-hidden {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@media @bp-tablet {
+	.tablet-hidden {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@media @bp-mobile {
+	.mobile-hidden {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@media @bp-mobile {
+  .show-mobile {
+  	visibility: visible;
+  	display: block;
+  }
+}
+
+.show-mobile {
+	display: none;
+	visibility: hidden; 
+	
+	@media @bp-mobile {
+		display: block;
+		visibility: visible;
+	}
+}
+
+.show-tablet {
+  display: none;
+  visibility: hidden;
+  
+  @media @bp-tablet {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.show-desktop {
+  display: none;
+  visibility: hidden;
+  
+  @media @bp-desktop {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.hide {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  .transition(opacity .45s linear);
+}
+
+.fade {
+  opacity: 0;
+  .transition(opacity .45s linear);
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.has-success {
+  color: @success-color;
+}
+
+.has-primary {
+  color: @primary-color;
+}
+
+.has-info {
+  color: @info-color;
+}
+
+.has-warning {
+  color: @warning-color;
+}
+
+.has-danger {
+  color: @danger-color;
+}

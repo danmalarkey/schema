@@ -1,0 +1,182 @@
+/*------------------------------------*\
+
+    @Navigation
+    
+\*------------------------------------*/
+
+.nav {
+  position: relative;
+  top: 0;
+  background-color: @base-white;
+}
+
+.brand > a {
+  text-decoration: none;
+  color: @base-color-333;
+  padding: @base-padding-vertical 0;
+  float: left;
+  
+  &:hover {
+    text-decoration: none;
+    color: @primary-color;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: @base-color-777;
+  padding: @base-padding-vertical @base-padding-horizontal;
+  display: inline-block;
+  .border-radius(@border-radius);
+  
+  &:hover {
+    background-color: @accent-white;
+    text-decoration: none;
+    color: @primary-color;
+  }
+}
+
+.nav {
+  padding-left: 0;
+}
+
+.nav > li > a {
+  display: block;
+  display: inline-block;
+  padding: @base-padding-pill-nav-vertical @base-padding-pill-nav-horizontal;
+  position: relative;
+  .left-float;
+}
+    // Default Outline //
+    .nav > a.btn--default-outline,
+    .nav > a.default-outline {
+      .button-version(@base-color-777, @btn-default-bg-outline, @btn-default-border-outline);
+      &:hover {
+        border-color: @base-color-777;
+        color: @base-white;
+        background-color: @base-color-777;
+      }
+      &:active {
+        .box-shadow(none);
+      }
+    }
+    
+    // Primary Outline //
+    .nav > li > a.btn--primary-outline,
+    .nav > li > a.primary-outline {
+      .button-version(@btn-primary-color-outline, @btn-primary-bg-outline, @btn-primary-border-outline);
+      &:hover {
+        border-color: @primary-color;
+        color: @base-white;
+        background-color: @primary-color;
+      }
+      &:active {
+        .box-shadow(none);
+      }
+    }
+    
+    // Danger Outline //
+    .nav > li > a.btn--danger-outline,
+    .nav > li > a.danger-outline {
+      .button-version(@btn-danger-color-outline, @btn-danger-bg-outline, @btn-danger-border-outline);
+      &:hover {
+        border-color: @danger-color;
+        color: @base-white;
+        background-color: @danger-color;
+      }
+      &:active {
+        .box-shadow(none);
+      }
+    }
+    
+    // Info Outline //
+    .nav > li > a.btn--info-outline,
+    .nav > li > a.info-outline {
+      .button-version(@btn-info-color-outline, @btn-info-bg-outline, @btn-info-border-outline);
+      &:hover {
+        border-color: @info-color;
+        color: @base-white;
+        background-color: @info-color;
+      }
+      &:active {
+        .box-shadow(none);
+      }
+    }
+    
+    // Warning Outline //
+    .nav > li > a.btn--warning-outline,
+    .nav > li > a.warning-outline {
+      .button-version(@btn-warning-color-outline, @btn-warning-bg-outline, @btn-warning-border-outline);
+      &:hover {
+        border-color: @warning-color;
+        color: @base-white;
+        background-color: @warning-color;
+      }
+      &:active {
+        .box-shadow(none);
+      }
+    }
+    
+    // Success Outline //
+    .nav > li > a.btn--success-outline,
+    .nav > li > a.success-outline {
+      .button-version(@btn-success-color-outline, @btn-success-bg-outline, @btn-success-border-outline);
+      &:hover {
+        border-color: @success-color;
+        color: @base-white;
+        background-color: @success-color;
+      }
+      &:active {
+        .box-shadow(none);
+      }
+    }
+    
+    .nav > li > a:hover.btn--default,
+    .nav > li > a:hover.btn--primary,
+    .nav > li > a:hover.btn--info,
+    .nav > li > a:hover.btn--success,
+    .nav > li > a:hover.btn--danger,
+    .nav > li > a:hover.btn--warning {
+      color: @base-white;
+    }
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  color: @primary-color;
+}
+
+.pill-nav > li > a {
+  display: inline-block;
+  .left-float;
+  padding: @base-padding-pill-nav-vertical @base-padding-pill-nav-horizontal;
+  .border-radius(@border-radius);
+  position: relative;
+}
+
+.pill-nav > li > a:hover,
+.pill-nav > li > a:focus {
+  text-decoration: none;
+  background-color: @base-color-eee;
+}
+
+.pill-nav li,
+.pill-nav > li+li {
+  display: inline-block;
+  .rem(margin-right, 4);
+}
+
+.pill-nav > li > a.active {
+  background-color: @primary-color;
+  color: @base-white;
+  
+  &:hover {
+    background-color: darken(@primary-color, 5%);
+  }
+  
+  &:active {
+    .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
+    .transition(all .25s ease);
+    outline: 0;
+	}
+}
