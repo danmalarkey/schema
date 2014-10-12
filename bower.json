@@ -1,0 +1,27 @@
+{
+  "name": "Schema",
+  "version": "2.0.0",
+  "homepage": "https://github.com/danmalarkey/schema",
+  "authors": [
+    "Dan Malarkey <dan@feature23.com>"
+  ],
+  "description": "A modular, responsive, front end framework, built with LESS, to easily and quickly help you jumpstart your process in building complex interfaces for the web right out the box.",
+  "main": "dist/css/schema.css",
+  "keywords": [
+    "Schema",
+    "UI",
+    "framework",
+    "LESS",
+    "CSS",
+    "CSS",
+    "Framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
