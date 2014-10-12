@@ -1,0 +1,19 @@
+{
+  "name": "schema",
+  "version": "0.1.0",
+  "description": "Schema validation",
+  "license": "MIT",
+  "main": "index.js",
+  "author": "Alexey Raspopov (https://github.com/alexeyraspopov)",
+  "homepage": "https://github.com/alexeyraspopov/schema",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.0",
+    "commit": "8ecf4e46f98f467f7d6cda77b49c3422be0d0be9"
+  },
+  "_source": "git://github.com/alexeyraspopov/schema.git",
+  "_target": "~0.1.0",
+  "_originalSource": "schema",
+  "_direct": true
+}
