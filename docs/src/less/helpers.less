@@ -1,0 +1,236 @@
+ 
+//
+//  Helper classes throughout Schema
+//  
+//  =============================================================
+
+.no-mgb {
+  margin-bottom: 0;
+}
+
+  .no-mgt {
+    margin-top: 0;
+  }
+  
+      .mrg-b {
+        margin-bottom: 1rem;
+      }
+
+.is-disabled {
+  pointer-events: none;
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+
+
+
+
+.left-float { 
+  float: left; 
+}	
+
+  .right-float { 
+    float: right; 
+  }	
+  
+    .center-float {
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    
+      .no-float {
+        float: none; 
+      }
+
+
+
+
+
+                    
+.text-left {
+  text-align: left; 
+}
+
+  .text-right { 
+    text-align: right; 
+  }
+  
+    .text-center { 
+      text-align: center; 
+    }
+    
+      .text-justified { 
+        text-align: justify; 
+      }
+      
+        .hide-text {
+          font: 0/0;
+          color: transparent;
+          text-shadow: none;
+          background-color: transparent;
+          border: 0; 
+        }
+
+.font-xs {
+  .rem(font-size, 12);
+}
+  
+  .font-sm {
+    .rem(font-size, 14);
+  }
+  
+    .font-lg {
+      .rem(font-size, 20);
+    }
+    
+      .font-xl {
+        .rem(font-size, 24);
+      }
+
+
+
+
+.font-sm {
+  font-size: @btn-font-size-sm;
+}
+
+.b-c-eee {
+  color: @base-color-eee;
+}
+
+@media @bp-desktop {
+	.desktop-hidden {
+		visibility: hidden!important;
+		display: none!important;
+	}
+}
+
+@media @bp-tablet {
+	.tablet-hidden {
+		visibility: hidden!important;
+		display: none!important;
+	}
+}
+
+@media @bp-mobile {
+	.mobile-hidden {
+		visibility: hidden!important;
+		display: none!important;
+	}
+}
+
+@media @bp-mobile {
+  .show-mobile {
+  	visibility: visible;
+  	display: block!important;
+  }
+}
+
+
+.hide {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  .transition(opacity .45s linear);
+}
+
+.fade {
+  opacity: 0;
+  .transition(opacity .45s linear);
+  @media @bp-mobile {
+    opacity: 1;
+  }
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.has-success {
+  color: @success-color;
+}
+
+.has-primary {
+  color: @primary-color;
+}
+
+.has-info {
+  color: @info-color;
+}
+
+.has-warning {
+  color: @warning-color;
+}
+
+.has-danger {
+  color: @danger-color;
+}
+
+.fade { 
+  opacity: 0;
+  
+  @media @bp-mobile {
+    opacity: 0;
+  }
+}
+
+.animate { 
+  opacity: 1; 
+}
+
+.first {
+  animation-delay: .25s!important;
+  -webkit-animation-delay: .25s!important;
+  
+  @media @bp-mobile {
+    display: none;
+    animation-delay: 0s!important;
+    -webkit-animation-delay: 0s!important;
+  }
+}
+
+.second {
+  animation-delay: .75s!important;
+  -webkit-animation-delay: .75s!important;
+  @media @bp-mobile {
+    display: none;
+    animation-delay: 0s!important;
+    -webkit-animation-delay: 0s!important;
+  }
+}
+
+.third {
+  animation-delay: 1.25s!important;
+  -webkit-animation-delay: 1.25s!important;
+  @media @bp-mobile {
+    display: none;
+    animation-delay: 0s!important;
+    -webkit-animation-delay: 0s!important;
+  }
+}
+
+
+.a-is-danger {
+  color: darken(@danger-color, 10%);
+  border-color: @danger-color;
+  background-color: lighten(@danger-color, 40.5%);
+}
+
+.a-is-info {
+  color: darken(@info-color, 10%);
+  border-color: @info-color;
+  background-color: lighten(@info-color, 51.5%);
+}
+
+.a-is-warning {
+  color: darken(@warning-color, 10%);
+  border-color: @warning-color;
+  background-color: lighten(@warning-color, 44.5%);
+}
+
+.a-is-primary {
+  color: darken(@primary-color, 10%);
+  border-color: @primary-color;
+  background-color: lighten(@primary-color, 44.5%);
+}
