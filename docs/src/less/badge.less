@@ -1,0 +1,70 @@
+.badge {
+  display: inline-block;
+  .rem(min-width, 10);
+  padding: (@base-padding-sm-vertical / 1.5) (@base-padding-sm-horizontal / 1);
+  .rem(font-size, 14);
+  font-weight: @weight-400;
+  line-height: ((@base-line-height * 0) + 1);
+  color: @base-white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: @base-color-777;;
+  .border-radius(@border-radius * 20);
+}
+
+.badge.success {
+  background-color: @success-color;
+}
+.badge.primary {
+  background-color: @primary-color;
+}
+.badge.danger {
+  background-color: @danger-color;
+}
+.badge.warning {
+  background-color: @warning-color;
+}
+.badge.info {
+  background-color: @info-color;
+}
+
+.btn > .badge {
+  .rem(margin-left, 6);
+}
+
+.btn-primary > .badge,
+.btn-success > .badge,
+.btn-warning > .badge,
+.btn-info > .badge,
+.btn-danger > .badge,
+.list-group-element.active > .badge {
+  background-color: @base-white;
+  text-shadow: none;
+}
+  
+  .list-group-element.active > .badge {
+    color: @info-color;
+  }
+
+  .btn-primary > .badge {
+    color: @primary-color;
+  }
+  
+  .btn-success > .badge {
+    color: @success-color;
+  }
+  
+  .btn-info > .badge {
+    color: @info-color;
+  }
+  
+  .btn-warning > .badge {
+    color: @warning-color;
+  }
+  
+  .btn-danger > .badge {
+    color: @danger-color;
+  }
+  
+  

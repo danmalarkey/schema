@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <meta charset="utf-8">      
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=1"/>
+  <meta name="description" content="feature, feature[23], 23, Jacksonville, Florida, Dan Malarkey, Dan, Malarkey, HTML, HTML5, CSS, CSS3, Open Source, Open Source Framework, Front End Framework, Boilerplate">
+  <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, front-end, frontend, web development, schema, schema ui, schema ui framework, css framework, css frameworks"
+  <meta name="author" content="feature[23] Jacksonville, Florida Dan Malarkey http://danmalarkey.com ©2014">
+
+  <link rel="stylesheet" href="src/css/base.css" />
+  
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic,400italic,700italic,900italic)" />
+
+  
+  <script src="lib/highlight/highlight.pack.js"></script>
+  <link href="lib/highlight/styles/github.css" rel="stylesheet" />
+        
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <title>SCHEMA UI — Forms</title>
+  </head>
+    
+  <body>
+  
+  <div class="mobile-nav">
+    <ul>
+      <li><a href="index.html">Schema UI</a></li>
+      <li class="title">Overview</li>
+      <li><a href="documentation.html">Read The Docs</a></li>
+      <li><a href="getstarted.html">Get Started</a></li>
+      <li><a href="doctype.html">HTML5 Doctype</a></li>
+      <li><a href="mediaqueries.html">Media Queries</a></li>
+      <li><a href="less.html">Less</a></li>
+      <li><a href="printcss.html">Print CSS</a></li>
+      <li class="title">Bundle</li>
+      <li><a href="opensourceprojects.html">Open Source Projects</a></li>
+      <li class="title">Blueprint</li>
+      <li><a href="gridsystem.html">Grid System</a></li>
+      <li><a href="frame.html">Frame</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="colors.html">Colors</a></li>
+      <li class="title">Navigation</li>
+      <li><a href="pagination.html">Pagination</a></li>
+      <li><a href="navigation.html">Nav</a></li>
+      <li><a href="listgroup.html">List Group</a></li>
+      <li class="title">Core</li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html" class="active">Forms</a></li>
+      <li><a href="buttons.html">Buttons</a></li>
+      <li><a href="badges.html">Badges</a></li>
+      <li><a href="panels.html">Panels</a></li>
+      <li><a href="inputgroups.html">Input Groups</a></li>
+      <li><a href="buttongroups.html">Button Groups</a></li>
+      <li><a href="alerts.html">Alerts</a></li>
+      <li><a href="labels.html">Labels</a></li>
+      <li class="icons">
+        <a href="https://github.com/danmalarkey/schema" class="one-half"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/schemaui" class="one-half"><i class="fa fa-twitter"></i></a>
+      </li>
+    </ul>
+  </div>
+  
+  <header class="docs nav">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="brand animated bounceInLeft">
+          <a href="index.html">Schema</a>
+        </div>
+          <nav class="right-float animated bounceInRight mobile-hidden">
+            <a href="documentation.html">Read The Docs</a>
+            <a href="https://github.com/danmalarkey/schema/blob/master/README.md">Changelog</a>
+            <a href="https://github.com/danmalarkey/schema/issues">Issues</a>
+            <a href="https://github.com/danmalarkey/schema">Github</a>
+          </nav>
+          <div id="hamburger" class="nav-toggle show-mobile animated bounceInRight">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      </div>
+    </div>
+  </header>
+  
+  <div class="feature-section">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="col2">
+          <ul class="side-nav mobile-hidden">
+            <li class="nav-header">Overview</li>
+            <li><a href="getstarted.html">Get Started</a></li>
+            <li><a href="doctype.html">HTML5 Doctype</a></li>
+            <li><a href="mediaqueries.html">Media Queries</a></li>
+            <li><a href="less.html">Less</a></li>
+            <li><a href="printcss.html">Print CSS</a></li>
+            <li class="nav-header">Bundle</li>
+            <li><a href="opensourceprojects.html">Open Source Projects</a></li>
+            <li class="nav-header">Blueprint</li>
+            <li><a href="gridsystem.html">Grid System</a></li>
+            <li><a href="frame.html">Frame</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="colors.html">Colors</a></li>
+            <li class="nav-header">Navigation</li>
+            <li><a href="pagination.html">Pagination</a></li>
+            <li><a href="navigation.html">Nav</a></li>
+            <li><a href="listgroup.html">List Group</a></li>
+            <li class="nav-header">Core</li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="forms.html" class="active">Forms</a></li>
+            <li><a href="buttons.html">Buttons</a></li>
+            <li><a href="badges.html">Badges</a></li>
+            <li><a href="panels.html">Panel</a></li>
+            <li><a href="inputgroups.html">Input Groups</a></li>
+            <li><a href="buttongroups.html">Button Groups</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="labels.html">Labels</a></li>
+          </ul>
+        </div>
+        <div class="col10 right-content">
+          <h1>Forms</h1>
+            <p>
+              Content driven input forms (<code>input</code>, <code>textarea</code>, <code>select</code>, etc) need the <code>form-element</code>.
+              This class gives these elements their styling. Examples are below.
+            </p>
+            <div class="alert a-is-danger">
+              <p>
+                To disable any element give it the class <code>is-disabled</code><i class="fa fa-warning"></i>
+              </p>
+            </div>
+            <hr />
+          
+          <div class="feature-section-sm">
+              <div class="row-fluid">
+                <h1>Basic Form Example</h1>
+                <p>Input elements default to full width, so you'll need to set a width of your choosing.</p>
+                <p><span class="btn-label danger">EXAMPLE</span></p>
+              </div>
+              <form style="width:100%;">
+                  <div class="form-group">
+                    <label for="emailID">Email address</label>
+                    <input type="email" class="form-element" id="emailID" placeholder="Example Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordID">Password</label>
+                    <input type="password" class="form-element" id="passwordID" placeholder="Example Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="someFile">File input</label>
+                    <input type="file" id="someFile">
+                    <p>Some text here.</p>
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      <input type="checkbox"> Check this box
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            <pre><code class="xml"><span class="tag">&lt;<span class="title">form</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"form-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="attribute">"emailID"</span>&gt;</span>Email Address<span class="tag">&lt;<span class="title">/label</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"email"</span> <span class="attribute">class</span>=<span class="attribute">"form-element"</span> <span class="attribute">id</span>=<span class="attribute">"emailID"</span> <span class="attribute">placeholder</span>=<span class="attribute">"Example Email"</span>&gt;</span></span>
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"form-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="attribute">"passwordID"</span>&gt;</span>Example Password<span class="tag">&lt;<span class="title">/label</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"email"</span> <span class="attribute">class</span>=<span class="attribute">"form-element"</span> <span class="attribute">id</span>=<span class="attribute">"passwordID"</span> <span class="attribute">placeholder</span>=<span class="attribute">"Example Password"</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"form-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="attribute">"someFile"</span>&gt;</span>File Input<span class="tag">&lt;<span class="title">/label</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"email"</span> <span class="attribute">class</span>=<span class="attribute">"form-element"</span> <span class="attribute">id</span>=<span class="attribute">"someFile"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">p</span><span>&gt;</span>Some text here.</span><span class="tag">&lt;<span class="title">/p</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"form-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"checkbox"</span><span>&gt;</span> Check this box
+  <span class="tag">&lt;<span class="title">/label</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="attribute">"submit"</span> <span class="attribute">class</span>=<span class="attribute">"btn btn-primary"</span>&gt;</span>Submit<span>&lt;/button</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/form</span>&gt;</span></code></pre>
+          </div>
+          
+          <hr />
+          
+          <div class="feature-section-sm">
+              <div class="row-fluid">
+                <h1>Basic Form Element</h1>
+                <p>This is a basic input field. Be sure to add the class <code>form-element</code> to the input.</p>
+                <p><span class="btn-label danger">EXAMPLE</span></p>
+                <input type="text" class="form-element" placeholder="input example" />
+              </div>
+              <pre><code class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"text"</span> <span class="attribute">class</span>=<span class="attribute">"form-element"</span>&gt;</span></code></pre>
+              
+              <div class="row-fluid">
+                <h1>Large Form Element</h1>
+                <p><span class="btn-label danger">EXAMPLE</span></p>
+                <p>Add the class <code>form-element-lg</code> for a larger input.</p>
+                <input type="text" class="form-element-lg form-element" placeholder="input example" />
+              </div>
+            <pre><code class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"text"</span> <span class="attribute">class</span>=<span class="attribute">"form-element-lg form-element"</span>&gt;</span></code></pre>
+            
+            <div class="row-fluid">
+                <h1>Small Form Element
+                <p><span class="btn-label danger">EXAMPLE</span></p>
+                <p>Add the class <code>form-element-sm</code> for a larger input.</p>
+                <input type="text" class="form-element-sm form-element" placeholder="input example" />
+              </div>
+            <pre><code class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"text"</span> <span class="attribute">class</span>=<span class="attribute">"form-element-sm form-element"</span>&gt;</span></code></pre>
+            <div class="row-fluid">
+            <h1>Disable Element</h1>
+                <p><span class="btn-label danger">EXAMPLE</span></p>
+                <p>Add the class <code>is-disabled</code> to any element to disable it.</p>
+                <input type="text" class="form-element form-element is-disabled" placeholder="input example" />
+              </div>
+            <pre><code class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"text"</span> <span class="attribute">class</span>=<span class="attribute">"form-element-sm form-element is-disabled"</span>&gt;</span></code></pre>
+          </div>
+        
+          <hr />
+          
+          <div class="row-fluid">
+            <h1>Validation States</h1>
+                <p>Schema provides validation styling for visualizing your UI. 
+                <p><span class="btn-label danger">EXAMPLE</span></p>
+                <p>
+                  Wrap your label and form-element in a div and assign it a class depending
+                  on what state you want. <code>has-success</code>, <code>has-danger</code>,
+                  <code>has-info</code>, <code>has-warning</code>, <code>has-primary</code>. 
+                  
+                  <p>Also include these classes on the input (form-element) element. <code>f-is-primary</code>, 
+                  <code>f-is-success</code>, <code>f-is-info</code>, <code>f-is-danger</code>, 
+                  <code>f-is-warning</code>
+                  </p> 
+                </p>
+                <div class="ex-form-validate">
+                  <label>Form-element that is a default</label>
+                  <input class="form-element">
+                </div>
+                <div class="has-primary ex-form-validate">
+                  <label>Form-element that is a default</label>
+                  <input class="form-element f-is-primary">
+                </div>
+                <div class="has-success ex-form-validate">
+                  <label>Form-element that has success</label>
+                  <input class="form-element f-is-success">
+                </div>
+                <div class="has-danger ex-form-validate">
+                  <label>Form-element that has danger</label>
+                  <input class="form-element f-is-danger">
+                </div>
+                <div class="has-info ex-form-validate">
+                  <label>Form-element that has information</label>
+                  <input class="form-element f-is-info">
+                </div>
+                <div class="has-warning ex-form-validate">
+                  <label>Form-element that has warning</label>
+                  <input class="form-element f-is-warning">
+                </div>
+              </div>
+            <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"has-warning"</span>&gt;</span>
+ <span class="tag">&lt;label</span>&gt;</span><span>Form-element has warning message!</span><span class="tag">&lt;/label</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">input</span> <span class="attribute">class</span>=<span class="attribute">"form-element f-is-warning"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div&gt;</span></code></pre>
+
+            <hr />
+            
+            <div class="feature-section-sm">
+              <div class="row-fluid">
+                <h1>Validation States With Icons</h1>
+                  <p>Add <code>has-icon</code> to the parent div wrapping your elements.</p>
+                  <p><span class="btn-label danger">EXAMPLE</span></p>
+              </div>
+              <div class="has-warning has-icon ex-form-validate">
+                <label>Form-element that has warning</label>
+                <input class="form-element f-is-warning">
+                <span class="fa fa-warning"></span>
+              </div>
+            </div>
+          <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"has-warning has-icon"</span>&gt;</span>
+ <span class="tag">&lt;label</span>&gt;</span><span>Form-element has warning message!</span><span class="tag">&lt;/label</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">input</span> <span class="attribute">class</span>=<span class="attribute">"form-element f-is-warning"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div&gt;</span></code></pre>
+
+          <hr />
+          
+          <div class="feature-section-sm">
+              <div class="row-fluid">
+                <h1>Input Focus</h1>
+                <p>Example of the <code>form-element:focus</code> style.</p>
+                <p><span class="btn-label danger">EXAMPLE</span></p>
+                <input type="text" class="input-focus form-element" placeholder="input example" />
+              </div>
+          </div>
+          
+          <hr />
+          
+          <div class="feature-section-sm">
+              <div class="row-fluid">
+                <h1>Textarea</h1>
+                <p><span class="btn-label danger">EXAMPLE</span></p>
+                <textarea class="form-element" rows="4"></textarea>
+              </div>
+            <pre><code class="xml"><span class="tag">&lt;<span class="title">textarea</span> <span class="attribute">class</span>=<span class="attribute">"form-element" <span class="attribute">rows</span>=<span class="attribute">"4"</span>&gt;</span></code></pre>
+          </div>
+          
+          <hr />
+          
+          <div class="feature-section-sm">
+              <div class="row-fluid">
+                <h1>Checkboxes and Inputs</h1>
+                <p><span class="btn-label danger">EXAMPLE</span></p>
+                <div class="form-group">
+                    <label>
+                      <input type="checkbox"> Check this box
+                    </label>
+                    <label>
+                      <input type="checkbox"> Check this box
+                    </label>
+                    <label>
+                      <input type="checkbox"> Check this box
+                    </label>
+              </div>
+              <br>
+              <div class="radio-btn">
+                <label>
+                  <input type="radio" name="radioOption" id="radioOption1" value="radioOption1" checked>
+                  This is the default selected answer
+                </label>
+              </div>
+              <div class="radio-btn">
+                <label>
+                  <input type="radio" name="radioOption" id="radioOption2" value="radioOption2">
+                  Option two is totally awesome and wants to be selected as well
+                </label>
+              </div>
+              <div class="radio-btn is-disabled">
+                <label>
+                  <input type="radio" name="radioOption" id="radioOption3" value="radioOption3">
+                  Option three is sad he has become disabled
+                </label>
+              </div>
+              <br>
+              </div>
+              <pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"form-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"checkbox"</span>&gt;</span> Check this box</span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"checkbox"</span>&gt;</span> Check this box</span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"checkbox"</span>&gt;</span> Check this box</span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"radio-btn"</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"radio"</span> </span><span class="attribute">name</span>=<span class="attribute">"radioOption" <span class="attribute">id</span>=<span class="attribute">"radioOption1"</span> <span class="attribute">value</span>=<span class="attribute">"radioOption1" checked&gt;</span>
+    This is the default selected answer </span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"radio-btn"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"radio"</span> </span><span class="attribute">name</span>=<span class="attribute">"radioOption" <span class="attribute">id</span>=<span class="attribute">"radioOption2"</span> <span class="attribute">value</span>=<span class="attribute">"radioOption2"&gt;</span>
+    Option two is totally awesome and wants to be selected as well </span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"radio-btn"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"radio"</span> </span><span class="attribute">name</span>=<span class="attribute">"radioOption" <span class="attribute">id</span>=<span class="attribute">"radioOption3"</span> <span class="attribute">value</span>=<span class="attribute">"radioOption3" disabled&gt;</span>
+    Option three is sad he has become disabled </span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span></code></pre>
+          </div>
+
+        </div><!-- the end of col10 -->
+      <!--feature-section, container, row-fluid ends -->    
+      </div>
+    </div>
+  </div> 
+    
+  <footer>
+    <div class="footer-logo text-center">
+        <span>S</span>
+      </div>
+    <p class="text-center">This site was designed and built by <a href="https://twitter.com/dan_malarkey">Dan Malarkey</a>, 
+    headquartered at the <a href="http://feature23.com">feature[23]</a> office. 
+    The tools used? <a href="http://lesscss.org">Less</a>, <a href="http://incident57.com/codekit">Codekit</a>, 
+    <a href="http://panic.com/coda/">Coda</a>, <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="http://jquery.com/">Jquery</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">HTML5</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS3</a>. 
+    Schema is licensed under an <a href="http://opensource.org/licenses/MIT">MIT License</a>.
+    </p>
+    
+    <ul>
+      <li><a href="getstarted.html">Get Started</a></li>
+      <li class="font-sm b-c-eee mobile-hidden">|</li>
+      <li><a href="documentation.html">Docs</a></li>
+      <li class="font-sm b-c-eee mobile-hidden">|</li>
+      <li><a href="https://github.com/danmalarkey/schema/issues">Issues</a></li>
+      <li class="font-sm b-c-eee mobile-hidden">|</li>
+      <li><a href="https://github.com/danmalarkey/schema">Github</a></li>
+      <li class="font-sm b-c-eee mobile-hidden">|</li>
+      <li><a href="https://github.com/danmalarkey/schema/releases">Releases</a></li>
+      <li class="font-sm b-c-eee mobile-hidden">|</li>
+      <li><a href="https://github.com/danmalarkey/schema/blob/master/README.md">Changelog</a></li>
+    </ul>
+    <div class="row-fluid icons text-center">
+      <nav>
+        <a href="https://github.com/danmalarkey/schema"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/schemaui"><i class="fa fa-twitter"></i></a>
+      </nav>
+    </div>
+  </footer>
+
+
+<script src="src/js/jquery-1.11.1.min.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+$('.nav-toggle').click(function(){
+  $('.mobile-nav').toggleClass('is-open');
+  $('#hamburger').toggleClass('open');
+});
+</script>
+
+</body>
+
+</html>
